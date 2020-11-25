@@ -1,35 +1,42 @@
 // gatsby-node.js
 
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const createFilePath = require (`gatsby-source-filesystem`);
+//const onCreateNode = require ('./gatsby-node/on-create-node');
+//const createPages = require('./gatsby-node/create-pages'); 
 
+//onCreateNode.onCreateNode();
+//createPages.createPages();
+
+
+exports.createPages = require('./gatsby-node/create-pages'); 
+exports.onCreateNode = require('./gatsby-node/on-create-node');
+
+
+
+
+/*
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  
-  
+
   if (node.internal.type === `MarkdownRemark`) {
-
-    // get filename
     const file = getNode(node.parent);
-    console.log(file);
-    const filename = file.name;
+    var base = ``;
 
-
-    if(node.frontmatter.categories == null){
-
-      const slug = `undefined/${filename}`;
-      createNodeField({node, name: `slug`, value: slug });
+    // check category first for category based url
+    const categories = node.frontmatter.categories;
+    if (categories == null) {
+      base = `/undefined`;
     }
-    else{
-      // get category 
-      const categories = node.frontmatter.categories;
-      var category_info = ``;
-      for(i in categories){
-        category_info += `${categories[i]}/`
+    else {
+      var arr = Array();
+      for (i in categories) {
+        base += `/${categories[i]}`
+        arr[i] = base;
       }
-      const slug = `${category_info}${filename}`;
-      createNodeField({ node, name: 'slug', value: slug });
     }
+    createNodeField({ node, name: 'slug', value: `${base}/${file.name}` });
+    createNodeField({ node, name: 'categorySlug', value: `${arr}` });
   }
 }
 
@@ -56,3 +63,4 @@ exports.createPages = async function ({ actions, graphql }) {
     })
   })
 }
+*/
