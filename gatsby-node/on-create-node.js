@@ -11,14 +11,14 @@ function onCreateNode({ node, getNode, actions }) {
       base = `/undefined`;
     }
     else {
-      var arr = Array();
+//      var arr = Array();
       for (i in categories) {
         base += `/${categories[i]}`;
-        arr[i] = base;
+//        arr[i] = categories[i];
       }
     }
     createNodeField({ node, name: 'slug', value: `${base}/${file.name}` });
-    createNodeField({ node, name: 'categorySlug', value: `${arr}` });
+//    createNodeField({ node, name: 'categories', value: `${arr}` });
   }
 }
 module.exports = onCreateNode;
