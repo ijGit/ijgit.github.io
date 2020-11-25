@@ -1,15 +1,32 @@
-const path = require(`path`)
+// gatsby-node.js
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
+
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
+
+    if(node.frontmatter.categories == null){
+      const slug = createFilePath({ node, getNode, basePath: `posts`});
+      createNodeField({node, name: `slug`, value: slug });
+    }else{
+      // get category 
+      const categories = node.frontmatter.categories;
+      var category_info = ``;
+      for(i in categories){
+        category_info += `${categories[i]}/`
+      }
+      console.log(category_info);
+  
+      // get filename
+      const fileObj = getNode(node.parent);
+      const filename = fileObj.base;
+      console.log(filename);
+
+      const slug = `${category_info}${filename}`;
+      createNodeField({ node, name: 'slug', value: slug });
+    }
   }
 }
 
