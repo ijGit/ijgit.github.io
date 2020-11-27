@@ -1,6 +1,8 @@
 function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
 
+  console.log(node);
+  console.log()
   if (node.internal.type === `MarkdownRemark`) {
     const file = getNode(node.parent);
     var base = ``;
@@ -11,14 +13,16 @@ function onCreateNode({ node, getNode, actions }) {
       base = `/undefined`;
     }
     else {
-//      var arr = Array();
       for (i in categories) {
         base += `/${categories[i]}`;
-//        arr[i] = categories[i];
       }
     }
-    createNodeField({ node, name: 'slug', value: `${base}/${file.name}` });
-//    createNodeField({ node, name: 'categories', value: `${arr}` });
+
+    if(node.frontmatter.type == 'post')
+      createNodeField({ node, name: 'slug', value: `${base}/${file.name}` });
+    else if(node.frontmatter.type == 'category'){
+      createNodeField({ node, name: 'slug', value: `${base}`});
+    }
   }
 }
 module.exports = onCreateNode;
