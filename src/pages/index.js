@@ -28,17 +28,18 @@ const IndexPage = ({data}) => {
     </div>
   )
 } 
+export default IndexPage
 
 
 export const pageQuery = graphql`
   query indexQuery{
-    allMarkdownRemark(limit: 10){
+    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}){
       edges{
         node{
           id
           frontmatter {
             categories
-            date
+            date(formatString: "YYYY-MM-DD")
             tags
             title
           }
@@ -52,4 +53,3 @@ export const pageQuery = graphql`
   }
 `
 
-export default IndexPage
