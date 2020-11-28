@@ -1,3 +1,5 @@
+// src/template/post.js
+
 import { graphql } from 'gatsby';
 import React from 'react';
 
@@ -6,7 +8,7 @@ data come from graphQL query then can be
 rendered in our template
 */
 export default function Template({data}){
-  const {markdownRemark: post} = data; 
+  const {markdownRemark:post} = data; 
   // const post = data.markdownRemark;
 
   return (
@@ -24,7 +26,7 @@ export default function Template({data}){
 }
 
 export const postQuery = graphql`
-  query($slug: String!) {
+  query postQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

@@ -1,8 +1,7 @@
 function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
 
-  console.log(node);
-  console.log()
+  //console.log(node);
   if (node.internal.type === `MarkdownRemark`) {
     const file = getNode(node.parent);
     var base = ``;

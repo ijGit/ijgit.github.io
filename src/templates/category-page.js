@@ -1,18 +1,21 @@
-// src/pages/index.js
+// src/template/category-page.js
 
-import { Link, graphql } from "gatsby"
-import React from "react"
+import { graphql, Link } from 'gatsby';
+import React from 'react';
 
-const IndexPage = ({data}) => {
-  return(
+/*
+data come from graphQL query then can be
+rendered in our template
+*/
+export default function Template({data =[]}){
+  const {allMarkdownRemark:posts} = data; 
+
+  return (
     <div>
-      <h1>Home</h1>
+      <h1>category</h1>
 
-      <h2>Index</h2>
-      
-      {data.allMarkdownRemark.edges.map(post =>(
+      {posts.edges.map(post =>(
         <div className="post-item" key = {post.node.id}>
-
           <div className="post-item-title">
             <h3><Link to={post.node.fields.slug}> {post.node.frontmatter.title}</Link></h3>
           </div>
@@ -29,13 +32,11 @@ const IndexPage = ({data}) => {
       ))}
     </div>
   )
-} 
-export default IndexPage
-
+}
 
 export const pageQuery = graphql`
-  query indexQuery{
-    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}){
+  query categoryQuery($name: [String]) {
+    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {categories: {in: $name}}}){
       edges{
         node{
           id
@@ -54,4 +55,3 @@ export const pageQuery = graphql`
     }
   }
 `
-

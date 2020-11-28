@@ -6,17 +6,17 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/gitpage-dev",
+  pathPrefix: '/gitpage-dev',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/posts`,
+        path: `${__dirname}/contents`,
         name: `markdown-pages`,
       },
     },
     `gatsby-plugin-sass`, // for css styling
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
-  ],
+    `gatsby-transformer-remark`
+  ]
 }

@@ -23,6 +23,7 @@ async function createPages ({actions, graphql}) {
     return Promise.reject(res.errors);
   }
   result.data.allMarkdownRemark.edges.forEach(({node}) => {
+    
     createPage({
       path: node.fields.slug,
       component: postTemplate,
