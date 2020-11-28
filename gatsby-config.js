@@ -1,12 +1,17 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+const config = require('./_config');
 
-module.exports = {
-  /* Your site config here */
-  pathPrefix: '/gitpage-dev',
+const siteConfig = require('./_config');
+
+const { title, description, author, siteUrl, language } = config;
+
+const _config = {
+  pathPrefix: siteConfig.prefix,
+  siteMetadata: { 
+    url: siteConfig.siteUrl,
+    title: siteConfig.title,
+    description: siteConfig.title,
+    language: siteConfig.language
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,8 +20,22 @@ module.exports = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-plugin-sass`, // for css styling
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: siteConfig.title,
+        short_name: siteConfig.title,
+        start_url: '/',
+        display: `standalone`,
+        theme_color_in_head: false,
+        icon: 'static/favicon.ico'
+      },
+    },
+    `gatsby-plugin-offline`,
   ]
 }
+
+module.exports = _config;

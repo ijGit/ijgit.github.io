@@ -7,8 +7,9 @@ module.exports = {
   description: `isu jeong, github page blog`,
   author: `isujeong`,
   language: `ko-KR`,
-  siteUrl: `https://ijgit.github.io/gitpage-dev/`,
-  
+  prefix: '/gitpage-dev',
+  siteUrl: `https://ijgit.github.io`,
+
   // Bio 
   comment: `hello world`,
   name: `isu.jeong`,
