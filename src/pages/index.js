@@ -1,4 +1,5 @@
 // src/pages/index.js
+import Header from "../components/header/header"
 
 import { Link, graphql } from "gatsby"
 import React from "react"
@@ -6,7 +7,8 @@ import React from "react"
 const IndexPage = ({data}) => {
   return(
     <div>
-      <h1>Home</h1>
+      <Header/>
+
 
       <h2>Index</h2>
       
@@ -33,9 +35,13 @@ const IndexPage = ({data}) => {
 export default IndexPage
 
 
+// show category page links
 export const pageQuery = graphql`
   query indexQuery{
-    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}){
+    allMarkdownRemark(limit: 1000, 
+      sort: {fields: frontmatter___date, order: DESC}
+      
+      filter: {frontmatter: {type: {eq: "category"}}}){
       edges{
         node{
           id
