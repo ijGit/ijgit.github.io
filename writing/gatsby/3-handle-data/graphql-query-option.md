@@ -1,9 +1,17 @@
 ---
-title: GraphQL 쿼리 옵션
+title: GraphQL 정리
 date: 2020-11-27
 tags: 
 categories: [gatsby]
 ---
+
+# 스키마 & 타입
+
+- `String`: 스칼라타입
+- `String!` 필드가 `non-nullable`임을 의미 (항상 값을 리턴)
+- [Episode]!: `non-nullable`이며, `Episode` 객체의 배열을 나타냄
+
+
 
 
 # filter (필터) 
@@ -27,3 +35,4 @@ filter: { contentType: { in: ["post", "page"] }, draft: { eq: false } }
   - `lt` (less than): 주어진 값보다 작음
   - `lte` (less than or equal): 주어진 값보다 작거나 같음
   - `eleMatch` (element match): 필터링 중인 필드가 이전 연산자를 사용하여 필터를 적용할 수 있는 요소 배열을 반환
+

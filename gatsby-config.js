@@ -11,10 +11,12 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content`,
+        path: `${__dirname}/content/posts`,
         name: `markdown-pages`,
       },
     },
+    `gatsby-plugin-sass`, // for css styling
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
   ],
 }
