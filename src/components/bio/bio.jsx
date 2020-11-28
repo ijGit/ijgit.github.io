@@ -29,8 +29,8 @@ const Bio = () => (
 
     <ul className="user-info">
       <ListLink to={portfolio} icon={faUserCircle}>{name}</ListLink>
-      <ListLink to={email} icon={faAt}>{email}</ListLink>
-      <ListLink to={github} icon={faGithub}>{github}</ListLink>
+      <ListLink to={email} icon={faAt}><email>{email}</email></ListLink>
+      <ListLink to={github} icon={faGithub}><address>{github}</address></ListLink>
     </ul>
   </div>
 )

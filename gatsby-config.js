@@ -34,6 +34,12 @@ const _config = {
         icon: 'static/favicon.ico'
       },
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
     `gatsby-plugin-offline`,
   ]
 }
