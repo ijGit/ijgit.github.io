@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import '/variables.scss';
 //@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 
 // set code style
@@ -14,11 +14,11 @@
     border-left: 0.35em solid #0687f0;
   }
 
-  code[class*="language-"],
-  pre[class*="language-"] {
+  code[class*='language-'],
+  pre[class*='language-'] {
     color: #e0e0e0;
     background: none;
-    font-family: "Nanum Gothic Coding", Menlo, Consolas, "Courier New",
+    font-family: 'Nanum Gothic Coding', Menlo, Consolas, "Courier New",
       monospace;
 
     direction: ltr;
@@ -29,7 +29,7 @@
     word-break: normal;
     white-space: pre;
 
-    line-height: 1.6;
+    line-height: 1.4;
     font-size: 14px;
 
     -moz-tab-size: 2;

@@ -17,7 +17,7 @@ export default function Template({data}){
   // const post = data.markdownRemark;
 
   return (
-    <Layout siteData={site} id='layout'>
+    <Layout siteData={site}>
       <article>
 
       <div className="blog-post-container">
