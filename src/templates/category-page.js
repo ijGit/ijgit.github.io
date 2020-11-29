@@ -1,17 +1,19 @@
 // src/template/category-page.js
 
-import { graphql, Link } from 'gatsby';
 import React from 'react';
-
+import { graphql, Link } from 'gatsby';
+import { Layout } from '../components/layout/layout';
 /*
 data come from graphQL query then can be
 rendered in our template
 */
 export default function Template({data =[]}){
   const {allMarkdownRemark:posts} = data; 
+  const {site} = data;
 
   return (
-    <div>
+      <Layout siteData={site}>
+
       <h1>category</h1>
 
       {posts.edges.map(post =>(
@@ -30,12 +32,19 @@ export default function Template({data =[]}){
           </div>
         </div>
       ))}
-    </div>
+    </Layout>
   )
 }
 
 export const pageQuery = graphql`
   query categoryQuery($name: [String]) {
+    site {
+      siteMetadata {
+        title
+        url
+      }
+      pathPrefix
+    }
     allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {categories: {in: $name}}}){
       edges{
         node{

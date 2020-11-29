@@ -22,7 +22,7 @@ const ListLink = props => (
 
 
 const Bio = () => (
-  <div id="bio">
+  <aside id="bio">
     <div className="user-comment">
       {comment}
     </div>
@@ -32,7 +32,7 @@ const Bio = () => (
       <ListLink to={email} icon={faAt}><email>{email}</email></ListLink>
       <ListLink to={github} icon={faGithub}><address>{github}</address></ListLink>
     </ul>
-  </div>
+  </aside>
 )
 
 export default Bio

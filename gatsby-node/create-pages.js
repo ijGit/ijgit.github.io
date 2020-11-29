@@ -29,7 +29,7 @@ async function createPages ({ actions, graphql }) {
     }
     else if(node.frontmatter.type == 'category'){
 
-      console.log(node);
+      // console.log(node);
 
       actions.createPage({
         path: node.fields.slug,

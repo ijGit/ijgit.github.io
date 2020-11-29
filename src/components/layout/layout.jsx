@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Header } from '../header/header';
 
+import './layout.scss';
 
 export const Layout = ({location, siteData, children}) => {
   return(
@@ -9,7 +10,9 @@ export const Layout = ({location, siteData, children}) => {
       
       <Header siteData={siteData} />
       <main>
-        {children}
+        <div id='content'>
+          {children}
+        </div>
       </main>
     </React.Fragment>
   )

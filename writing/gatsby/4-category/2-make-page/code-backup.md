@@ -12,8 +12,8 @@ date: 2020-11-28
 function onCreateNode({ node, getNode, actions }) {
   const { createNodeField } = actions;
 
-  console.log(node);
-  console.log()
+  // console.log(node);
+  // console.log()
   if (node.internal.type === `MarkdownRemark`) {
     const file = getNode(node.parent);
     var base = ``;

@@ -1,0 +1,24 @@
+@import '../../styles/variables.scss';
+
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  
+  
+  #content{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+
+    @media screen and (max-width: $break-l){
+      width: 60%;
+    }
+    @media screen and (max-width: $break-s){
+      width: 90%;
+    }
+  }
+
+
+
+}

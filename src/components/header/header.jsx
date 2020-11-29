@@ -7,7 +7,7 @@ export const Header = ({siteData}) => {
     <header id='header'>
       <div className='header-title'>
         <h1>
-          <Link to={siteData.pathPrefix}>
+          <Link to={'/'}>
             {siteData.siteMetadata.title}
           </Link>
         </h1>
