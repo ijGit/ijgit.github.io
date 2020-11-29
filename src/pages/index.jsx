@@ -1,16 +1,15 @@
 // src/pages/index.js
-import Header from "../components/header/header"
 
 import { Link, graphql } from "gatsby"
 import React from "react"
 
-const IndexPage = ({data}) => {
+import { Layout } from "../components/layout/layout";
+
+
+export default ({ data }) => {
+
   return(
-    <div>
-      <Header/>
-
-
-      <h2>Index</h2>
+    <Layout siteData={data.site}>
       
       {data.allMarkdownRemark.edges.map(post =>(
         <div className="post-item" key = {post.node.id}>
@@ -29,16 +28,22 @@ const IndexPage = ({data}) => {
           </div>
         </div>
       ))}
-    </div>
+    </Layout>
   )
 } 
-export default IndexPage
 
 
 // show category page links
 export const pageQuery = graphql`
-  query indexQuery{
-    allMarkdownRemark(limit: 1000, 
+  query {
+    site {
+      siteMetadata {
+        title
+        url
+      }
+      pathPrefix
+    }
+    allMarkdownRemark(
       sort: {fields: frontmatter___date, order: DESC}
       
       filter: {frontmatter: {type: {eq: "category"}}}){

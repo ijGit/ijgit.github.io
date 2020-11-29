@@ -1,16 +1,17 @@
 
 import React from "react";
 import { Link } from "gatsby";
-import {title} from "../../../_config";
 
-const Header = () =>(
-  <header id="header">
-    <div className="header-title">
-      <h1>
-        <Link to="/">{title}</Link>
-      </h1>
-    </div>
-  </header>
-)
-
-export default Header
+export const Header = ({siteData}) => {
+  return(
+    <header id='header'>
+      <div className='header-title'>
+        <h1>
+          <Link to={siteData.pathPrefix}>
+            {siteData.siteMetadata.title}
+          </Link>
+        </h1>
+      </div>
+    </header>
+  )
+}

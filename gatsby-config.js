@@ -1,16 +1,12 @@
 const config = require('./_config');
 
-const siteConfig = require('./_config');
-
-const { title, description, author, siteUrl, language } = config;
-
 const _config = {
-  pathPrefix: siteConfig.prefix,
+  pathPrefix: config.prefix,
   siteMetadata: { 
-    url: siteConfig.siteUrl,
-    title: siteConfig.title,
-    description: siteConfig.title,
-    language: siteConfig.language
+    url: config.siteUrl,
+    title: config.title,
+    description: config.title,
+    language: config.language
   },
   plugins: [
     {
@@ -26,8 +22,8 @@ const _config = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: siteConfig.title,
-        short_name: siteConfig.title,
+        name: config.title,
+        short_name: config.title,
         start_url: '/',
         display: `standalone`,
         theme_color_in_head: false,

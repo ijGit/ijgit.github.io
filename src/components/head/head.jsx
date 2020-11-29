@@ -1,11 +1,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 //import {config} from "../../_config"
 // import {config} from (`${__dirname}/_config`); 
 
-export function SEO({ description, lang, meta, keywords, title }) {
+export function Head({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
       query={detailsQuery}
@@ -69,13 +69,13 @@ export function SEO({ description, lang, meta, keywords, title }) {
   )
 }
 
-SEO.defaultProps = {
+Head.defaultProps = {
   lang: `en`,
   meta: [],
   keywords: [],
 }
 
-SEO.propTypes = {
+Head.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.array,

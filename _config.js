@@ -13,7 +13,7 @@ module.exports = {
   // Bio 
   comment: `hello world`,
   name: `isu.jeong`,
-  portfolio: `${this.siteUrl}portfolio`,
+  portfolio: `${this.siteUrl}/portfolio`,
   email: `isuu.jeong@gmail.com`,
   github: 'https://github.com/ijgit',
   
