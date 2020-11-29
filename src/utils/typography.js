@@ -23,7 +23,6 @@ wordpress.overrideThemeStyles = ({ adjustFontSizeTo, rhythm }, options, styles) 
     marginBottom: 0
   }
 
-
 });
 
 const typography = new Typography(wordpress);

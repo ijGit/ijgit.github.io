@@ -1,0 +1,236 @@
+@import "./variables.scss";
+//@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
+// set code style
+
+#layout {
+  .gatsby-highlight-code-line {
+    background-color: hsla(207, 95%, 15%, 1);
+    display: block;
+    margin-right: -1.2em;
+    margin-left: -1.2em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.35em solid #0687f0;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: #e0e0e0;
+    background: none;
+    font-family: "Nanum Gothic Coding", Menlo, Consolas, "Courier New",
+      monospace;
+
+    direction: ltr;
+    text-align: left;
+
+    word-spacing: normal;
+    word-wrap: normal;
+    word-break: normal;
+    white-space: pre;
+
+    line-height: 1.6;
+    font-size: 14px;
+
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+
+    -ms-overflow-style: none; // IE 10+
+    overflow: -moz-scrollbars-none; // Firefox
+  }
+
+  pre[class*="language-"]::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    padding: 1.2em;
+    margin: 1.5em 0;
+    overflow: auto;
+    border-radius: 0.6em;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background: $code-background-color-d;
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    padding: 0.1em 0.6em;
+    border-radius: 0.2em;
+    white-space: normal;
+    //background: $code-background-color-d;
+    background-color: transparent;
+    color: $code-text-color-d;
+  }
+
+  .token.comment,
+  .token.block-comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: #7f848e;
+  }
+
+  .token.punctuation {
+    color: #e0e0e0;
+  }
+
+  .token.tag,
+  .token.attr-name,
+  .token.namespace,
+  .token.deleted {
+    color: #e2777a;
+  }
+
+  .token.function-name {
+    color: #6196cc;
+  }
+
+  .token.boolean,
+  .token.number,
+  .token.function {
+    color: #ff9100;
+  }
+
+  .token.property,
+  .token.class-name,
+  .token.constant,
+  .token.symbol {
+    color: #ffff00; // 2bbac5
+  }
+
+  .token.selector,
+  .token.important,
+  .token.atrule,
+  .token.keyword,
+  .token.builtin {
+    color: #b388ff;
+  }
+
+  .token.string,
+  .token.char,
+  .token.attr-value,
+  .token.regex,
+  .token.variable {
+    color: #00e676; // 50A14F
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url {
+    color: #67cdcc;
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.entity {
+    cursor: help;
+  }
+
+  .token.inserted {
+    color: #50a14f;
+  }
+
+  /* line number */
+  /* Adjust the position of the line numbers */
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em;
+  }
+
+/**
+ * If you only want to use line numbering
+ */
+
+  .gatsby-highlight {
+    background-color: #fdf6e3;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+  }
+
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+
+  // pre[class*="language-"].line-numbers {
+  //   position: relative;
+  //   padding-left: 3.8em;
+  //   counter-reset: linenumber;
+  // }
+
+  // pre[class*="language-"].line-numbers > code {
+  //   position: relative;
+  //   white-space: inherit;
+  // }
+
+  // .line-numbers .line-numbers-rows {
+  //   position: absolute;
+  //   pointer-events: none;
+  //   top: 0;
+  //   font-size: 100%;
+  //   left: -3.8em;
+  //   width: 3em; /* works for line-numbers below 1000 lines */
+  //   letter-spacing: -1px;
+  //   border-right: 1px solid #999;
+
+  //   -webkit-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   user-select: none;
+  // }
+
+  // .line-numbers-rows > span {
+  //   display: block;
+  //   counter-increment: linenumber;
+  // }
+
+  // .line-numbers-rows > span:before {
+  //   //  content: counter(linenumber);
+  //   color: #999;
+  //   display: block;
+  //   padding-right: 0.8em;
+  //   text-align: right;
+  // }
+}
+
+
+// prompt
+
+.command-line-prompt > span:before {
+  color: #999;
+  content: " ";
+  display: block;
+  padding-right: 0.8em;
+}
+
+/* Prompt for all users */
+.command-line-prompt > span[data-user]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] $";
+}
+
+/* Prompt for root */
+.command-line-prompt > span[data-user="root"]:before {
+  content: "[" attr(data-user) "@" attr(data-host) "] #";
+}
+
+.command-line-prompt > span[data-prompt]:before {
+  content: attr(data-prompt);
+}

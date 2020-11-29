@@ -4,6 +4,8 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Layout } from '../components/layout/layout'
 
+import './../styles/code-style.scss'
+import './../styles/article-style.scss'
 
 /*
 data come from graphQL query then can be
@@ -15,7 +17,7 @@ export default function Template({data}){
   // const post = data.markdownRemark;
 
   return (
-    <Layout siteData={site}>
+    <Layout siteData={site} id='layout'>
       <article>
 
       <div className="blog-post-container">

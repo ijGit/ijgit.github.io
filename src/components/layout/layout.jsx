@@ -7,13 +7,15 @@ import './layout.scss';
 export const Layout = ({location, siteData, children}) => {
   return(
     <React.Fragment>
-      
-      <Header siteData={siteData} />
-      <main>
-        <div id='content'>
-          {children}
-        </div>
-      </main>
+      <div>
+
+        <Header siteData={siteData} />
+        <main>
+          <div id='content'>
+            {children}
+          </div>
+        </main>
+      </div>
     </React.Fragment>
   )
 }

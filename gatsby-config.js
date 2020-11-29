@@ -2,7 +2,7 @@ const config = require('./_config');
 
 const _config = {
   pathPrefix: config.prefix,
-  siteMetadata: { 
+  siteMetadata: {
     url: config.siteUrl,
     title: config.title,
     description: config.title,
@@ -38,6 +38,20 @@ const _config = {
     },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-remark-prismjs`,
+      options: {
+        //  require("prismjs/plugins/line-numbers/prism-line-numbers.css")
+        classPrefix: 'language-',
+        inlineCodeMarker: null,
+        showLineNumbers: true,
+        noInlineHighlight: false,
+        escapeEntities: {},
+        aliases: {
+          react: 'jsx',
+        },
+      },
+    },
     `gatsby-plugin-offline`,
   ]
 }
