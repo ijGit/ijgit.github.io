@@ -1,6 +1,3 @@
-@import '/variables.scss';
-//@import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
-
 // set code style
 
 #layout {
@@ -45,31 +42,31 @@
     overflow: -moz-scrollbars-none; // Firefox
   }
 
-  pre[class*="language-"]::-webkit-scrollbar {
+  pre[class*='language-']::-webkit-scrollbar {
     display: none; // Safari and Chrome
   }
 
   /* Code blocks */
-  pre[class*="language-"] {
+  pre[class*='language-'] {
     padding: 1.2em;
     margin: 1.5em 0;
     overflow: auto;
     border-radius: 0.6em;
   }
 
-  :not(pre) > code[class*="language-"],
-  pre[class*="language-"] {
-    background: $code-background-color-d;
+  :not(pre) > code[class*='language-'],
+  pre[class*='language-'] {
+    background: #282c34;
   }
 
   /* Inline code */
-  :not(pre) > code[class*="language-"] {
+  :not(pre) > code[class*='language-'] {
     padding: 0.1em 0.6em;
     border-radius: 0.2em;
     white-space: normal;
     //background: $code-background-color-d;
     background-color: transparent;
-    color: $code-text-color-d;
+    color: #bb72ec;
   }
 
   .token.comment,
@@ -148,7 +145,7 @@
 
   /* line number */
   /* Adjust the position of the line numbers */
-  .gatsby-highlight pre[class*="language-"].line-numbers {
+  .gatsby-highlight pre[class*='language-'].line-numbers {
     padding-left: 2.8em;
   }
 
@@ -164,19 +161,19 @@
     overflow: auto;
   }
 
-  .gatsby-highlight pre[class*="language-"].line-numbers {
+  .gatsby-highlight pre[class*='language-'].line-numbers {
     padding: 0;
     padding-left: 2.8em;
     overflow: initial;
   }
 
-  // pre[class*="language-"].line-numbers {
+  // pre[class*='language-'].line-numbers {
   //   position: relative;
   //   padding-left: 3.8em;
   //   counter-reset: linenumber;
   // }
 
-  // pre[class*="language-"].line-numbers > code {
+  // pre[class*='language-'].line-numbers > code {
   //   position: relative;
   //   white-space: inherit;
   // }

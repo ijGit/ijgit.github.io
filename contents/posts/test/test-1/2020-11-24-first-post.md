@@ -27,7 +27,7 @@ categories: [category1, category2]
 
 
 
-```c++
+```cpp
 
 #include <stdio.h>
 

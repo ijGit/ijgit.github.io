@@ -6,6 +6,7 @@ import { Layout } from '../components/layout/layout'
 
 import './../styles/code-style.scss'
 import './../styles/article-style.scss'
+//require("prismjs/themes/prism-solarizedlight.css");
 
 /*
 data come from graphQL query then can be

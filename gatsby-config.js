@@ -9,6 +9,12 @@ const _config = {
     language: config.language
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-offline`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -16,9 +22,34 @@ const _config = {
         name: `markdown-pages`,
       },
     },
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
+
+
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        tableOfContents: {  // for TOC 
+          maxDepth: 3
+        },
+
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              showLineNumbers: true,
+              noInlineHighlight: false,
+              escapeEntities: {},
+              aliases: {
+                react: 'jsx',
+              },
+            },
+          },
+        ],
+      },
+    },
+
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -30,29 +61,14 @@ const _config = {
         icon: 'static/favicon.ico'
       },
     },
+
+    
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-remark-prismjs`,
-      options: {
-        //  require("prismjs/plugins/line-numbers/prism-line-numbers.css")
-        classPrefix: 'language-',
-        inlineCodeMarker: null,
-        showLineNumbers: true,
-        noInlineHighlight: false,
-        escapeEntities: {},
-        aliases: {
-          react: 'jsx',
-        },
-      },
-    },
-    `gatsby-plugin-offline`,
   ]
 }
 
