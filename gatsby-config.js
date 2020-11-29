@@ -22,14 +22,13 @@ const _config = {
         name: `markdown-pages`,
       },
     },
-
-
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        tableOfContents: {  // for TOC 
-          maxDepth: 3
-        },
+        // tableOfContents 
+        // tableOfContents: {  // for TOC 
+        //   maxDepth: 3
+        // },
 
         plugins: [
           {

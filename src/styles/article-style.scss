@@ -1,9 +1,9 @@
 @import './variables.scss';
 
-
 article{
   word-break: break-all;
 
+  /*
   a{
     text-decoration: none;
   }
@@ -28,4 +28,5 @@ article{
   blockquote > :last-child {
     margin-bottom: 0;
   }
+  */
 }

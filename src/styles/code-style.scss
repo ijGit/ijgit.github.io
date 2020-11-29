@@ -20,7 +20,7 @@
   // If you only want to use line numbering
   .gatsby-highlight {
     background-color: $code-background-color-d;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     margin: 0.5rem 0;
     padding: 0;
     overflow: auto;
@@ -36,8 +36,7 @@
   pre[class*='language-'] {
     color: #e0e0e0;
     background: none;
-    font-family: 'Nanum Gothic Coding', Menlo, Consolas, "Courier New",
-      monospace;
+    font-family: 'Source Code Pro', 'Nanum Gothic Coding', Consolas, monospace;
 
     direction: ltr;
     text-align: left;
