@@ -5,33 +5,57 @@ import { graphql } from 'gatsby';
 import { Layout } from '../components/layout/layout'
 
 import './../styles/code-style.scss'
-import './../styles/article-style.scss'
-//require("prismjs/themes/prism-solarizedlight.css");
+import './../styles/post-style.scss'
+
+export const Post = ({ post }) => {
+  return (
+    <article>
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <div className='post-meta'>
+            <div className="post-title">
+              <h1>{post.frontmatter.summary}</h1>
+              <h2>{post.frontmatter.title}</h2>
+            </div>
+            <div>
+              <span className="post-date">{post.frontmatter.date}</span>
+              <span className="post-tag">{post.frontmatter.tags}</span>
+            </div>
+            <div>{post.frontmatter.category}</div>
+          </div>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
+      </div>
+    </article>
+  )
+}
+
+
 
 /*
 data come from graphQL query then can be
 rendered in our template
 */
-export default function Template({data}){
-  const {markdownRemark:post} = data; 
-  const {site} = data;
-  // const post = data.markdownRemark;
+export default function Template({ data }) {
+  const { markdownRemark: post } = data;
+  const category = (post.frontmatter.category == null) ? 'undefined' : post.frontmatter.category;
+  
+  const metaData = {};
+  metaData['title'] = post.frontmatter.title;
+  metaData['description'] = post.frontmatter.description;
+  metaData['keywords'] = post.frontmatter.keywords;
+  metaData['category'] = post.frontmatter.category;
+
+  const postData = {};
+  postData['title'] = post.frontmatter.title;
+  postData['category'] = category;
 
   return (
-    <Layout siteData={site}>
-      <article>
-
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <h1>{post.frontmatter.title}</h1>
-          <span>{post.frontmatter.date}</span>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{__html: post.html}}
-            />
-        </div>
-      </div>
-      </article>
+    <Layout metaData={metaData} postData={postData}>
+        <Post post={data}/>
     </Layout>
   )
 }
@@ -42,8 +66,8 @@ export const postQuery = graphql`
       siteMetadata {
         title
         url
+        language
       }
-      pathPrefix
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
@@ -52,6 +76,7 @@ export const postQuery = graphql`
         title
         category
         tags
+        keywords
       }
       fields {
         slug

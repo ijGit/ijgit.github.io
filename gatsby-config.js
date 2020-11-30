@@ -5,8 +5,9 @@ const _config = {
   siteMetadata: {
     url: config.siteUrl,
     title: config.title,
-    description: config.title,
-    language: config.language
+    description: config.description,
+    language: config.language,
+    author: config.author,
   },
   plugins: [
     `gatsby-plugin-sass`,

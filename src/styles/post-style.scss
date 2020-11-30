@@ -1,7 +1,21 @@
 @import './variables.scss';
 
 article{
-  word-break: break-all;
+  word-break: keep-all;
+
+  a{color: #0687f0;}
+  a:link{text-decoration-color: #0687f0;}
+  a:visited{text-decoration-color: $font-color; opacity: .9;}
+  
+  
+  .post-meta{
+    h1{
+      font-size: 2rem;
+    }
+  }
+
+
+
 
   /*
   a{

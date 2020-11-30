@@ -1,0 +1,17 @@
+@import './../../styles/variables.scss';
+
+#header{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  
+  height: $header-height;
+}
+
+#header-title{
+  padding: 1rem;
+  background-color: inherit;
+}

@@ -3,34 +3,47 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { Layout } from '../components/layout/layout';
+
 /*
 data come from graphQL query then can be
 rendered in our template
 */
-export default function Template({data =[]}){
-  const {allMarkdownRemark:posts} = data; 
-  const {site} = data;
+
+export const postItem = ({ post }) => {
+  return (
+    <div className="post-item" key={post.id}>
+      <div className="post-item-title">
+        <h3><Link to={post.fields.slug}> {post.frontmatter.title}</Link></h3>
+      </div>
+      <div className="post-item-meta">
+        <span>{post.frontmatter.date}</span>
+        <span>{post.frontmatter.category}</span>
+        <span>{post.frontmatter.tags}</span>
+      </div>
+      <div className="post-item-excerpt">{post.excerpt}</div>
+    </div>
+  )
+}
+
+
+
+export default function Template({ data = [] }) {
+  const { allMarkdownRemark: posts } = data;
+
+  const metaData = {};
+  metaData['title'] = posts.edges.node.frontmatter.title;
+  metaData['description'] = posts.edges.node.frontmatter.description;
+  metaData['keywords'] = posts.edges.node.frontmatter.keywords;
+  metaData['category'] = posts.edges.node.frontmatter.category;
+
+  const postData = {};
+  postData['title'] = posts.edges.node.frontmatter.title;
+  postData['category'] = posts.edges.node.frontmatter.category;
 
   return (
-      <Layout siteData={site}>
-
-      <h1>category</h1>
-
-      {posts.edges.map(post =>(
-        <div className="post-item" key = {post.node.id}>
-          <div className="post-item-title">
-            <h3><Link to={post.node.fields.slug}> {post.node.frontmatter.title}</Link></h3>
-          </div>
-          <div className="post-item-meta">
-            <span>{post.node.frontmatter.date}</span>
-            <span>{post.node.frontmatter.category}</span>
-            <span>{post.node.frontmatter.tags}</span>
-          </div>
-
-          <div className="post-item-excerpt">
-            {post.node.excerpt}
-          </div>
-        </div>
+    <Layout metaData={metaData} postData={postData}>
+      {posts.edges.map(post => (
+        <postItem post={post} />
       ))}
     </Layout>
   )
@@ -42,8 +55,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         url
+        language
       }
-      pathPrefix
     }
     allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, 
       filter: {frontmatter: {category: {eq: $eq }, type: {ne: "category"}}}) {
@@ -53,8 +66,8 @@ export const pageQuery = graphql`
           frontmatter {
             category
             date(formatString: "YYYY-MM-DD")
-            tags
             title
+            description
           }
           excerpt(pruneLength: 100)
           fields {

@@ -88,8 +88,10 @@ const detailsQuery = graphql`
     site {
       siteMetadata {
         title
+        url
         description
-        
+        language
+        author
       }
     }
   }
