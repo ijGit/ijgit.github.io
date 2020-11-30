@@ -14,12 +14,21 @@ const _config = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
-    
+
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/contents`,
-        name: `markdown-pages`,
+      options:
+      {
+        path: `${__dirname}/contents/posts`,
+        name: `markdown-post-page`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options:
+      {
+        path: `${__dirname}/contents/categories`,
+        name: `markdown-category-page`,
       },
     },
     {
@@ -61,7 +70,7 @@ const _config = {
       },
     },
 
-    
+
     {
       resolve: `gatsby-plugin-typography`,
       options: {

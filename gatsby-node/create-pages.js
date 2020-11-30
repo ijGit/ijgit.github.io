@@ -2,15 +2,20 @@
 
 //const createPages = async ({ actions, graphql }) => {
 async function createPages ({ actions, graphql }) {
-  const { data } = await graphql(` query {
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+  const { data } = await graphql(`query {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC})
+    {
       edges {
         node {
           fields {
-            slug
+            meta{
+              slug
+              type
+              category
+              root
+            }
           }
           frontmatter{
-            type
             categories
           }
         }
@@ -18,21 +23,19 @@ async function createPages ({ actions, graphql }) {
     }
   }`);
 
-
   data.allMarkdownRemark.edges.forEach( ({node}) => {
-    if(node.frontmatter.type == 'post'){
+    const meta = node.fields.meta; 
+
+    if(meta.type == 'post'){
       actions.createPage({
-        path: node.fields.slug,
+        path: meta.slug,
         component: require.resolve(`../src/templates/post-page.js`),
-        context: { slug: node.fields.slug },
+        context: { slug: meta.slug },
       });
     }
-    else if(node.frontmatter.type == 'category'){
-
-      // console.log(node);
-
+    else if(meta.type == 'category'){
       actions.createPage({
-        path: node.fields.slug,
+        path: meta.slug,
         component: require.resolve(`../src/templates/category-page.js`),
         context: { name: node.frontmatter.categories },
       });

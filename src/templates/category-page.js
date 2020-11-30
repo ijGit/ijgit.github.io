@@ -45,7 +45,7 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {categories: {in: $name}}}){
+    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {categories: {in: $name}, type: {eq: "post"}}}){
       edges{
         node{
           id
