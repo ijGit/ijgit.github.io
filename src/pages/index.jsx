@@ -19,7 +19,7 @@ export default ({ data }) => {
           </div>
           <div className="post-item-meta">
             <span>{post.node.fields.date}</span>
-            <span>{post.node.fields.categories}</span>
+            <span>{post.node.fields.category}</span>
             <span>{post.node.fields.tags}</span>
           </div>
 
@@ -51,7 +51,7 @@ export const pageQuery = graphql`
         node{
           id
           frontmatter {
-            categories
+            category
             date(formatString: "YYYY-MM-DD")
             tags
             title

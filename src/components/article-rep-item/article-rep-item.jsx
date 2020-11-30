@@ -7,7 +7,7 @@ export const ArticleRepItem = ({ node }) =>(
       <Link to={ node.fields.slug }><h3>{node.frontmatter.title}</h3></Link>
       <div>
         <span>{node.frontmatter.date}</span>
-        <span>{node.frontmatter.categories}</span>
+        <span>{node.frontmatter.category}</span>
         <span>{node.frontmatter.tags}</span>
       </div>
     </div>

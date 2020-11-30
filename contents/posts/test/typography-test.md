@@ -1,5 +1,4 @@
 ---
-type: post
 title: typography-test
 date: 2020-11-29
 ---

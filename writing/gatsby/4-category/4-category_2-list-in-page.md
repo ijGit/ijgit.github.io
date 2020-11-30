@@ -18,7 +18,7 @@ async function createPages ({ actions, graphql }) {
           }
           frontmatter{
             type
-            categories   
+            category   
           }
         }
       }

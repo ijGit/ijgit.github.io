@@ -22,9 +22,9 @@ export default function Template({data =[]}){
             <h3><Link to={post.node.fields.slug}> {post.node.frontmatter.title}</Link></h3>
           </div>
           <div className="post-item-meta">
-            <span>{post.node.fields.date}</span>
-            <span>{post.node.fields.categories}</span>
-            <span>{post.node.fields.tags}</span>
+            <span>{post.node.frontmatter.date}</span>
+            <span>{post.node.frontmatter.category}</span>
+            <span>{post.node.frontmatter.tags}</span>
           </div>
 
           <div className="post-item-excerpt">
@@ -37,7 +37,7 @@ export default function Template({data =[]}){
 }
 
 export const pageQuery = graphql`
-  query categoryQuery($name: [String]) {
+  query categoryQuery($eq: String) {
     site {
       siteMetadata {
         title
@@ -45,12 +45,13 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, filter: {frontmatter: {categories: {in: $name}, type: {eq: "post"}}}){
+    allMarkdownRemark(limit: 1000, sort: {fields: frontmatter___date, order: DESC}, 
+      filter: {frontmatter: {category: {eq: $eq }, type: {ne: "category"}}}) {
       edges{
         node{
           id
           frontmatter {
-            categories
+            category
             date(formatString: "YYYY-MM-DD")
             tags
             title

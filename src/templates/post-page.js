@@ -24,7 +24,7 @@ export default function Template({data}){
       <div className="blog-post-container">
         <div className="blog-post">
           <h1>{post.frontmatter.title}</h1>
-          <h2>{post.frontmatter.date}</h2>
+          <span>{post.frontmatter.date}</span>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{__html: post.html}}
@@ -50,7 +50,7 @@ export const postQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
-        categories
+        category
         tags
       }
       fields {
