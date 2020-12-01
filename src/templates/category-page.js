@@ -9,48 +9,54 @@ data come from graphQL query then can be
 rendered in our template
 */
 
-export const postItem = ({ post }) => {
-  return (
-    <div className="post-item" key={post.id}>
-      <div className="post-item-title">
-        <h3><Link to={post.fields.slug}> {post.frontmatter.title}</Link></h3>
-      </div>
-      <div className="post-item-meta">
-        <span>{post.frontmatter.date}</span>
-        <span>{post.frontmatter.category}</span>
-        <span>{post.frontmatter.tags}</span>
-      </div>
-      <div className="post-item-excerpt">{post.excerpt}</div>
-    </div>
-  )
-}
+// export function PostItem ({ props }) {
+//   return(
+    
+//         <div className="post-item" key={props.id}>
+//           <div className="post-item-title">
+//             <h3><Link to={props.slug}> {props.title}</Link></h3>
+//           </div>
+//           <div className="post-item-meta">
+//             <span>{props.date}</span>
+//             <span>{props.category}</span>
+//             <span>{props.tags}</span>
+//           </div>
+//           <div className="post-item-excerpt">{props.excerpt}</div>
+//         </div>
+// )}
+
 
 
 
 export default function Template({ data = [] }) {
+
   const { allMarkdownRemark: posts } = data;
-
-  const metaData = {};
-  metaData['title'] = posts.edges.node.frontmatter.title;
-  metaData['description'] = posts.edges.node.frontmatter.description;
-  metaData['keywords'] = posts.edges.node.frontmatter.keywords;
-  metaData['category'] = posts.edges.node.frontmatter.category;
-
-  const postData = {};
-  postData['title'] = posts.edges.node.frontmatter.title;
-  postData['category'] = posts.edges.node.frontmatter.category;
+  const title = data.site.siteMetadata.title;
+  var category = data.markdownRemark.frontmatter.category;
+  category = category == null ? 'undefined' : category;
 
   return (
-    <Layout metaData={metaData} postData={postData}>
+    <Layout root={data.site.siteMetadata.title} title={title} category={category}>
       {posts.edges.map(post => (
-        <postItem post={post} />
+
+        <div className="post-item" key={post.node.id}>
+          <div className="post-item-title">
+            <h3><Link to={post.node.fields.slug}> {post.node.frontmatter.title}</Link></h3>
+          </div>
+          <div className="post-item-meta">
+            <span>{post.node.frontmatter.date}</span>
+            <span>{post.node.frontmatter.category}</span>
+            <span>{post.node.frontmatter.tags}</span>
+          </div>
+          <div className="post-item-excerpt">{post.node.excerpt}</div>
+        </div>
       ))}
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query categoryQuery($eq: String) {
+  query categoryQuery($eq: String, $slug: String) {
     site {
       siteMetadata {
         title
@@ -74,6 +80,12 @@ export const pageQuery = graphql`
             slug
           }
         }
+      }
+    }
+    markdownRemark(fields: {slug: {eq: $slug}}) {
+      frontmatter {
+        category
+        description
       }
     }
   }

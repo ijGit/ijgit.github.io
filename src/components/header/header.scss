@@ -9,9 +9,20 @@
   background-color: transparent;
   
   height: $header-height;
-}
 
-#header-title{
-  padding: 1rem;
-  background-color: inherit;
+
+  .header-logo{
+    float: left;
+
+    .header-title{
+      padding-left: 1rem;
+      height: 100%;
+    }
+    .path{
+      height: 100%;
+      padding-left: 2rem;
+
+      align-self: flex-end;
+    }
+  }
 }

@@ -7,12 +7,15 @@ import './header.scss';
 export const Header = ({title, category}) => {
   return(
     <header id='header'>
-      <div className='header-title'>
-        <h1 style={{paddingLeft:'1rem'}}>
-          <Link to={'/'}>{title}</Link>
-        </h1>
+      <div className='header-logo'>
+        
+        <span className='header-title'>
+          <h1 style={{paddingLeft:'1rem'}}>
+            <Link to={'/'}>{title}</Link>
+          </h1>
+        </span>
+        <span className='path'> /{category}</span>
       </div>
-      <div className='category'> /{category}</div>
     </header>
   )
 }

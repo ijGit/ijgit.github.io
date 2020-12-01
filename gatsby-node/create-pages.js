@@ -32,7 +32,7 @@
         actions.createPage({
           path: node.fields.slug,
           component: require.resolve(`../src/templates/category-page.js`),
-          context: { eq: node.frontmatter.category },
+          context: { eq: node.frontmatter.category , slug: node.fields.slug},
         });
       }
     });
