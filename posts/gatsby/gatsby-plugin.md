@@ -23,3 +23,7 @@ tags: [gatsby, gitpage]
   - Sass/SCSS stylesheets 지원
 
 - [gatsby-plugin-lodash][https://www.gatsbyjs.com/plugins/gatsby-plugin-lodash/]
+
+- [gatsby-remark-prismjs][gatsby-remark-prismjs]
+
+- gatsby-plugin-styled-components
