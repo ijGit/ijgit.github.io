@@ -1,21 +1,20 @@
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
-import React from "react";
-import { Link } from "gatsby";
+export default function Header() {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
-import './header.scss';
-
-export const Header = ({title, category}) => {
-  return(
-    <header id='header'>
-      <div className='header-logo'>
-        
-        <span className='header-title'>
-          <h1 style={{paddingLeft:'1rem'}}>
-            <Link to={'/'}>{title}</Link>
-          </h1>
-        </span>
-        <span className='path'> /{category}</span>
-      </div>
+  return (
+    <header>
+      <h1>{data.site.siteMetadata.title}</h1>
     </header>
   )
 }
