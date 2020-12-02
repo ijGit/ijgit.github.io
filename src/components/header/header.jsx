@@ -3,6 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 const LogoWrapper = styled.div`
+  display: inline-flex;
+  flex-direction: row;
+
   margin: 0;
   padding: 0;
   margin-left: 3vw;
@@ -23,13 +26,15 @@ export default function Header() {
 
   return (
     <header>
-    <LogoWrapper>
-      <h1>
-        <Link to = {data.site.siteMetadata.prefix}>
-          {data.site.siteMetadata.title}
-          </Link>
-      </h1>
-    </LogoWrapper>
+      <div className="header-content">
+        <LogoWrapper>
+          <h1>
+            <Link to = {data.site.siteMetadata.prefix}>
+              {data.site.siteMetadata.title}
+              </Link>
+          </h1>
+        </LogoWrapper>
+      </div>
     </header>
   )
 }

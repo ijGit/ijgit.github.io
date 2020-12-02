@@ -1,0 +1,66 @@
+@import './variables.scss';
+
+body{
+  
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans KR', 'sans-serif';
+    font-weight: 700;
+  }
+
+  font-family: 'Noto Sans KR', 'sans-serif';
+  font-weight: 500;
+  font-size: $font-size;
+  color: $font-color;
+
+  line-height: 1.6;
+
+
+  h1{font-size: $h1-font-size;}
+  h2{font-size: $h2-font-size;}
+  h3{font-size: $h3-font-size;}
+  h4{font-size: $h4-font-size;}
+  h5, h6 {font-size: $h5-font-size;}
+
+
+  a{text-decoration: none;}
+  a:hover{
+    color: $font-color;
+    opacity: .8;
+    text-decoration: none;
+    border-bottom: 1px solid #00000079;
+  }
+  a:visited{opacity: .8;}
+
+
+  blockquote{
+    font-family: 'Noto Serif KR', 'serif';
+    font-size: .9rem;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+    border-left: .3rem solid #00000083;
+  }
+  blockquote > :last-child {
+    margin-bottom: 0;
+  }
+
+  li{
+    list-style-type: disc;
+  }
+
+  li, ul, ol, li p, ul p, ol p{
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  li, ul, ol, li p, ul p, ol p{
+    margin-bottom: 1vh;
+  }
+
+
+
+  code{
+    font-family: 'Fila code', 'Source Code Pro', 'Nanum Gothic Coding', Consolas, monospace;
+  }
+
+}
