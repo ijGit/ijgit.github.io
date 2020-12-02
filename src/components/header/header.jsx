@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
 const LogoWrapper = styled.div`
@@ -12,7 +12,7 @@ const LogoWrapper = styled.div`
   margin-bottom: 1.2vw;
 `
 
-export default function Header() {
+export const Header = () => {
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {

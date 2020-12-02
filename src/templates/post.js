@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
 import './../styles/code-style.scss'
+import {Layout} from './../components/layout/layout'
 
 import styled from 'styled-components';
 const PostContentWrapper = styled.div`
@@ -31,6 +32,8 @@ export default function PostTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
+    <Layout>
+
     <article>
       <div className="blog-post-container">
         <div className="blog-post">
@@ -42,10 +45,11 @@ export default function PostTemplate({ data }) {
           <PostContentWrapper
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
-          />
+            />
         </div>
       </div>
     </article>
+</Layout>
   )
 }
 
