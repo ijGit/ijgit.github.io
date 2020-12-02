@@ -27,6 +27,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `${__dirname}/src/utils/typography`,
+      },
+    },
+    {
       resolve: `gatsby-remark-prismjs`,
       options: {
         classPrefix: 'language-',

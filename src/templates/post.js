@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
-import './../styles/code-style.scss'
 import {Layout} from './../components/layout/layout'
+import './../styles/code-style.scss'
 
 import styled from 'styled-components';
 const PostContentWrapper = styled.div`
