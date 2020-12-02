@@ -33,16 +33,27 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-remark-prismjs`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        classPrefix: 'language-',
-        inlineCodeMarker: null,
-        showLineNumbers: true,
-        noInlineHighlight: false,
-        escapeEntities: {},
-        aliases: {
-          react: 'jsx',
+        tableOfContents: {  // for TOC 
+          maxDepth: 3
         },
+
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              showLineNumbers: true,
+              noInlineHighlight: false,
+              escapeEntities: {},
+              aliases: {
+                react: 'jsx',
+              },
+            },
+          },
+        ],
       },
     },
   ],
