@@ -1,20 +1,51 @@
 import React from 'react'
 import { graphql } from "gatsby"
+import './../styles/code-style.scss'
 
-export default function Post({ data }) {
+import styled from 'styled-components';
+const PostContentWrapper = styled.div`
+  h1, h2, h3{
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  h4, h5, h6{
+    margin-top: 1em;
+    margin-bottom: .5em;
+  }
+`
+const MetaWrapper = styled.div`
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #8383837e;
+  .date, .tags{
+    font-size: .9rem;
+    font-weight: 400;
+    opacity: .8;
+  }
+  .tags{
+    span{margin-right: .5em;}
+    span:before{content: '#';}   }
+  }
+`
+
+export default function PostTemplate({ data }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+    <article>
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <MetaWrapper>
+            <h1>{frontmatter.title}</h1>
+            <div className="date">{frontmatter.date}</div>
+            <div className="tags">{(frontmatter.tags == null) ? "" : (frontmatter.tags.map(tag => (<span>{tag}</span>)))}</div>
+          </MetaWrapper>
+          <PostContentWrapper
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
       </div>
-    </div>
+    </article>
   )
 }
 

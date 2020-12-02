@@ -8,6 +8,7 @@ module.exports = {
     description: config.description,
     language: config.language,
     author: config.author,
+    name: config.author,
     prefix: config.prefix
   },
 

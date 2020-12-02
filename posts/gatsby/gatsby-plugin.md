@@ -26,4 +26,11 @@ tags: [gatsby, gitpage]
 
 - [gatsby-remark-prismjs][gatsby-remark-prismjs]
 
-- gatsby-plugin-styled-components
+- [gatsby-plugin-styled-components][https://www.gatsbyjs.com/plugins/gatsby-plugin-styled-components/?=styled]
+
+
+[gatsby-remark-prismjs][https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/?=high]
+npm install gatsby-transformer-remark gatsby-remark-prismjs prismjs
+
+
+darkmode: https://www.gatsbyjs.com/blog/2019-01-31-using-react-context-api-with-gatsby/#creating-the-context-file-in-a-new-gatsby-project
