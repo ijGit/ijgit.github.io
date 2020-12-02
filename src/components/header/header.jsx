@@ -2,6 +2,9 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
+import './header.scss'
+
+
 const LogoWrapper = styled.div`
   display: inline-flex;
   flex-direction: row;
@@ -25,7 +28,7 @@ export const Header = () => {
   `)
 
   return (
-    <header>
+    <header id='header'>
       <div className="header-content">
         <LogoWrapper>
           <h1>
