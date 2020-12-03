@@ -8,17 +8,17 @@ module.exports = {
     description: config.description,
     language: config.language,
     author: config.author,
+    prefix: config.prefix,
     name: config.author,
-    prefix: config.prefix
   },
-
-
+  
   plugins: [
     `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
