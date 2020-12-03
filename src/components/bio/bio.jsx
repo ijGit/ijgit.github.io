@@ -44,7 +44,7 @@ const ListLink = props => (
 export const Bio = () => {
   const emailLink = `mailto:${email}`
   return (
-    <div id="bio">
+    <div className='bio'>
       <div className="user-comment">{comment}</div>
 
       <ul className="user-info">

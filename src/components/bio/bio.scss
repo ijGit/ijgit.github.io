@@ -1,21 +1,9 @@
 @import "../../styles/variables.scss";
 
-#bio{
-  margin-left: 2vw;
-  position: fixed;
-  top: $header-height;
+.bio{
   transition: opacity 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
-  
-  @media screen and (max-width: $break-l) {
-    top: .5rem;
-    right: 2vw;
-    height: $header-height;
-    .user-comment{
-      display: none;
-    }
-  }
   
   font-size: .9em;
   opacity: .9;

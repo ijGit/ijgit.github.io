@@ -1,20 +1,20 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import styled from "styled-components"
+import { Bio } from "./../bio/bio";
 
+import styled from "styled-components"
 import './header.scss'
 
-
 const LogoWrapper = styled.div`
-  display: inline-flex;
-  flex-direction: row;
-
-  margin: 0;
+  display: block;
+  margin: 2px;
   padding: 0;
-  margin-left: 2vw;
 `
 
 export const Header = () => {
+  const [, setYPos] = useState(0);
+  const [isHide, setIsHide] = useState(false);
+
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -24,10 +24,11 @@ export const Header = () => {
         }
       }
     }
-  `)
+    `)
 
+  
   return (
-    <header id='header'>
+    <header className='header'>
       <div className="header-content">
         <LogoWrapper>
           <h1>
@@ -36,7 +37,9 @@ export const Header = () => {
               </Link>
           </h1>
         </LogoWrapper>
+      <Bio/>
       </div>
     </header>
   )
+
 }

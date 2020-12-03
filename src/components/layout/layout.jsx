@@ -8,8 +8,9 @@ export const Layout = ({children}) => {
   return (
     <React.Fragment>
       <div id="layout">
-        <Header />
-        <Bio/>
+        <Header id='header'/>
+        <aside>
+        </aside>
         <main>
           <div id="content"> {children} </div>
         </main>
