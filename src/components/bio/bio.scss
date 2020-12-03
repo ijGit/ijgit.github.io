@@ -2,7 +2,6 @@
 
 #bio{
   margin-left: 2vw;
-  width: 20vw;
   position: fixed;
   top: $header-height;
   transition: opacity 0.2s;
@@ -10,11 +9,9 @@
   transition-delay: 0.1s;
   
   @media screen and (max-width: $break-l) {
-  
-
-      display: none;
-
-
+    top: 0;
+    right: 2vw;
+    height: $header-height;
   }
   
   font-size: .9em;
