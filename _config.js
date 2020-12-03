@@ -3,7 +3,7 @@ module.exports = {
   /* blog setting */
 
   // metadata (important)
-  title: `Dev.Log`,
+  title: `ij.Log`,
   description: `isu jeong, github page blog`,
   author: `isujeong`,
   language: `ko-KR`,
