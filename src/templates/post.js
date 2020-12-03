@@ -13,6 +13,7 @@ const PostContentWrapper = styled.div`
     margin-top: 1em;
     margin-bottom: .5em;
   }
+  margin-top: 1rem;
 `
 const MetaWrapper = styled.div`
   padding-bottom: 1rem;
@@ -58,8 +59,9 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        date(formatString: "YYYY MM, DD")
+        date(formatString: "YYYY-MM-DD")
         title
+        tags
       }
       fields{
         slug

@@ -11,8 +11,7 @@ const LogoWrapper = styled.div`
 
   margin: 0;
   padding: 0;
-  margin-left: 3vw;
-  margin-bottom: 1.2vw;
+  margin-left: 2vw;
 `
 
 export const Header = () => {
