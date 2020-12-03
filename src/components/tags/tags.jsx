@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useCallback, useRef } from 'react'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 // Utilities
 import kebabCase from "lodash/kebabCase"
+import {Item} from "./item/item"
 
 // Components
 import { Helmet } from "react-helmet"
@@ -28,11 +29,10 @@ export const Tags = () =>{
 
   return(
     <div>
-  <Helmet title={site.siteMetadata.title} />
       <ul>
         {group.map(tag => (
           <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            <Link to={`tags/${kebabCase(tag.fieldValue)}`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
           </li>
