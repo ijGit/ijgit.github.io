@@ -1,6 +1,7 @@
 ---
 title: Gatsby plugin 추천 목록
 date: 2020-12-02
+category: dev
 tags: [gatsby, gitpage]
 ---
 

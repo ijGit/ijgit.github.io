@@ -14,8 +14,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-
-
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   
@@ -32,7 +30,10 @@ exports.createPages = async ({ graphql, actions }) => {
       edges {
         node {
           fields {slug}
-          frontmatter {tags}
+          frontmatter {
+            tags
+            category
+          }
         }
       }
     }

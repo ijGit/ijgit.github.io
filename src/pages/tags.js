@@ -7,31 +7,46 @@ import kebabCase from "lodash/kebabCase"
 // Components
 import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
+import {Layout} from "./../components/layout/layout"
 
-const TagsPage = ({
+
+import styled from "styled-components";
+
+
+const Tag = styled.li`
+  display: inline-block;
+  margin-right: 3vw;
+`
+
+
+export default function TagsPage({
   data: {
     allMarkdownRemark: { group },
-    site: {
-      siteMetadata: { title },
-    },
+    site: { siteMetadata: { title }, },
   },
-}) => (
-  <div>
-    <Helmet title={title} />
-    <div>
-      <h1>Tags</h1>
-      <ul>
-        {group.map(tag => (
-          <li key={tag.fieldValue}>
-            <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-              {tag.fieldValue} ({tag.totalCount})
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-)
+}) {
+  return (
+    <Layout>
+      <Helmet title={title} />
+      <div>
+        <ul>
+          {group.map(item => {
+            function getFontSize(){
+              return `calc(${item.totalCount/100}vh + 12px)`
+            }
+            return(
+            <Tag key={item.fieldValue}>
+              <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>
+                {item.fieldValue} ({item.totalCount})
+              </Link>
+            </Tag>
+            )
+        })}
+        </ul>
+      </div>
+    </Layout>
+  )
+}
 
 TagsPage.propTypes = {
   data: PropTypes.shape({
@@ -51,7 +66,6 @@ TagsPage.propTypes = {
   }),
 }
 
-export default TagsPage
 
 export const pageQuery = graphql`
   query {

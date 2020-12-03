@@ -2,6 +2,7 @@
 title: Gatsby project architecture
 date: 2020-12-02
 tags: [gatsby, how to]
+category: dev
 ---
 
 ## gatsby 프로젝트 구조

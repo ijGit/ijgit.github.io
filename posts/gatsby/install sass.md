@@ -1,3 +1,7 @@
+---
+category: dev
+---
+
 Node Sass version 5.0.0 is incompatible with ^4.0.0.
 
 npm uninstall node-sass

@@ -2,6 +2,7 @@
 title: Gatsby SEO
 date: 2020-12-02
 tags: [gatsby, how to]
+category: dev
 ---
 
 

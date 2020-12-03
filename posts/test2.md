@@ -1,6 +1,7 @@
 ---
 title: test2
 date: 2020-12-02
+category: test
 tags: [tag1, tag2, tag3]
 ---
 

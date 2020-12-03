@@ -1,15 +1,24 @@
-import React, { useCallback, useRef } from 'react'
+import React from 'react'
+// { useCallback, useRef } from 'react'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 // Utilities
 import kebabCase from "lodash/kebabCase"
-import {Item} from "./item/item"
+// import {Item} from "./item/item"
 
 // Components
-import { Helmet } from "react-helmet"
+//import { Helmet } from "react-helmet"
+
+import styled from "styled-components"
+const Tag = styled.li`
+  list-style: none
+  display: inline-display;
+  margin-right: 3vw;
+`
+
 
 export const Tags = () =>{
-  const data = useStaticQuery(graphql`
+const data = useStaticQuery(graphql`
   query TagsQuery {
     site {
       siteMetadata {
@@ -31,17 +40,16 @@ export const Tags = () =>{
     <div>
       <ul>
         {group.map(tag => (
-          <li key={tag.fieldValue}>
+          <Tag>
             <Link to={`tags/${kebabCase(tag.fieldValue)}`}>
               {tag.fieldValue} ({tag.totalCount})
             </Link>
-          </li>
+          </Tag>
         ))}
       </ul>
     </div>
   )
 }
-
 
 Tags.propTypes = {
   data: PropTypes.shape({

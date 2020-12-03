@@ -1,6 +1,7 @@
 ---
 title: make markdown-page
 date: 2020-12-02
+category: dev
 tags: [gatsby, gitpage]
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: use static query
 date: 2020-12-02
+category: dev
 tags: 
   - gatsby
   - react
