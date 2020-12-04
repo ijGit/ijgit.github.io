@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-lodash`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-emotion`,
+    'gatsby-plugin-theme-ui',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

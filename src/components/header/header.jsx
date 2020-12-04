@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio";
 
