@@ -1,45 +1,21 @@
-import React, { useEffect, useState } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { Bio } from "./../bio/bio";
 
-import styled from "styled-components"
-import './header.scss'
+import React from "react";
+import { Link } from "gatsby";
 
-const LogoWrapper = styled.div`
-  display: block;
-  margin: 2px;
-  padding: 0;
-`
+import './header.scss';
 
-export const Header = () => {
-  const [, setYPos] = useState(0);
-  const [isHide, setIsHide] = useState(false);
-
-  const data = useStaticQuery(graphql`
-    query HeaderQuery {
-      site {
-        siteMetadata {
-          title
-          prefix
-        }
-      }
-    }
-    `)
-
-  
-  return (
-    <header className='header'>
-      <div className="header-content">
-        <LogoWrapper>
-          <h1>
-            <Link to = {data.site.siteMetadata.prefix}>
-              {data.site.siteMetadata.title}
-              </Link>
+export const Header = ({title, category}) => {
+  return(
+    <header id='header'>
+      <div className='header-logo'>
+        
+        <span className='header-title'>
+          <h1 style={{paddingLeft:'1rem'}}>
+            <Link to={'/'}>{title}</Link>
           </h1>
-        </LogoWrapper>
-      <Bio/>
+        </span>
+        <span className='path'> /{category}</span>
       </div>
     </header>
   )
-
 }

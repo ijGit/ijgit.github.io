@@ -12,28 +12,26 @@ const Tag = styled.li`
   margin-right: 3vw;
 `
 
-export default function IndexPage({data}) {
+export default function IndexPage({ data }) {
   const group = data.allMarkdownRemark.group;
-  return(
+  return (
     <Layout>
       <div>
         <ul>
           {group.map(item => {
-            return(
-            <Tag key={item.fieldValue}>
-              <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>
-                {item.fieldValue} ({item.totalCount})
-              </Link>
-            </Tag>
+            return (
+              <Tag key={item.fieldValue}>
+                <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>
+                  {item.fieldValue} ({item.totalCount})
+                </Link>
+              </Tag>
             )
-        })}
+          })}
         </ul>
       </div>
     </Layout>
-  ) 
+  )
 }
-
-
 
 export const pageQuery = graphql`
   query {
