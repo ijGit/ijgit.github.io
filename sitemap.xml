@@ -1,25 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://ijgit.github.io/gitpage-dev/2020-10-31-dp_1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/gatsby/gatsby-image/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/git/commands/delete-remote-branch/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ijgit.github.io/gitpage-dev/gatsby/SEO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/gatsby/gatsby-plugin/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/gatsby/SEO/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/gatsby/install sass/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/node.js/2020-11-24-npm-uninstall-package/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/node.js/node-1/2020-11-16-Node_1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/note/Infinite-Challenge/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-29-git-push-error/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-28-npm-enoself-error/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-18-bit_operator/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-18-num-string/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-18-bit_operator/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-16-c_cpp_fmod/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-16-iterators/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-16-vector/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/c_cpp/2020-10-18-c_cpp_diff/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-15-rejected-failed-to-push-some-refs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-13-remote-origin-already-exists/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-11-Hot_reloading-is-not-working-on-WSL2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-10-npm install error/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/error-log/2020-10-11-Hot_reloading-is-not-working-on-WSL2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/node.js/2020-10-13-node-version/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/algorithm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/c-c/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
