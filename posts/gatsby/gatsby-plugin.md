@@ -1,9 +1,27 @@
 ---
 title: Gatsby plugin 추천 목록
 date: 2020-12-02
-category: dev
-tags: [gatsby, gitpage]
+tags: [gatsby]
+draft: false
 ---
+
+
+## gatsby-plugin-offline 
+
+
+#### install
+```shell
+npm install gatsby-plugin-offline
+```
+
+#### setting
+```js
+// In your gatsby-config.js
+plugins: [`gatsby-plugin-offline`]
+```
+
+
+
 
 
 
@@ -32,9 +50,5 @@ tags: [gatsby, gitpage]
 
 [gatsby-remark-prismjs][https://www.gatsbyjs.com/plugins/gatsby-remark-prismjs/?=high]
 npm install gatsby-transformer-remark gatsby-remark-prismjs prismjs
-
-
-darkmode: https://www.gatsbyjs.com/blog/2019-01-31-using-react-context-api-with-gatsby/#creating-the-context-file-in-a-new-gatsby-project
-
 
 [gatsby-plugin-typography][https://www.gatsbyjs.com/plugins/gatsby-plugin-typography/]

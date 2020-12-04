@@ -5,6 +5,7 @@ category: dev
 tags: 
   - gatsby
   - react
+draft: false
 ---
 
 https://www.gatsbyjs.com/docs/use-static-query/

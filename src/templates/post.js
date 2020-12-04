@@ -4,7 +4,7 @@ import React from 'react'
 import { graphql } from "gatsby"
 import {Layout} from './../components/layout/layout'
 import './../styles/code-style.scss'
-import {Comment} from './../components/Comment/comment'
+import {Comment} from './../components/comment/comment'
 
 
 import styled from 'styled-components';
