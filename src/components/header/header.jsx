@@ -1,20 +1,36 @@
+import React, { useEffect, useState } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import { Bio } from "./../bio/bio";
 
-import React from "react";
-import { Link } from "gatsby";
+import styled from "styled-components"
+import './header.scss'
 
-import './header.scss';
 
-export const Header = ({title, category}) => {
-  return(
-    <header id='header'>
-      <div className='header-logo'>
-        
-        <span className='header-title'>
-          <h1 style={{paddingLeft:'1rem'}}>
-            <Link to={'/'}>{title}</Link>
+export const Header = () => {
+
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          title
+          prefix
+        }
+      }
+    }
+    `)
+
+  
+  return (
+    <header className='header'>
+      <div className='header-content'>
+        <div>
+          <h1>
+            <Link to = {data.site.siteMetadata.prefix}>
+              {data.site.siteMetadata.title}
+              </Link>
           </h1>
-        </span>
-        <span className='path'> /{category}</span>
+        </div>
+      <Bio className='bio'/>
       </div>
     </header>
   )

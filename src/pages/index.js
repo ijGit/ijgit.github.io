@@ -7,7 +7,9 @@ import { Link, graphql } from "gatsby"
 
 import styled from "styled-components";
 
-const Tag = styled.li`
+const Tag = styled.div`
+  padding: 2px;
+  margin: 5px;
   display: inline-block;
   margin-right: 3vw;
 `
@@ -17,7 +19,6 @@ export default function IndexPage({ data }) {
   return (
     <Layout>
       <div>
-        <ul>
           {group.map(item => {
             return (
               <Tag key={item.fieldValue}>
@@ -27,7 +28,6 @@ export default function IndexPage({ data }) {
               </Tag>
             )
           })}
-        </ul>
       </div>
     </Layout>
   )
