@@ -1,7 +1,11 @@
 import React from 'react'
+// import { useEffect, useState, useCallback, Suspense, useRef } from 'react';
+// import { useColorMode } from 'theme-ui';
 import { graphql } from "gatsby"
 import {Layout} from './../components/layout/layout'
 import './../styles/code-style.scss'
+import {Comment} from './../components/Comment/comment'
+
 
 import styled from 'styled-components';
 const PostContentWrapper = styled.div`
@@ -30,10 +34,15 @@ const MetaWrapper = styled.div`
 `
 
 export default function PostTemplate({ data }) {
+//  const [colorMode] = useColorMode();
+
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark;
+  
   return (
     <Layout>
+      <section>
+
 
     <article>
       <div className="blog-post-container">
@@ -50,6 +59,20 @@ export default function PostTemplate({ data }) {
         </div>
       </div>
     </article>
+    <div>
+
+      <Comment></Comment>
+      {/*
+      <script src="https://utteranc.es/client.js"
+          repo="ijgit/ijgit.github.io"
+          issue-term="pathname"
+          theme="photon-dark"
+          crossorigin="anonymous"
+          async>
+      </script>
+    */}
+    </div>
+    </section>
 </Layout>
   )
 }

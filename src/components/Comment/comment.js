@@ -1,8 +1,8 @@
-import React, { useRef, useContext, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import config from './../../../_config'
 import { useColorMode } from 'theme-ui';
 
-const Comment = () => {
+export const Comment = () => {
   const [colorMode] = useColorMode();
   const src="https://utteranc.es/client.js";
   const utterancesSelector = 'iframe.utterances-frame';
@@ -41,8 +41,6 @@ const Comment = () => {
   }, [colorMode]);
   return <div ref={containerRef} />;
 }
-
-export default Comment;
 
 
 

@@ -14,7 +14,6 @@ import "./../../styles/global.scss"
 import "./layout.scss"
 
 const Toggle = styled.button`
-  position: absolute;
   top: 0;
   right: 0;
   background-color: transparent;
