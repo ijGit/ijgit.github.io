@@ -1,3 +1,6 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui'
+
 import React from "react"
 import {useMemo} from 'react'
 
@@ -12,7 +15,7 @@ import './layout.scss'
 
 
 export const Layout = ({children}) => {
-  const [colorMode] = useColorMode();
+  const [colorMode, setColorMode] = useColorMode()
   const isDark = useMemo(() => colorMode === 'dark', [colorMode]);
 
 
@@ -20,7 +23,13 @@ export const Layout = ({children}) => {
 
   return (
     <React.Fragment>
-      <div id="layout">
+      <div id="layout" className={colorMode}>
+      <button
+        onClick={e => {
+          setColorMode(colorMode === 'default' ? 'dark' : 'default')
+        }}>
+        Toggle {colorMode === 'default' ? 'Dark' : 'Light'}
+      </button>
         <Header id='header'/>
         <aside>
         </aside>
