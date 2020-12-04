@@ -9,16 +9,12 @@ import { Helmet } from "react-helmet"
 import { Link, graphql } from "gatsby"
 import {Layout} from "./../components/layout/layout"
 
-
 import styled from "styled-components";
-
 
 const Tag = styled.li`
   display: inline-block;
   margin-right: 3vw;
 `
-
-
 export default function TagsPage({
   data: {
     allMarkdownRemark: { group },
@@ -31,9 +27,9 @@ export default function TagsPage({
       <div>
         <ul>
           {group.map(item => {
-            function getFontSize(){
-              return `calc(${item.totalCount/100}vh + 12px)`
-            }
+            // function getFontSize(){
+            //   return `calc(${item.totalCount/100}vh + 12px)`
+            // }
             return(
             <Tag key={item.fieldValue}>
               <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>

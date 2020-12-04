@@ -2,9 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio";
 
-import styled from "styled-components"
+//import styled from "styled-components"
 import './header.scss'
-
 
 export const Header = () => {
 
@@ -18,8 +17,6 @@ export const Header = () => {
       }
     }
 `)
-
-
 
   return (
     <header className='header'>

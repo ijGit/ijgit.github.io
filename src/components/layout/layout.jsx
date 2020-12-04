@@ -1,8 +1,5 @@
-/** @jsx jsx */
-import { Button, jsx } from "theme-ui"
-
 import React from "react"
-import { useMemo } from "react"
+// import { useMemo } from "react"
 
 import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
@@ -41,7 +38,7 @@ const Icon = styled.div`
 
 export const Layout = ({ children }) => {
   const [colorMode, setColorMode] = useColorMode()
-  const isDark = useMemo(() => colorMode === "dark", [colorMode])
+  // const isDark = useMemo(() => colorMode === "dark", [colorMode])
 
   return (
     <React.Fragment>
