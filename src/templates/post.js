@@ -79,7 +79,7 @@ export default function PostTemplate({ data }) {
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug}}, frontmatter: {draft: {ne: false}}) {
       html
       frontmatter {
         date(formatString: "YYYY-MM-DD")

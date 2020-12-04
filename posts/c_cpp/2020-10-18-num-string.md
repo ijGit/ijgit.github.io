@@ -1,6 +1,7 @@
 ---
 title: "[C/C++] 문자열을 숫자로 변환"
 date: 2020-10-18
+draft: true
 tags:
   - "C/C++"
 keywords:

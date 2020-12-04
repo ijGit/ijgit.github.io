@@ -3,6 +3,7 @@ title: "Node.js: npm uninstall package"
 date: 2020-11-24
 tags: 
   - Node.js
+draft: true
 ---
 
 ```shell

@@ -2,6 +2,7 @@
 title: "git 브랜치 삭제 (delete remote branch)"
 date: 2020-12-03
 tags: [Git]
+draft: true
 ---
 
 `origin`: remote-name

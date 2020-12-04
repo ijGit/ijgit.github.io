@@ -25,7 +25,7 @@ export const Header = () => {
       <ThemeToggle/>
 
       <div className='header-content'>
-        <div>
+        <div className='header-logo'>
           <h1>
             <Link to = {data.site.siteMetadata.prefix}>
               {data.site.siteMetadata.title}
