@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faUserCircle, faAt } from "@fortawesome/free-solid-svg-icons"
-import { name, comment, email, github, portfolio } from "../../../_config"
+import { name, comment, email, github } from "../../../_config"
 // import {faLink} from '@fortawesome/free-solid-svg-icons';
 import "../../styles/variables.scss"
 
@@ -26,7 +26,7 @@ const Icon = styled.div`
 `
 
 // display: `inline-block`,
-const ListLink = props => (
+const ListLinkItem = props => (
   <li>
     <span>
       <Link to={props.to}>
@@ -40,23 +40,34 @@ const ListLink = props => (
     </span>
   </li>
 )
+const ListItem = props => (
+  <li>
+    <span>
+        <IconWrapper>
+          <Icon>
+            <Fa icon={props.icon}></Fa>
+          </Icon>
+        </IconWrapper>
+        {props.children}
+    </span>
+  </li>
+)
 
 export const Bio = () => {
-  const emailLink = `mailto:${email}`
   return (
     <div className='bio'>
       <div className="user-comment">{comment}</div>
 
       <ul className="user-info">
-        <ListLink to={portfolio} icon={faUserCircle}>
+        <ListLinkItem icon={faUserCircle}>
           {name}
-        </ListLink>
-        <ListLink to={emailLink} icon={faAt}>
+        </ListLinkItem>
+        <ListItem icon={faAt}>
           {email}
-        </ListLink>
-        <ListLink to={github} icon={faGithub}>
+        </ListItem>
+        <ListLinkItem to={github} icon={faGithub}>
           {github}
-        </ListLink>
+        </ListLinkItem>
       </ul>
     </div>
   )
