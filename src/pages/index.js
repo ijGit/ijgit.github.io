@@ -4,7 +4,6 @@ import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout";
 import { Link, graphql } from "gatsby"
 
-
 import styled from "styled-components";
 
 const Tag = styled.div`
