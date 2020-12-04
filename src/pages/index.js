@@ -3,17 +3,20 @@ import React from 'react'
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout";
 import { Link, graphql } from "gatsby"
+//import { Link as GatsbyLink } from "gatsby";
 
 import styled from "styled-components";
 
-const Tag = styled.div`
-  padding: 2px;
-  margin: 5px;
+
+const Tag = styled(Link)`
+  height: 3rem;
+  padding: 1vw;
   display: inline-block;
-  margin-right: 3vw;
-`
+`;
+
 
 const TagContainer = styled.div`
+  padding-top: 2vh;
   text-align: center;
 `
 
@@ -25,10 +28,8 @@ export default function IndexPage({ data }) {
       <TagContainer>
           {group.map(item => {
             return (
-              <Tag key={item.fieldValue}>
-                <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>
-                  {item.fieldValue} ({item.totalCount})
-                </Link>
+              <Tag to={`/tags/${kebabCase(item.fieldValue)}/`}>
+                {item.fieldValue} ({item.totalCount})
               </Tag>
             )
           })}
