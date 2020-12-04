@@ -1,0 +1,1 @@
+https://dennytek.com/blog/personal-site-with-gatsby-part-8

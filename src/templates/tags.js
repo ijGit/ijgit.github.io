@@ -5,30 +5,75 @@ import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 
 
+import styled from 'styled-components';
+
 import { Layout } from "../components/layout/layout";
 
+const BackButton = styled.div`
+  margin-bottom: 5vh
+`
 
-const Tags = ({ pageContext, data }) => {
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+const PostListContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`
 
+const PostList = styled.ul`
+  margin-left: 0;
+  padding: 0;
+`
+const PostRep = styled.li`
+  list-style: none;
+  margin-bottom: 7vh;
+`
+const PostRepHeader = styled.h3`
+  font-size: 1.2rem;  
+  margin-bottom: 1vh;
+`
+
+const PostRepDate = styled.div`
+  font-size: 0.85rem;  
+  opacity: .7;
+`
+const PostRepExcerpt = styled.div`
+  font-size: 0.9rem;
+  opacity: .8;
+  
+  -webkit-line-clamp:2;
+  line-height: 1.5rem;
+  height: 3rem;
+  
+  word-wrap:break-word; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+`
+
+// pageContext
+const Tags = ({ data }) => {
+  const { edges } = data.allMarkdownRemark
   return (
     <Layout>
-      <ul>
+      <BackButton>
+          <Link to="/">back</Link>
+      </BackButton>
+      <PostListContainer>
+        
+      <PostList>
         {edges.map(({ node }) => {
           const { slug } = node.fields
           const { title } = node.frontmatter
           return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
+            <PostRep key={slug}>
+              <div className='post-rep'>
+              <PostRepHeader><Link to={slug}>{title}</Link></PostRepHeader>
+              <PostRepDate className='post-rep-date'>{node.frontmatter.date}</PostRepDate>
+              <PostRepExcerpt className='post-rep-excerpt'>{node.excerpt}</PostRepExcerpt>
+              </div>
+            </PostRep>
           )
         })}
-      </ul>
-      <Link to="/">All tags</Link>
+      </PostList>
+        </PostListContainer>
     </Layout>
   )
 }
@@ -68,11 +113,14 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt
           fields {
             slug
           }
           frontmatter {
+            tags
             title
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }
