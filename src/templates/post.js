@@ -2,9 +2,9 @@ import React from 'react'
 // import { useEffect, useState, useCallback, Suspense, useRef } from 'react';
 // import { useColorMode } from 'theme-ui';
 import { graphql } from "gatsby"
-import { Layout } from './../components/layout/layout'
+import {Layout} from './../components/layout/layout'
 import './../styles/code-style.scss'
-import { Comment } from './../components/comment/comment'
+import {Comment} from './../components/comment/comment'
 
 
 import styled from 'styled-components';
@@ -34,48 +34,52 @@ const MetaWrapper = styled.div`
 `
 
 export default function PostTemplate({ data }) {
-  //  const [colorMode] = useColorMode();
-    const { markdownRemark } = data // data.markdownRemark holds your post data
-    const { frontmatter, html } = markdownRemark;
-    return (
-      <Layout>
-        <section>
-          <article>
-            <div className="blog-post-container">
-              <div className="blog-post">
-                <MetaWrapper>
-                  <h1>{frontmatter.title}</h1>
-                  <div className="date">{frontmatter.date}</div>
-                  <div className="tags">{(frontmatter.tags == null) ? "" : (frontmatter.tags.map(tag => (<span>{tag}</span>)))}</div>
-                </MetaWrapper>
-                <PostContentWrapper
-                  className="blog-post-content"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
-              </div>
-            </div>
-          </article>
-          <div>
+//  const [colorMode] = useColorMode();
 
-            <Comment></Comment>
-            {/*
-        <script src="https://utteranc.es/client.js"
-            repo="ijgit/ijgit.github.io"
-            issue-term="pathname"
-            theme="photon-dark"
-            crossorigin="anonymous"
-            async>
-        </script>
-      */}
-          </div>
-        </section>
-      </Layout>
-    )
-  }
+  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark;
+  
+  return (
+    <Layout>
+      <section>
+
+
+    <article>
+      <div className="blog-post-container">
+        <div className="blog-post">
+          <MetaWrapper>
+            <h1>{frontmatter.title}</h1>
+            <div className="date">{frontmatter.date}</div>
+            <div className="tags">{(frontmatter.tags == null) ? "" : (frontmatter.tags.map(tag => (<span>{tag}</span>)))}</div>
+          </MetaWrapper>
+          <PostContentWrapper
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+            />
+        </div>
+      </div>
+    </article>
+    <div>
+
+      <Comment></Comment>
+      {/*
+      <script src="https://utteranc.es/client.js"
+          repo="ijgit/ijgit.github.io"
+          issue-term="pathname"
+          theme="photon-dark"
+          crossorigin="anonymous"
+          async>
+      </script>
+    */}
+    </div>
+    </section>
+</Layout>
+  )
+}
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: {slug: {eq: $slug}}, frontmatter: {draft: {ne: false}}) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       html
       frontmatter {
         date(formatString: "YYYY-MM-DD")
