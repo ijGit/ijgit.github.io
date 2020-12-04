@@ -13,11 +13,16 @@ const Tag = styled.div`
   margin-right: 3vw;
 `
 
+const TagContainer = styled.div`
+  text-align: center;
+`
+
+
 export default function IndexPage({ data }) {
   const group = data.allMarkdownRemark.group;
   return (
     <Layout>
-      <div>
+      <TagContainer>
           {group.map(item => {
             return (
               <Tag key={item.fieldValue}>
@@ -27,7 +32,7 @@ export default function IndexPage({ data }) {
               </Tag>
             )
           })}
-      </div>
+      </TagContainer>
     </Layout>
   )
 }
