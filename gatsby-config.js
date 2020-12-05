@@ -34,6 +34,8 @@ module.exports = {
         pathToConfigModule: `${__dirname}/src/utils/typography`,
       },
     },
+    
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -41,7 +43,6 @@ module.exports = {
           // for TOC
           maxDepth: 3,
         },
-
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
@@ -57,13 +58,13 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-relative-images`,
-          },
-          {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 690,
             },
+          },
+          {
+            resolve: `gatsby-remark-relative-images`,
           },
         ],
       },
