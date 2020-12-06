@@ -1,4 +1,6 @@
 const config = require("./_config")
+const path = require(`path`)
+
 
 module.exports = {
   pathPrefix: `/`,
@@ -14,28 +16,14 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-lodash`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-emotion`,
-    "gatsby-plugin-theme-ui",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `post`,
-        path: `${__dirname}/posts`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `${__dirname}/src/utils/typography`,
-      },
-    },
-    
-
+    `gatsby-plugin-theme-ui`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -44,6 +32,16 @@ module.exports = {
           maxDepth: 3,
         },
         plugins: [
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 590,
+              loading: 'lazy',
+            },
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -57,18 +55,31 @@ module.exports = {
               },
             },
           },
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 690,
-            },
-          },
-          {
-            resolve: `gatsby-remark-relative-images`,
-          },
+          
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `post`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `${__dirname}/src/utils/typography`,
+      },
+    },
+
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {

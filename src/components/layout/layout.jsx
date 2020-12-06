@@ -1,25 +1,50 @@
 import React from "react"
 // import { useMemo } from "react"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
-import { Header } from "./../header/header"
-import {Head} from "./../head/head"
-
-import "./../../styles/global.scss"
+import { ThemeToggle } from "./../theme-toggle/theme-toggle"
+import { Head } from "./../head/head"
+import { Bio } from "./../bio/bio"
 import "./layout.scss"
 
+export const Layout = ({ children}) => {
 
-export const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+  query MetaDataQuery {
+    site {
+      siteMetadata {
+        title
+        prefix
+      }
+    }
+  }
+`)
+  const {title, prefix} = data.site.siteMetadata;
   return (
     <React.Fragment>
-      <Head/>
+      <Head />
       <div id="layout">
-        <Header id="header" />
+        <header className="header">
+          <nav className="nav">
+            <ThemeToggle className="theme-toggle" />
+          </nav>
+          <div className="header-contents">
+            <h1 className="logo">
+              <Link to={prefix}>{title}</Link>
+            </h1>
+            <div className='bio'>
+              <Bio/>
+            </div>
+          </div>
+        </header>
 
-        <aside></aside>
         <main>
           <div id="content"> {children} </div>
         </main>
+
+        
       </div>
     </React.Fragment>
   )
 }
+

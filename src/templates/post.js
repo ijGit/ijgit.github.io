@@ -50,7 +50,7 @@ export default function PostTemplate({ data }) {
           <MetaWrapper>
             <h1>{frontmatter.title}</h1>
             <div className="date">{frontmatter.date}</div>
-            <div className="tags">{(frontmatter.tags == null) ? "" : (frontmatter.tags.map(tag => (<span>{tag}</span>)))}</div>
+            <div className="tags">{frontmatter.tags}</div>
           </MetaWrapper>
           <PostContentWrapper
             className="blog-post-content"
@@ -62,15 +62,6 @@ export default function PostTemplate({ data }) {
     <div>
 
       <Comment></Comment>
-      {/*
-      <script src="https://utteranc.es/client.js"
-          repo="ijgit/ijgit.github.io"
-          issue-term="pathname"
-          theme="photon-dark"
-          crossorigin="anonymous"
-          async>
-      </script>
-    */}
     </div>
     </section>
 </Layout>

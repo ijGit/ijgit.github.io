@@ -1,8 +1,10 @@
 // Noto Sans KR
+import 'fontsource-noto-sans-kr/400.css';
 import 'fontsource-noto-sans-kr/500.css';
 import 'fontsource-noto-sans-kr/700.css';  
 
 // Noto Serif KR
+import 'fontsource-noto-serif-kr/400.css';
 import 'fontsource-noto-serif-kr/500.css';
 import 'fontsource-noto-serif-kr/700.css';
 
@@ -11,7 +13,9 @@ import 'fontsource-noto-serif-kr/700.css';
 import 'fontsource-nanum-gothic-coding/400.css';
 
 // Source Code Pro
+import 'fontsource-source-code-pro/400.css';
 import 'fontsource-source-code-pro/500.css';
+import 'fontsource-source-code-pro/400-italic.css';
 import 'fontsource-source-code-pro/500-italic.css';
 
 // Nanum Gothic

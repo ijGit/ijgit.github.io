@@ -1,10 +1,23 @@
 @import './variables.scss';
 
 body{
-  
+
+  word-break: keep-all;
+  a {  color: inherit;}
   h1, h2, h3, h4, h5, h6{
     font-family: 'Noto Sans KR', 'sans-serif';
     font-weight: 700;
+
+    a:link {
+      text-decoration-color: inherit;
+    }
+    a:visited {
+      text-decoration-color: inherit;
+    }
+    a:hover {
+      border-bottom: 1px solid #00000080;
+    }
+
   }
 
   font-family: 'Noto Sans KR', 'sans-serif';

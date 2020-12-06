@@ -11,7 +11,6 @@
 title: category1
 date: 2020-11-25
 type: category
-categories: [category1]
 ---
 
 # Category1

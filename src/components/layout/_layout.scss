@@ -13,51 +13,27 @@
 
 .layout {
   display: flex;
-  min-height: 100vh; 
+  min-height: 100vh;
   flex-direction: column;
 }
 
 main {
   display: flex;
   order: 1;
-
-  flex-direction: column;
-
-  #content {
-    // display size
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
-    margin: 0 auto;
-    margin-top: -5vh;
-    margin-bottom:  $header-height;
-
-    @media screen and (max-width: $break-l) {
-      margin-top: 0;
-      width: 60vw;
-    }
-    @media screen and (max-width: $break-s) {
-      margin-top: 5vh;
-      width: 90vw;
-    }
-  }
 }
 
 header {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 
   .header-contents {
     // logo + bio
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     width: 35vw;
     padding: 2vw;
-    
-    margin-top: -1rem;
 
     .logo{
       display: flex;
@@ -70,7 +46,6 @@ header {
       justify-content: space-between;
       .bio{
         margin-right: 2vw;
-        margin-left: auto;
       }
     }
 
@@ -79,11 +54,10 @@ header {
   }
   nav {
     display: flex;
-    flex-direction: row-reverse;
-    padding-right: 2vw;
-    padding-top: 2vh;
     .theme-toggle {
       flex: 0 0 auto; /* flex: none */
+      margin-left: auto;
+      margin-right: 2vw;
     }
     @media screen and (max-width: $break-l) {
       // order: 1;

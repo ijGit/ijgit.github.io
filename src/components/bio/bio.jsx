@@ -5,16 +5,32 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faUserCircle, faAt } from "@fortawesome/free-solid-svg-icons"
 import { name, comment, email, github } from "../../../_config"
 // import {faLink} from '@fortawesome/free-solid-svg-icons';
-import "../../styles/variables.scss"
 
-import "./bio.scss"
 import styled from "styled-components"
+
+const BioContainer = styled.div`
+  transition: opacity 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.1s;
+  font-size: .9em;
+  opacity: .9;
+`
+
+
+const BioListContainer = styled.ul`
+margin-left: 0;
+`
+const BioList = styled.ul`
+  margin: 0;
+  list-style-type: none;
+`
+
+
 
 const IconWrapper = styled.div`
   display: inline-flex;
   font-size: 0.9rem;
   margin-right: 0.4rem;
-  min-width: 1.1rem;
   width: 1.1rem;
   justify-content: center;
 `
@@ -27,7 +43,7 @@ const Icon = styled.div`
 
 // display: `inline-block`,
 const ListLinkItem = props => (
-  <li>
+  <BioList>
     <span>
       <Link to={props.to}>
         <IconWrapper>
@@ -38,10 +54,10 @@ const ListLinkItem = props => (
         {props.children}
       </Link>
     </span>
-  </li>
+  </BioList>
 )
 const ListItem = props => (
-  <li>
+  <BioList>
     <span>
         <IconWrapper>
           <Icon>
@@ -50,25 +66,25 @@ const ListItem = props => (
         </IconWrapper>
         {props.children}
     </span>
-  </li>
+  </BioList>
 )
 
 export const Bio = () => {
   return (
-    <div className='bio'>
+    <BioContainer>
       <div className="user-comment">{comment}</div>
 
-      <ul className="user-info">
-        <ListLinkItem icon={faUserCircle}>
+      <BioListContainer>
+        <ListItem icon={faUserCircle}>
           {name}
-        </ListLinkItem>
+        </ListItem>
         <ListItem icon={faAt}>
           {email}
         </ListItem>
         <ListLinkItem to={github} icon={faGithub}>
           {github}
         </ListLinkItem>
-      </ul>
-    </div>
+      </BioListContainer>
+    </BioContainer>
   )
 }
