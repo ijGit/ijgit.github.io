@@ -3,7 +3,7 @@ title: "[Git error] fatal: 'origin' dose not appear to be a git repository"
 date: 2020-10-29
 draft: true
 tags:
-  - Error
+  - error
   - Git
 keywords:
 ---

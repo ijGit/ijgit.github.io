@@ -4,7 +4,7 @@ date: 2020-10-28
 draft: true
 tags:
     - Node.js
-    - Error
+    - error
 keywords:
     - Node.js npm install error
     - npm err! ENOSELF

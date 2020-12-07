@@ -5,7 +5,7 @@ draft: true
 # update: 2020-03-08
 tags:
   - WSL
-  - Error
+  - error
 keywords:
   - WSL
   - Hot Reloading

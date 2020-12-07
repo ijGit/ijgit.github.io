@@ -18,3 +18,4 @@ draft: true
 | [말하는 대로](https://www.youtube.com/playlist?list=PLOp43HAgMx8BXNOf3RSuh5w4moG55CO3m) | |
 | [명수는 12 살](https://www.youtube.com/playlist?list=PLSuivFemagZmOZstWQn-5RGW1XU1ltlSN) | |
 | [if](https://www.youtube.com/playlist?list=PLC2fz__iOoMjAMtD7UVf8DFge4BkcjWBo)  | | 
+| [언니의 유혹](https://www.youtube.com/playlist?list=PLx__hRoHuOdxU7zRvbqggtX_wxwt1sU1p) | |   

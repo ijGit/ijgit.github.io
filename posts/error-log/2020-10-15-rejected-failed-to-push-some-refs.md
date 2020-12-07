@@ -5,7 +5,7 @@ draft: true
 # update: 2020-03-08
 tags:
   - Git
-  - Error
+  - error
 keywords:
   - git error
   - 깃 에러

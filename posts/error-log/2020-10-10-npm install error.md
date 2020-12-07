@@ -5,7 +5,7 @@ draft: true
 # update: 2020-03-08
 tags:
   - Node.js
-  - Error
+  - error
 keywords:
   - node.js error
   - npm install error
