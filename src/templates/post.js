@@ -73,6 +73,11 @@ export default function PostTemplate({ data }) {
 
 export const query = graphql`
   query($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     markdownRemark(fields: {slug: {eq: $slug}}) {
       html
       frontmatter {
