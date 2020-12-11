@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import { Layout } from './../components/layout/layout'
 import './../styles/code-style.scss'
 import { Comment } from './../components/comment/comment'
-
+import {TOC} from './../components/toc/toc'
 
 import styled from 'styled-components';
 
@@ -58,6 +58,7 @@ export default function PostTemplate({ data }) {
               <MetaWrapper>
                 <h1>{frontmatter.title}</h1>
                 <div className="date">{frontmatter.date}</div>
+                
                 <div className="tags">
                   {frontmatter.tags.forEach(tag => {
                     return (<span>{tag}</span>)
@@ -65,7 +66,8 @@ export default function PostTemplate({ data }) {
                 </div>
               </MetaWrapper>
               
-              <div dangerouslySetInnerHTML={{__html:tableOfContents}}/>
+              <TOC toc={tableOfContents}/>
+              
               <PostContentWrapper
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
