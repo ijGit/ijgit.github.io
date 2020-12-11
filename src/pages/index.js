@@ -32,9 +32,9 @@ export default function IndexPage({ data }) {
           {group.map(item => {
             return (
               <TagWrapper>
-              <Tag to={`/tags/${kebabCase(item.fieldValue)}/`}>
-                {item.fieldValue} ({item.totalCount})
-              </Tag>
+                <Tag to={`/tags/${kebabCase(item.fieldValue)}/`}>
+                  {item.fieldValue} ({item.totalCount})
+                </Tag>
               </TagWrapper>
             )
           })}
