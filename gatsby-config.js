@@ -55,7 +55,14 @@ module.exports = {
               },
             },
           },
-          
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // https://github.com/KaTeX/KaTeX/blob/master/docs/options.md 
+              // 위의 링크에서 KaTeX 옵션을 여기에 추가
+              strict: `ignore`
+            }
+          }
         ],
       },
     },

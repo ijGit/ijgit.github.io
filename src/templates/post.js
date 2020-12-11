@@ -1,10 +1,11 @@
 import React from 'react'
 // import { useEffect, useState, useCallback, Suspense, useRef } from 'react';
 // import { useColorMode } from 'theme-ui';
-import { graphql } from "gatsby"
+import { graphql } from 'gatsby'
 import {Layout} from './../components/layout/layout'
-import './../styles/code-style.scss'
 import {Comment} from './../components/comment/comment'
+import './../styles/code-style.scss'
+import 'katex/dist/katex.min.css'
 
 
 import styled from 'styled-components';

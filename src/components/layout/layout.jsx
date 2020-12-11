@@ -22,8 +22,8 @@ export const Layout = ({ children}) => {
   const {title, prefix} = data.site.siteMetadata;
   return (
     <React.Fragment>
-      <Head />
       <div id="layout">
+        <Head />
         <header className="header">
           <nav className="nav">
             <ThemeToggle className="theme-toggle" />

@@ -5,7 +5,7 @@ tags: [gatsby, error]
 ---
 
 
-Gatsby 버전과 sass 버전이 충돌이 일어나서 발생하는 오류 같다.
+Gatsby 버전과 sass 버전이 충돌이 일어나서 발생하는 오류
 
 ```shell
 Node Sass version 5.0.0 is incompatible with ^4.0.0.
