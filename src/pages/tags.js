@@ -1,67 +1,45 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
 
-// Utilities
 import kebabCase from "lodash/kebabCase"
-
-// Components
-import { Helmet } from "react-helmet"
+import { Layout } from "../components/layout/layout";
 import { Link, graphql } from "gatsby"
-import {Layout} from "./../components/layout/layout"
 
 import styled from "styled-components";
 
-const Tag = styled.li`
-  display: inline-block;
-  margin-right: 3vw;
+const TagContainer = styled.ul`
+  margin-top: 2vh;
 `
-export default function TagsPage({
-  data: {
-    allMarkdownRemark: { group },
-    site: { siteMetadata: { title }, },
-  },
-}) {
+
+const TagWrapper = styled.li`
+  cursor: pointer;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  display: inline-block;
+`
+
+const Tag = styled(Link)`
+  margin: 3px;
+`
+
+
+export default function IndexPage({ data }) {
+  const group = data.allMarkdownRemark.group;
   return (
     <Layout>
-      <Helmet title={title} />
-      <div>
-        <ul>
+      <TagContainer>
           {group.map(item => {
-            // function getFontSize(){
-            //   return `calc(${item.totalCount/100}vh + 12px)`
-            // }
-            return(
-            <Tag key={item.fieldValue}>
-              <Link to={`/tags/${kebabCase(item.fieldValue)}/`}>
-                {item.fieldValue} ({item.totalCount})
-              </Link>
-            </Tag>
+            return (
+              <TagWrapper>
+                <Tag to={`/tags/${kebabCase(item.fieldValue)}/`}>
+                  {item.fieldValue} ({item.totalCount})
+                </Tag>
+              </TagWrapper>
             )
-        })}
-        </ul>
-      </div>
+          })}
+      </TagContainer>
     </Layout>
   )
 }
-
-TagsPage.propTypes = {
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      group: PropTypes.arrayOf(
-        PropTypes.shape({
-          fieldValue: PropTypes.string.isRequired,
-          totalCount: PropTypes.number.isRequired,
-        }).isRequired
-      ),
-    }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-      }),
-    }),
-  }),
-}
-
 
 export const pageQuery = graphql`
   query {
