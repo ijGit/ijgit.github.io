@@ -46,43 +46,34 @@ main {
 
 header {
   display: flex;
-  flex-direction: column;
   padding: 1vw 2vw 2vw 2vw;
-
+  justify-content: space-between;
+  @media screen and (max-width: $break-s) {
+    flex-direction: column;
+  }
+  
   .header-contents {
     // logo + bio
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 35vw;
 
     .logo{
       display: flex;
-      align-items: center;
     }
     
     @media screen and (max-width: $break-l) {
-      width: 90vw;
-
       flex-direction: row;
-      justify-content: space-between;
+      // justify-content: space-between;
       .bio{
-        margin-left: auto;
+        margin-left: 5vw;
+//        margin-left: auto;
       }
     }
   }
   nav {
     display: flex;
-    flex-direction: row-reverse;
-    padding-top: 2vh;
-    .theme-toggle {
-      flex: 0 0 auto; /* flex: none */
-    }
-    @media screen and (max-width: $break-l) {
-      // order: 1;
-    }
   }
-
 }
 
 

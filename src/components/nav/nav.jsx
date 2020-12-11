@@ -6,17 +6,9 @@ import { faSun, faMoon, faFolder, faTags, faSearch, faTimes} from "@fortawesome/
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 
-
-const Btn = styled.button`
-  background-color: transparent;
-  background: transparent;
-  color: inherit;
-  border: none;
-  outline:none;
-`
-
-const LinkWrapper = styled.div`
+const ButtonWrapper = styled.div`
   display: inline-block;
+  height:1rem;
   width: 2rem;
   max-width: 2rem;
   text-align: center;
@@ -28,7 +20,7 @@ const Icon = styled.div`
   height: 0.9rem;
   opacity: 0.6;
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1rem;
   :hover{
     opacity: 0.9;
   }
@@ -37,10 +29,10 @@ const Icon = styled.div`
 const ThemeToggle = () =>{
   const [colorMode, setColorMode] = useColorMode()
   return(
-    <Btn
+    <ButtonWrapper
       onClick={e => {setColorMode(colorMode === "default" ? "dark" : "default")}}>
       <Icon><Fa icon = {colorMode === "default" ? faMoon : faSun} /></Icon>
-    </Btn>
+    </ButtonWrapper>
   )
 }
 
@@ -49,21 +41,21 @@ const LinkButton = props => {
   const icon = typeof window !== 'undefined' && window.location.pathname === props.path ? faTimes : props.icon;
 
   return(
-    <LinkWrapper>
+    <ButtonWrapper>
     <Link to={to} className='icon-link'>
       <Icon><Fa icon={icon}/></Icon>
     </Link>
-    </LinkWrapper>
+    </ButtonWrapper>
   )
 }
 
 export const Navbar = () => {
   return(
-    <div>
+    <nav>
       <ThemeToggle/>
       <LinkButton key='tags' path='/tags' icon={faTags}/>
       <LinkButton key='category' path='/category' icon={faFolder}/>
       <LinkButton key='search' path='/search' icon={faSearch}/>
-    </div>
+    </nav>
   )
 }

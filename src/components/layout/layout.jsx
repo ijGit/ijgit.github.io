@@ -1,7 +1,7 @@
 import React from "react"
 // import { useMemo } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { ThemeToggle } from "./../theme-toggle/theme-toggle"
+// import { ThemeToggle } from "./../theme-toggle/theme-toggle"
 import { Navbar } from './../nav/nav'
 import { Head } from "./../head/head"
 import { Bio } from "./../bio/bio"
@@ -24,7 +24,6 @@ export const Layout = ({ children}) => {
     <React.Fragment>
       <div id="layout">
         <Head />
-        <Navbar/>
         <header className="header">
           <div className="header-contents">
             <h1 className="logo">
@@ -34,6 +33,7 @@ export const Layout = ({ children}) => {
               <Bio/>
             </div>
           </div>
+          <Navbar/>
         </header>
 
         <main>

@@ -70,9 +70,9 @@ const ListItem = props => (
 )
 
 export const Bio = () => {
+  //<div className="user-comment">{comment}</div>
   return (
     <BioContainer>
-      <div className="user-comment">{comment}</div>
 
       <BioListContainer>
         <ListItem icon={faUserCircle}>
