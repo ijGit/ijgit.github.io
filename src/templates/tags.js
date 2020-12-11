@@ -24,7 +24,7 @@ const PostList = styled.ul`
 `
 const PostRep = styled.li`
   list-style: none;
-  margin-bottom: 7vh;
+  margin-bottom: 9vh;
 `
 const PostRepHeader = styled.h3`
   font-size: 1.2rem;  

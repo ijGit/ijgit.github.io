@@ -1,7 +1,7 @@
 ---
 title: "Gatsby에 LaTeX 적용하기: gatsby-remark-katex"
 date: 2020-12-11
-tags: [Gatsby]
+tags: [gatsby]
 ---
 
 

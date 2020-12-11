@@ -21,22 +21,24 @@ main {
   display: flex;
   order: 1;
   flex-direction: column;
+  margin-top: -10vh;
 
+  @media screen and (max-width: $break-l) {
+    margin-top: 8vh;
+  }
+  
   #content {
     // display size
     display: flex;
     flex-direction: column;
     width: 40vw;
     margin: 0 auto;
-    margin-top: -5vh;
     margin-bottom:  $header-height;
 
     @media screen and (max-width: $break-l) {
-      margin-top: 0;
       width: 80vw;
     }
     @media screen and (max-width: $break-s) {
-      margin-top: 5vh;
       width: 90vw;
     }
   }
@@ -45,16 +47,14 @@ main {
 header {
   display: flex;
   flex-direction: column;
-  padding: 2vw;
+  padding: 1vw 2vw 2vw 2vw;
 
   .header-contents {
     // logo + bio
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
     width: 35vw;
-    margin-top: -1rem;
 
     .logo{
       display: flex;
@@ -85,9 +85,6 @@ header {
 
 }
 
-aside {
-  order: -1;
-}
 
 footer {
   margin-top: auto;

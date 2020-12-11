@@ -48,8 +48,7 @@ const MetaWrapper = styled.div`
 export default function PostTemplate({ data }) {
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html } = markdownRemark;
-
+  const { frontmatter, html, tableOfContents} = markdownRemark;
   return (
     <Layout>
       <section>
@@ -65,6 +64,8 @@ export default function PostTemplate({ data }) {
                   })}
                 </div>
               </MetaWrapper>
+              
+              <div dangerouslySetInnerHTML={{__html:tableOfContents}}/>
               <PostContentWrapper
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -93,6 +94,7 @@ export const query = graphql`
       fields{
         slug
       }
+      tableOfContents(absolute: true, maxDepth: 3)
     }
   }
 `
