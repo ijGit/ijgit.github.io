@@ -54,7 +54,7 @@ export const Navbar = () => {
     <nav>
       <ThemeToggle/>
       <LinkButton key='tags' path='/tags' icon={faTags}/>
-      <LinkButton key='category' path='/category' icon={faFolder}/>
+      <LinkButton key='categories' path='/categories' icon={faFolder}/>
       <LinkButton key='search' path='/search' icon={faSearch}/>
     </nav>
   )
