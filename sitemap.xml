@@ -19,6 +19,7 @@
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-11-16-Node_1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/Infinite-Challenge</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-29-git-push-error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-29-python-default-version</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-28-npm-enoself-error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-18-bit_operator</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-18-num-string</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -30,6 +31,7 @@
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-13-remote-origin-already-exists</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-11-Hot_reloading-is-not-working-on-WSL2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-10-npm install error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-09-wsl2-install</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/2020-10-13-node-version</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/algorithm/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/c-c/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -45,6 +47,7 @@
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/for-interview/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/private-note/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/tags/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/web/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
