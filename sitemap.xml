@@ -3,6 +3,7 @@
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/dp_1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/flex-layout</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/gatsby-remark-katex</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/pages/test</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/nodejs-7-url-querystring</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/nodejs-8-event</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/pages/nodejs-1-console_1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -50,6 +51,7 @@
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/private-note/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/python/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ijgit.github.io/gitpage-dev/tags/test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/web/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ijgit.github.io/gitpage-dev/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

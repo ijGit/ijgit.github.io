@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/test/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"test","fields":{"slug":"/pages/test"},"frontmatter":{"tags":["test"],"title":"test","date":"2020-12-11"}}}]}},"pageContext":{"tag":"test"}},"staticQueryHashes":["1073894666","554375791"]}
