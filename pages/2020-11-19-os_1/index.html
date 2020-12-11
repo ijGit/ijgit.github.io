@@ -1,0 +1,513 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.6 'georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'georgia',serif;font-weight:normal;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:2rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.51572rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1.31951rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.87055rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;color:inherit;font-family:-apple-system,'BlinkMacSystemFont','Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif;font-weight:bold;text-rendering:optimizeLegibility;font-size:0.81225rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}ul{margin-left:1.6rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.6rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;font-size:0.85rem;line-height:1.6rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;font-size:1rem;line-height:1.6rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}blockquote{margin-left:1.6rem;margin-right:1.6rem;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.6rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.6rem;}b{font-weight:bold;}strong{font-weight:bold;}dt{font-weight:bold;}th{font-weight:bold;}li{margin-bottom:calc(1.6rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.6rem;margin-bottom:calc(1.6rem / 2);margin-top:calc(1.6rem / 2);}li > ul{margin-left:1.6rem;margin-bottom:calc(1.6rem / 2);margin-top:calc(1.6rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.6rem / 2);}code{font-size:0.85rem;line-height:1.6rem;}kbd{font-size:0.85rem;line-height:1.6rem;}samp{font-size:0.85rem;line-height:1.6rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.06667rem;padding-right:1.06667rem;padding-top:0.8rem;padding-bottom:calc(0.8rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}</style><style data-href="/styles.30462c4d1169358906bd.css">pre[class*=language-].line-numbers{padding-left:3.8em}.line-numbers .line-numbers-rows{font-size:100%;left:-3.8em;width:3em}.line-numbers-rows>span:before{content:counter(linenumber)}.command-line-prompt{border-right:1px solid #999;display:block;float:left;font-size:100%;letter-spacing:-1px;margin-right:1em;pointer-events:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}body{word-break:keep-all;font-family:Noto Sans KR,"sans-serif";font-weight:400;font-size:calc(12px + .5vh);line-height:1.6}body a{color:inherit}body h1,body h2,body h3,body h4,body h5,body h6{font-family:Noto Sans KR,"sans-serif";font-weight:700}body h1 a:link,body h1 a:visited,body h2 a:link,body h2 a:visited,body h3 a:link,body h3 a:visited,body h4 a:link,body h4 a:visited,body h5 a:link,body h5 a:visited,body h6 a:link,body h6 a:visited{-webkit-text-decoration-color:inherit;text-decoration-color:inherit}body h1 a:hover,body h2 a:hover,body h3 a:hover,body h4 a:hover,body h5 a:hover,body h6 a:hover{border-bottom:1px solid rgba(0,0,0,.5019607843137255)}body h1{font-size:calc(13px + 1.3vh)}body h2{font-size:calc(13px + 1.1vh)}body h3{font-size:calc(13px + .9vh)}body h4{font-size:calc(13px + .5vh)}body h5,body h6{font-size:calc(12px + 1vh)}body a,body a:hover{text-decoration:none}body a:hover{color:inherit;opacity:.8;border-bottom:1px solid rgba(0,0,0,.4745098039215686)}body a:visited{opacity:.8}body blockquote{font-family:"Noto Serif KR","serif";font-size:.9rem;opacity:.9;padding:0 1rem;margin:0 0 1rem;border-left:.3rem solid rgba(0,0,0,.5137254901960784)}body blockquote>:last-child{margin-bottom:0}body li{list-style-type:disc}body li,body li p,body ol,body ol p,body ul,body ul p{margin-bottom:0;margin-top:0;margin-bottom:1vh}body code{font-family:Fila code,Source Code Pro,Nanum Gothic Coding,Consolas,monospace}.flex-container{display:flex;flex-flow:column}.flex-content{display:flex;order:1}.layout{min-height:100vh}.layout,main{display:flex;flex-direction:column}main{order:1}main #content{display:flex;flex-direction:column;width:40vw;margin:-5vh auto 10vh}@media screen and (max-width:1119px){main #content{margin-top:0;width:60vw}}@media screen and (max-width:559px){main #content{margin-top:5vh;width:90vw}}header{width:100%}header,header .header-contents{display:flex;flex-direction:column}header .header-contents{justify-content:flex-start;width:35vw;padding:2vw;margin-top:-1rem}header .header-contents .logo{display:flex;align-items:center}@media screen and (max-width:1119px){header .header-contents{width:100vw;flex-direction:row;justify-content:space-between}header .header-contents .bio{margin-right:2vw;margin-left:auto}}header nav{display:flex;flex-direction:row-reverse;padding-right:2vw;padding-top:2vh}header nav .theme-toggle{flex:0 0 auto}aside{order:-1}footer{margin-top:auto}#layout .gatsby-highlight-code-line{background-color:#022a4b;display:block;margin-right:-1.2em;margin-left:-1.2em;padding-right:1em;padding-left:.75em;border-left:.35em solid #0687f0}#layout .gatsby-highlight pre[class*=language-].line-numbers{padding-left:3rem}#layout .gatsby-highlight{background-color:#282c34;border-radius:.4em;margin:.5rem 0;padding:0;overflow:auto}#layout .gatsby-highlight pre[class*=language-].line-numbers{padding:0 0 0 3rem;overflow:initial}#layout code[class*=language-],#layout pre[class*=language-]{color:#e0e0e0;background:none;font-family:Source Code Pro,Nanum Gothic Coding,Consolas,monospace;direction:ltr;text-align:left;word-spacing:normal;word-wrap:normal;word-break:normal;white-space:pre;line-height:1.6;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;-ms-overflow-style:none;overflow:-moz-scrollbars-none}#layout pre[class*=language-]::-webkit-scrollbar{display:none}#layout pre[class*=language-]{padding:1.2em;margin:1.5em 0;overflow:auto;border-radius:.6em}#layout :not(pre)>code[class*=language-],#layout pre[class*=language-]{background:#282c34}#layout :not(pre)>code[class*=language-]{padding:.1em .6em;border-radius:2;white-space:normal;background:#282c34;background-color:transparent;color:inherit}#layout .token.directive-hash,#layout .token.directive.keyword{color:#7affff}#layout .token.function,#layout .token.function-name{color:#64b5f6}#layout .token.attr-value,#layout .token.char,#layout .token.regex,#layout .token.string,#layout .token.variable{color:#c2ff7d}#layout .token.keyword,#layout .token.namespace{color:#c678dd}#layout .token.operator{color:#59ffff}#layout .token.boolean,#layout .token.class-name,#layout .token.number{color:#ffc107}#layout .token.constant,#layout .token.property,#layout .token.symbol{color:#e06c75}#layout .token.block-comment,#layout .token.cdata,#layout .token.comment,#layout .token.doctype,#layout .token.prolog{color:#7f848e}#layout .token.punctuation{color:#e0e0e0}#layout .token.attr-name,#layout .token.deleted,#layout .token.tag{color:#e2777a}#layout .token.atrule,#layout .token.builtin,#layout .token.important,#layout .token.selector{color:#b388ff}#layout .token.entity,#layout .token.url{color:#59ffff}#layout .token.bold,#layout .token.important{font-weight:700}#layout .token.italic{font-style:italic}#layout .token.entity{cursor:help}#layout .token.inserted{color:#50a14f}.command-line-prompt>span:before{color:#999;content:" ";display:block;padding-right:.8em}.command-line-prompt>span[data-user]:before{content:"[" attr(data-user) "@" attr(data-host) "] $"}.command-line-prompt>span[data-user=root]:before{content:"[" attr(data-user) "@" attr(data-host) "] #"}.command-line-prompt>span[data-prompt]:before{content:attr(data-prompt)}pre[class*=language-].line-numbers{position:relative;padding-left:3.5rem!important;counter-reset:linenumber}pre[class*=language-].line-numbers>code{position:relative;white-space:inherit}.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:0;left:0;width:2.5rem!important;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-ms-user-select:none;user-select:none}.line-numbers-rows>span{display:block;counter-increment:linenumber}.line-numbers-rows>span:before{color:#999;display:block;padding-right:.8em;text-align:right}</style><meta name="generator" content="Gatsby 2.26.1"/><title data-react-helmet="true"></title><meta data-react-helmet="true" name="description" content="isu jeong, github page blog"/><meta data-react-helmet="true" property="og:title"/><meta data-react-helmet="true" property="og:description" content="isu jeong, github page blog"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="isujeong"/><meta data-react-helmet="true" name="twitter:title"/><meta data-react-helmet="true" name="twitter:description" content="isu jeong, github page blog"/><style data-styled="" data-styled-version="5.2.1">.iXyFHz{background-color:transparent;background:transparent;color:inherit;border:none;outline:none;}/*!sc*/
+data-styled.g1[id="theme-toggle__Toggle-sc-1memk66-0"]{content:"iXyFHz,"}/*!sc*/
+.hORDGv{height:0.9rem;margin-top:1px;opacity:0.6;color:inherit;font-size:1.3rem;}/*!sc*/
+.hORDGv:hover{opacity:0.9;}/*!sc*/
+data-styled.g2[id="theme-toggle__Icon-sc-1memk66-1"]{content:"hORDGv,"}/*!sc*/
+.cOAECg{-webkit-transition:opacity 0.2s;transition:opacity 0.2s;-webkit-transition-timing-function:ease-in-out;transition-timing-function:ease-in-out;-webkit-transition-delay:0.1s;transition-delay:0.1s;font-size:.9em;opacity:.9;}/*!sc*/
+data-styled.g3[id="bio__BioContainer-sc-1ffvsqj-0"]{content:"cOAECg,"}/*!sc*/
+.cWYuIn{margin-left:0;}/*!sc*/
+data-styled.g4[id="bio__BioListContainer-sc-1ffvsqj-1"]{content:"cWYuIn,"}/*!sc*/
+.hWpJAz{margin:0;list-style-type:none;}/*!sc*/
+data-styled.g5[id="bio__BioList-sc-1ffvsqj-2"]{content:"hWpJAz,"}/*!sc*/
+.vToaU{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;font-size:0.9rem;margin-right:0.4rem;width:1.1rem;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}/*!sc*/
+data-styled.g6[id="bio__IconWrapper-sc-1ffvsqj-3"]{content:"vToaU,"}/*!sc*/
+.lnCYPg{height:0.9rem;margin-top:1px;opacity:0.9;}/*!sc*/
+data-styled.g7[id="bio__Icon-sc-1ffvsqj-4"]{content:"lnCYPg,"}/*!sc*/
+.bXoheV{margin-top:1rem;}/*!sc*/
+.bXoheV h1,.bXoheV h2,.bXoheV h3{margin-top:2em;margin-bottom:1em;}/*!sc*/
+.bXoheV h4,.bXoheV h5,.bXoheV h6{margin-top:1em;margin-bottom:.5em;}/*!sc*/
+.bXoheV table{display:block;max-width:-moz-fit-content;max-width:-webkit-fit-content;max-width:-moz-fit-content;max-width:fit-content;overflow-x:auto;}/*!sc*/
+data-styled.g15[id="post__PostContentWrapper-sc-1c1x7v1-0"]{content:"bXoheV,"}/*!sc*/
+.fobFMA{padding-bottom:1rem;border-bottom:1px solid #8383837e;}/*!sc*/
+.fobFMA .date,.fobFMA .tags{font-size:.9rem;font-weight:400;opacity:.8;}/*!sc*/
+.fobFMA .tags span{margin-right:.5em;}/*!sc*/
+.fobFMA .tags span:before{content:'#';}/*!sc*/
+data-styled.g16[id="post__MetaWrapper-sc-1c1x7v1-1"]{content:"fobFMA,"}/*!sc*/
+</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link as="script" rel="preload" href="/webpack-runtime-befc20d44a24e954342a.js"/><link as="script" rel="preload" href="/framework-81279cacaab4bdba7685.js"/><link as="script" rel="preload" href="/app-34d0a25eef16915e63e5.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/cb1608f2-c529e7b78e209618b5ed.js"/><link as="script" rel="preload" href="/a9a7754c-1d8fe4a4152f0495a993.js"/><link as="script" rel="preload" href="/commons-6a90a046fdecc34648ee.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-577df30cb7c01ee2f85f.js"/><link as="fetch" rel="preload" href="/page-data/pages/2020-11-19-os_1/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073894666.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/554375791.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>(function() { try {
+  var mode = localStorage.getItem('theme-ui-color-mode');
+  if (!mode) return
+  document.body.classList.add('theme-ui-' + mode);
+} catch (e) {} })();</script><div id="___gatsby"><style data-emotion-css="1nnvd0a">body{--theme-ui-colors-text:var(--theme-ui-colors-text,#24292e);--theme-ui-colors-primary:var(--theme-ui-colors-primary,#24292e);--theme-ui-colors-background:var(--theme-ui-colors-background,#fff);--theme-ui-colors-code:var(--theme-ui-colors-code,#24292e);color:var(--theme-ui-colors-text,#24292e);background-color:var(--theme-ui-colors-background,#fff);}body.theme-ui-dark{--theme-ui-colors-text:var(--theme-ui-colors-modes-dark-text,#e4e4e4);--theme-ui-colors-primary:var(--theme-ui-colors-modes-dark-primary,#e4e4e4);--theme-ui-colors-blockquote:var(--theme-ui-colors-modes-dark-blockquote,#e4e4e4);--theme-ui-colors-background:var(--theme-ui-colors-modes-dark-background,#212121);--theme-ui-colors-code:var(--theme-ui-colors-modes-dark-code,#e4e4e4);}</style><style data-emotion-css="1d7m1w5">*{box-sizing:border-box;}body{margin:0;}</style><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div id="layout"><header class="header"><nav class="nav"><button class="theme-toggle__Toggle-sc-1memk66-0 iXyFHz"><div class="theme-toggle__Icon-sc-1memk66-1 hORDGv"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg></div></button></nav><div class="header-contents"><h1 class="logo"><a href="/">ij.Log</a></h1><div class="bio"><div class="bio__BioContainer-sc-1ffvsqj-0 cOAECg"><div class="user-comment">hello world</div><ul class="bio__BioListContainer-sc-1ffvsqj-1 cWYuIn"><ul class="bio__BioList-sc-1ffvsqj-2 hWpJAz"><span><div class="bio__IconWrapper-sc-1ffvsqj-3 vToaU"><div class="bio__Icon-sc-1ffvsqj-4 lnCYPg"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-circle" class="svg-inline--fa fa-user-circle fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"></path></svg></div></div>isu.jeong</span></ul><ul class="bio__BioList-sc-1ffvsqj-2 hWpJAz"><span><div class="bio__IconWrapper-sc-1ffvsqj-3 vToaU"><div class="bio__Icon-sc-1ffvsqj-4 lnCYPg"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="svg-inline--fa fa-at fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z"></path></svg></div></div>isuu.jeong@gmail.com</span></ul><ul class="bio__BioList-sc-1ffvsqj-2 hWpJAz"><span><a href="https://github.com/ijgit"><div class="bio__IconWrapper-sc-1ffvsqj-3 vToaU"><div class="bio__Icon-sc-1ffvsqj-4 lnCYPg"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></div></div>https://github.com/ijgit</a></span></ul></ul></div></div></div></header><main><div id="content"> <section><article><div class="blog-post-container"><div class="blog-post"><div class="post__MetaWrapper-sc-1c1x7v1-1 fobFMA"><h1>[OS] Computer System (1): Hardware and Software</h1><div class="date">2020-11-19</div><div class="tags"></div></div><div class="post__PostContentWrapper-sc-1c1x7v1-0 bXoheV blog-post-content"><h2>1. Computer System</h2>
+<ul>
+<li>
+<p>computer system</p>
+<ul>
+<li>데이터를 처리하기 위해 다양한 작업을 수행하는 장치</li>
+<li>Computer system 은 Hardware와 Software로 이루어져 있다.</li>
+</ul>
+</li>
+<li>
+<p>Two main components</p>
+<ul>
+<li>Hardware (H/W)</li>
+<li>command 또는 instruction를 처리할 수 있는 물리적이고 실제하는 디바이스</li>
+<li>Software (S/W)</li>
+<li>데이터를 다루기 위한 instruction collection</li>
+<li>OS (Operating System) 또한 컴퓨터 시스템의 main software 중 하나이다.</li>
+</ul>
+</li>
+</ul>
+<h2>2. Hardware</h2>
+<h3>Three main components of H/W</h3>
+<p>각각의 component들은 <strong>system bus</strong>를 통해 서로 연결되어 있다.</p>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>processor</strong><br>(프로세서)</td>
+<td>기본연산을 수행하여 instruction를 수행한다.<br>CPU (Central Processing Unit) 으로 참조됨</td>
+</tr>
+<tr>
+<td><strong>Memory</strong><br>(메모리)</td>
+<td>정보를 저장한다.</td>
+</tr>
+<tr>
+<td><strong>Peripherals</strong><br>(I/O Devices)</td>
+<td>컴퓨터에 정보를 입력하고 출력한다.</td>
+</tr>
+</tbody>
+</table>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/57cc7e1136c521010e4e94fe3c9ff29a/302a4/1.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcRAAAXEQHKJvM/AAABfklEQVQoz11T2W6DQAzk//+rD32o1EolAqIEaAgk3Gc4k+mOJaIFS9YSr3dmfMSAstfrJU4bxxF5nos3TYO9FUUhd0mSvO/XtzRDB2Oibds4mAecTieEYYjb7SYk0zSh73t4ngff93E8HnG5XFDX9QbUWD94EsA0TZzPZ0RRhDRN5REBfP8PwfWKOE5QVRXu9zuyLJMcvcqNQiY5jgPXdREEgSSHCmQaB8zzhKF/KKJQgca4qjjVsyrdNoDP5xPLsmjngqyo8fVj4+PzG6btoawaic8zfZa3zOc3z3fJ7BHLI+swDNKvWcWSNMev5eLgeHDOAaq6Ubmj9LXrOqmC/bQsSzAMXW7btgJYlqUwkoBKZwWQJrHkRKrPjDOXdzzZAvZTSmaQvWOjych1oBOQw1iJOPVW3TOH6ni/NxkK62YSy+RekZ0TZsxTwyEzS+F6UDkF6AC6i0KdYW0uwflw3T3G9Zz19x5wszb6tq/WqVLpD6WW6lk6lZJo/w9Z7R+bYlELZc5WkwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/57cc7e1136c521010e4e94fe3c9ff29a/fcda8/1.png" srcset="/static/57cc7e1136c521010e4e94fe3c9ff29a/12f09/1.png 148w,
+/static/57cc7e1136c521010e4e94fe3c9ff29a/e4a3f/1.png 295w,
+/static/57cc7e1136c521010e4e94fe3c9ff29a/fcda8/1.png 590w,
+/static/57cc7e1136c521010e4e94fe3c9ff29a/efc66/1.png 885w,
+/static/57cc7e1136c521010e4e94fe3c9ff29a/302a4/1.png 1080w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+<h3>2.1.  HW: Processor (프로세서)</h3>
+<p><strong>REGISTER</strong> (레지스터)와 <strong>ALU</strong> (연산 장치) 로 instruction를 실행</p>
+<ul>
+<li>Register: save/load data for ALU</li>
+<li>ALU (Arithmetic Logical Unit): 레지스터의 데이터로 instruction 수행</li>
+</ul>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/578ec637a02e21eea1ba7d302384b939/561da/2.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 51.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcRAAAXEQHKJvM/AAABM0lEQVQoz4VSi26DMAzk/3+w68QoLRRKeRWShkcCN9sTEmVls2TFEOd8Z9vDyoZhQFEUqKoKTdNga/M8Y3IOzo6w44iRfGueUgpZliFNEoRhCN/3cbvdcD6fBTzPczkZjL23DpU2iK9XBEGAx+Mh+ZxnrYVX1zUSuvw6hYjiGGVZous6tG0rjI0xUnCaJmFgZ8A4QGktYFo/Jc8Rc87xNDGsqxKFMqiVxtD3cqHpwZUKpWkqRRZAEo6/TBjyw8PxE4ePIzKib55P8H+u2lMBlrQALtL33GNpzIJlM3B2vwtTlsnfMbWB4zXYFviF4TJdbvDlckFHcUs94mmGNJgoil7YvTt/Ab6sBrkanbBjqe8e7YEJ4LYHWCUyM3bZv1X8L8N3zV1awavxsx5aVoljHtYe4DfmrgqvwOt1jgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/578ec637a02e21eea1ba7d302384b939/fcda8/2.png" srcset="/static/578ec637a02e21eea1ba7d302384b939/12f09/2.png 148w,
+/static/578ec637a02e21eea1ba7d302384b939/e4a3f/2.png 295w,
+/static/578ec637a02e21eea1ba7d302384b939/fcda8/2.png 590w,
+/static/578ec637a02e21eea1ba7d302384b939/efc66/2.png 885w,
+/static/578ec637a02e21eea1ba7d302384b939/561da/2.png 969w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+<h4><strong>MultiProcessor system</strong></h4>
+<ul>
+<li>
+<p>A system that has a multiple processor</p>
+<ul>
+<li>quad-core: 4 processors/ octa-core: 8 processors</li>
+</ul>
+</li>
+<li>
+<p>Why?</p>
+<ul>
+<li>more processors -> <strong>higher concurrency (동시성)</strong><br>: multiple instructions can be executed simultaneously (다중의 instruction이 동시에 실행될 수 있다)</li>
+</ul>
+</li>
+</ul>
+<h4>* Register (레지스터)</h4>
+<p>Register 는 processor 내부에 있는 <strong><em>memory</em></strong> 이다. <br>시스템의 모든 메모리 디바이스 중에서 가장 빠르다.</p>
+<ul>
+<li>
+<p>Register Size</p>
+<ul>
+<li>register 의 크기는 processor가 한 번에 처리할 수 있는 데이터의 크기를 결정한다.</li>
+<li><code class="language-text">n-bit</code> processor computer는 최대 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">2^n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span> 메모리를 사용할 수 있다.</li>
+</ul>
+</li>
+</ul>
+<h5>Types of registers: 사용자 가시 레지스터</h5>
+<ul>
+<li>
+<p>데이터 레지스터 (DR, Data Register)</p>
+<ul>
+<li>함수  연산에 필요한 데이터를 저장한다. 값 문자 등을 저장하므로 산술 연산이나 논리 연산에 사용하며, 연산 결과로 플래그 값을 저장한다.  </li>
+</ul>
+</li>
+<li>
+<p>주소 레지스터 (AR, Address Register)</p>
+<ul>
+<li>주소나 유효 주소를 계산하는 데 필요한 주소의 일부분을 저장한다. AR 에 저장한 값 (값 데이터)을 사용하여 산술 연산을 할 수 있다.</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기준 주소<br>레지스터</td>
+<td>프로그램을  실행할 때 사용하는 기준 주소 값을 저장한다.<br>기준  주소는 하나의 프로그램이나 일부처럼 서로 관련 있는 정보를 저장하며, 연속된 저장 공간을 지정하는  데 참조할 수 있는 주소이다. <br>따라서 기준 주소 레지스터는 페이지나 세그먼트처럼 블록화된 정보에  접근하는 데 사용한다.</td>
+</tr>
+<tr>
+<td>스택 포인터<br> 레지스터</td>
+<td>메모리에 프로세서 스택을 구현하는 데 사용한다.<br>많은 프로세서와 주소 레지스터를 데이터 스택 포인터와 큐 포인터로 사용한다. <br>보통 반환 주소, 프로세서 상태 정보, 서브루틴의 임시 변수를 저장한다.</td>
+</tr>
+</tbody>
+</table>
+<h5>Control and Status Register: 사용자 불가시 레지스터</h5>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>프로그램 카운터 <br>(PC, program Counter)</strong></td>
+<td>다음에 실행할 명령어의 주소를 보관하는 레지스터이다. <br>계수기로 되어 있어 실행할 명령어를 메모리에서 읽으면 명령어의 길이만큼 증가하여 다음 명령어를 가리키며, 분기 명령어는 목적 주소로 갱신할 수 있다.</td>
+</tr>
+<tr>
+<td><strong>명령어  레지스터  <br>(IR, Instruction Register)</strong></td>
+<td>현재 실행하는 명령어를 보관하는 레지스터이다</td>
+</tr>
+<tr>
+<td>누산기 <br>(ACC, Accumulator)</td>
+<td>데이터를 일시적으로 저장하는 레지스터이다</td>
+</tr>
+<tr>
+<td>메모리 주소 레지스터<br>(MAR, Memory Address Register)</td>
+<td>프로세서가 참조하려는 데이터의 주소를 명시하여 메모리에 접근하는 버퍼 레지스터이다</td>
+</tr>
+<tr>
+<td>메모리 버퍼 레지스터 <br>(MBR, Memory Buffer Register)</td>
+<td>프로세서가 메모리에서 읽거나 메모리에 저장할 데이터 자체를 보관하는 버퍼 레지스터이다. 메모리 데이터 레지스터 (MDR, Memory Data Register)라고도 한다.</td>
+</tr>
+</tbody>
+</table>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/7eb783ebf1f22f194006246289bc2c9a/5b4a1/3.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 61.48648648648649%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABcRAAAXEQHKJvM/AAACDUlEQVQoz21T2Y6bQBD0B/N5eYlWibKK1ut9MOsDjDiMbcxh7suAYwOVnnHwsQpSaXqgKaqqh1Hf96jrGlVV3TDsT00Da7vBcrGAqqpomhOSrEKS14jZ+lBX9QnsGrVtiyAIYJom9vs9wjCEYRgcez/C2g3gBCHSJEGSZljoIaR1QmuEuRZiuY4x0yI4fn4l7LoOnudxwu12C9d1uRpltYIZ5QhbQK96XKj5cunwqTh4/VDw613Gz/ES314mGItreGFxJzwcDrBtmytkaldEJssyjmXJm5y6xaXnjFhoPmbqgcgk/Hhb4mO+4WodP7tbzvMcaZpCkiRMJhNomoYsy1CUR96kli3UYwcj/4OFEUK1CijbDKtNymvJTO4KGWEcx1wlsyqKIs+PxZAXV4WbI/Wce2T1mXLzeY5j0cDbVMdUtp8VDpZ1XYfjOFwps85UlkVxs0x86P5Znqs+Xn7P8P1VxPvnGksjvhOyY8PsMZWWZWG32/HBJLQPCzpCHQ2FLDe0ns8XUhhANlOIiofpyiWyiGKIn6fMMoyiiGeoKAq3nNNHdkkJu+nhERubCSPUrRimkxMymHaGjVvA2KcIk2s8I0JLKjlYPeDr/glD/8MKUE3PuOXhYvWwv1BeKalM6TAXNJyC8mT5lnSUhp6HV7kDdp8RCl9BzwSavkAEHPQbCkQoUNYCEd56/vfeX01QftZDAwwcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="3" title="3" src="/static/7eb783ebf1f22f194006246289bc2c9a/fcda8/3.png" srcset="/static/7eb783ebf1f22f194006246289bc2c9a/12f09/3.png 148w,
+/static/7eb783ebf1f22f194006246289bc2c9a/e4a3f/3.png 295w,
+/static/7eb783ebf1f22f194006246289bc2c9a/fcda8/3.png 590w,
+/static/7eb783ebf1f22f194006246289bc2c9a/5b4a1/3.png 831w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+<h3>2.2.  HW: Memory (메모리)</h3>
+<p>bit pattern (0 or 1) 으로 정보를 저장한다.<br>
+목적에 따라 다양한 종류가 존재한다.</p>
+<ul>
+<li>Hierarchical memory structure (메모리 계층 구조)
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/d9a945735149acc2b19843a03ab09c00/d8817/4.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcRAAAXEQHKJvM/AAABpklEQVQoz31SyUoDQRCdz1RQ8KoQ8S88eVD0oCIiHsUFBE+KBwmSoEYlKo4rZgyzJDGZfXq651ndM4m7BUVXd1e9Wl5pWZZBSpokgBBQN3rrv3ueD845+iLtMAyRu2U/VBsEBiGSNP3mCFi2jThOvgC2Wq1/AAvHe4/DLOKEyF8Dz0W304bXeysA5J+ATUn+Eo2TQxIGeAwz3Fpv4ElUBAvUbh5xdHqN4wsdXdcrkgk0Gg2lhmEoNU1TJYmiCBqjNjuOjScaS92wEVJVUh7I3jl5xUb5AZtVA+WrF8oiIKjMZrMJy7KUSiDf98EYU+P4aNmnluP8xlOmgBb26pjdqmBht4bl/Ts0rI76t23n75ZzUjLoNMNmmLO5W33C+OoFptbOMLFURmmlgtJ6HdPbl0RQrNp1HGdQqbQlUa7rfrDcI5al1XV9TK6eYHSxhpG5IwzN7GN45gBjS6cYnq/i8PwZ5usLgRrQdV3NsN1uq1WSyQaAKE6WcgRRjJj2MiE75RkYJ+JYqjRKGP4TrQ+WFXv1WSLK6ro9BL5HFQQ0fE9V8tv+9fUdaO/1yU24PnIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/d9a945735149acc2b19843a03ab09c00/fcda8/4.png" srcset="/static/d9a945735149acc2b19843a03ab09c00/12f09/4.png 148w,
+/static/d9a945735149acc2b19843a03ab09c00/e4a3f/4.png 295w,
+/static/d9a945735149acc2b19843a03ab09c00/fcda8/4.png 590w,
+/static/d9a945735149acc2b19843a03ab09c00/efc66/4.png 885w,
+/static/d9a945735149acc2b19843a03ab09c00/c83ae/4.png 1180w,
+/static/d9a945735149acc2b19843a03ab09c00/d8817/4.png 1238w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span></li>
+<li><strong>Main Memory (메인 메모리)</strong></li>
+<li>
+<p>Main Memory</p>
+<ul>
+<li>긴 바이트 리스트 (8 bits 그룹)</li>
+<li>각각은 고유한 주소를 가진다
+→ how many bits are required for using 4GB memory space?</li>
+</ul>
+</li>
+<li>
+<p>Interaction with the processor</p>
+<ul>
+<li>Load: 데이터가 processor - register으로 복사됨</li>
+<li>Save: 데이터가 processor - register 에서 memory 로 복사됨 </li>
+</ul>
+</li>
+<li><strong>Cache (캐시)</strong></li>
+<li>
+<p>Problem</p>
+<ul>
+<li>processor의 처리 속도가 main memory 의 처리속도보다 훨신 빠르다.</li>
+<li>main memory 의 data에 접근하는 평균 비용을 줄일 필요성을 느끼게 되었다.</li>
+</ul>
+</li>
+<li>
+<p>Idea</p>
+<ul>
+<li>main memory 와 processor 사이에 cache 라는 또 다른 메모리를 두었다. </li>
+</ul>
+</li>
+</ul>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/3d71fe4f9d89dfdafce2193f1321b864/4ad3a/5.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 24.324324324324326%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABcRAAAXEQHKJvM/AAAAvElEQVQY04VQ2wqFMAzb/3+hIAjO+eD9frfmNAXPq4PQLEuzbm7bNvR9j7qu0XUd1nXFOI6mEeTLsqBpGpRlab62bc0XQkCWZYY0TcEsNwwD8jxHFEVWq6qyRnI2vCHUvfemcU/wjGFJkqAoCuz7DjfPs6hJ4ji2yr1OKmoUDTBOTS+wc2rk1HRq4/RquBzHIe55HogIuO77/ldqxMvVjOu6DOd5mo9fwafzqdM0mdep7r+g03ht9nr5p/cHr9l8daMfIq8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/3d71fe4f9d89dfdafce2193f1321b864/fcda8/5.png" srcset="/static/3d71fe4f9d89dfdafce2193f1321b864/12f09/5.png 148w,
+/static/3d71fe4f9d89dfdafce2193f1321b864/e4a3f/5.png 295w,
+/static/3d71fe4f9d89dfdafce2193f1321b864/fcda8/5.png 590w,
+/static/3d71fe4f9d89dfdafce2193f1321b864/efc66/5.png 885w,
+/static/3d71fe4f9d89dfdafce2193f1321b864/4ad3a/5.png 1152w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+   <br>
+<ul>
+<li>
+<p>Term</p>
+<ul>
+<li><strong>Cache Hit:</strong> cache가 processor 가 요청한 데이터를 가지고 있다.</li>
+<li><strong>Cache Miss:</strong> cache가 processor 가 요청한 데이터를 가지고 있지 않다. processor는 main memory에서 데이터를 가지고 와야 한다.</li>
+<li><strong>Cache Hit Ratio:</strong> cache 조회 수에 대한 cache hit 비율 </li>
+</ul>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/16c3e7340ec7ddb261a9f1f10e35ce7b/c946b/6.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 81.75675675675677%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAABcRAAAXEQHKJvM/AAACpElEQVQ4y31Uu27bQBDUH6fJo3ETOIW/IEW61GmcAIGrFIkbw4ANG4HtgI4kUxZf4h1JiTw+JJ0mOyeJsAMkByyPPA5nH7PLwWazwdNljEGWZbDWPjv/G1eWJdI0RdM0z84HvKxWKweoqgqTyQTD4RBaa0de13VPtl6vHYZY3/fheR7CMHQ4nhM3IBkjyvPceeM+m816siRJsFwuHSFxRVG488Vi4d7xnhZFkQvMESqlHFHXdS6y6XQKI6C2bR2QOxdTnAshn4l/fJy4yPgcBIFzPGCYvFlIGkZe6tLgTht0pkItVlWmT3kluFIwzESVDe7zFktGaLZlcCnzQg9zSaEWcFoscJPMUZULTNPMAfcCdUI4l7TnUrcoDXE1DZHlKQKVo5jPt4SMjqnkAqTnmqqtl7gOFF5+HyKSVFopBZcSh/HpKfzXbzC7PsT51Xt8uT7Gi28+RiLSmjUkIetBBblYwzgKUbcdSLOvmROFOJKL00yHGI895IsclIwcvSgkoTBVVSIW5R6CEAVV36nX7SIkjqQUbKY0/DDe4YwTxRG6/pKbSkBN1yIznYjSYt02rthPG9eyD6WdGolYlS1+ZU2P2/erE6UWQCqtoscjBNEIFw9jREmA35FyEexFIZGOY2hp/KngLgUXz7Y4JdETt21sSSk+/ozo6BDJzTtc3n3Ep6sTvD1XSOKwF0VLJOrsDMHBAbLbI1z8/ICT26949SOELyk/E2XVLdFJLcajexm/B+hMO5KiyHtRtHQCP9rIN8OhJzhfajnDZi8KG1sitDJSVgpupWltmiqx1GbyXBtj4zi24pQ5O5yI0uNESKuVtjIQVkSx5Op/DhwhWl0bZ5xlNz2yszY0ZvMUx3c0Tg/3vSiecP7TJBVPone7/DQ8If4v/g8mVMC0l8gMZAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/16c3e7340ec7ddb261a9f1f10e35ce7b/fcda8/6.png" srcset="/static/16c3e7340ec7ddb261a9f1f10e35ce7b/12f09/6.png 148w,
+/static/16c3e7340ec7ddb261a9f1f10e35ce7b/e4a3f/6.png 295w,
+/static/16c3e7340ec7ddb261a9f1f10e35ce7b/fcda8/6.png 590w,
+/static/16c3e7340ec7ddb261a9f1f10e35ce7b/c946b/6.png 805w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+</li>
+<li>
+<p><strong>Auxiliary memory (보조기억장치)</strong></p>
+<ul>
+<li>Auxiliary memory (보조기억장치)</li>
+<li>주변기기 사이의 데이터와 프로그램을 저장하는 하드웨어</li>
+<li>= Secondary storagy, external storagy</li>
+<li>HDD, SSD, etc</li>
+</ul>
+</li>
+</ul>
+<h3>2.3. HW: System bus (시스템 버스)</h3>
+<p>System Bus: bus master 와 bus slave 사이에 데이터를 전달 </p>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/43e6f5e636eb38339e923d61f6a061b1/715a3/7.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 72.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABcRAAAXEQHKJvM/AAACPUlEQVQ4y4VU25KaQBD1/38p2apUHjYp3WQfFIwIoiDiBXS4DsjlpHsANYlbmaqpppvmzDndPYzwwQqCAGvbQhQJ5V8uF/i+pywvIQRc18He3yHLMhVr2xajjwBPpxP0+RxhGCqf7dKyKR4o/3w+w1iaWNkbpGl6B+QTt9st9vs9drsdPM+DLAqVoNkJ4qy+HTIlPy8b/lT5/rmE7Uv13DRdbGTbtpLBlmUul0s4josiT/DlzUEYlz1Ag7EeIi+a2wHuUWLhxB0gsVMM1+s1pJQE4iBJEgW8WBiIRIiXbwvoxprY74j9Fp9elzgGEVLKk3kK3ToQYHJjqAAty8L7+zs0TcNsNsNkMsFFRJRSY6wdEYhCsWOWYz3AJc5RVVcKVbC2EYwHQCWZGfq+D7ZcP8Mw4LguSpng608X5/jaS27xY3GBvN4b5wUlDPcvQGZ4PB6xWq1Uc+bUWU3XEZPkz6+9ZBoNf+fh5buJw0lQaWLILIFu/ilZAW42G9UItsxyOp3SjA2STwij4sZwMg8hYom6rsitn0tmhi5J5PoxINdyQw0qeslhVHY1bBu8/Tr/X7JpmnQbIiX1cDgoOyXw6FEyd9nruqwkxzFykqw9k8zDzAx5sLk5fECW5+rlmCR2XW77LoeIkoI+rhXrlRf/C3jLfrKpw+21am++SK9t3dx9WTZtKqu2u3VdfNT2Ez7spmn6Z3U7UVcVzV23hzXkPvrDYkDxbPMPpShKQT8FQTUWdD0FHabiw/vH3OH5N2Zfd3EKhEK3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/43e6f5e636eb38339e923d61f6a061b1/fcda8/7.png" srcset="/static/43e6f5e636eb38339e923d61f6a061b1/12f09/7.png 148w,
+/static/43e6f5e636eb38339e923d61f6a061b1/e4a3f/7.png 295w,
+/static/43e6f5e636eb38339e923d61f6a061b1/fcda8/7.png 590w,
+/static/43e6f5e636eb38339e923d61f6a061b1/715a3/7.png 830w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+<table>
+<thead>
+<tr>
+<th>종류</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>데이터  버스</td>
+<td>프로세서와  메인 메모리, 주변장치 사이에서 데이터를 전송한다. <br>데이터  버스를   구성하는  배선 수는 프로세서가 한 번에 전송할 수 있는 비트 수를 결정하는데 이를 워드라고 한다</td>
+</tr>
+<tr>
+<td>주소  버스</td>
+<td>프로세서가 시스템의 구성 요소를 식별하는 주소 정보를 전송한다. <br/>주소 버스를 구성하는 배선 수는 프로세서와 접속할 수 있는 메인 메모리의 최대 용량을 결정한다.</td>
+</tr>
+<tr>
+<td>제어  버스</td>
+<td>프로세서가 시스템의 구성 요소를 제어하는 데 사용한다. <br/>제어 신호로 연산장치의 연산 종류와 메인 메모리의 읽기나 쓰기 동작을 결정한다.</td>
+</tr>
+</tbody>
+</table>
+<h4>Bus master</h4>
+<ul>
+<li>bus request signal 을 전송함으로써 bus transaction 을 시작</li>
+<li>CPU: main memory와 CPU-register 간에 데이터를 이동</li>
+<li>
+<p>DMA (Direct Memory Access) controller</p>
+<ul>
+<li>CPU의 도움 없이 main memory와 I/O buffer 간에 데이터를 이동</li>
+</ul>
+</li>
+</ul>
+<h4>Bus slave</h4>
+<ul>
+<li>bus master 으로부터 command를 받고 그에 따라 동작한다.</li>
+<li>Memory controller (memory)</li>
+<li>
+<p>Device controller (I/O device)</p>
+<ul>
+<li>특정한 디바이스 유형 담당</li>
+<li>Has local registers and/or local buffer</li>
+<li>CPU에 interrupt를 발생시켜 작업이 끝났음을 알린다.</li>
+<li>*Note that: I/O device와 CPU는 동시에 실행될 수 있다. </li>
+</ul>
+</li>
+</ul>
+<h3>2.4. HW: Peripherals (I/O Devices)</h3>
+<ul>
+<li>Input device: input data from outside (ex, mouse, keyboard, microphone …)</li>
+<li>Output device: send data to the outside (ex, monitor, speaker, printer …)</li>
+<li>
+<p>I/O Device Controller</p>
+<ul>
+<li>Each I/O device has its own controller</li>
+</ul>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/9b54a2d7cc66fafa0ccd160861944a04/60b8f/8.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 35.13513513513513%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABcRAAAXEQHKJvM/AAABEUlEQVQoz4VQXauCUBD0//+eFHoRBPFFSBNNK79FRdOHkIqKdnP2YtyX2xXGnT17dnbOKvzHd7lcOEkSbpqG9/s9F0XBZVlylmV8OBw4jmPhx+NRasiv1ysr3wTTNOW+73m324lYXdcighzAwDAMRSyKoh/BaZr4dDpJ44JxHKU5CAKB7/vicrvdfuJmsxFRcNd1BTCh4Eld1/EwDPKUtm2FYzqA6XhWnucisDiEI9QxAHU4FYfzj+YD0nWd5ktkmiYZhkFzE1mWRev1mhzHodkJrVYr8jxPclVVP1zTNLJtm+73O8kOn8+n7At7Qlw4XC0ci4cjxN+8qipxC9ev14sVIjrPml9xu93Oj8fj33vAG+8KAVJG+FtoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/9b54a2d7cc66fafa0ccd160861944a04/fcda8/8.png" srcset="/static/9b54a2d7cc66fafa0ccd160861944a04/12f09/8.png 148w,
+/static/9b54a2d7cc66fafa0ccd160861944a04/e4a3f/8.png 295w,
+/static/9b54a2d7cc66fafa0ccd160861944a04/fcda8/8.png 590w,
+/static/9b54a2d7cc66fafa0ccd160861944a04/efc66/8.png 885w,
+/static/9b54a2d7cc66fafa0ccd160861944a04/c83ae/8.png 1180w,
+/static/9b54a2d7cc66fafa0ccd160861944a04/60b8f/8.png 1217w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+<h4>I/O device controller</h4>
+<ul>
+<li>자체적인 register를 지닌다.</li>
+<li>I/O 작업 (operation)은 CPU에 의해 시작된다. (initiated by CPU)</li>
+<li>Output operation</li>
+<li>
+<p>status register에서 output register 가 사용 가능한지 확인</p>
+<ul>
+<li>사용 가능하다면, 데이터를 output register로 이동시킨다. (output command를 control register로 이동시킨다)</li>
+<li>사용 불가능하다면, output register 가 사용 가능할 때까지 대기</li>
+</ul>
+</li>
+<li>
+<p><strong>Polling I/O vs. Interrupt-driven I/O</strong></p>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/32863c2671b6ce67a44bc5c7066db928/5c744/9.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 49.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcRAAAXEQHKJvM/AAABN0lEQVQoz3WSiY6DMAxE8///h1QEBVparlIoPTjK4dWzlBViWUuWHbAn43GMrOz1eknXdZo/n08py1Jut5vM8yxbW5ZF9sxM0yTjOGpT27YyDMMv4P1+V1BqsP+ArStgVVXKimbYAP5+vyVNUz0Tr9erJEkiRVFoTg/Gme95nmvs+14MrEiIrusqIzyOY43H41G/Xy4XaZpGc8/ztJ4LIfP9flWuz+cjhtHO57M8Hg/xfV+CINDbLCuAcGoAoMZxHGVlNWa6uq4VXAHRCEBuxWDCqIxEzLJMwRmVSD2aAYLmaItM9BuaoQog+tltn04ndRjhh8NBWePW6IMQ9TgXmb3V8xMNYQhoGIYKZJew3uqfZ7Neuy2CdRRFOhJgLAIwHC1t3bYXN3uPFV0AZRy0YTRY2/MacGs/IPL/0boPckIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/32863c2671b6ce67a44bc5c7066db928/fcda8/9.png" srcset="/static/32863c2671b6ce67a44bc5c7066db928/12f09/9.png 148w,
+/static/32863c2671b6ce67a44bc5c7066db928/e4a3f/9.png 295w,
+/static/32863c2671b6ce67a44bc5c7066db928/fcda8/9.png 590w,
+/static/32863c2671b6ce67a44bc5c7066db928/efc66/9.png 885w,
+/static/32863c2671b6ce67a44bc5c7066db928/c83ae/9.png 1180w,
+/static/32863c2671b6ce67a44bc5c7066db928/5c744/9.png 1206w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+</li>
+</ul>
+</li>
+</ul>
+<h2>3. Interrupt</h2>
+<ul>
+<li>
+<p>Interrupt</p>
+<ul>
+<li>즉각적인 주의를 필요로하는 이벤트를 나타내는 프로세스에 대한 신호 </li>
+<li>H/W 또는 S/W 에 의해 발생한다.</li>
+<li>interrupt가 발생하면 <strong>ISR (Interrupt Service Routine)</strong> 이 호출된다.</li>
+</ul>
+</li>
+<li>
+<p>Types of interrupts</p>
+<ul>
+<li>H/W interrupt : Caused by H/W signal</li>
+<li>S/W interrupt (a.k.a. Trap) : Caused either by an error or instruction</li>
+</ul>
+</li>
+</ul>
+<h3>3.1. Interrupt H/W</h3>
+<ul>
+<li>
+<p>Interrupt destination</p>
+<ul>
+<li>processor는 <strong>Interrupt Request (IRQ)</strong> 라는 input pin를 가진다. </li>
+<li>IRQ 는 processor에게 시스템의 다른 칩이 주의가 필요함을 알린다. </li>
+</ul>
+</li>
+<li>
+<p>Interrupt source</p>
+<ul>
+<li>I/O chip에는 서비스가 필요할 때,  assertion을 발생시키는 핀이 있다. </li>
+</ul>
+</li>
+<li>
+<p>Legacy mechanism</p>
+<ul>
+<li>not scalable</li>
+</ul>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/a0baa510b4b16fb7249f7426faedeeb7/22c86/10.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 63.51351351351351%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABcRAAAXEQHKJvM/AAABkklEQVQ4y5WT547CQAyE9/3fDYFCC70TSui9+u4bydGB4MetZNbO2uNxIdjvOZ/PNpvNbL1e22azsefzKfnvISbcbjer1Wo2GAxsPp9bvV63NE3lcL/flWixWOhGptOprVYr+WBz8+14PComXC4XgY3HY2u323LCvl6vYl4qlaxarVqlUpFeLpeVFDuKIisUClYsFuUDaCCo0+moVBgi3W7Xer2eTSYTezwecqQdMOOGOZX5jQ8EsANGq9USAOwof7/fq0ySkBDm6ID1+329fTuBHxgACDvvH0FkPxwONhwOs4Dlcik/H8K7ZAzpISDNZtN2u51tt9usf6PRSOXSWxJi/wV0XQypnaA4jtU7Svb++bAQPyRlqp8AxRBAB6E/6ADD5HQ6iRkVUDqCD71+379sD5lMo9EQIJnR6RHrBCDfSUIrqIJqHJREDOqlZF9gHmAACI8+ZV9ckiRJItuXmu/cxGcMv/3FKJWFZXlZZm6WmaWGaS6X09Dy+fzLkMKn8XOYPoxZKVg7e2x0dhXd3x3nB4HN3MMI8PIbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/a0baa510b4b16fb7249f7426faedeeb7/fcda8/10.png" srcset="/static/a0baa510b4b16fb7249f7426faedeeb7/12f09/10.png 148w,
+/static/a0baa510b4b16fb7249f7426faedeeb7/e4a3f/10.png 295w,
+/static/a0baa510b4b16fb7249f7426faedeeb7/fcda8/10.png 590w,
+/static/a0baa510b4b16fb7249f7426faedeeb7/efc66/10.png 885w,
+/static/a0baa510b4b16fb7249f7426faedeeb7/22c86/10.png 1143w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+</li>
+<li>
+<p><strong>PIC (programmable interrupt controller)</strong></p>
+<ul>
+<li>Functions as an overall manager in an interrupt-driven system environment</li>
+</ul>
+</li>
+<li>
+<p>IRQ 핀의 개수보다 많은 I/O 디바이스들을 지원할 수 있다.</p>
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; ">
+      <a class="gatsby-resp-image-link" href="/static/1b239d8620556b41816afcf8085d4b8f/eb390/11.png" style="display: block" target="_blank" rel="noopener">
+    <span class="gatsby-resp-image-background-image" style="padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcRAAAXEQHKJvM/AAABk0lEQVQoz41SW0sCYRD1H0YPQQT9iuihH1ESRFHRqxs9+LA+6qssIiYquuYF8e6uurq66xU8eQbW2lqigeGbb2e+M+fMTmi32+Gn0/6KPZtOpxiPx9hut4dc6HuBZ0FNgtw0TfHlcvkFyGC1WsFxHLiui/V6jf9avV5HPp/3MyQAaW82GywWC0wmEwHlnY3YpNPpoNvtikTLsjCfzwWgVquhUCj8BhyNRigWi/KQEjRNk/tgMECz2cRwOES73RYgArOO1uv10O/3/ZLJgqwIypPFLPKcIHTDMIQxQUzTOEhOpVK+2QtDPqQcdqIkz5jLZrOoVCoyFt6t/fn0/ILr8N0+945IJALbtoUQTX4KZWUyGUlwHpTXaDSkgPK92NuHm/Atjo5PoJdKUFVV2JP5AZBzq1araLVaMiNd15HL5aQwGo1KzO+USPn3D484PTvHR7mMRCLhl8xgNpsJK86PnQiQTCaRTqehKIowJCAb2vvRKK9vuLi8QiymIh6P+xY8cLHZgHMl8yDjC8dxpQnd2wb+g0+yFDl8IYUDhAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image" title="image" src="/static/1b239d8620556b41816afcf8085d4b8f/fcda8/11.png" srcset="/static/1b239d8620556b41816afcf8085d4b8f/12f09/11.png 148w,
+/static/1b239d8620556b41816afcf8085d4b8f/e4a3f/11.png 295w,
+/static/1b239d8620556b41816afcf8085d4b8f/fcda8/11.png 590w,
+/static/1b239d8620556b41816afcf8085d4b8f/efc66/11.png 885w,
+/static/1b239d8620556b41816afcf8085d4b8f/eb390/11.png 935w" sizes="(max-width: 590px) 100vw, 590px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+  </a>
+    </span>
+</li>
+</ul>
+<h3>3.2.  Interrupt Mechanism</h3>
+<ol>
+<li>
+<p>At the time of interrupt (interrupt 발생)</p>
+<ul>
+<li>현재 프로그램의 실행을 중지 </li>
+</ul>
+</li>
+<li>
+<p>While interrupt is being processed (interrupt 처리 중)</p>
+<ul>
+<li>interrupt 손실을 방지하기 위해 이후의 interrupt 수신을 비활성화한다.  </li>
+</ul>
+</li>
+<li>
+<p>After the execution of ISR (ISR 실행 완료)</p>
+<ul>
+<li>저장된 주소를 통해 중단되었던 프로그램으로 복귀</li>
+</ul>
+</li>
+</ol>
+<h2>영어 공부</h2>
+<table>
+<thead>
+<tr>
+<th>Eng</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>command</td>
+<td>"command" can be a process/binary for a system.<br>Command is at high level</td>
+</tr>
+<tr>
+<td>instruction</td>
+<td>"instructions" are at the lowest level of communication. <br>"Instruction" word is used at processor level.</td>
+</tr>
+<tr>
+<td>referred</td>
+<td>참조된</td>
+</tr>
+<tr>
+<td>asserts</td>
+<td>주장하다<br>assertion</td>
+</tr>
+<tr>
+<td>In charge of</td>
+<td>담당해서</td>
+</tr>
+</tbody>
+</table></div></div></div></article><div><div></div></div></section> </div></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/pages/2020-11-19-os_1";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f5ec1ff06108d0c85bab.js"],"app":["/app-34d0a25eef16915e63e5.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-83d5ee59fbec0a5b0576.js"],"component---src-pages-index-js":["/component---src-pages-index-js-3b899edf7485af3d85bd.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-98fb34b4250f6eee849e.js"],"component---src-pages-test-js":["/component---src-pages-test-js-98cc9466fd856397b6b9.js"],"component---src-templates-post-js":["/component---src-templates-post-js-577df30cb7c01ee2f85f.js"],"component---src-templates-tags-js":["/component---src-templates-tags-js-093cdcad2a1952b347fd.js"]};/*]]>*/</script><script src="/polyfill-f5ec1ff06108d0c85bab.js" nomodule=""></script><script src="/component---src-templates-post-js-577df30cb7c01ee2f85f.js" async=""></script><script src="/commons-6a90a046fdecc34648ee.js" async=""></script><script src="/a9a7754c-1d8fe4a4152f0495a993.js" async=""></script><script src="/cb1608f2-c529e7b78e209618b5ed.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-34d0a25eef16915e63e5.js" async=""></script><script src="/framework-81279cacaab4bdba7685.js" async=""></script><script src="/webpack-runtime-befc20d44a24e954342a.js" async=""></script></body></html>
