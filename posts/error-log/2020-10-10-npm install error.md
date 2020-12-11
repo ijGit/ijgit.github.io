@@ -1,8 +1,6 @@
 ---
 title: "[Node.js error] npm install error"
 date: 2020-10-10
-draft: true
-# update: 2020-03-08
 tags:
   - Node.js
   - error

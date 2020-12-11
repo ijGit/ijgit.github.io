@@ -1,8 +1,6 @@
 ---
 title: "[Git Error] Remote origin already exists"
 date: 2020-10-13
-draft: true
-# update: 2020-03-08
 tags:
   - Git
   - error
