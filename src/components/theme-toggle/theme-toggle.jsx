@@ -13,11 +13,6 @@ const Toggle = styled.button`
   color: inherit;
   border: none;
   outline:none;
-  
-  height: 1rem;
-  max-height: 1rem;
-  width: 1rem;
-  max-width: 1rem;
 `
 
 const Icon = styled.div`

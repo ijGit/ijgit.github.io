@@ -9,6 +9,7 @@ import styled from "styled-components";
 
 const TagContainer = styled.ul`
   margin-top: 2vh;
+  text-align: auto;
 `
 
 const TagWrapper = styled.li`
