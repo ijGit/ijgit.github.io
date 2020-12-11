@@ -46,12 +46,22 @@ main {
 
 header {
   display: flex;
-  padding: 1vw 2vw 2vw 2vw;
+  padding: 2vw;
+  //padding: 1vw 2vw 2vw 2vw;
   justify-content: space-between;
   @media screen and (max-width: $break-s) {
     flex-direction: column;
   }
   
+  .header-contents{
+    @media screen and (max-width: $break-l) {
+      .bio{
+        display: none;
+      }
+    }
+  }
+
+  /*
   .header-contents {
     // logo + bio
     display: flex;
@@ -64,13 +74,12 @@ header {
     
     @media screen and (max-width: $break-l) {
       flex-direction: row;
-      // justify-content: space-between;
       .bio{
         margin-left: 5vw;
-//        margin-left: auto;
       }
     }
   }
+  */
   nav {
     display: flex;
   }
