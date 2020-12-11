@@ -118,6 +118,3 @@ Memoization (메모이제이션)과 DP (Dynamic Programming, 동적계획법)은
 - DP 는 bottom-up 방식이며, 모든 subproblem 을 푼다.
 - DP는 recursion에 수반되는 오버헤드가 없다.
 
-
-
-$\color{blue}hello$

@@ -20,12 +20,11 @@ const BioContainer = styled.div`
 const BioListContainer = styled.ul`
 margin-left: 0;
 `
+
 const BioList = styled.ul`
   margin: 0;
   list-style-type: none;
 `
-
-
 
 const IconWrapper = styled.div`
   display: inline-flex;

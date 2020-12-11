@@ -45,7 +45,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               showLineNumbers: true,
               noInlineHighlight: false,
@@ -56,11 +56,10 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-katex`,
+            resolve: 'gatsby-remark-katex',
             options: {
               // https://github.com/KaTeX/KaTeX/blob/master/docs/options.md 
-              // 위의 링크에서 KaTeX 옵션을 여기에 추가
-              strict: `ignore`
+              strict: 'ignore',
             }
           }
         ],
