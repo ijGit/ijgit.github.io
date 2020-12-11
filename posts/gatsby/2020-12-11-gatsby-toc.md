@@ -23,10 +23,10 @@ $ npm install gatsby-transformer-remark gatsby-remark-autolink-headers
 
 `gatsby-config.js` 파일에 아래 내용을 추가한다.
 
->  주의할 점: `gatsby-remark-prismjs`을 사용하는 경우, `gatsby-remark-autolink-headers` 뒤에 `gatsby-remark-prismjs` 를 작성해야 한다
+> 주의할 점: `gatsby-remark-prismjs`을 사용하는 경우, `gatsby-remark-autolink-headers` 뒤에 `gatsby-remark-prismjs` 를 작성해야 한다
 
 
-```js{numberLines: 11, 12}
+```js
 // gatsby-config.js
 plugins: [
   {
@@ -52,13 +52,14 @@ plugins: [
 
 
 
-
 ## 쿼리 작성
 
-기존에 사용하던 포스트 템플릿 (`src/templates/post.js`)의 쿼리를 아래로 바꿔주었다.
+
+기존에 사용하던 포스트 템플릿 (`src/templates/post.js`)의 쿼리에 TOC을 가져오는 부분을 추가해주었다. (`line 13`)
 목록생성 범위는 아래와 같이 maxDepth 설정을 하지 않아도 쿼리로 조절이 가능하다.
 
-```js{numberLines: 13}
+
+```js
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
@@ -114,7 +115,7 @@ export const query = graphql`
 line 6 에서 데이터를 가져온 뒤, line 23 에서 출력만 해주는 단순한 코드지만, TOC 기능은 제대로 한다. 
 
 
-```js{numberLines: 6, 23}
+```jsx
 // src/templates/posts.js
 
 export default function PostTemplate({ data }) {
