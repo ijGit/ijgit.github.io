@@ -5,13 +5,13 @@ tags: [gatsby]
 ---
 
 
-#### 1. install
+## 1. install
 
 ```shell
 npm install gatsby-transformer-remark gatsby-remark-katex katex
 ```
 
-### 2. setting
+## 2. setting
 
 ```js
 // gatsby-config.js
@@ -33,7 +33,7 @@ plugins: [
   },
 ],
 ```
-### 3. 템플릿에 Katex CSS 추가
+## 3. 템플릿에 Katex CSS 추가
 
 수식을 올바르게 렌더링하려면 Katex의 CSS 파일이 필요하다.
 블로그 포스트 템플릿에 아래와 같이 CSS 파일을 포함시킨다.
@@ -43,7 +43,7 @@ import "katex/dist/katex.min.css"
 ```
 
 
-### 4. 사용법
+## 4. 사용법
 
 `$` 하나로 수식을 감싸면 inline 수식으로 작성이 되고 두개 (`$$`)로 감싸면 새로운 줄에 수식이 표현된다.
 

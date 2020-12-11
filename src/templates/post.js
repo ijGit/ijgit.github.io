@@ -11,15 +11,21 @@ import styled from 'styled-components';
 
 
 const PostContentWrapper = styled.div`
-  h1, h2, h3{
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-  h4, h5, h6{
-    margin-top: 1em;
-    margin-bottom: .5em;
-  }
   margin-top: 1rem;
+
+  h1, h2{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+  h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h3, h4, h5, h6{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
   
   table{
     display: block;
@@ -65,7 +71,7 @@ export default function PostTemplate({ data }) {
                   })}
                 </div>
               </MetaWrapper>
-              
+
               <TOC toc={tableOfContents}/>
               
               <PostContentWrapper
@@ -96,7 +102,7 @@ export const query = graphql`
       fields{
         slug
       }
-      tableOfContents(absolute: true, maxDepth: 3)
+      tableOfContents(maxDepth: 3)
     }
   }
 `
