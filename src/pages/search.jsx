@@ -6,12 +6,15 @@ import { graphql } from 'gatsby';
 export default function Search ({data}) {
   return (
     <Layout siteData = {data.site}>
-      <div>
-        search temp page
-      </div>
+      <main>
+      <section id="content">
+      <div>search temp page</div>
+      </section>
+      </main>
     </Layout>
   )
 }
+
 
 export const pageQuery = graphql`
   query {

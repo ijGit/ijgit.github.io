@@ -52,28 +52,34 @@ const PostRepExcerpt = styled.div`
 const Tags = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <Layout>
-      <BackButton>
-          <Link to="/">back</Link>
-      </BackButton>
-      <PostListContainer>
-        
-      <PostList>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <PostRep key={slug}>
-              <div className='post-rep'>
-              <PostRepHeader><Link to={slug}>{title}</Link></PostRepHeader>
-              <PostRepDate className='post-rep-date'>{node.frontmatter.date}</PostRepDate>
-              <PostRepExcerpt className='post-rep-excerpt'>{node.excerpt}</PostRepExcerpt>
-              </div>
-            </PostRep>
-          )
-        })}
-      </PostList>
-        </PostListContainer>
+    <Layout siteData={data.site}>
+      <main>
+        <div id='content'>
+
+
+          <BackButton>
+            <Link to="/">back</Link>
+          </BackButton>
+          <PostListContainer>
+
+            <PostList>
+              {edges.map(({ node }) => {
+                const { slug } = node.fields
+                const { title } = node.frontmatter
+                return (
+                  <PostRep key={slug}>
+                    <div className='post-rep'>
+                      <PostRepHeader><Link to={slug}>{title}</Link></PostRepHeader>
+                      <PostRepDate className='post-rep-date'>{node.frontmatter.date}</PostRepDate>
+                      <PostRepExcerpt className='post-rep-excerpt'>{node.excerpt}</PostRepExcerpt>
+                    </div>
+                  </PostRep>
+                )
+              })}
+            </PostList>
+          </PostListContainer>
+        </div>
+      </main>
     </Layout>
   )
 }
