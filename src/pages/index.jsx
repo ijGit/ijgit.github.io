@@ -1,17 +1,16 @@
 import React from "react"
 
-import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 
 import styled from "styled-components"
 
-export const Tags = ({ tags }) => {
+export const TagList = ({ tags }) => {
   return(
     <>
       {tags.map(tag => {
         //console.log(tag);
-        return (<span key={tag}>{tag}</span>)
+        return (<span className='item' key={tag}>{tag}</span>)
       })}
     </>
   )
@@ -35,12 +34,24 @@ const PostRepHeader = styled.h3`
   margin-bottom: 1vh;
 `
 const PostRepDate = styled.div`
+  display: inline-block;
   font-size: 0.85rem;
   opacity: 0.7;
+  padding-right: .5rem;
 `
-const PostRepTags = styled.div`
+const PostRepTags = styled.div` 
+  display: inline-block;
+  margin-left: 1rem;
+
   font-size: 0.85rem;
   opacity: 0.7;
+
+  .item{
+    margin-right: .5rem;
+  }
+  .item:before{
+    content: '#';
+  }
 `
 
 const PostRepExcerpt = styled.div`
@@ -70,7 +81,7 @@ export default function IndexPage({ data }) {
                 return (
                   <PostRep key={slug}>
                     <div className="post-rep">
-                      
+
                       <PostRepHeader>
                         <Link to={slug}>{title}</Link>
                       </PostRepHeader>
@@ -80,7 +91,7 @@ export default function IndexPage({ data }) {
                       </PostRepDate>
 
                       <PostRepTags>
-                        <Tags tags={node.frontmatter.tags} />
+                        <TagList tags={node.frontmatter.tags} />
                       </PostRepTags>
 
                       <PostRepExcerpt className="post-rep-excerpt">

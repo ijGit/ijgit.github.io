@@ -9,6 +9,19 @@ import styled from 'styled-components';
 
 import { Layout } from "../components/layout/layout";
 
+
+export const TagList = ({ tags }) => {
+  return(
+    <>
+      {tags.map(tag => {
+        //console.log(tag);
+        return (<span className='item' key={tag}>{tag}</span>)
+      })}
+    </>
+  )
+}
+
+
 const BackButton = styled.div`
   margin-bottom: 5vh
 `
@@ -32,8 +45,24 @@ const PostRepHeader = styled.h3`
 `
 
 const PostRepDate = styled.div`
-  font-size: 0.85rem;  
-  opacity: .7;
+  display: inline-block;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  padding-right: .5rem;
+`
+const PostRepTags = styled.div` 
+  display: inline-block;
+  margin-left: 1rem;
+
+  font-size: 0.85rem;
+  opacity: 0.7;
+
+  .item{
+    margin-right: .5rem;
+  }
+  .item:before{
+    content: '#';
+  }
 `
 const PostRepExcerpt = styled.div`
   font-size: 0.9rem;
@@ -69,6 +98,9 @@ const Tags = ({ data }) => {
                     <div className='post-rep'>
                       <PostRepHeader><Link to={slug}>{title}</Link></PostRepHeader>
                       <PostRepDate className='post-rep-date'>{node.frontmatter.date}</PostRepDate>
+                      <PostRepTags>
+                        <TagList tags={node.frontmatter.tags} />
+                      </PostRepTags>
                       <PostRepExcerpt className='post-rep-excerpt'>{node.excerpt}</PostRepExcerpt>
                     </div>
                   </PostRep>

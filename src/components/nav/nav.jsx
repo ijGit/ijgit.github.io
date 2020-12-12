@@ -2,7 +2,7 @@ import React from "react"
 
 import {Link} from 'gatsby'
 import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
-import { faSun, faMoon, faFolder, faTags, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
+import { faSun, faMoon, faTags, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 
