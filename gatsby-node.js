@@ -1,20 +1,19 @@
 const path = require(`path`)
 const _ = require('lodash')
-const { createFilePath } = require(`gatsby-source-filesystem`)
 
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const file = getNode(node.parent);
-    console.log(file.name);
-
     const slug = `/pages/${file.name}`;
 
-//    const slug = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({ node, name: 'slug', value: slug });
   }
 }
+
+
+
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -22,6 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // template files
   const postTemplate = path.resolve(`${__dirname}/src/templates/post.js`)
   const tagTemplate = path.resolve(`${__dirname}/src/templates/tags.js`)
+  const categoryTemplate = path.resolve(`${__dirname}/src/templates/category.jsx`)
 
   // query
   const result = await graphql(`{

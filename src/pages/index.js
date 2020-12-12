@@ -7,6 +7,7 @@ import { Link, graphql } from "gatsby"
 import styled from "styled-components";
 
 const TagContainer = styled.ul`
+  text-align: center;
   margin-top: 2vh;
 `
 
@@ -15,8 +16,12 @@ const TagWrapper = styled.li`
   padding-left: 1vw;
   padding-right: 1vw;
   display: inline-block;
+  .tag{
+    a, a:visited{opacity: 0.6;}
+    a:hover{opacity: .9;}
+  }
 `
-
+  
 const Tag = styled(Link)`
   margin: 3px;
 `
@@ -32,9 +37,11 @@ export default function IndexPage({ data }) {
           {group.map(item => {
             return (
               <TagWrapper>
+                <span className='tag'>
                 <Tag to={`/tags/${kebabCase(item.fieldValue)}/`}>
-                  {item.fieldValue} ({item.totalCount})
+                    {item.fieldValue}
                 </Tag>
+                </span>
               </TagWrapper>
             )
           })}

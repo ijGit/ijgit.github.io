@@ -55,8 +55,6 @@ const Tags = ({ data }) => {
     <Layout siteData={data.site}>
       <main>
         <div id='content'>
-
-
           <BackButton>
             <Link to="/">back</Link>
           </BackButton>

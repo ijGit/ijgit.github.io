@@ -7,7 +7,6 @@ tags:
 keywords: 
   - Node.js
   - node 버전 관리
-draft: true
 ---
 
 # n 모듈
