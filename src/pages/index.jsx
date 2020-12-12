@@ -9,7 +9,6 @@ export const TagList = ({ tags }) => {
   return(
     <>
       {tags.map(tag => {
-        //console.log(tag);
         return (<span className='item' key={tag}>{tag}</span>)
       })}
     </>

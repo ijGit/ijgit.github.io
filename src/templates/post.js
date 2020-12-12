@@ -11,6 +11,18 @@ import styled from 'styled-components';
 import './post.scss';
 
 
+export const TagList = ({ tags }) => {
+  return(
+    <>
+      {tags.map(tag => {
+        console.log(tag);
+        return (<span className='item' key={tag}>{tag}</span>)
+      })}
+    </>
+  )
+}
+
+
 const MetaWrapper = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px solid #8383837e;
@@ -19,7 +31,7 @@ const MetaWrapper = styled.div`
     font-weight: 400;
     opacity: .8;
   }
-  .tags{
+  .tags .item{
     span{margin-right: .5em;}
     span:before{content: '#';}   }
   }
@@ -43,12 +55,10 @@ export default function PostTemplate({ data }) {
                 <MetaWrapper>
                   <h1>{frontmatter.title}</h1>
                   <div className="date">{frontmatter.date}</div>
-
                   <div className="tags">
-                    {frontmatter.tags.forEach(tag => {
-                      return (<span>{tag}</span>)
-                    })}
+                    <TagList tags={frontmatter.tags} />
                   </div>
+
                 </MetaWrapper>
                 <div className='toc-smallsize'>
                   <TOC toc={tableOfContents}/>
