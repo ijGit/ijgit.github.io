@@ -6,21 +6,11 @@ import { Layout } from './../components/layout/layout'
 import './../styles/code-style.scss'
 import { Comment } from './../components/comment/comment'
 import { TOC } from './../components/toc/toc'
+import {TagList} from './../components/tags/tags'
+
 
 import styled from 'styled-components';
 import './post.scss';
-
-
-export const TagList = ({ tags }) => {
-  return(
-    <>
-      {tags.map(tag => {
-        console.log(tag);
-        return (<span className='item' key={tag}>{tag}</span>)
-      })}
-    </>
-  )
-}
 
 
 const MetaWrapper = styled.div`
