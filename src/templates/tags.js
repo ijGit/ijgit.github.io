@@ -54,7 +54,7 @@ const Tags = ({ data }) => {
   return (
     <Layout siteData={data.site}>
       <main>
-        <div id='content'>
+        <section id='content'>
           <BackButton>
             <Link to="/">back</Link>
           </BackButton>
@@ -76,7 +76,7 @@ const Tags = ({ data }) => {
               })}
             </PostList>
           </PostListContainer>
-        </div>
+        </section>
       </main>
     </Layout>
   )
