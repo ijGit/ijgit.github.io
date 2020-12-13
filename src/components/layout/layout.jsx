@@ -7,8 +7,6 @@ import { Head } from "./../head/head"
 import { Bio } from "./../bio/bio"
 import "./layout.scss"
 
-
-
 export const Layout = ({ children}) => {
 
   const data = useStaticQuery(graphql`
@@ -26,18 +24,20 @@ export const Layout = ({ children}) => {
     <React.Fragment>
       <div id="layout">
         <Head />
-        <header className="header">
-          <div className="header-contents">
-            <h1 className="logo">
-              <Link to={prefix}>{title}</Link>
-            </h1>
-            <div className='bio'>
-              <Bio/>
-            </div>
-          </div>
+        <div className='top-bar'>
+          <header className="header">
+              <h1 className="logo">
+                <Link to={prefix}>{title}</Link>
+              </h1>
+              <div className='bio'>
+                <Bio/>
+              </div>
+          </header>
           <Navbar/>
-        </header>
-        <div id="content"> {children} </div>
+        </div>
+        <main>
+          {children}
+        </main>
       </div>
     </React.Fragment>
   )

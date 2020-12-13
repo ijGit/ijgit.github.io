@@ -19,9 +19,8 @@
 
 main {
   display: flex;
-  order: 1;
   flex-direction: column;
-  margin-top: 14vh;
+  margin-top: 10vh;
   
   @media screen and (max-width: $break-l) {
   }
@@ -30,7 +29,7 @@ main {
     // display size
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 45vw;
     margin: 0 auto;
     margin-bottom:  $header-height;
 
@@ -43,25 +42,34 @@ main {
   }
 }
 
-.header {
+.top-bar {
   position: fixed;
   top: 0;
   width: 100vw;
+  height: $header-height;
 
   display: flex;
   justify-content: space-between;
 
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 3vh;
+  padding-top: 4vh;
 
   background: none; // header 에 가려진 부분 클릭이 안되는 것을 막음
   
-  .header-contents{
+  header{
     .logo{  margin: 0;}
     .bio{margin-top: 1rem;}
     @media screen and (max-width: $break-l) {
       .bio{display: none;}
+    }
+  }
+}
+
+aside{
+  .bio{margin-top: 1rem;
+    @media screen and (max-width: $break-l) {
+      display: none;
     }
   }
 }
