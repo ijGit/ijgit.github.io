@@ -1,8 +1,7 @@
-import React from "react"
+import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio";
 import {ThemeToggle} from "./../theme-toggle/theme-toggle";
-
 
 //import styled from "styled-components"
 import './header.scss'
@@ -19,11 +18,10 @@ export const Header = () => {
       }
     }
 `)
-
   return (
     <header className='header'>
-      <ThemeToggle/>
 
+      <ThemeToggle/>
       <div className='header-content'>
         <div className='header-logo'>
           <h1>

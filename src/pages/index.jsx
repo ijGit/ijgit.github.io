@@ -61,6 +61,7 @@ export default function IndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout siteData={data.site}>
+        <base href="/" /> 
         <section id="content">
           <PostListContainer>
             <PostList>

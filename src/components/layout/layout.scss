@@ -20,10 +20,7 @@
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 10vh;
-  
-  @media screen and (max-width: $break-l) {
-  }
+  margin-top: 15vh;
   
   #content {
     // display size
@@ -42,29 +39,47 @@ main {
   }
 }
 
-.top-bar {
+header {
   position: fixed;
   top: 0;
   width: 100vw;
-  height: $header-height;
-
+  
   display: flex;
   justify-content: space-between;
-
+  
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 4vh;
 
-  background: none; // header 에 가려진 부분 클릭이 안되는 것을 막음
+  background-color: inherit;
   
-  header{
-    .logo{  margin: 0;}
-    .bio{margin-top: 1rem;}
+  .header-contents{
+    background-color: inherit;
+    .logo{  
+      margin: 0;
+      height: $header-height; // 5vh
+    }
+    .bio{
+      padding-top: 1rem;
+      height: $bio-height;  // 7vh
+    }
     @media screen and (max-width: $break-l) {
       .bio{display: none;}
     }
   }
+  nav{
+    height: $header-height;
+  }
+
 }
+
+header.visible{
+  top: 0;
+}
+header.invisible{
+  top: -21vh
+}
+
 
 aside{
   .bio{margin-top: 1rem;
