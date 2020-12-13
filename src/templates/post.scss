@@ -1,31 +1,5 @@
 @import './../styles/variables.scss';
 
-.blog-post-content{
-  margin-top: 1rem;
-
-  h1, h2{
-    margin-top: 4rem;
-    margin-bottom: 1rem;
-  }
-  h3{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  h3, h4, h5, h6{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  table{
-    display: block;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    overflow-x: auto;
-  }
-}
-
-
 .toc-fullsize{
   position: fixed;
   right: 0;

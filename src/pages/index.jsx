@@ -2,18 +2,9 @@ import React from "react"
 
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
+import {TagList} from './../components/tags/tags'
 
 import styled from "styled-components"
-
-export const TagList = ({ tags }) => {
-  return(
-    <>
-      {tags.map(tag => {
-        return (<span className='item' key={tag}>{tag}</span>)
-      })}
-    </>
-  )
-}
 
 const PostListContainer = styled.div`
   display: flex;

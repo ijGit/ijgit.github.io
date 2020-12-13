@@ -35,10 +35,7 @@ export const Layout = ({ children}) => {
           </div>
           <Navbar/>
         </header>
-
         <div id="content"> {children} </div>
-
-        
       </div>
     </React.Fragment>
   )
