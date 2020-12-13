@@ -3,7 +3,7 @@ import React from "react"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 import {TagList} from './../components/tags/tags'
-
+import {Head} from './../components/head/head'
 import styled from "styled-components"
 
 const PostListContainer = styled.div`
@@ -59,7 +59,10 @@ const PostRepExcerpt = styled.div`
 
 export default function IndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
+  const {title} = data.site.siteMetadata;
   return (
+    <>
+    <Head title={title}/>
     <Layout siteData={data.site}>
         <section id="content">
           <PostListContainer>
@@ -94,6 +97,7 @@ export default function IndexPage({ data }) {
           </PostListContainer>
         </section>
     </Layout>
+    </>
   )
 }
 

@@ -5,6 +5,7 @@ import './../styles/code-style.scss'
 import { Comment } from './../components/comment/comment'
 import { TOC } from './../components/toc/toc'
 import { TagList } from './../components/tags/tags'
+import { Head } from "./../components/head/head"
 
 import styled from 'styled-components';
 import './post.scss';
@@ -57,8 +58,10 @@ const MetaWrapper = styled.div`
 export default function PostTemplate({ data }) {
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, tableOfContents } = markdownRemark;
+  const { frontmatter, html, excerpt, tableOfContents } = markdownRemark;
   return (
+    <>
+    <Head title={frontmatter.title} description={excerpt} keywords={(frontmatter.tags)} />
     <Layout siteData={data.site}>
       <div className='toc-fullsize'>
         <TOC toc={tableOfContents} />
@@ -97,6 +100,7 @@ export default function PostTemplate({ data }) {
         </div>
       </section>
     </Layout>
+    </>
   )
 }
 
@@ -109,10 +113,12 @@ export const query = graphql`
     }
     markdownRemark(fields: {slug: {eq: $slug}}) {
       html
+      excerpt
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         title
         tags
+        keywords
       }
       fields{
         slug

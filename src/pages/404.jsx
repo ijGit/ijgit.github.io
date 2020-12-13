@@ -1,4 +1,5 @@
 import React from 'react';
+import {Head} from './../components/head/head';
 import { Layout } from '../components/layout/layout';
 import { graphql } from 'gatsby';
 
@@ -17,7 +18,11 @@ const errorCodeDesc = {
 }
 
 export default function NotFoundPage ({data}) {
+  const {title} = data.site.siteMetadata;
+
   return (
+    <>
+    <Head title={`${title} | Not found`}/>
     <Layout siteData = {data.site}>
       <div>
         <div className="error-title">
@@ -30,6 +35,7 @@ export default function NotFoundPage ({data}) {
         </div>
       </div>
     </Layout>
+    </>
   )
 }
 

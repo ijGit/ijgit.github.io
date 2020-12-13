@@ -1,12 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-
-// Components
 import { Link, graphql } from "gatsby"
-
-
 import styled from 'styled-components';
 
+
+import { Head } from "./../components/head/head"
 import { Layout } from "../components/layout/layout";
 
 
@@ -81,6 +79,8 @@ const PostRepExcerpt = styled.div`
 const Tags = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
+    <>
+    <Head title={data.site.siteMetadata.title} />
     <Layout siteData={data.site}>
         <section id="content">
           <BackButton>
@@ -109,6 +109,7 @@ const Tags = ({ data }) => {
           </PostListContainer>
         </section>
     </Layout>
+    </>
   )
 }
 
@@ -139,6 +140,11 @@ export default Tags
 
 export const pageQuery = graphql`
   query($tag: String) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
     allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
