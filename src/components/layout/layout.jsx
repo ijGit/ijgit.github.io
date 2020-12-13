@@ -60,6 +60,7 @@ export const Layout = ({ children }) => {
             <Navbar />
           </header>
         <main>{children}</main>
+        <footer/>
       </div>
     </React.Fragment>
   )

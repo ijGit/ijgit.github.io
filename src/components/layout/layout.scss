@@ -7,7 +7,6 @@
   flex-direction: column;
 }
 
-
 header {
   position: absolute;
   position: fixed;
@@ -68,7 +67,6 @@ header.invisible{
   top: -21vh
 }
 
-
 main {
   display: flex;
   flex-direction: column;
@@ -78,9 +76,8 @@ main {
     // display size
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 40vw;
     margin: 0 auto;
-    margin-bottom:  $header-height;
 
     @media screen and (max-width: $break-l) {
       width: 80vw;
@@ -90,7 +87,6 @@ main {
     }
   }
 }
-
 
 .flex-container {
   display: flex;
@@ -102,8 +98,6 @@ main {
   order: 1;
 }
 
-
-
 aside{
   .bio{margin-top: 1rem;
     @media screen and (max-width: $break-l) {
@@ -112,7 +106,7 @@ aside{
   }
 }
 
-
 footer {
   margin-top: auto;
+  height: 10vh;
 }
