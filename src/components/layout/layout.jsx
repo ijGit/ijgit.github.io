@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useMemo } from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { useStaticQuery, graphql, Link } from "gatsby"
-// import { ThemeToggle } from "./../theme-toggle/theme-toggle"
 import { Navbar } from "./../nav/nav"
 import { Head } from "./../head/head"
 import { Bio } from "./../bio/bio"

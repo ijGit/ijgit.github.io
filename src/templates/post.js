@@ -1,6 +1,4 @@
 import React from 'react'
-// import { useEffect, useState, useCallback, Suspense, useRef } from 'react';
-// import { useColorMode } from 'theme-ui';
 import { graphql } from "gatsby"
 import { Layout } from './../components/layout/layout'
 import './../styles/code-style.scss'
