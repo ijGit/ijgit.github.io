@@ -21,10 +21,9 @@ main {
   display: flex;
   order: 1;
   flex-direction: column;
-  margin-top: -10vh;
-
+  margin-top: 14vh;
+  
   @media screen and (max-width: $break-l) {
-    margin-top: 8vh;
   }
   
   #content {
@@ -44,39 +43,27 @@ main {
   }
 }
 
-header {
+.header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
   display: flex;
-  padding: 2vw;
-  //padding: 1vw 2vw 2vw 2vw;
   justify-content: space-between;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 3vh;
+
+  background: none; // header 에 가려진 부분 클릭이 안되는 것을 막음
   
   .header-contents{
+    .logo{  margin: 0;}
+    .bio{margin-top: 1rem;}
     @media screen and (max-width: $break-l) {
-      .bio{
-        display: none;
-      }
+      .bio{display: none;}
     }
   }
-
-  /*
-  .header-contents {
-    // logo + bio
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    .logo{
-      display: flex;
-    }
-    
-    @media screen and (max-width: $break-l) {
-      flex-direction: row;
-      .bio{
-        margin-left: 5vw;
-      }
-    }
-  }
-  */
 }
 
 

@@ -6,6 +6,7 @@ import { faSun, faMoon, faTags, faSearch, faTimes} from "@fortawesome/free-solid
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 
+
 const ButtonWrapper = styled.div`
   display: inline-block;
   height:1rem;

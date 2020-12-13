@@ -7,6 +7,8 @@ import { Head } from "./../head/head"
 import { Bio } from "./../bio/bio"
 import "./layout.scss"
 
+
+
 export const Layout = ({ children}) => {
 
   const data = useStaticQuery(graphql`
