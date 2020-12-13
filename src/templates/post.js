@@ -39,8 +39,12 @@ const PostContainer = styled.div`
 
 
 
-const PostTitle = styled.h1`
-  margin-top: 0;
+
+
+const PostTitle = styled.div`
+  h1{
+    margin-top: 0;
+  }
 `
 
 const DateContainer = styled.div`
@@ -76,7 +80,11 @@ export default function PostTemplate({ data }) {
               <div className="blog-post">
                 
                 <MetaWrapper>
-                  <PostTitle>{frontmatter.title}</PostTitle>
+                  <PostTitle>
+                    <h1>
+                    {frontmatter.title}
+                    </h1>
+                    </PostTitle>
                   <DateContainer>{frontmatter.date}</DateContainer>
                   <TagList tags={frontmatter.tags} />
                 </MetaWrapper>
