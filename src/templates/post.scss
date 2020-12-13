@@ -1,9 +1,11 @@
 @import './../styles/variables.scss';
 
 .toc-fullsize{
+  
   position: fixed;
   right: 0;
-  width: 20vw;
+  top: 18vh;
+  width: 15vw;
   text-overflow:ellipsis;
   font-size: .9rem;
 

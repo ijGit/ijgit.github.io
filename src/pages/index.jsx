@@ -61,7 +61,6 @@ export default function IndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout siteData={data.site}>
-      <main>
         <section id="content">
           <PostListContainer>
             <PostList>
@@ -94,7 +93,6 @@ export default function IndexPage({ data }) {
             </PostList>
           </PostListContainer>
         </section>
-      </main>
     </Layout>
   )
 }

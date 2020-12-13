@@ -39,6 +39,10 @@ const PostContainer = styled.div`
 
 
 
+const PostTitle = styled.h1`
+  margin-top: 0;
+`
+
 const DateContainer = styled.div`
   display: inline-block;
   margin-right: 1rem;
@@ -61,7 +65,7 @@ export default function PostTemplate({ data }) {
   const { frontmatter, html, tableOfContents } = markdownRemark;
   return (
     <Layout siteData={data.site}>
-      <main>
+      <>
         <div className='toc-fullsize'>
           <TOC toc={tableOfContents} />
         </div>
@@ -72,7 +76,7 @@ export default function PostTemplate({ data }) {
               <div className="blog-post">
                 
                 <MetaWrapper>
-                  <h1>{frontmatter.title}</h1>
+                  <PostTitle>{frontmatter.title}</PostTitle>
                   <DateContainer>{frontmatter.date}</DateContainer>
                   <TagList tags={frontmatter.tags} />
                 </MetaWrapper>
@@ -84,7 +88,7 @@ export default function PostTemplate({ data }) {
                 <div
                   className="blog-post-content"
                   dangerouslySetInnerHTML={{ __html: html }}
-                />
+                  />
 
               </div>
             </PostContainer>
@@ -94,7 +98,7 @@ export default function PostTemplate({ data }) {
             <Comment></Comment>
           </div>
         </section>
-      </main>
+      </>
     </Layout>
   )
 }
