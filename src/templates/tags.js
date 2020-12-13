@@ -82,8 +82,7 @@ const Tags = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
     <Layout siteData={data.site}>
-      <main>
-        <section id='content'>
+        <section id="content">
           <BackButton>
             <Link to="/">back</Link>
           </BackButton>
@@ -109,7 +108,6 @@ const Tags = ({ data }) => {
             </PostList>
           </PostListContainer>
         </section>
-      </main>
     </Layout>
   )
 }

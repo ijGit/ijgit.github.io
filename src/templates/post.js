@@ -37,10 +37,6 @@ const PostContainer = styled.div`
   }
 `
 
-
-
-
-
 const PostTitle = styled.div`
   h1{
     margin-top: 0;
@@ -53,7 +49,6 @@ const DateContainer = styled.div`
   opacity: .8;
 `
 
-
 const MetaWrapper = styled.div`
   padding-bottom: 1rem;
   border-bottom: 1px solid #8383837e;
@@ -61,52 +56,48 @@ const MetaWrapper = styled.div`
   font-weight: 400;
 `
 
-
-
 export default function PostTemplate({ data }) {
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, tableOfContents } = markdownRemark;
   return (
     <Layout siteData={data.site}>
-      <>
-        <div className='toc-fullsize'>
-          <TOC toc={tableOfContents} />
-        </div>
+      <div className='toc-fullsize'>
+        <TOC toc={tableOfContents} />
+      </div>
 
-        <section id="content">
-          <article>
-            <PostContainer>
-              <div className="blog-post">
-                
-                <MetaWrapper>
-                  <PostTitle>
-                    <h1>
+      <section id="content">
+        <article>
+          <PostContainer>
+            <div className="blog-post">
+
+              <MetaWrapper>
+                <PostTitle>
+                  <h1>
                     {frontmatter.title}
-                    </h1>
-                    </PostTitle>
-                  <DateContainer>{frontmatter.date}</DateContainer>
-                  <TagList tags={frontmatter.tags} />
-                </MetaWrapper>
+                  </h1>
+                </PostTitle>
+                <DateContainer>{frontmatter.date}</DateContainer>
+                <TagList tags={frontmatter.tags} />
+              </MetaWrapper>
 
-                <div className='toc-smallsize'>
-                  <TOC toc={tableOfContents}/>
-                </div>
-
-                <div
-                  className="blog-post-content"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                  />
-
+              <div className='toc-smallsize'>
+                <TOC toc={tableOfContents} />
               </div>
-            </PostContainer>
-          </article>
-          <div>
 
-            <Comment></Comment>
-          </div>
-        </section>
-      </>
+              <div
+                className="blog-post-content"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+
+            </div>
+          </PostContainer>
+        </article>
+        <div>
+
+          <Comment></Comment>
+        </div>
+      </section>
     </Layout>
   )
 }

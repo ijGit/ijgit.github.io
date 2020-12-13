@@ -31,7 +31,6 @@ export default function IndexPage({ data }) {
   const group = data.allMarkdownRemark.group;
   return (
     <Layout siteData = {data.site}>
-      <main>
       <section id="content">
       <TagContainer>
           {group.map(item => {
@@ -47,7 +46,6 @@ export default function IndexPage({ data }) {
           })}
       </TagContainer>
       </section>
-      </main>
     </Layout>
   )
 }
