@@ -1,21 +1,73 @@
 @import "../../styles/variables.scss";
 @import "./../../styles/global.scss";
 
-.flex-container {
-  display: flex;
-  flex-flow: column;
-}
-
-.flex-content {
-  display: flex;
-  order: 1;
-}
-
-.layout {
+#layout {
   display: flex;
   min-height: 100vh; 
   flex-direction: column;
 }
+
+
+header {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 4vh;
+  
+  transition: top 0.3s ease 0.2s;
+  
+  .header-contents{
+    .logo{  
+      margin: 0;
+      max-height: $header-height; // 5vh
+      font-weight: 500;
+      
+      @media screen and (max-width: $break-l) {
+        font-size: calc(13px + 1vh);
+      }
+    }
+    .bio{
+      padding-top: 1rem;
+      max-height: $bio-height;
+    }
+    @media screen and (max-width: $break-l) {
+      .bio{display: none;}
+    }
+  }
+  nav{height: $header-height;}
+}
+#layout.light{
+  header{
+    background: $background-color;
+    background-color: $background-color;
+  }
+}
+#layout.dark{
+  header{
+    background: $background-color-d;
+    background-color: $background-color-d;
+  }
+}
+
+header:focus{
+  outline:none;
+}
+
+header.visible{
+  top: 0;
+}
+header.invisible{
+  top: -21vh
+}
+
 
 main {
   display: flex;
@@ -39,46 +91,17 @@ main {
   }
 }
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  
+
+.flex-container {
   display: flex;
-  justify-content: space-between;
-  
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 4vh;
-
-  background-color: inherit;
-  
-  .header-contents{
-    background-color: inherit;
-    .logo{  
-      margin: 0;
-      height: $header-height; // 5vh
-    }
-    .bio{
-      padding-top: 1rem;
-      height: $bio-height;  // 7vh
-    }
-    @media screen and (max-width: $break-l) {
-      .bio{display: none;}
-    }
-  }
-  nav{
-    height: $header-height;
-  }
-
+  flex-flow: column;
 }
 
-header.visible{
-  top: 0;
+.flex-content {
+  display: flex;
+  order: 1;
 }
-header.invisible{
-  top: -21vh
-}
+
 
 
 aside{

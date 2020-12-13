@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react"
-// import { useMemo } from "react"
+import React, { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import { useStaticQuery, graphql, Link } from "gatsby"
 // import { ThemeToggle } from "./../theme-toggle/theme-toggle"
 import { Navbar } from "./../nav/nav"
 import { Head } from "./../head/head"
 import { Bio } from "./../bio/bio"
+import { useColorMode } from 'theme-ui';
+
 import "./layout.scss"
 
 
@@ -19,8 +21,17 @@ export const Layout = ({ children }) => {
       }
     }
   `)
+  
+
+  // for scroll 
   const [, initOffset] = useState(0);
   const [visible, setVisible] = useState(true)
+
+
+  // for header color
+  const [colorMode] = useColorMode();
+  const theme = useMemo(() => colorMode === 'dark', [colorMode]);
+
 
   useEffect(() => {
     const setOffset = () => {
@@ -37,7 +48,7 @@ export const Layout = ({ children }) => {
   const { title, prefix } = data.site.siteMetadata
   return (
     <React.Fragment>
-      <div id="layout">
+      <div id="layout" className={theme ? 'dark' : 'light'}>
         <Head />
           <header id="header" className={`${visible ? 'visible' : 'invisible'}`}>
             <div className='header-contents'>
