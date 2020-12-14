@@ -95,6 +95,7 @@ module.exports = {
         priority: 0.7,
       },
     },
+
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {

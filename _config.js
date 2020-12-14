@@ -8,7 +8,7 @@ module.exports = {
   author: `isujeong`,
   language: `ko-KR`,
   prefix: '/',
-  url: `https://ijgit.github.io/gitpage-dev`,
+  url: `https://ijgit.github.io`,
 
   // Bio 
   comment: `hello world`,

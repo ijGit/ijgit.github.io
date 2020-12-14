@@ -31,6 +31,8 @@ const Tag = styled(Link)`
 export default function IndexPage({ data }) {
   const group = data.allMarkdownRemark.group;
   return (
+    <>
+    <Head title={data.site.siteMetadata.title} />
     <Layout siteData = {data.site}>
       <section id="content">
       <TagContainer>
@@ -48,6 +50,7 @@ export default function IndexPage({ data }) {
       </TagContainer>
       </section>
     </Layout>
+    </>
   )
 }
 

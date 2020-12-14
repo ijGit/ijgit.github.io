@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components';
-
-
 import { Head } from "./../components/head/head"
 import { Layout } from "../components/layout/layout";
 

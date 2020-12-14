@@ -16,17 +16,17 @@ const PostContainer = styled.div`
   margin-top: 1rem;
 
   h1, h2{
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
   h3{
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 
   h3, h4, h5, h6{
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
   }
 
   table{
@@ -41,7 +41,7 @@ const PostContainer = styled.div`
 
 const PostTitle = styled.div`
   h1{
-    padding-top: 0;
+    margin-top: 0;
   }
 `
 

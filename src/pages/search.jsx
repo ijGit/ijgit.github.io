@@ -5,6 +5,8 @@ import { graphql } from 'gatsby';
 
 export default function Search ({data}) {
   return (
+    <>
+    <Head title={data.site.siteMetadata.title} />
     <Layout siteData = {data.site}>
       <main>
       <section id="content">
@@ -12,6 +14,7 @@ export default function Search ({data}) {
       </section>
       </main>
     </Layout>
+    </>
   )
 }
 
