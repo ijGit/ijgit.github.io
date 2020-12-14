@@ -1,91 +1,86 @@
-import React, { useEffect } from 'react';
-import { Component, useState } from 'react'
-import { Layout } from '../components/layout/layout';
-import { graphql } from 'gatsby';
-import { Head } from "./../components/head/head"
-import Search from './../components/search/search'
+import React, { Component } from "react"
+import Axios from "axios"
 import * as JsSearch from "js-search"
 
+class Search extends Component {
+  state = {
+    bookList: [],
+    search: [],
+    searchResults: [],
+    isLoading: true,
+    isError: false,
+    searchQuery: "",
+  }
+  /**
+   * React lifecycle method to fetch the data
+   */
+  async componentDidMount() {
+    Axios.get("https://bvaughn.github.io/js-search/books.json")
+      .then(result => {
+        const bookData = result.data
+        this.setState({ bookList: bookData.books })
+        this.rebuildIndex()
+      })
+      .catch(err => {
+        this.setState({ isError: true })
+        console.log("====================================")
+        console.log(`Something bad happened while fetching the data\n${err}`)
+        console.log("====================================")
+      })
+  }
 
-
-export default function SearchPage ({data}) {
-  const {edges} = data.allMarkdownRemark;
-
-  // need make new json array
-  var posts = [];
-  edges.map(({node}) => {
-    var _node = {
-      'id': node.id,
-      'slug': node.fields.slug, 
-      'title': node.frontmatter.title, 
-      'date': node.frontmatter.date, 
-      'tags': node.frontmatter.tags, 
-      'excerpt': node.excerpt,
-    }
-    posts.push(_node);
-  });
-
-  
-  const [search, setSearch] = useState([])
-  const [searchResults, setSearchResults] = useState([])
-  const [postList, setPostList] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
-  const [searchQuery, setSearchQuery] = useState("")
-  const [queryResults, setQueryResults] = useState(posts)
-
-  const rebuildIndex = () => {
-    const dataToSearch = new JsSearch.Search("id")
+  /**
+   * rebuilds the overall index based on the options
+   */
+  rebuildIndex = () => {
+    const { bookList } = this.state
+    const dataToSearch = new JsSearch.Search("isbn")
+    /**
+     *  defines a indexing strategy for the data
+     * more about it in here https://github.com/bvaughn/js-search#configuring-the-index-strategy
+     */
     dataToSearch.indexStrategy = new JsSearch.PrefixIndexStrategy()
+    /**
+     * defines the sanitizer for the search
+     * to prevent some of the words from being excluded
+     *
+     */
     dataToSearch.sanitizer = new JsSearch.LowerCaseSanitizer()
+    /**
+     * defines the search index
+     * read more in here https://github.com/bvaughn/js-search#configuring-the-search-index
+     */
+    dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex("isbn")
 
-    dataToSearch.searchIndex = new JsSearch.TfIdfSearchIndex("id")
+    dataToSearch.addIndex("title") // sets the index attribute for the data
+    dataToSearch.addIndex("author") // sets the index attribute for the data
 
-    dataToSearch.addIndex("title") 
-    dataToSearch.addIndex("excerpt")
-    dataToSearch.addIndex("tags") 
-    dataToSearch.addDocuments(posts)
+    dataToSearch.addDocuments(bookList) // adds the data to be searched
+    console.log(dataToSearch);
 
-    setSearch(dataToSearch);
-//    console.log(dataToSearch);
-
-    setIsLoading(false);
+    this.setState({ search: dataToSearch, isLoading: false })
   }
 
-  const searchData = e => {
+  /**
+   * handles the input change and perform a search with js-search
+   * in which the results will be added to the state
+   */
+  searchData = e => {
+    const { search } = this.state
     const queryResult = search.search(e.target.value)
-    setSearchQuery(e.target.value);
-    setQueryResults(searchQuery === "" ? postList : searchResults)
-    setSearchResults(queryResult);
-
-//    console.log(e.target.value);
-//    console.log(queryResult);
+    this.setState({ searchQuery: e.target.value, searchResults: queryResult })
   }
-
-  const handleSubmit = e => {
+  handleSubmit = e => {
     e.preventDefault()
   }
 
-  useEffect(() => {
-    setPostList(posts);
-    rebuildIndex()
-//    console.log(isLoading);
-  }, []);
-
-
-//  <Search/>
-  
-  return (
-    <>
-    <Head title={data.site.siteMetadata.title} />
-    <Layout siteData = {data.site}>
-      <main>
-      <section id="content">
-      <div>search temp page</div>
-
-      <section>
+  render() {
+    const { bookList, searchResults, searchQuery } = this.state
+    const queryResults = searchQuery === "" ? bookList : searchResults
+    return (
       <div>
         <div style={{ margin: "0 auto" }}>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={this.handleSubmit}>
             <div style={{ margin: "0 auto" }}>
               <label htmlFor="Search" style={{ paddingRight: "10px" }}>
                 Enter your search here
@@ -93,7 +88,7 @@ export default function SearchPage ({data}) {
               <input
                 id="Search"
                 value={searchQuery}
-                onChange={searchData}
+                onChange={this.searchData}
                 placeholder="Enter your search here"
                 style={{ margin: "0 auto", width: "400px" }}
               />
@@ -151,16 +146,16 @@ export default function SearchPage ({data}) {
                 </tr>
               </thead>
               <tbody>
-                {queryResults.map(node => {
+                {queryResults.map(item => {
                   return (
-                    <tr key={`row_${node.id}`}>
+                    <tr key={`row_${item.isbn}`}>
                       <td
                         style={{
                           fontSize: "14px",
                           border: "1px solid #d3d3d3",
                         }}
                       >
-                        {node.id}
+                        {item.isbn}
                       </td>
                       <td
                         style={{
@@ -168,7 +163,7 @@ export default function SearchPage ({data}) {
                           border: "1px solid #d3d3d3",
                         }}
                       >
-                        {node.title}
+                        {item.title}
                       </td>
                       <td
                         style={{
@@ -176,7 +171,7 @@ export default function SearchPage ({data}) {
                           border: "1px solid #d3d3d3",
                         }}
                       >
-                        {node.tags}
+                        {item.author}
                       </td>
                     </tr>
                   )
@@ -186,44 +181,7 @@ export default function SearchPage ({data}) {
           </div>
         </div>
       </div>
-
-
-      </section>
-
-
-
-      </section>
-      </main>
-    </Layout>
-    </>
-  )
-}
-
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-      pathPrefix
-    }
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          excerpt(format: PLAIN)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD")
-            tags
-            title
-          }
-        }
-      }
-    }
+    )
   }
-`
-
+}
+export default Search
