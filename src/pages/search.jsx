@@ -6,6 +6,7 @@ import { Head } from "./../components/head/head"
 import Search from './../components/search/search'
 import * as JsSearch from "js-search"
 
+import {PostRep} from '../components/post-rep/post-rep'
 
 
 export default function SearchPage ({data}) {
@@ -153,6 +154,16 @@ export default function SearchPage ({data}) {
               <tbody>
                 {queryResults.map(node => {
                   return (
+                    <>
+                    <PostRep
+                      title = {node.title}
+                      tags = {node.tags}
+                      date = {node.date}
+                      excerpt = {node.excerpt}
+                      slug = {node.slug}
+                    />
+
+
                     <tr key={`row_${node.id}`}>
                       <td
                         style={{
@@ -179,6 +190,7 @@ export default function SearchPage ({data}) {
                         {node.tags}
                       </td>
                     </tr>
+                    </>
                   )
                 })}
               </tbody>
