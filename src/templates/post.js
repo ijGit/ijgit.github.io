@@ -16,17 +16,17 @@ const PostContainer = styled.div`
   margin-top: 1rem;
 
   h1, h2{
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
   }
   h3{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   h3, h4, h5, h6{
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
   }
 
   table{
@@ -35,11 +35,13 @@ const PostContainer = styled.div`
     max-width: fit-content;
     overflow-x: auto;
   }
+
+  margin-bottom: 10vh;
 `
 
 const PostTitle = styled.div`
   h1{
-    margin-top: 0;
+    padding-top: 0;
   }
 `
 

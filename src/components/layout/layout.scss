@@ -8,24 +8,25 @@
 }
 
 header {
-  position: absolute;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100vw;
+  // position: absolute;
+  // position: fixed;
+  // top: 0;
+  // z-index: 1;
 
   display: flex;
-  justify-content: space-between;
   
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 4vh;
   
-  transition: top 0.3s ease 0.2s;
+  // transition: top 0.3s ease 0.2s;
+
+  height: $header-height;
   
   .header-contents{
     .logo{  
       margin: 0;
+      
       max-height: $header-height; // 5vh
       font-weight: 500;
       
@@ -41,36 +42,48 @@ header {
       .bio{display: none;}
     }
   }
-  nav{height: $header-height;}
-}
-#layout.light{
-  header{
-    background: $background-color;
-    background-color: $background-color;
+  nav{
+    display: flex;
+    margin-left: auto;
+    height: $header-height;
   }
 }
-#layout.dark{
-  header{
-    background: $background-color-d;
-    background-color: $background-color-d;
-  }
-}
+// #layout.light{
+//   header{
+//     background: transparent;
+//     @media screen and (max-width: $break-l) {
+//       background: $background-color;
+//     }
+//   }
+// }
+// #layout.dark{
+//   header{
+//     background: transparent;
+//     @media screen and (max-width: $break-l) {
+//       background: $background-color-d;
+//     }
+//   }
+// }
 
-header:focus{
-  outline:none;
-}
+// header:focus{
+//   outline:none;
+// }
 
-header.visible{
-  top: 0;
-}
-header.invisible{
-  top: -21vh
-}
+// header.visible{
+//   top: 0;
+// }
+// header.invisible{
+//   top: -21vh
+// }
 
 main {
   display: flex;
   flex-direction: column;
-  margin-top: 15vh;
+  //margin-top: $header-height;
+  margin-top: 10vh;
+
+  // @media screen and (max-width: $break-l) {}
+
   
   #content {
     // display size

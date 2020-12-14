@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useMemo } from "react"
+import React, {useMemo } from "react"
+// import React, { useEffect, useState, useMemo } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Navbar } from "./../nav/nav"
 import { Bio } from "./../bio/bio"
@@ -18,14 +19,14 @@ export const Layout = ({ children }) => {
     }
   `)
 
-  // for scroll
-  const [, initOffset] = useState(0)
-  const [visible, setVisible] = useState(true)
+// for scroll
+//  const [, initOffset] = useState(0)
+//  const [visible, setVisible] = useState(true)
 
   // for header color
   const [colorMode] = useColorMode()
   const theme = useMemo(() => colorMode === "dark", [colorMode])
-
+/*
   useEffect(() => {
     const setOffset = () => {
       initOffset(prevOffset => {
@@ -37,12 +38,14 @@ export const Layout = ({ children }) => {
     document.addEventListener("scroll", setOffset)
     return () => document.removeEventListener("scroll", setOffset)
   }, [])
+<header id="header" className={`${visible ? "visible" : "invisible"}`}>
+*/
 
   const { title, prefix } = data.site.siteMetadata
   return (
     <React.Fragment>
       <div id="layout" className={theme ? "dark" : "light"}>
-        <header id="header" className={`${visible ? "visible" : "invisible"}`}>
+        <header id="header">
           <div className="header-contents">
             <h1 className="logo">
               <Link to={prefix}>{title}</Link>
