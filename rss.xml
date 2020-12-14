@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Dec 2020 13:04:31 GMT</lastBuildDate><item><title><![CDATA[Gatsby 블로그 포스트에 TOC (목차) 적용하기]]></title><description><![CDATA[plugin 설치 및 세팅 1. install  과 를 아래 명령어로 설치해준다.  플러그인은  의 하위 플러그인으로 markdown 파일이 렌더링 될 때 링크를 추가해준다. 2. setting…]]></description><link>https://ijgit.github.io/gitpage-dev/pages/2020-12-11-gatsby-toc</link><guid isPermaLink="false">https://ijgit.github.io/gitpage-dev/pages/2020-12-11-gatsby-toc</guid><pubDate>Fri, 11 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;plugin-설치-및-세팅&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugin-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%B8%ED%8C%85&quot; aria-label=&quot;plugin 설치 및 세팅 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;plugin 설치 및 세팅&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 14 Dec 2020 00:48:44 GMT</lastBuildDate><item><title><![CDATA[파워포인트에서 LaTeX 수식 입력 사용하기]]></title><description><![CDATA[Install 이구아나 텍스 (IguanaTEX) 플러그인은 Windows PowerPoint에서 LaTeX 추가기능을 사용할 수 있도록 해준다. (무료) 링크에 연결된 페이지에서 다운로드 방법과 사용 방법을 확인할 수 있다. Error Error…]]></description><link>https://ijgit.github.io/gitpage-dev/pages/powerpoint-latex</link><guid isPermaLink="false">https://ijgit.github.io/gitpage-dev/pages/powerpoint-latex</guid><pubDate>Mon, 14 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jonathanleroux.org/software/iguanatex/&quot;&gt;이구아나 텍스 (IguanaTEX)&lt;/a&gt; 플러그인은 Windows PowerPoint에서 LaTeX 추가기능을 사용할 수 있도록 해준다. (무료)&lt;/p&gt;
+&lt;p&gt;링크에 연결된 페이지에서 다운로드 방법과 사용 방법을 확인할 수 있다.&lt;/p&gt;
+&lt;h2 id=&quot;error&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#error&quot; aria-label=&quot;error permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Error&lt;/h2&gt;
+&lt;h5 id=&quot;error-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#error-1&quot; aria-label=&quot;error 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Error 1&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Could not start process: &amp;quot;pdflatex&amp;quot; -shell -escape -output..&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;1.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;h5 id=&quot;해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;power point 창 상단에서 &quot;Iguana Tex&quot; 를 클릭한다.&lt;/li&gt;
+&lt;li&gt;&quot;Main Settings&quot; 를 클릭한다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;하단 입력창에 &lt;code class=&quot;language-text&quot;&gt;pdfLaTeX.exe&lt;/code&gt;가 있는 경로를 적어준다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;2.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt; pdfLaTeX 실행 경로를 넣어줘야 오류를 해결하는데 설치한 적도 없었다. &lt;/p&gt;
+&lt;p&gt;pdfLaTeX 가 없다면 &lt;a href=&quot;https://miktex.org/&quot;&gt;MiKTeX&lt;/a&gt; 에서 다운받을 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;reference&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tex.stackexchange.com/questions/483797/iguanatex-error-about-latex&quot;&gt;https://tex.stackexchange.com/questions/483797/iguanatex-error-about-latex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[파워포인트에서 LaTeX 수식 입력 사용하기]]></title><description><![CDATA[Install 이구아나 텍스 (IguanaTEX) 플러그인은 Windows PowerPoint에서 LaTeX 추가기능을 사용할 수 있도록 해준다. (무료) 링크에 연결된 페이지에서 다운로드 방법과 사용 방법을 확인할 수 있다. Error Error…]]></description><link>https://ijgit.github.io/gitpage-dev/pages/powerpoint-latex</link><guid isPermaLink="false">https://ijgit.github.io/gitpage-dev/pages/powerpoint-latex</guid><pubDate>Mon, 14 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.jonathanleroux.org/software/iguanatex/&quot;&gt;이구아나 텍스 (IguanaTEX)&lt;/a&gt; 플러그인은 Windows PowerPoint에서 LaTeX 추가기능을 사용할 수 있도록 해준다. (무료)&lt;/p&gt;
+&lt;p&gt;링크에 연결된 페이지에서 다운로드 방법과 사용 방법을 확인할 수 있다.&lt;/p&gt;
+&lt;h2 id=&quot;error&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#error&quot; aria-label=&quot;error permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Error&lt;/h2&gt;
+&lt;h5 id=&quot;error-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#error-1&quot; aria-label=&quot;error 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Error 1&lt;/h5&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Could not start process: &amp;quot;pdflatex&amp;quot; -shell -escape -output..&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 409px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bcb535ef4ef67b3c86c1ca50e507f5d2/7a75e/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.83815028901734%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABDklEQVQoz61R20rEMBDt//+QvgmK+7CKLAtbddu0adML2zZNr/beYxKoKz4pGDicmZzMMGdiMMbgEgeEEPg+g23boA5F2zYYpwnDMGAcRw0Vb/lP7roOlFIYfd/jv05ZljByIcAzDiE5TVPknCOTeVWVSC4JojhGXVfyLtO6gigKqV2QJBk4z1CI4tqQ81zbdV0K6nnaMrEJAhbAkas4n98QhKG+D5gP5vuwLEtrURTLWhuhXNskbVd1DaNtW6zrinmesSzLF+b5e3zV1NuN143ldIqFyNWEHKpp0zS/Rl03+JCfZscFdicPDy+vONIEphvBME1T21E2/gIia/bHd9zuDri53+Pu+YTHpwM+ARa3ESC/dliMAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/bcb535ef4ef67b3c86c1ca50e507f5d2/7a75e/1.png&quot;
+        srcset=&quot;/static/bcb535ef4ef67b3c86c1ca50e507f5d2/991de/1.png 173w,
+/static/bcb535ef4ef67b3c86c1ca50e507f5d2/e4d6b/1.png 345w,
+/static/bcb535ef4ef67b3c86c1ca50e507f5d2/7a75e/1.png 409w&quot;
+        sizes=&quot;(max-width: 409px) 100vw, 409px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h5 id=&quot;해결&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0&quot; aria-label=&quot;해결 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;해결&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;power point 창 상단에서 &quot;Iguana Tex&quot; 를 클릭한다.&lt;/li&gt;
+&lt;li&gt;&quot;Main Settings&quot; 를 클릭한다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;하단 입력창에 &lt;code class=&quot;language-text&quot;&gt;pdfLaTeX.exe&lt;/code&gt;가 있는 경로를 적어준다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 477px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5d20902a181e606682671ec3cd288b60/d743b/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 119.65317919075144%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAEMUlEQVQ4y3VUyXLbVhBEgo/NbyQqx8fwlnyEr6nK0UtiS5a4Yt/3jSAoChRFS3oWxj1PiiimnMMUgAegp2e6ZxTLtFTXslXP81XXdtU4jFRdM9RV26rDMKji/l4VQnw3Hh4e1O31tVoUxY9EpHAoi/lcMeaaYpq2YmiG4nu+MhlPlbZt5QcAVf79+Hux2+2UPC+Urw8Pj4BxHI/SJB1lWS6vZVGMojAedV03ur29He33+/8NvP+t7/s/yrL86ZlhXVW0bBpaLpfE96vVipq6pm3f0/39Pd3d3R0FQI4CwHR5efnhCfAHxbVtgTJFGIbCc10BxsJzHJx5wjIM4ePMRfCz77nCxvfOU9iGfpslCZP48xnQ87xBX2iDri0GlDn02+2wXq8HJBgM3RgiXFHWcHV1dRR8BmaiQlVJkvz1DBhHETmmRYEfUBQElCUxrdoV4SeCgrTjuLkhNF/GNZ5vnp43m41Acmqa5gAIBsSRZxkxeJamhOwSkMHLsiIIxT/hWqK8loo8l2d1XYumWXL/D4AMwJHG0TMgZ4UVkCigJI5xjSRIEidSPD4PAx/JSlFLQV8wDJ8YRr4nWTIASqEM98wixXMB8DxNkCSjVdfhOaMUYoC1LLltXzD0XYegLkFRsg2NbMuSPeQP2UIMztHhfg2w7kXgvQQ8KpkPSijlOi6XQNttD9VScmxH9o17WcGX+mKBMgOZKMtSMnWd2yP4Pcb0AGiBketY6F9IIXoYhr4M+Yxecb8s26YIPS7KggK0x/ddCtDDIAwErMNMD4CGodNkPKbJxZi0+YLgR5pNxnTx+TNNpzNazKZ0dnpKBjNCX1m02WxGBlqEsiVDLIcXPkTTMRkowZBedMDY1DUyDVOC5FnOP0ixWHkGNExTgrfoIRs7TdMDIAtiMCuwsS0bTC9kGJpO88mUMEnsN9lftsx2u6W8yHk6WHHRrbr/AOIHjBjKnZOpaRKUy8TsUgUQ7Es8z2QSFgOjSRH3Gj3GihPtsgXz/AAYQDnTeATEwMsw9IU8Y49aKF3THu3ETmAvMlNmzLZh9kezbFsm6fMpRDiT1piMz1H+BAnACuLo2hwG5z7mdH5+RovFnHT0doE2SR9262OGcVwic4bSYhg7wj08ZsUQiMuNyDRDcvDeNCCYkyCpJgeB1eVtwwwh0Asfam9odvqatPNXZE5OaH56QtNPr3F9ReOPv+DdCeJXmn36mfTx7xTDo7yAeYEwQzb/UcmXa5u65Ucq07fU1h+oLt5Tmb2jtnxHFe6X1T/UVH/j7C015Rl9+bKXm5s3dd9vpShHPtxsdth7AhbYodk9desbutzs6Xr3la76O2THNmk2GLkbzPQeyq5QsicXiufYKLnicTwAVlUpGx7BBjxuMUasrtlzNfyVkIvlwasqTWNeU1JdB4PAdnNsS8CDBHM/A34Dh5uB4wEZ11MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/5d20902a181e606682671ec3cd288b60/d743b/2.png&quot;
+        srcset=&quot;/static/5d20902a181e606682671ec3cd288b60/991de/2.png 173w,
+/static/5d20902a181e606682671ec3cd288b60/e4d6b/2.png 345w,
+/static/5d20902a181e606682671ec3cd288b60/d743b/2.png 477w&quot;
+        sizes=&quot;(max-width: 477px) 100vw, 477px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt; pdfLaTeX 실행 경로를 넣어줘야 오류를 해결하는데 설치한 적도 없었다. &lt;/p&gt;
+&lt;p&gt;pdfLaTeX 가 없다면 &lt;a href=&quot;https://miktex.org/&quot;&gt;MiKTeX&lt;/a&gt; 에서 다운받을 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;reference&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://tex.stackexchange.com/questions/483797/iguanatex-error-about-latex&quot;&gt;https://tex.stackexchange.com/questions/483797/iguanatex-error-about-latex&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsby 블로그 포스트에 TOC (목차) 적용하기]]></title><description><![CDATA[plugin 설치 및 세팅 1. install  과 를 아래 명령어로 설치해준다.  플러그인은  의 하위 플러그인으로 markdown 파일이 렌더링 될 때 링크를 추가해준다. 2. setting…]]></description><link>https://ijgit.github.io/gitpage-dev/pages/2020-12-11-gatsby-toc</link><guid isPermaLink="false">https://ijgit.github.io/gitpage-dev/pages/2020-12-11-gatsby-toc</guid><pubDate>Fri, 11 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;plugin-설치-및-세팅&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugin-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%84%B8%ED%8C%85&quot; aria-label=&quot;plugin 설치 및 세팅 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;plugin 설치 및 세팅&lt;/h2&gt;
 &lt;h4 id=&quot;1-install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-install&quot; aria-label=&quot;1 install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. install&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-transformer-remark/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-transformer-remark&lt;/code&gt;&lt;/a&gt; 과 &lt;a href=&quot;https://www.gatsbyjs.com/plugins/gatsby-remark-autolink-headers/&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-autolink-headers&lt;/code&gt;&lt;/a&gt;를 아래 명령어로 설치해준다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby-remark-autolink-headers&lt;/code&gt; 플러그인은 &lt;code class=&quot;language-text&quot;&gt;gatsby-transformer-remark&lt;/code&gt; 의 하위 플러그인으로 markdown 파일이 렌더링 될 때 링크를 추가해준다.&lt;/p&gt;
