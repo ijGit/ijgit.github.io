@@ -8,6 +8,7 @@ import { TagList } from './../components/tags/tags'
 import { Head } from "./../components/head/head"
 
 import styled from 'styled-components';
+import "katex/dist/katex.min.css"
 import './post.scss';
 
 

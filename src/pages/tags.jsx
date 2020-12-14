@@ -7,6 +7,7 @@ import { Link, graphql } from "gatsby"
 import styled from "styled-components";
 
 const TagContainer = styled.ul`
+  margin-left: 0;
   text-align: center;
   margin-top: 2vh;
 `

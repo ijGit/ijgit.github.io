@@ -14,6 +14,10 @@ import 'fontsource-source-code-pro/500.css';
 import 'fontsource-source-code-pro/400-italic.css';
 import 'fontsource-source-code-pro/500-italic.css';
 
+// Nanum Myeongjo
+import 'fontsource-nanum-myeongjo.css'
+
+
 // Nanum Gothic
 // import 'fontsource-nanum-gothic/400.css'
 // import 'fontsource-nanum-gothic/700.css'
