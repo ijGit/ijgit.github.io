@@ -1,14 +1,51 @@
-import React, { useEffect } from "react"
-import { Component, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Layout } from "../components/layout/layout"
 import { graphql } from "gatsby"
 import { Head } from "./../components/head/head"
-import Search from "./../components/search/search"
 import * as JsSearch from "js-search"
+import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
 import { PostRep } from "../components/post-rep/post-rep"
 
 import styled from "styled-components"
+
+const IconWrapper = styled.div`
+  display: inline-flex;
+  font-size: 0.9rem;
+  margin-right: 0.4rem;
+  width: 1.1rem;
+  justify-content: center;
+`
+
+const Icon = styled.div`
+  height: 0.9rem;
+  margin-top: 1px;
+  opacity: 0.9;
+`
+
+const SearchContainer = styled.div`
+display: flex;
+width: 70%;
+flex-direction: column;
+margin: 0 auto;
+margin-bottom: 10vh;
+`
+
+const SearchInput = styled.div`
+justify-content: center;
+align-items: center;
+  display: flex;
+  input{
+    flex: auto;
+  }
+`
+
+const SearchCount = styled.div`
+  opacity: .7;
+`
+
+
 
 const PostListContainer = styled.div`
   display: flex;
@@ -93,26 +130,28 @@ export default function SearchPage({ data }) {
       <Head title={data.site.siteMetadata.title} />
       <Layout siteData={data.site}>
         <section id="content">
-          <div>
-            <form onSubmit={handleSubmit}>
-              <div style={{ margin: "0 auto" }}>
-                <label htmlFor="Search" style={{ paddingRight: "10px" }}>
-                </label>
-                <input
-                  id="Search"
-                  value={searchQuery}
-                  onChange={searchData}
-                  placeholder="Enter your search here"
-                  style={{ margin: "0 auto", width: "400px" }}
-                />
-              </div>
-            </form>
-          </div>
+          <SearchContainer>
+            <SearchInput onSubmit={handleSubmit}>
+              <input
+                id="Search"
+                value={searchQuery}
+                onChange={searchData}
+                placeholder="Enter your search here"
+              />
+              <label htmlFor="Search" style={{ paddingLeft: "10px" }}>
+                <IconWrapper>
+                  <Icon>
+                    <Fa icon={faSearch}></Fa>
+                  </Icon>
+                </IconWrapper>
+              </label>
+            </SearchInput>
+            <SearchCount>
+              Number of items:
+              {queryResults.length}
+            </SearchCount>
+          </SearchContainer>
 
-          <div>
-            Number of items:
-            {queryResults.length}
-          </div>
 
           <PostListContainer>
             <PostList>
