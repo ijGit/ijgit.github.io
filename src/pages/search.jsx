@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components/layout/layout';
 import { graphql } from 'gatsby';
-
+import { Head } from "./../components/head/head"
 
 export default function Search ({data}) {
   return (
