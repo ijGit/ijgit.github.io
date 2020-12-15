@@ -1,5 +1,4 @@
 import React from "react"
-// import {PostRep} from './../components/post-rep/post-rep'
 import styled from "styled-components"
 import './post-rep-item'
 import { PostRepItem } from "./post-rep-item"
@@ -26,7 +25,7 @@ export const PostRepList = ({posts, isSearchpage=false}) =>{
       <PostList>
         {
           posts.map(node=> {
-            node = isSearchpage? node : ({node})
+            node = isSearchpage? node : ((node.node));
             const title = isSearchpage? node.title : node.frontmatter.title
             const tags = isSearchpage? node.tags : node.frontmatter.tags
             const date = isSearchpage? node.date : node.frontmatter.date

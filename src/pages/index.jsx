@@ -3,23 +3,8 @@ import React from "react"
 import { Layout } from "../components/layout/layout"
 import { graphql } from "gatsby"
 import {Head} from './../components/head/head'
-import {PostRep} from './../components/post-rep/post-rep'
-import styled from "styled-components"
+import {PostRepList} from './../components/post-rep-list/post-rep-list'
 
-
-const PostListContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
-const PostList = styled.ul`
-  margin-left: 0;
-  padding: 0;
-`
-const PostItem = styled.li`
-  list-style: none;
-  margin-bottom: 9vh;
-`
 
 export default function IndexPage({ data }) {
   const { edges } = data.allMarkdownRemark
@@ -29,27 +14,7 @@ export default function IndexPage({ data }) {
     <Head title={title}/>
     <Layout siteData={data.site}>
         <section id="content">
-          <PostListContainer>
-            <PostList>
-              {edges.map(({ node }) => {
-                const { slug } = node.fields
-                const { title } = node.frontmatter
-                return (
-                  <PostItem key={slug}>
-                    <div className="post-rep">
-                    <PostRep
-                      title = {title}
-                      tags = {node.frontmatter.tags}
-                      date = {node.frontmatter.date}
-                      excerpt = {node.excerpt}
-                      slug = {slug}
-                    />
-                    </div>
-                  </PostItem>
-                )
-              })}
-            </PostList>
-          </PostListContainer>
+        <PostRepList posts={edges}/>
         </section>
     </Layout>
     </>
