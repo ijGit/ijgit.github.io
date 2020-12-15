@@ -108,7 +108,7 @@ export default function SearchPage({ data }) {
             </SearchCount>
           </SearchContainer>
 
-          <PostList isSearchpage={true} posts={posts}/>
+          <PostList isSearchpage={true} posts={queryResults}/>
         </section>
       </Layout>
     </>
