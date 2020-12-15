@@ -16,7 +16,6 @@ const BioContainer = styled.div`
   opacity: .9;
 `
 
-
 const BioListContainer = styled.ul`
 margin-left: 0;
 `
