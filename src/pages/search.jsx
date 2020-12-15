@@ -11,24 +11,27 @@ import styled from "styled-components"
 
 const SearchContainer = styled.div`
 display: flex;
-width: 70%;
+width: 100%;
+max-width: 600px;
 flex-direction: column;
 margin: 0 auto;
 margin-bottom: 10vh;
-`
 
-const SearchInput = styled.div`
-justify-content: center;
-align-items: center;
+.search-input{
+  justify-content: center;
+  align-items: center;
   display: flex;
   input{
     flex: auto;
   }
+}
+.search-count{
+  display: flex;
+  margin-right: auto;
+  opacity: .7;
+}
 `
 
-const SearchCount = styled.div`
-  opacity: .7;
-`
 
 export default function SearchPage({ data }) {
   const { edges } = data.allMarkdownRemark
@@ -90,22 +93,22 @@ export default function SearchPage({ data }) {
       <Layout siteData={data.site}>
         <section id="content">
           <SearchContainer>
-            <SearchInput onSubmit={handleSubmit}>
+            <div className='search-input' onSubmit={handleSubmit}>
               <input
                 id="Search"
+                style={{ padding: "4px 8px" }}
                 value={searchQuery}
                 onChange={searchData}
                 placeholder="Enter your search here"
               />
               <label htmlFor="Search" style={{ paddingLeft: "10px" }}>
                 <Icon icon={faSearch}/>
-                
               </label>
-            </SearchInput>
-            <SearchCount>
-              search result :
-              {queryResults.length}
-            </SearchCount>
+            </div>
+
+            <div className='search-count'>
+              search result : {queryResults.length}
+            </div>
           </SearchContainer>
 
           <PostList isSearchpage={true} posts={queryResults}/>
