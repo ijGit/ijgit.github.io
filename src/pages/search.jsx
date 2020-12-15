@@ -6,7 +6,6 @@ import * as JsSearch from "js-search"
 import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
-import { PostRep } from "../components/post-rep/post-rep"
 import {PostRepList} from './../components/post-rep-list/post-rep-list'
 
 import styled from "styled-components"
@@ -46,21 +45,6 @@ const SearchCount = styled.div`
   opacity: .7;
 `
 
-
-
-const PostListContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`
-
-const PostList = styled.ul`
-  margin-left: 0;
-  padding: 0;
-`
-const PostItem = styled.li`
-  list-style: none;
-  margin-bottom: 9vh;
-`
 
 export default function SearchPage({ data }) {
   const { edges } = data.allMarkdownRemark
@@ -154,26 +138,6 @@ export default function SearchPage({ data }) {
           </SearchContainer>
 
           <PostRepList isSearchpage={true} posts={posts}/>
-
-          <PostListContainer>
-            <PostList>
-              {queryResults.map(node => {
-                return (
-                  <PostItem key={node.id}>
-                    <div className="post-rep">
-                      <PostRep
-                        title={node.title}
-                        tags={node.tags}
-                        date={node.date}
-                        excerpt={node.excerpt}
-                        slug={node.slug}
-                      />
-                    </div>
-                  </PostItem>
-                )
-              })}
-            </PostList>
-          </PostListContainer>
         </section>
       </Layout>
     </>
