@@ -23,8 +23,6 @@ const ButtonWrapper = styled.div`
   }
 `
 
-
-
 const ThemeToggle = () =>{
   const [colorMode, setColorMode] = useColorMode()
   return(

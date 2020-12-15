@@ -20,8 +20,6 @@ export const Header = () => {
 `)
   return (
     <header className='header'>
-
-      <ThemeToggle/>
       <div className='header-content'>
         <div className='header-logo'>
           <h1>
