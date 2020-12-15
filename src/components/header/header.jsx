@@ -1,7 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio";
-import {ThemeToggle} from "./../theme-toggle/theme-toggle";
 
 //import styled from "styled-components"
 import './header.scss'

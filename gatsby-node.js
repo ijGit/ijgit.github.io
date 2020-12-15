@@ -19,8 +19,8 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   
   // template files
-  const postTemplate = path.resolve(`${__dirname}/src/templates/post.js`)
-  const tagTemplate = path.resolve(`${__dirname}/src/templates/tags.js`)
+  const postTemplate = path.resolve(`${__dirname}/src/templates/post.jsx`)
+  const tagTemplate = path.resolve(`${__dirname}/src/templates/tags.jsx`)
   // query
   const result = await graphql(`{
     postsRemark: allMarkdownRemark(

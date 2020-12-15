@@ -2,16 +2,14 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import styled from 'styled-components';
-import { Head } from "./../components/head/head"
+import { Head } from "../components/head/head"
 import { Layout } from "../components/layout/layout";
-import {PostList} from './../components/post-list/post-list'
+import {PostList} from '../components/post-list/post-list'
 
 
 const BackButton = styled.div`
   margin-bottom: 5vh
 `
-
-// pageContext
 const Tags = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (

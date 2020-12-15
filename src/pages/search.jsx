@@ -3,26 +3,11 @@ import { Layout } from "../components/layout/layout"
 import { graphql } from "gatsby"
 import { Head } from "./../components/head/head"
 import * as JsSearch from "js-search"
-import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
-
 import {PostList} from './../components/post-list/post-list'
-
+import {Icon} from './../components/icon'
 import styled from "styled-components"
 
-const IconWrapper = styled.div`
-  display: inline-flex;
-  font-size: 0.9rem;
-  margin-right: 0.4rem;
-  width: 1.1rem;
-  justify-content: center;
-`
-
-const Icon = styled.div`
-  height: 0.9rem;
-  margin-top: 1px;
-  opacity: 0.9;
-`
 
 const SearchContainer = styled.div`
 display: flex;
@@ -45,7 +30,6 @@ const SearchCount = styled.div`
   opacity: .7;
 `
 
-
 export default function SearchPage({ data }) {
   const { edges } = data.allMarkdownRemark
 
@@ -66,7 +50,6 @@ export default function SearchPage({ data }) {
   const [search, setSearch] = useState([])
   const [searchResults, setSearchResults] = useState([])
   const [postList, setPostList] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState("")
   const [queryResults, setQueryResults] = useState(posts)
 
@@ -83,9 +66,6 @@ export default function SearchPage({ data }) {
     dataToSearch.addDocuments(posts)
 
     setSearch(dataToSearch)
-    //    console.log(dataToSearch);
-
-    setIsLoading(false)
   }
 
   const searchData = e => {
@@ -93,9 +73,6 @@ export default function SearchPage({ data }) {
     setSearchQuery(e.target.value)
     setQueryResults(searchQuery === "" ? postList : searchResults)
     setSearchResults(queryResult)
-
-    //    console.log(e.target.value);
-    //    console.log(queryResult);
   }
 
   const handleSubmit = e => {
@@ -105,10 +82,7 @@ export default function SearchPage({ data }) {
   useEffect(() => {
     setPostList(posts)
     rebuildIndex()
-    //    console.log(isLoading);
   }, [])
-
-  //  <Search/>
 
   return (
     <>
@@ -124,15 +98,12 @@ export default function SearchPage({ data }) {
                 placeholder="Enter your search here"
               />
               <label htmlFor="Search" style={{ paddingLeft: "10px" }}>
-                <IconWrapper>
-                  <Icon>
-                    <Fa icon={faSearch}></Fa>
-                  </Icon>
-                </IconWrapper>
+                <Icon icon={faSearch}/>
+                
               </label>
             </SearchInput>
             <SearchCount>
-              Number of items:
+              search result :
               {queryResults.length}
             </SearchCount>
           </SearchContainer>
