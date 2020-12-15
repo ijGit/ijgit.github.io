@@ -1,11 +1,10 @@
 import React from "react"
 
 import {Link} from 'gatsby'
-import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faSun, faMoon, faTags, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
-
+import {Icon} from './../icon'
 
 const ButtonWrapper = styled.div`
   display: inline-block;
@@ -14,25 +13,24 @@ const ButtonWrapper = styled.div`
   max-width: 2rem;
   text-align: center;
   a:hover{border-bottom: none;}
-`
 
-const Icon = styled.div`
-  display: inline-block;
-  height: 0.9rem;
-  opacity: 0.6;
-  color: inherit;
-  font-size: 1rem;
-  :hover{
-    opacity: 0.9;
+  .icon-item{
+    font-size: 1rem;
+    opacity: 0.6;
+  }
+  .icon-item:hover{
+    opacity: 1;
   }
 `
+
+
 
 const ThemeToggle = () =>{
   const [colorMode, setColorMode] = useColorMode()
   return(
     <ButtonWrapper
       onClick={e => {setColorMode(colorMode === "default" ? "dark" : "default")}}>
-      <Icon><Fa icon = {colorMode === "default" ? faMoon : faSun} /></Icon>
+        <Icon icon={colorMode === "default" ? faMoon : faSun}></Icon>
     </ButtonWrapper>
   )
 }
@@ -44,7 +42,7 @@ const LinkButton = props => {
   return(
     <ButtonWrapper>
     <Link to={to} className='icon-link'>
-      <Icon><Fa icon={icon}/></Icon>
+      <Icon icon={icon}/>
     </Link>
     </ButtonWrapper>
   )
