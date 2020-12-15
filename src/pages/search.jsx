@@ -6,7 +6,7 @@ import * as JsSearch from "js-search"
 import { FontAwesomeIcon as Fa } from "@fortawesome/react-fontawesome"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 
-import {PostRepList} from './../components/post-rep-list/post-rep-list'
+import {PostList} from './../components/post-list/post-list'
 
 import styled from "styled-components"
 
@@ -137,7 +137,7 @@ export default function SearchPage({ data }) {
             </SearchCount>
           </SearchContainer>
 
-          <PostRepList isSearchpage={true} posts={posts}/>
+          <PostList isSearchpage={true} posts={posts}/>
         </section>
       </Layout>
     </>

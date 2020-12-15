@@ -3,7 +3,7 @@ import React from "react"
 import { Layout } from "../components/layout/layout"
 import { graphql } from "gatsby"
 import {Head} from './../components/head/head'
-import {PostRepList} from './../components/post-rep-list/post-rep-list'
+import {PostList} from '../components/post-list/post-list'
 
 
 export default function IndexPage({ data }) {
@@ -14,7 +14,7 @@ export default function IndexPage({ data }) {
     <Head title={title}/>
     <Layout siteData={data.site}>
         <section id="content">
-        <PostRepList posts={edges}/>
+        <PostList posts={edges}/>
         </section>
     </Layout>
     </>

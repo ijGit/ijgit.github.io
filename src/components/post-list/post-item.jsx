@@ -1,5 +1,5 @@
 import React from "react"
-import {TagList} from './../tags/tags'
+import {TagList} from '../tags/tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
 
@@ -28,7 +28,6 @@ const PostRepTags = styled.div`
     content: "#";
   }
 `
-
 const PostRepExcerpt = styled.div`
   font-size: 0.9rem;
   opacity: 0.8;
@@ -42,7 +41,7 @@ const PostRepExcerpt = styled.div`
   text-overflow: ellipsis;
 `
 
-export const PostRepItem = ({ title, tags, date, excerpt, slug }) => {
+export const PostItem = ({ title, tags, date, excerpt, slug }) => {
   return (
     <div>
       <PostRepHeader>

@@ -4,7 +4,6 @@ import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout";
 import { Link, graphql } from "gatsby"
 import { Head } from "./../components/head/head"
-
 import styled from "styled-components";
 
 const TagContainer = styled.ul`
