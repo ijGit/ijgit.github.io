@@ -18,6 +18,9 @@ const Item = styled.li`
 `
 
 export const PostList = ({posts, isSearchpage=false}) =>{
+
+  console.log(posts);
+  
   return(
     <Container>
       <List>
