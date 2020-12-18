@@ -3,6 +3,7 @@ title: "WSL 2 (Windows Subsystem for Linux 2) Install"
 date: 2020-10-09
 tags:
   - WSL
+  - dev env
 keywords: 
   - WSL2 설치
   - WSL 설치

@@ -32,6 +32,16 @@ margin-bottom: 10vh;
 }
 `
 
+/*
+const _SearchContainer = styled.div`
+  input{
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+`
+*/
 
 export default function SearchPage({ data }) {
   const { edges } = data.allMarkdownRemark
