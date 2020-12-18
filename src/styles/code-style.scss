@@ -77,16 +77,6 @@
     background: $code-background-color-d;
   }
   
-  /* Inline code */
-  :not(pre) > code[class*='language-'] {
-    padding: 0.1em 0.6em;
-    border-radius: 2;
-    white-space: normal;
-    background: $code-background-color-d;
-    background-color: transparent;
-    color: inherit;
-  }
-  
   .token.directive-hash,
   .token.directive.keyword{
     color: #7affff;
@@ -204,45 +194,70 @@
   content: attr(data-prompt);
 }
 
+pre[class*='language-'].line-numbers {
+  position: relative;
+  padding-left: 3.5rem !important;
+  counter-reset: linenumber;
+}
+
+pre[class*='language-'].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  // font-size: 100%;
+  left: 0;
+  //left: -3.8rem;
+  width: 2.5rem !important; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  //  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
 
 
-  pre[class*='language-'].line-numbers {
-    position: relative;
-    padding-left: 3.5rem !important;
-    counter-reset: linenumber;
+  // inline code style
+#layout.light{
+  /* Inline code */
+  :not(pre) > code[class*='language-'] {
+    padding: 0.1em 0.6em;
+    border-radius: 2;
+    white-space: normal;
+    border-radius: 3px;
+    background: #ececec;
+    color:#e7646f;
   }
+}
 
-  pre[class*='language-'].line-numbers > code {
-    position: relative;
-    white-space: inherit;
+#layout.dark{
+  /* Inline code */
+  :not(pre) > code[class*='language-'] {
+    padding: 0.1em 0.6em;
+    border-radius: 2;
+    white-space: normal;
+    font-weight: 300;
+    border-radius: 3px;
+    background: #474747;
+    color:#ff5d6a;
   }
-
-  .line-numbers .line-numbers-rows {
-    position: absolute;
-    pointer-events: none;
-    top: 0;
-    // font-size: 100%;
-    left: 0;
-    //left: -3.8rem;
-    width: 2.5rem !important; /* works for line-numbers below 1000 lines */
-    letter-spacing: -1px;
-    border-right: 1px solid #999;
-
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  .line-numbers-rows > span {
-    display: block;
-    counter-increment: linenumber;
-  }
-
-  .line-numbers-rows > span:before {
-    //  content: counter(linenumber);
-    color: #999;
-    display: block;
-    padding-right: 0.8em;
-    text-align: right;
-  }
+}
