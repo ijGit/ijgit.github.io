@@ -102,7 +102,7 @@ module.exports = {
         //     // 1 query for each data type
         query: `
          {
-          allMarkdownRemark {
+          allMarkdownRemark (filter: {frontmatter: {draft: {ne: false}}}){
             edges {
               node {
                 excerpt
@@ -160,6 +160,7 @@ module.exports = {
               {
                 allMarkdownRemark(
                   sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: {frontmatter: {draft: {ne: false}}}
                 ) {
                   edges {
                     node {
