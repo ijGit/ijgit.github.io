@@ -5,10 +5,13 @@ const _ = require('lodash')
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const file = getNode(node.parent);
-    const slug = `/pages/${file.name}`;
 
-    createNodeField({ node, name: 'slug', value: slug });
+    if(node.frontmatter.draft === null || node.frontmatter.draft === undefined || node.frontmatter.draft === true){
+      const file = getNode(node.parent);
+      const slug = `/pages/${file.name}`;
+
+      createNodeField({ node, name: 'slug', value: slug });
+    }
   }
 }
 
@@ -23,21 +26,22 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagTemplate = path.resolve(`${__dirname}/src/templates/tags.jsx`)
   // query
   const result = await graphql(`{
-    postsRemark: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 2000
-    ) {
+    postsRemark: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
       edges {
         node {
-          fields {slug}
+          fields {
+            slug
+          }
           frontmatter {
             tags
           }
         }
       }
     }
-    tagsGroup: allMarkdownRemark(limit: 2000) {
-      group(field: frontmatter___tags) {fieldValue}
+    tagsGroup: allMarkdownRemark(limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
+      group(field: frontmatter___tags) {
+        fieldValue
+      }
     }
   }`
   )

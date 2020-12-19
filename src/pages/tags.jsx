@@ -74,7 +74,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(limit: 2000, sort: {fields: frontmatter___date}) {
+    allMarkdownRemark(limit: 2000, sort: {fields: frontmatter___date}, filter: {frontmatter: {draft: {ne: false}}}) {
       group(field: frontmatter___tags) {
         fieldValue
       }

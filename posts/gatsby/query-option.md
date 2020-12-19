@@ -1,11 +1,11 @@
 ---
 title: GraphQL 정리
 date: 2020-11-27
-tags: 
-categories: [gatsby]
+tags: [gatsby]
+draft: false
 ---
 
-# 스키마 & 타입
+## 스키마 & 타입
 
 - `String`: 스칼라타입
 - `String!` 필드가 `non-nullable`임을 의미 (항상 값을 리턴)
@@ -14,7 +14,7 @@ categories: [gatsby]
 
 
 
-# filter (필터) 
+## filter (필터) 
 
 GraphQL의 필터 옵션은 AND 로 동작한다.
 

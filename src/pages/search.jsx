@@ -136,7 +136,8 @@ export const pageQuery = graphql`
       }
       pathPrefix
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } 
+      filter: {frontmatter: {draft: {ne: false}}}) {
       edges {
         node {
           id
