@@ -2,7 +2,6 @@
 title: GraphQL 정리
 date: 2020-11-27
 tags: [gatsby]
-draft: false
 ---
 
 ## 스키마 & 타입
