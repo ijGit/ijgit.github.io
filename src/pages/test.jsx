@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState, useMemo } from "react"
-import Select from 'react-select'
+import Select from "react-select"
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
@@ -12,56 +12,50 @@ import * as JsSearch from "js-search"
 import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
 import { Icon } from "./../components/icon"
 
-
-
-import {TagSelect} from './../components/tag-select'
+import { TagSelect } from "./../components/tag-select"
 
 const Container = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-margin: 0 auto;
-margin-bottom: 10vh;
+  margin: 0 auto;
+  margin-bottom: 10vh;
+
+  max-width: 400px;
+  width: 80%;
 
   .tag-filter{
-    width: 100%
-    display: flex;
+    width: 100%;
   }
   
-  
   .search-input{
-    width: 100%
+    width: 100%;
+
     display: flex;
     flex-direction: row;
     
-    max-width: 400px;
-  
+    align-items: center;
+    justify-content: space-between;
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 1px solid;
-  
+    border: 1px solid #8383837e;
   
     opacity: 0.6;
     font-size: .9em;
     padding: 5px 10px;
 
   #search {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
     border: none;
     outline: none;
-    
     background: none;
     color: inherit;
   }
 }
 `
-  
+
 export default function IndexPage({ data }) {
   const { group, edges } = data.allMarkdownRemark
   const { title } = data.site.siteMetadata
@@ -124,13 +118,14 @@ export default function IndexPage({ data }) {
     rebuildIndex()
   }, [])
 
-
   // for tag filter
-  var option = [];
+  var option = []
   const tagOptions = group.map(item => {
-    option.push({value: item.fieldValue.toLowerCase(), label: item.fieldValue})
+    option.push({
+      value: item.fieldValue.toLowerCase(),
+      label: item.fieldValue,
+    })
   })
-
 
   return (
     <>
@@ -139,6 +134,10 @@ export default function IndexPage({ data }) {
         <section id="content">
           <div>
             <Container>
+              <div className='tags-container'>
+                
+              </div>
+
 
               <div className="search-input" onSubmit={handleSubmit}>
                 <input
@@ -147,16 +146,16 @@ export default function IndexPage({ data }) {
                   onChange={searchData}
                   placeholder="Search.."
                 />
-                <Icon icon={faSearch} />
+                <Icon className='search-icon' icon={faSearch} />
               </div>
 
-              <div className='tag-filter'>
-                <TagSelect data={group}/>
+{/*
+              <div className="tag-filter">
+              <TagSelect data={group} />
               </div>
-
-            </Container>
+*/}
+              </Container>
           </div>
-
 
           <PostList isSearchpage={true} posts={queryResults} />
         </section>
