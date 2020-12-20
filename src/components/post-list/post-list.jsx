@@ -30,6 +30,7 @@ export const PostList = ({posts, isSearchpage=false}) =>{
             const date = isSearchpage? node.date : node.frontmatter.date
             const slug = isSearchpage? node.slug : node.fields.slug
 
+            console.Console(tags);
             return(
               <Item key = {slug}>
                 <PostItem

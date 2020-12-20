@@ -1,27 +1,37 @@
 import React from "react"
 import styled from "styled-components"
-import './post-item'
 import { PostItem } from "./item"
 
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+
+  ul{
+    list-style: none;
+    margin-left: 0;
+    margin: 0px;
+    padding: 0px;
+
+    li{
+      list-style: none;
+      margin-left: 0;
+      margin: 0px;
+      padding: 0px;
+      border-bottom: 1px solid #8383837e;
+    }
+    li:first-child{
+      border-top: 1px solid #8383837e;
+    }
+  }
 `
-const List = styled.ul`
-  margin-left: 0;
-  padding: 0;
-`
-const Item = styled.li`
-  list-style: none;
-  margin-bottom: 9vh;
-`
+
 
 export const PostList = ({posts, isSearchpage=false}) =>{
 
   return(
     <Container>
-      <List>
+      <ul>
         {
           posts.map(node=> {
             node = isSearchpage? node : ((node.node));
@@ -31,19 +41,17 @@ export const PostList = ({posts, isSearchpage=false}) =>{
             const slug = isSearchpage? node.slug : node.fields.slug
 
             return(
-              <Item key = {slug}>
+              <li key = {slug}>
                 <PostItem
                   title={title}
                   tags={tags}
                   date={date}
-                  excerpt={node.excerpt}
-                  slug={slug}
-                />
-              </Item>
+                  slug={slug}/>
+              </li>
             )
           })
         }
-      </List>
+      </ul>
     </Container>
   )
 }
