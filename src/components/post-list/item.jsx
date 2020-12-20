@@ -12,7 +12,6 @@ const Container = styled.div`
   align-items: center;
   
   padding: 3vh 0;
-  border-bottom: 1px solid #8383837e;
   
   @media screen and (max-width: 479px){
     flex-direction: column;
