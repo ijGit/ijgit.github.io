@@ -24,6 +24,7 @@ module.exports = {
     `gatsby-plugin-theme-ui`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-glamor`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -33,6 +34,7 @@ module.exports = {
         },
         plugins: [
           `gatsby-remark-autolink-headers`,
+          `gatsby-remark-color-highlight`,
           {
             resolve: "gatsby-remark-images",
             options: {
