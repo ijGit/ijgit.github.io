@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react"
+import React, { Component, useEffect, useState, useMemo } from "react"
+import Select from 'react-select'
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
@@ -11,28 +12,43 @@ import * as JsSearch from "js-search"
 import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
 import { Icon } from "./../components/icon"
 
-const Container = styled.div`
-.search-input{
 
-  display: flex;
-  width: 100%;
-  max-width: 500px;
+
+import {TagSelect} from './../components/tag-select'
+
+const Container = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+margin: 0 auto;
+margin-bottom: 10vh;
+
+  .tag-filter{
+    width: 100%
+    display: flex;
+  }
   
-  border-radius: 8px;
-  border: 1px solid;
   
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  .search-input{
+    width: 100%
+    display: flex;
+    flex-direction: row;
+    
+    max-width: 400px;
   
-  opacity: 0.6;
-  font-size: inherit;
-  padding: 8px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid;
   
-  margin: 0 auto;
-  margin-bottom: 10vh;
   
-  .input {
+    opacity: 0.6;
+    font-size: .9em;
+    padding: 5px 10px;
+
+  #search {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -42,14 +58,28 @@ const Container = styled.div`
     
     background: none;
     color: inherit;
-  
   }
 }
-  `
+`
   
 export default function IndexPage({ data }) {
-  const { edges } = data.allMarkdownRemark
+  const { group, edges } = data.allMarkdownRemark
   const { title } = data.site.siteMetadata
+
+  /*
+  // const tag = query.tag ===null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
+  const posts = edges.filter(({node}) => {
+    const tags = node.frontmatter.tags.map(tag =>{
+      tag = tag.split(/[\_\ \. \/]/).join('-').split(/[\_\ \. \/ \+]/).join('');
+      return tag.toLowerCase();
+    });
+    if(tags.includes(tag)){
+      return(node)
+    }
+  });
+    */
+
+  // for search
   var posts = []
   edges.map(({ node }) => {
     var _node = {
@@ -94,29 +124,39 @@ export default function IndexPage({ data }) {
     rebuildIndex()
   }, [])
 
+
+  // for tag filter
+  var option = [];
+  const tagOptions = group.map(item => {
+    option.push({value: item.fieldValue.toLowerCase(), label: item.fieldValue})
+  })
+
+
   return (
     <>
       <Head title={title} />
       <Layout siteData={data.site}>
         <section id="content">
-
           <div>
             <Container>
+
               <div className="search-input" onSubmit={handleSubmit}>
                 <input
-                  className="input"
+                  id="search"
                   value={searchQuery}
                   onChange={searchData}
                   placeholder="Search.."
                 />
-                <span style={{ paddingLeft: "10px" }}>
-                  <Icon icon={faSearch} />
-                </span>
+                <Icon icon={faSearch} />
               </div>
-            </Container>
 
-            <Icon icon={faTags} />
+              <div className='tag-filter'>
+                <TagSelect data={group}/>
+              </div>
+
+            </Container>
           </div>
+
 
           <PostList isSearchpage={true} posts={queryResults} />
         </section>
