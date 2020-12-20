@@ -17,27 +17,27 @@ import { TagSelect } from "./../components/tag-select"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   margin: 0 auto;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 
-  max-width: 400px;
-  width: 80%;
-
-  .tag-filter{
+  .tag-container{
     width: 100%;
+    
+
   }
   
+
   .search-input{
-    width: 100%;
 
-    display: flex;
-    flex-direction: row;
+    margin-left: auto;
     
-    align-items: center;
+    width: 60%;
+    max-width: 400px;
+    
+    display: flex;
     justify-content: space-between;
-
+    
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -45,13 +45,18 @@ const Container = styled.div`
   
     opacity: 0.6;
     font-size: .9em;
-    padding: 5px 10px;
+    padding: 5px;
 
   #search {
+    display: inline-flex;
+    max-width: 90%;
     border: none;
     outline: none;
     background: none;
     color: inherit;
+  }
+  .search-icon{
+    display: inline-flex;
   }
 }
 `
