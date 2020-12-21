@@ -4,6 +4,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio"
 import { ThemeToggle } from './../theme-toggle'
 import { useColorMode } from "theme-ui"
+import {Header} from './../header'
 
 import "./layout.scss"
 
@@ -45,16 +46,14 @@ export const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <div id="layout" className={theme ? "dark" : "light"}>
-        <header id="header">
-          <div className="header-contents">
-            <h1 className="logo">
-              <Link to={prefix}>{title}</Link>
-            </h1>
-            <div className="bio">
-              <Bio />
-            </div>
+        <Header id='header'/>
+        
+        <aside>
+          <div className="bio">
+            <Bio />
           </div>
-        </header>
+        </aside>
+
         <main>{children}</main>
         <footer />
       </div>

@@ -1,11 +1,13 @@
+/*
 import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Bio } from "./../bio/bio";
-
 //import styled from "styled-components"
+
+
 import './header.scss'
 
-export const Header = () => {
+export const _Header = () => {
 
   const data = useStaticQuery(graphql`
     query HeaderQuery {
@@ -20,7 +22,8 @@ export const Header = () => {
   return (
     <header className='header'>
       <div className='header-content'>
-        <div className='header-logo'>
+        <div className='header-title'>
+          <img src='./../../images/profile.jpg' alt='profile'/>
           <h1>
             <Link to = {data.site.siteMetadata.prefix}>
               {data.site.siteMetadata.title}
@@ -32,3 +35,5 @@ export const Header = () => {
     </header>
   )
 }
+
+*/
