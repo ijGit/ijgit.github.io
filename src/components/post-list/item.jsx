@@ -1,5 +1,5 @@
 import React from "react"
-import {TagList} from '../tags/tags'
+import {TagList} from '../tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { faFileAlt } from "@fortawesome/free-solid-svg-icons"
@@ -24,35 +24,38 @@ const Container = styled.div`
     max-width: 60%;
     display: flex;
     margin-right: auto;
-    
-    height: 2.6;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; 
-    -webkit-box-orient: vertical;
+    flex-direction: row;
 
     
     .title-text{
-      display: flex;
-      flex-direction: row;
-
-      margin-block-start: 0;
-      margin-block-end: 0;
-
+      display: -webkit-box;
+      -webkit-line-clamp: 2; 
+      -webkit-box-orient: vertical;
+      height: 2.6;
+      
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
       font-weight: 500;
       line-height: 1.3;
       font-size: 1em;
+      
+      @media screen and (max-width: 479px){
+        height: 1.3;
+        -webkit-line-clamp: 1; 
+      }
     }
-    .title-text:before{
-      content: '📄';
-      margin-right: 4px;
-    }
-
+    
     @media screen and (max-width: 479px){
       width: 100%;
       max-width: 100%;
-    }
+      margin-bottom: .8em;
+    }    
+  }
+  .title:before{
+    content: '📄';
+    line-height: 1.3;
+    margin-right: 4px;
   }
 
   .meta{
