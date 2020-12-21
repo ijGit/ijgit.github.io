@@ -50,7 +50,7 @@ export const Navbar = () => {
   return(
     <nav>
       <ThemeToggle/>
-      <LinkButton key='tags' path='/tags' icon={faTags}/>
+      {/* <LinkButton key='tags' path='/tags' icon={faTags}/> */}
       <LinkButton key='search' path='/search' icon={faSearch}/>
     </nav>
   )
