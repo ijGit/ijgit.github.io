@@ -1,8 +1,9 @@
 ---
-title: "[Data Visualization] matplotlib 튜토리얼"
+title: "matplotlib 튜토리얼"
 date: 2020-12-18
 tags:
   - data-visualization
+draft: true
 ---
 
 

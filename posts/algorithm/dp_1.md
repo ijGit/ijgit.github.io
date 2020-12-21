@@ -1,10 +1,11 @@
 ---
-title: "[Algorithm] 동적 계획법 (Dynamic Programming) 1"
+title: "동적 계획법 (Dynamic Programming) 1"
 date: 2020-11-30
 tags: [Algorithm]
+draft: false
 ---
 
-# 1. 동적 계획법 (DP, Dynamic Programming)
+## 1. 동적 계획법 (DP, Dynamic Programming)
 
 동적 계획법이란 복잡한 문제를 간단한 여러 개의 문제로 나누어 푸는 방법을 일컷는다. 이를 사용하여 반복적인 계산을 줄이고 효율적으로 최적해를 찾아낼 수 있다.
 
@@ -13,7 +14,7 @@ DP의 일반적인 원리는 주어진 문제에서 입력 크기가 작은 부�
 
 DP 를 이용하면 부분 문제 반복과 최적 부분 구조 (optimal substructure)를 가지고 있는 문제들을 일반적인 방법에 비하여 적은 시간 내에 해결할 수 있다.
 
-<br>
+</br>
 
 ***주요 용어***
 - subproblem
@@ -22,7 +23,7 @@ DP 를 이용하면 부분 문제 반복과 최적 부분 구조 (optimal substr
   - 어떤 문제의 최적해가 그것의 `subproblem`들의 최적해로부터 효율적으로 구해질 수 있을 때, 해당 문제는 `optimal substructure`를 가진다고 할 수 있다.
 
 
-# 2. Dynamic Programming 적용
+## 2. Dynamic Programming 적용
 
 #### DP 적용 조건
 
@@ -39,7 +40,7 @@ DP 를 이용하면 부분 문제 반복과 최적 부분 구조 (optimal substr
 3. 작은 문제를 해결하는 방법으로 전체 문제를 해결한다. (문제를 푼다)
 
 
-## 2.1. DP Problem: 피보나치 수열
+### 2.1. DP Problem: 피보나치 수열
 
 #### 1) Recursion 
 
@@ -86,34 +87,15 @@ int fib(int n){
 위처럼 문제를 푸는 방식을 bottom-up 방식이라 한다. 
 DP 는 bottom-up 방식을 이용하여 중복 계산을 피한다.
 
-<!-- 
-
-
-### DP Problem 2: 이항 계수
-
-#### Recursion 
-#### Memoization
-#### Dynamic Programming
-
-
-
-
-### DP Problem 3: 행렬 경로
-
-#### Recursion 
-#### Memoization
-#### Dynamic Programming
- -->
-
-# 3. Memoization vs Dynamic Programming 
+## 3. Memoization vs Dynamic Programming 
 
 Memoization (메모이제이션)과 DP (Dynamic Programming, 동적계획법)은 순환식의 값을 계산하는 기법으로 약간의 차이점이 존재하나 *둘 다 DP의 일종으로 간주*하기도 한다.
 
-## Memoization
+### Memoization
 - Memoization은 top-down 방식이며, 실제로 필요한 subproblem 만을 푼다.
 - Memoization은 recursion에 따른 오버헤드가 존재한다.
 
-## Dynamic Programming
+### Dynamic Programming
 - DP 는 bottom-up 방식이며, 모든 subproblem 을 푼다.
 - DP는 recursion에 수반되는 오버헤드가 없다.
 

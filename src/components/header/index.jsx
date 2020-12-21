@@ -6,12 +6,12 @@ import image from './../../images/profile.png'
 import {ThemeToggle} from './../theme-toggle'
 
 const Container = styled.header`
-  margin-top: 2vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
+  
   .header-title{
     display: flex;
     flex-direction: row;

@@ -9,13 +9,13 @@ keywords:
   - node 버전 관리
 ---
 
-# n 모듈
+## n 모듈
 
 - `n`	`Node.js` 버전을 관리해주는 플러그인
 - 다양한 버전을 선택하여 설치 가능 (최신 버전, 안정 버전, LTS, 특정 버전)
 
 
-# **install n**
+## install n
 
 ```shell
 # n모듈 설치
@@ -40,7 +40,7 @@ $ n rm 10.0.0
 
 
 
-# **npm upgrade**
+## npm upgrade
 
 ```shell
 //npm 버전 확인

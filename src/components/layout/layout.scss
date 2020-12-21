@@ -2,124 +2,43 @@
 @import "./../../styles/global.scss";
 
 #layout {
-  display: flex;
-  min-height: 100vh; 
-  flex-direction: column;
-}
+  width: 100%;
 
-header {
-  // position: absolute;
-  // position: fixed;
-  // top: 0;
-  // z-index: 1;
-
-  display: flex;
-  
+  margin-top: 4vh;
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 4vh;
-  
-  // transition: top 0.3s ease 0.2s;
 
-  height: $header-height;
-  
-  .header-contents{
-    .logo{  
-      margin: 0;
-      
-      max-height: $header-height; // 5vh
-      font-weight: 500;
-      
-      @media screen and (max-width: $break-l) {
-        font-size: calc(13px + 1vh);
-      }
-    }
-    .bio{
-      padding-top: 1rem;
-      max-height: $bio-height;
-    }
-    @media screen and (max-width: $break-l) {
-      .bio{display: none;}
-    }
-  }
-  nav{
-    display: flex;
-    margin-left: auto;
-    height: $header-height;
-  }
-}
-// #layout.light{
-//   header{
-//     background: transparent;
-//     @media screen and (max-width: $break-l) {
-//       background: $background-color;
-//     }
-//   }
-// }
-// #layout.dark{
-//   header{
-//     background: transparent;
-//     @media screen and (max-width: $break-l) {
-//       background: $background-color-d;
-//     }
-//   }
-// }
-
-// header:focus{
-//   outline:none;
-// }
-
-// header.visible{
-//   top: 0;
-// }
-// header.invisible{
-//   top: -21vh
-// }
-
-main {
   display: flex;
   flex-direction: column;
-  //margin-top: $header-height;
-  margin-top: 10vh;
 
-  // @media screen and (max-width: $break-l) {}
+  min-height: 100vh; 
+}
 
-  
-  #content {
-    // display size
+#contents{
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 1023px){
+    flex-direction: column;
+  }
+
+  aside{
+    width: 20%;
+  }
+
+  main{
     display: flex;
     flex-direction: column;
-    width: 40vw;
+
+    max-width: 800px;
     margin: 0 auto;
+  }
 
-    @media screen and (max-width: $break-l) {
-      width: 80vw;
-    }
-    @media screen and (max-width: $break-s) {
-      width: 90vw;
+  aside, main{
+    @media screen and (max-width: 1023px) {
+      width: 95%;
+      margin-bottom: 4vh;
     }
   }
 }
 
-.flex-container {
-  display: flex;
-  flex-flow: column;
-}
-
-.flex-content {
-  display: flex;
-  order: 1;
-}
-
-aside{
-  .bio{margin-top: 1rem;
-    @media screen and (max-width: $break-l) {
-      display: none;
-    }
-  }
-}
-
-footer {
-  margin-top: auto;
-  height: 10vh;
-}

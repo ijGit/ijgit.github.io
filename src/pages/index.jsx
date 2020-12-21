@@ -1,15 +1,11 @@
 import React from 'react' 
-// { Component, useEffect, useState, useMemo } from "react"
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 import { Head } from "../components/head/head"
-import { PostList } from "../components/post-list/index"
+import { PostList } from "../components/post-list"
 import styled from "styled-components"
 import queryString from "query-string"
-
-// import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
-// import { Icon } from "./../components/icon"
 
 
 const Container = styled.div`
@@ -26,7 +22,7 @@ const Container = styled.div`
       margin: 4px;
     }
 
-    margin-bottom: 8vh;
+    margin-bottom: 5vh;
   }
 
   .search-input {
@@ -67,9 +63,10 @@ export default function IndexPage({ data }) {
   const {edges, group} = data.allMarkdownRemark;
 
   const query = typeof window !== 'undefined' && window ? 
-    queryString.parse(window.location.search) : null;
+    queryString.parse(window.location.search) : 'undefined';
 
-  const tag = query.tag === null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
+
+  const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
   
   const posts = tag === 'undefined' ? edges : 
     edges.filter(({node}) => {
@@ -87,7 +84,6 @@ export default function IndexPage({ data }) {
     <>
       <Head title={data.site.siteMetadata.title} />
       <Layout siteData={data.site}>
-        <section id="content">
           <div>
             <Container>
               <div className="tag-container">
@@ -103,9 +99,7 @@ export default function IndexPage({ data }) {
               </div>
             </Container>
           </div>
-
           <PostList posts={posts} />
-        </section>
       </Layout>
     </>
   )

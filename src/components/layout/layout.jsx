@@ -1,53 +1,30 @@
 import React, {useMemo } from "react"
 // import React, { useEffect, useState, useMemo } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { ThemeToggle } from './../theme-toggle'
 import { useColorMode } from "theme-ui"
 import {Header} from './../header'
-
+import {Bio} from './../bio'
 import "./layout.scss"
 
+
 export const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query MetaDataQuery {
-      site {
-        siteMetadata {
-          title
-          prefix
-        }
-      }
-    }
-  `)
-
-// for scroll
-//  const [, initOffset] = useState(0)
-//  const [visible, setVisible] = useState(true)
-
   // for header color
   const [colorMode] = useColorMode()
   const theme = useMemo(() => colorMode === "dark", [colorMode])
-/*
-  useEffect(() => {
-    const setOffset = () => {
-      initOffset(prevOffset => {
-        const curOffset = window.pageYOffset
-        if (curOffset > 0) setVisible(prevOffset > curOffset)
-        return curOffset
-      })
-    }
-    document.addEventListener("scroll", setOffset)
-    return () => document.removeEventListener("scroll", setOffset)
-  }, [])
-<header id="header" className={`${visible ? "visible" : "invisible"}`}>
-*/
 
-  const { title, prefix } = data.site.siteMetadata
   return (
     <React.Fragment>
       <div id="layout" className={theme ? "dark" : "light"}>
         <Header id='header'/>
+
+        <section id='contents'>
+          <aside id='aside-left'><Bio/></aside>
+
+          <main id='main'>{children}</main>
+
+          <aside id='aside-right'/>
+
+        </section>
         
-        <main>{children}</main>
         <footer />
       </div>
     </React.Fragment>

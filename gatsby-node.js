@@ -23,7 +23,6 @@ exports.createPages = async ({ graphql, actions }) => {
   
   // template files
   const postTemplate = path.resolve(`${__dirname}/src/templates/post.jsx`)
-  const tagTemplate = path.resolve(`${__dirname}/src/templates/tags.jsx`)
   // query
   const result = await graphql(`{
     postsRemark: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
@@ -53,16 +52,6 @@ exports.createPages = async ({ graphql, actions }) => {
       path: node.fields.slug,
       component: postTemplate,
       context: {slug: node.fields.slug,},
-    })
-  })
-
-  // Extract tag data from query and make tag pages
-  const tags = result.data.tagsGroup.group
-  tags.forEach(tag => {
-    createPage({
-      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {tag: tag.fieldValue,},
     })
   })
 }

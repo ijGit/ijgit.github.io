@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import styled from 'styled-components';
 import { Head } from "../components/head/head"
 import { Layout } from "../components/layout/layout";
-import {PostList} from '../components/post-list/post-list'
+import {PostList} from '../components/post-list/'
 
 
 const BackButton = styled.div`

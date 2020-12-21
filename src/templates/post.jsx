@@ -2,45 +2,15 @@ import React from 'react'
 import { graphql } from "gatsby"
 import { Layout } from '../components/layout/layout'
 import './../styles/code-style.scss'
-import { Comment } from '../components/comment/comment'
+import { Comment } from '../components/comment'
 import { TOC } from '../components/toc/toc'
-import { TagList } from '../components/tags/tags'
+import { TagList } from '../components/tags'
 import { Head } from "../components/head/head"
 
 import styled from 'styled-components';
 import "katex/dist/katex.min.css"
 import './post.scss';
 
-const PostContainer = styled.div`
-  margin-top: 1rem;
-
-  .blog-post-content{
-    margin-top: 3vh;
-  
-    h1, h2{
-      margin-top: 4rem;
-      margin-bottom: 1rem;
-    }
-    h3{
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-    }
-  
-    h3, h4, h5, h6{
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-    }
-  
-    table{
-      display: block;
-      max-width: -moz-fit-content;
-      max-width: fit-content;
-      overflow-x: auto;
-    }
-  
-    margin-bottom: 10vh;
-  }
-`
 
 const MetaWrapper = styled.div`
   padding-bottom: 1rem;
@@ -67,9 +37,7 @@ export default function PostTemplate({ data }) {
         <TOC toc={tableOfContents} />
       </div>
 
-      <section id="content">
         <article>
-          <PostContainer>
             <div className="blog-post">
 
               <MetaWrapper>
@@ -90,13 +58,11 @@ export default function PostTemplate({ data }) {
               />
 
             </div>
-          </PostContainer>
         </article>
         <div>
 
           <Comment></Comment>
         </div>
-      </section>
     </Layout>
     </>
   )
