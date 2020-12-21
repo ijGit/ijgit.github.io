@@ -21,9 +21,12 @@ const Container = styled.div`
 
   .tag-container {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
+    .tag-item{
+      margin: 4px;
+    }
+
+    margin-bottom: 8vh;
   }
 
   .search-input {
@@ -134,7 +137,7 @@ export default function IndexPage({ data }) {
         <section id="content">
           <div>
             <Container>
-              <div className="tags-container">
+              <div className="tag-container">
                 {group.map(item => {
                   return (
                     <div className="tag-item" key={item.fieldValue}>
