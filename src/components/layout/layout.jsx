@@ -1,7 +1,6 @@
 import React, {useMemo } from "react"
 // import React, { useEffect, useState, useMemo } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { Bio } from "./../bio/bio"
 import { ThemeToggle } from './../theme-toggle'
 import { useColorMode } from "theme-ui"
 import {Header} from './../header'
@@ -48,12 +47,6 @@ export const Layout = ({ children }) => {
       <div id="layout" className={theme ? "dark" : "light"}>
         <Header id='header'/>
         
-        <aside>
-          <div className="bio">
-            <Bio />
-          </div>
-        </aside>
-
         <main>{children}</main>
         <footer />
       </div>

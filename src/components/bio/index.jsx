@@ -3,53 +3,55 @@ import { Link } from "gatsby"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faUserCircle, faAt } from "@fortawesome/free-solid-svg-icons"
 import { name, comment, email, github } from "../../../_config"
-import {Icon} from './../icon'
+import {Icon} from '../icon'
 
 
 import styled from "styled-components"
 
-const BioContainer = styled.div`
+const Container = styled.div`
   transition: opacity 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0.1s;
   font-size: .9em;
   opacity: .9;
-`
 
-const BioListContainer = styled.ul`
-margin-left: 0;
-`
-const BioList = styled.ul`
-  margin: 0;
-  list-style-type: none;
+
+  ul{
+    margin: 0;
+    li{
+      margin: 0;
+      list-style-type: none;
+    }
+  }
+  
 `
 
 // display: `inline-block`,
 const ListLinkItem = props => (
-  <BioList>
+  <li>
     <span>
       <Link to={props.to}>
         <Icon icon={props.icon}/>
         {props.children}
       </Link>
     </span>
-  </BioList>
+  </li>
 )
 const ListItem = props => (
-  <BioList>
+  <li>
     <span>
     <Icon icon={props.icon}/>
         {props.children}
     </span>
-  </BioList>
+  </li>
 )
 
 export const Bio = () => {
   return (
-    <BioContainer>
+    <Container>
       <div className="user-comment">{comment}</div>
 
-      <BioListContainer>
+      <ul>
         <ListItem icon={faUserCircle}>
           {name}
         </ListItem>
@@ -59,7 +61,7 @@ export const Bio = () => {
         <ListLinkItem to={github} icon={faGithub}>
           {github}
         </ListLinkItem>
-      </BioListContainer>
-    </BioContainer>
+      </ul>
+    </Container>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
-import './header.scss'
 import image from './../../images/profile.png'
 
 import {ThemeToggle} from './../theme-toggle'
@@ -55,7 +54,7 @@ const Container = styled.header`
     }
 `)
   return (
-    <Container className='header'>
+    <Container>
       <div className='header-title'>
         <img src={image} alt='profile'/>
         <h1>
