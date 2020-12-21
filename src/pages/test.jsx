@@ -12,8 +12,6 @@ import * as JsSearch from "js-search"
 import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
 import { Icon } from "./../components/icon"
 
-import { TagSelect } from "./../components/tag-select"
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -21,66 +19,72 @@ const Container = styled.div`
   margin: 0 auto;
   margin-bottom: 2vh;
 
-  .tag-container{
+  .tag-container {
     width: 100%;
-    
-
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  
 
-  .search-input{
-
+  .search-input {
     margin-left: auto;
-    
+
     width: 60%;
     max-width: 400px;
-    
+
     display: flex;
     justify-content: space-between;
-    
+
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #8383837e;
-  
+
     opacity: 0.6;
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 5px;
 
-  #search {
-    display: inline-flex;
-    max-width: 90%;
-    border: none;
-    outline: none;
-    background: none;
-    color: inherit;
+    #search {
+      display: inline-flex;
+      max-width: 90%;
+      border: none;
+      outline: none;
+      background: none;
+      color: inherit;
+    }
+    .search-icon {
+      display: inline-flex;
+    }
   }
-  .search-icon{
-    display: inline-flex;
-  }
-}
 `
 
 export default function IndexPage({ data }) {
   const { group, edges } = data.allMarkdownRemark
   const { title } = data.site.siteMetadata
+  const query = queryString.parse(window.location.search)
 
-  /*
-  // const tag = query.tag ===null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
-  const posts = edges.filter(({node}) => {
-    const tags = node.frontmatter.tags.map(tag =>{
-      tag = tag.split(/[\_\ \. \/]/).join('-').split(/[\_\ \. \/ \+]/).join('');
-      return tag.toLowerCase();
-    });
-    if(tags.includes(tag)){
-      return(node)
+  const tag =
+    query.tag === null || query.tag === undefined
+      ? "null"
+      : query.tag.toLowerCase()
+  
+  const posts = (tag == 'null') ? edges : edges.filter(({ node }) => {
+    const tags = node.frontmatter.tags.map(tag => {
+      tag = tag
+        .split(/[\_\ \. \/]/)
+        .join("-")
+        .split(/[\_\ \. \/ \+]/)
+        .join("")
+      return tag.toLowerCase()
+    })
+    if (tags.includes(tag)) {
+      return node
     }
-  });
-    */
+  })
 
   // for search
-  var posts = []
-  edges.map(({ node }) => {
+  var searchPosts = []
+  posts.map(({ node }) => {
     var _node = {
       id: node.id,
       slug: node.fields.slug,
@@ -89,13 +93,13 @@ export default function IndexPage({ data }) {
       tags: node.frontmatter.tags,
       excerpt: node.excerpt,
     }
-    posts.push(_node)
+    searchPosts.push(_node)
   })
   const [search, setSearch] = useState([])
   const [searchResults, setSearchResults] = useState([])
   const [postList, setPostList] = useState([])
   const [searchQuery, setSearchQuery] = useState("")
-  const [queryResults, setQueryResults] = useState(posts)
+  const [queryResults, setQueryResults] = useState(searchPosts)
 
   const rebuildIndex = () => {
     const dataToSearch = new JsSearch.Search("id")
@@ -106,7 +110,7 @@ export default function IndexPage({ data }) {
     dataToSearch.addIndex("title")
     dataToSearch.addIndex("excerpt")
     dataToSearch.addIndex("tags")
-    dataToSearch.addDocuments(posts)
+    dataToSearch.addDocuments(searchPosts)
     setSearch(dataToSearch)
   }
   const searchData = e => {
@@ -119,18 +123,9 @@ export default function IndexPage({ data }) {
     e.preventDefault()
   }
   useEffect(() => {
-    setPostList(posts)
+    setPostList(searchPosts)
     rebuildIndex()
   }, [])
-
-  // for tag filter
-  var option = []
-  const tagOptions = group.map(item => {
-    option.push({
-      value: item.fieldValue.toLowerCase(),
-      label: item.fieldValue,
-    })
-  })
 
   return (
     <>
@@ -139,10 +134,17 @@ export default function IndexPage({ data }) {
         <section id="content">
           <div>
             <Container>
-              <div className='tags-container'>
-                
+              <div className="tags-container">
+                {group.map(item => {
+                  return (
+                    <div className="tag-item" key={item.fieldValue}>
+                      <Link to={`/tags?tag=${kebabCase(item.fieldValue)}`}>
+                        {item.fieldValue}
+                      </Link>
+                    </div>
+                  )
+                })}
               </div>
-
 
               <div className="search-input" onSubmit={handleSubmit}>
                 <input
@@ -151,15 +153,9 @@ export default function IndexPage({ data }) {
                   onChange={searchData}
                   placeholder="Search.."
                 />
-                <Icon className='search-icon' icon={faSearch} />
+                <Icon className="search-icon" icon={faSearch} />
               </div>
-
-{/*
-              <div className="tag-filter">
-              <TagSelect data={group} />
-              </div>
-*/}
-              </Container>
+            </Container>
           </div>
 
           <PostList isSearchpage={true} posts={queryResults} />

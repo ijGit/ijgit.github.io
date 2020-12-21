@@ -1,0 +1,23 @@
+.tag-item{
+  display: inline-flex;
+  flex: auto;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+
+#layout.light {
+  
+  .tag-item{
+    background: '#1976D2';
+  }
+}
+
+
+#layout.dark {
+  
+  .tag-item{
+    background: '#2962FF';
+  }
+}
+

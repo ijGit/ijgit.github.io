@@ -1,99 +1,123 @@
-@import './variables.scss';
+@import "./variables.scss";
+@import './component/tag.scss';
+@import './color-mode.scss';
 
-body{
-
+body {
   word-break: keep-all;
-  a {  color: inherit;}
-  h1, h2, h3, h4, h5, h6{
-    font-family: 'Noto Sans KR', 'sans-serif';
-    a:link {
-      text-decoration-color: inherit;
-    }
-    a:visited {
-      text-decoration-color: inherit;
-    }
-    a:hover {
-      border-bottom: 1px solid #00000080;
-    }
-  }
-  .katex{
-    font-size: inherit;
-    line-height: inherit;
-  }
-  
-  table{
-    display: block;
-    max-width: -moz-fit-content;
-    max-width: fit-content;
-    overflow-x: auto;
-  }
 
-  font-family: 'Noto Sans KR', 'sans-serif';
+  font-family: "Noto Sans KR", "sans-serif";
   font-size: $font-size;
   line-height: 1.6;
+}
 
-  #layout.light{
-    h1, h2, h3, h4, h5, h6{
-      font-weight: 600;
-    }
-    font-weight: 400;
-  }
-  #layout.dark{
-    h1, h2, h3, h4, h5, h6{
-      font-weight: 500;
-    }
-    font-weight: 300;
-  }
+a {
+  color: inherit;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+  opacity: 0.8;
+  text-decoration: none;
+  border-bottom: 1px solid #00000079;
+}
+a:visited {
+  opacity: 0.8;
+}
 
-
-  h1{font-size: $h1-font-size;}
-  h2{font-size: $h2-font-size;}
-  h3{font-size: $h3-font-size;}
-  h4{font-size: $h4-font-size;}
-  h5, h6 {font-size: $h5-font-size;}
-
-
-  a{text-decoration: none;}
-  a:hover{
-    color: inherit;
-    opacity: .8;
-    text-decoration: none;
-    border-bottom: 1px solid #00000079;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Sans KR", "sans-serif";
+  a:link {
+    text-decoration-color: inherit;
   }
-  a:visited{opacity: .8;}
+  a:visited {
+    text-decoration-color: inherit;
+  }
+  a:hover {
+    border-bottom: 1px solid #00000080;
+  }
+}
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+h5,
+h6 {
+  font-size: $h5-font-size;
+}
 
+.katex {
+  font-size: inherit;
+  line-height: inherit;
+}
 
-  blockquote{
-    font-family: 'Noto Serif KR', 'serif';
-    font-size: .9rem;
-    opacity: 0.9;
-    margin: 0;
-    padding: 0 1rem 0 1rem;
-    margin-bottom: 1rem;
-    border-left: .3rem solid #8383837e;
-  }
-  blockquote > :last-child {
-    margin-bottom: 0;
-  }
+table {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  overflow-x: auto;
+}
 
-  ul li{
-      list-style-type: disc;
-  }
-  ol{
-    li{list-style-type: decimal;}
-    ul li{list-style-type: disc;}
-    ol li{list-style-type: lower-alpha;}
-  }
+blockquote {
+  font-family: "Noto Serif KR", "serif";
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  margin-bottom: 1rem;
+  border-left: 0.3rem solid #8383837e;
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
 
-  li, ul, ol, li p, ul p, ol p{
-    margin-bottom: 0;
-    margin-top: 0;
+ul li {
+  list-style-type: disc;
+}
+ol {
+  li {
+    list-style-type: decimal;
   }
-  li, ul, ol, li p, ul p, ol p{
-    margin-bottom: 1vh;
+  ul li {
+    list-style-type: disc;
   }
+  ol li {
+    list-style-type: lower-alpha;
+  }
+}
 
-  code{
-    font-family: 'Fila code', 'Source Code Pro', 'Nanum Gothic Coding', Consolas, monospace;
-  }
+li,
+ul,
+ol,
+li p,
+ul p,
+ol p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+li,
+ul,
+ol,
+li p,
+ul p,
+ol p {
+  margin-bottom: 1vh;
+}
+
+code {
+  font-family: "Fila code", "Source Code Pro", "Nanum Gothic Coding", Consolas, monospace;
 }
