@@ -1,8 +1,8 @@
 import React, {useMemo } from "react"
 // import React, { useEffect, useState, useMemo } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { Navbar } from "./../nav/nav"
 import { Bio } from "./../bio/bio"
+import { ThemeToggle } from './../theme-toggle'
 import { useColorMode } from "theme-ui"
 
 import "./layout.scss"
@@ -54,7 +54,6 @@ export const Layout = ({ children }) => {
               <Bio />
             </div>
           </div>
-          <Navbar />
         </header>
         <main>{children}</main>
         <footer />

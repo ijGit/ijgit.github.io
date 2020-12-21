@@ -32,26 +32,3 @@ export const ThemeToggle = () =>{
     </ButtonWrapper>
   )
 }
-
-const LinkButton = props => {
-  const to = typeof window !== 'undefined' && window.location.pathname === props.path ? '/' : props.path;
-  const icon = typeof window !== 'undefined' && window.location.pathname === props.path ? faTimes : props.icon;
-
-  return(
-    <ButtonWrapper>
-    <Link to={to} className='icon-link'>
-      <Icon icon={icon}/>
-    </Link>
-    </ButtonWrapper>
-  )
-}
-
-export const Navbar = () => {
-  return(
-    <nav>
-      <ThemeToggle/>
-      {/*<LinkButton key='tags' path='/tags' icon={faTags}/> */}
-      {/*<LinkButton key='search' path='/search' icon={faSearch}/> */}
-    </nav>
-  )
-}
