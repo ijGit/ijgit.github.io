@@ -1,5 +1,5 @@
-import React, { Component, useEffect, useState, useMemo } from "react"
-import Select from "react-select"
+import React from 'react' 
+// { Component, useEffect, useState, useMemo } from "react"
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
@@ -8,9 +8,9 @@ import { PostList } from "../components/post-list/index"
 import styled from "styled-components"
 import queryString from "query-string"
 
-import * as JsSearch from "js-search"
-import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
-import { Icon } from "./../components/icon"
+// import { faSearch, faTags } from "@fortawesome/free-solid-svg-icons"
+// import { Icon } from "./../components/icon"
+
 
 const Container = styled.div`
   display: flex;
@@ -61,34 +61,31 @@ const Container = styled.div`
   }
 `
 
-export default function IndexPage({ data }) {
-  const { group, edges } = data.allMarkdownRemark
-  const { title, siteUrl } = data.site.siteMetadata
-  const query = queryString.parse(window.location.search)
 
-  const tag =
-    query.tag === null || query.tag === undefined
-      ? "null"
-      : query.tag.toLowerCase()
+
+export default function IndexPage({ data }) {
+  const {edges, group} = data.allMarkdownRemark;
+
+  const query = typeof window !== 'undefined' && window ? 
+    queryString.parse(window.location.search) : null;
+
+  const tag = query.tag === null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
   
-  const posts = (tag == 'null') ? edges : edges.filter(({ node }) => {
-    const tags = node.frontmatter.tags.map(tag => {
-      tag = tag
-        .split(/[\_\ \. \/]/)
-        .join("-")
-        .split(/[\_\ \. \/ \+]/)
-        .join("")
-      return tag.toLowerCase()
-    })
-    if (tags.includes(tag)) {
-      return node
-    }
-  })
+  const posts = tag === 'undefined' ? edges : 
+    edges.filter(({node}) => {
+      const tags = node.frontmatter.tags.map(tag =>{
+        tag = tag.split(/[\_\ \. \/]/).join('-').split(/[\_\ \. \/ \+]/).join('');
+        return tag.toLowerCase();
+      });
+      if(tags.includes(tag)){
+        return(node)
+      }
+    });
 
 
   return (
     <>
-      <Head title={title} />
+      <Head title={data.site.siteMetadata.title} />
       <Layout siteData={data.site}>
         <section id="content">
           <div>
@@ -97,7 +94,7 @@ export default function IndexPage({ data }) {
                 {group.map(item => {
                   return (
                     <div className="tag-item" key={item.fieldValue}>
-                      <Link to={`?tag=${kebabCase(item.fieldValue)}`}>
+                      <Link to={`/?tag=${kebabCase(item.fieldValue)}`}>
                         {item.fieldValue}
                       </Link>
                     </div>
@@ -119,29 +116,22 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        siteUrl
       }
-      pathPrefix
     }
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: false } } }
-    ) {
+    allMarkdownRemark(limit: 2000, sort: {fields: frontmatter___date}, filter: {frontmatter: {draft: {ne: false}}}) {
       group(field: frontmatter___tags) {
         fieldValue
       }
       edges {
         node {
-          id
+          excerpt
           fields {
             slug
           }
-          excerpt
           frontmatter {
-            date(formatString: "YYYY-MM-DD")
             tags
             title
+            date(formatString: "YYYY-MM-DD")
           }
         }
       }

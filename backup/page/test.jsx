@@ -1,5 +1,4 @@
-import React, { Component, useEffect, useState, useMemo } from "react"
-import Select from "react-select"
+/*import React, { Component, useEffect, useState, useMemo } from "react"
 import kebabCase from "lodash/kebabCase"
 import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
@@ -201,3 +200,4 @@ export const pageQuery = graphql`
     }
   }
 `
+*/

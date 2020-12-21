@@ -2,8 +2,6 @@ import React from "react"
 import {TagList} from '../tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons"
-import {Icon} from './../icon'
 
 const Container = styled.div`
   display: flex;
@@ -17,8 +15,6 @@ const Container = styled.div`
     flex-direction: column;
   }
   
-
-
   .title{
     width: 60%;
     max-width: 60%;
