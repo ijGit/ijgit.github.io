@@ -34,6 +34,16 @@ module.exports = {
         },
         plugins: [
           `gatsby-remark-autolink-headers`,
+          {
+            resolve: 'gatsby-remark-emoji', // <-- this adds emoji
+            options: {
+              // default emojiConversion --> shortnameToUnicode
+              emojiConversion: 'shortnameToUnicode',
+              // when true, matches ASCII characters (in unicodeToImage and shortnameToImage)
+              // e.g. ;) --> 😉
+              ascii: false,
+            }
+          },
           `gatsby-remark-color-highlight`,
           {
             resolve: "gatsby-remark-images",

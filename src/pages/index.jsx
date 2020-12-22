@@ -66,7 +66,7 @@ export default function IndexPage({ data }) {
     queryString.parse(window.location.search) : 'undefined';
 
 
-  const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
+  const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? '📌' : query.tag.toLowerCase();
   
   const posts = edges.filter(({node}) => {
       const tags = node.frontmatter.tags.map(tag =>{
