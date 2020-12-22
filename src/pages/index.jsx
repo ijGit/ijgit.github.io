@@ -68,8 +68,7 @@ export default function IndexPage({ data }) {
 
   const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? 'undefined' : query.tag.toLowerCase();
   
-  const posts = tag === 'undefined' ? edges : 
-    edges.filter(({node}) => {
+  const posts = edges.filter(({node}) => {
       const tags = node.frontmatter.tags.map(tag =>{
         tag = tag.split(/[\_\ \. \/]/).join('-').split(/[\_\ \. \/ \+]/).join('');
         return tag.toLowerCase();
