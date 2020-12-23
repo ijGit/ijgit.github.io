@@ -33,7 +33,7 @@ gatsby의 [`Starter Library`](https://www.gatsbyjs.com/starters/?) 에서는 많
 
 -----
 
-###### :speech_balloon:
+:speech_balloon:
 
 - `css`는 진짜 아닐 줄 알았는데 만들고 싶은게 있으니까 재미있다.
 - `css`가 괜찮으니까 웹도 흥미가 생긴다.
