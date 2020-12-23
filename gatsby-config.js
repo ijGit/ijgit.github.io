@@ -92,13 +92,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+/*
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `${__dirname}/src/utils/typography`,
       },
     },
-
+*/
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
