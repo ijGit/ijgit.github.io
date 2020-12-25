@@ -17,6 +17,7 @@ const Container = styled.div`
 
 
   ul{
+    padding-inline-start: 0;
     margin: 0;
     li{
       margin: 0;

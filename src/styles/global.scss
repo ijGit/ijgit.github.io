@@ -24,12 +24,7 @@ a:visited {
   opacity: 0.8;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Sans KR", "sans-serif";
   a:link {
     text-decoration-color: inherit;
@@ -50,8 +45,7 @@ h3 {
 h4 {
   font-size: $h4-font-size;
 }
-h5,
-h6 {
+h5, h6 {
   font-size: $h5-font-size;
 }
 
@@ -84,6 +78,12 @@ blockquote > :last-child {
   margin-bottom: 0;
 }
 
+
+
+ul, ol{
+  padding-inline-start: 1em;
+}
+
 ul li {
   list-style-type: disc;
 }
@@ -99,18 +99,14 @@ ol {
   }
 }
 
-li,
-ul,
-ol,
+li, ul, ol, 
 li p,
 ul p,
 ol p {
   margin-bottom: 0;
   margin-top: 0;
 }
-li,
-ul,
-ol,
+li, ul, ol, 
 li p,
 ul p,
 ol p {
