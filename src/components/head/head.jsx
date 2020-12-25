@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import config from './../../../_config'
 
 export function Head({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(
@@ -29,6 +30,10 @@ export function Head({ description, lang, meta, keywords, title }) {
       title={title}
       titleTemplate={title === metaTtitle ? metaTtitle : `${metaTtitle} | %s`}
       meta={[
+        {
+          name: 'google-site-verification',
+          content: config.googleSearchConsole ?? ''
+        },
         {
           name: `description`,
           content: metaDescription,

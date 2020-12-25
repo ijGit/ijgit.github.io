@@ -19,7 +19,7 @@ module.exports = {
   
   // option 
   googleAnalytics: ``,
-  googleSearchConsole: ``, 
+  googleSearchConsole: `5k_bJRZxnC2wJI8Pk2JL9KiZN-2dtWifGrMUhkH6QAg`, 
   googleAdsenseSlot: ``,  
   googleAdsenseClient: ``, 
 

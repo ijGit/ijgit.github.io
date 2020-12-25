@@ -31,6 +31,16 @@ gatsby의 [`Starter Library`](https://www.gatsbyjs.com/starters/?) 에서는 많
 디자인도 많이 고민했고 몇 번 갈아 엎으면서 지금의 블로그를 만들었는데 나름 만족한다. 
 변경하고 싶은 부분이 생기면 앞으로 또 수정해가야지.
 
+
+## 3. To Do
+
+수정할 부분이 생각나면 여기에 적어놓아야겠다.
+
+- 글의 타입 생성하기 (글 타입에 따라 이모티콘을 다르게 만들기 
+  - 🧩(snippet), 📌(main) 🎨(design), 📐(math), 📄(default), 📕 (study), 👨🏻‍💻(project), ..📰😎..)
+- .gif 지원 하도록 만들기
+
+
 -----
 
 :speech_balloon:
