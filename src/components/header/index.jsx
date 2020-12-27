@@ -5,13 +5,6 @@ import image from './../../images/profile.png'
 
 import {ThemeToggle} from './../theme-toggle'
 
-
-
-import { faSun, faMoon} from "@fortawesome/free-solid-svg-icons"
-import { useColorMode } from "theme-ui"
-import {Icon} from './../icon'
-
-
 const Container = styled.header`
   display: flex;
   flex-direction: row;
