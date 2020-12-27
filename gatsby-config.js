@@ -1,6 +1,4 @@
-const config = require("./_config")
-const path = require(`path`)
-
+import config from './config/_config'
 
 module.exports = {
   pathPrefix: `/`,
@@ -37,10 +35,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-emoji', // <-- this adds emoji
             options: {
-              // default emojiConversion --> shortnameToUnicode
               emojiConversion: 'shortnameToUnicode',
-              // when true, matches ASCII characters (in unicodeToImage and shortnameToImage)
-              // e.g. ;) --> 😉
               ascii: false,
             }
           },

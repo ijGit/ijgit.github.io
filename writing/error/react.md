@@ -12,7 +12,7 @@ var App, code, div, fix, h1, header, img, p;
 ## 오류 코드
 
 ```jsx
-import {config} from '../../../_config';
+import {config} from '../../../config/_config';
 const rootPath = `${config.siteUrl}${config.prefix}`;
 
 import { Header } from '../header/header';
@@ -21,7 +21,7 @@ import { Head } from '../head/head';
 
 ## 수정
 ```jsx
-import {config} from '../../../_config';
+import {config} from '../../../config/_config';
 
 import { Header } from '../header/header';
 import { Head } from '../head/head';

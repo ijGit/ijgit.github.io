@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import config from './../../../_config'
+import config from '../../../config/_config'
 
 export function Head({ description, lang, meta, keywords, title }) {
   const { site } = useStaticQuery(

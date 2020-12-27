@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import config from '../../../_config'
+import config from '../../../config/_config'
 import { useColorMode } from 'theme-ui';
 
 export const Comment = () => {
