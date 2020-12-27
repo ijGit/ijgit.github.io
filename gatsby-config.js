@@ -1,4 +1,5 @@
-import config from './config/_config'
+const config = require("./config/_config")
+
 
 module.exports = {
   pathPrefix: `/`,
@@ -35,6 +36,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-emoji', // <-- this adds emoji
             options: {
+              // default emojiConversion --> shortnameToUnicode
               emojiConversion: 'shortnameToUnicode',
               ascii: false,
             }
@@ -43,9 +45,6 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
               maxWidth: 690,
               loading: 'lazy',
             },
