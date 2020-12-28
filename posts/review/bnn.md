@@ -5,6 +5,7 @@ tags:
   - AI
   - NN
   - review
+type: review
 ---
 
 ## Abstract

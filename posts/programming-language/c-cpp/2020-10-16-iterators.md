@@ -1,6 +1,7 @@
 ---
 title: "[C/C++] Iterators (반복자)"
 date: 2020-10-16
+type: develop
 tags:
   - "C/C++"
 keywords:

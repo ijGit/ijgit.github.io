@@ -1,6 +1,7 @@
 ---
 title: "[WSL error] Hot Reloading is not workign on WSL"
 date: 2020-10-10
+type: error
 tags:
   - WSL
   - error

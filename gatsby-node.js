@@ -1,4 +1,5 @@
 const path = require(`path`)
+const type = require('./config/type')
 const _ = require('lodash')
 
 
@@ -7,6 +8,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   if (node.internal.type === `MarkdownRemark`) {
 
     if(node.frontmatter.draft === null || node.frontmatter.draft === undefined || node.frontmatter.draft === true){
+      // make new title
+      const _type = node.frontmatter.type!=='undefined' ? node.frontmatter.type: 'default';
+      const _title = `${type[_type]} ${node.frontmatter.title}`;
+      node.frontmatter.title = _title;
+
+      // make node path       
       const file = getNode(node.parent);
       const slug = `/pages/${file.name}`;
 
@@ -33,6 +40,8 @@ exports.createPages = async ({ graphql, actions }) => {
           }
           frontmatter {
             tags
+            title
+            type
           }
         }
       }

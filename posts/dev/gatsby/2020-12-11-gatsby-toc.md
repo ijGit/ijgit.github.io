@@ -2,6 +2,7 @@
 title: "Gatsby 블로그 포스트에 TOC (목차) 적용하기"
 date: 2020-12-11
 tags: [gatsby]
+type: develop
 ---
 
 

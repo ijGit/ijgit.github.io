@@ -2,6 +2,7 @@
 title: "[CSS] text 말줄임 효과"
 date: 2020-12-20
 tags: [web, CSS, snippet]
+type: snippet
 ---
 
 

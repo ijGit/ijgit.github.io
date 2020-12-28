@@ -1,6 +1,7 @@
 ---
 title: "[AI, ML] Data Rescaling (표준화와 정규화)"
 date: 2020-11-09
+type: term
 tags:
   - AI
   - Machine Learning

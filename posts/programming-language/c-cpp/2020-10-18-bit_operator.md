@@ -1,6 +1,7 @@
 ---
 title: "[C/C++] 비트 연산자 (bit operator)"
 date: 2020-10-18
+type: develop
 tags:
   - C/C++
   - bit

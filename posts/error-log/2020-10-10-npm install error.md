@@ -7,6 +7,7 @@ tags:
 keywords:
   - node.js error
   - npm install error
+type: error
 ---
 
 

@@ -2,6 +2,7 @@
 title: "[Algorithm] 비교 정렬 알고리즘"
 date: 2020-12-19
 tags: [algorithm]
+type: theory
 keywords: 
   - sorting algorithm
   - 정렬 알고리즘

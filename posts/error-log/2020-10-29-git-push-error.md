@@ -1,6 +1,7 @@
 ---
 title: "[Git error] fatal: 'origin' dose not appear to be a git repository"
 date: 2020-10-29
+type: error
 tags:
   - error
   - Git

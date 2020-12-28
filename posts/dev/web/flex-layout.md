@@ -2,6 +2,7 @@
 title: "flex layout 정리"
 date: 2020-12-05
 tags: [web, CSS]
+type: snippet
 ---
 
 

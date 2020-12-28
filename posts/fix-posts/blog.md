@@ -1,7 +1,8 @@
 ---
 title: '🐣 Start Blogging!'
 date: 2020-12-22
-tags: ['📌']
+type: main
+tags: ['undefined']
 ---
 
 ## 0. Start Blog

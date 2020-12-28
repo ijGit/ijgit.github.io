@@ -2,6 +2,7 @@
 title: "Load Balancing (부하 분산)"
 date: 2020-12-19
 tags: ["용어"]
+type: term
 ---
 
 ## Load Balancing (부하 분산)

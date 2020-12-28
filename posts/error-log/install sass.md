@@ -2,6 +2,7 @@
 title: "[Gatsby error] Gatsby install sass plugin error"
 date: 2020-12-02
 tags: [gatsby, error]
+type: error
 ---
 
 

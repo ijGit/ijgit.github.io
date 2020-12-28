@@ -3,6 +3,7 @@ title: "[Algorithm] 비교 정렬의 하한"
 date: 2020-12-18
 tags: [algorithm]
 draft: false
+type: theory
 keywords: 
   - sorting algorithm
   - 정렬 알고리즘

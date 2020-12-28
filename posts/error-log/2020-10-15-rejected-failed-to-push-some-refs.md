@@ -1,6 +1,7 @@
 ---
 title: "[Git error] ![rejected] Note about fast-forwards"
 date: 2020-10-15
+type: error
 tags:
   - Git
   - error

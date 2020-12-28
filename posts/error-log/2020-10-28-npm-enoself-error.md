@@ -1,6 +1,7 @@
 ---
 title: "[Node.js error] npm ERR! code ENOSELF"
 date: 2020-10-28
+type: error
 tags:
     - Node.js
     - error

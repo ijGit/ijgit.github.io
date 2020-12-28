@@ -1,6 +1,7 @@
 ---
 title: "Gatsby로 Gitpage 블로그 만들기"
 date: 2020-11-24
+type: develop
 tags: [gatsby]
 ---
 

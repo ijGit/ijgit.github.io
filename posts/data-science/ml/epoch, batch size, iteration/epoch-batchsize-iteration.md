@@ -1,6 +1,7 @@
 ---
 title: "[AI, ML] epoch, batch size, iteration"
 date: 2020-11-09
+type: term
 tags:
   - AI
   - Machine Learning

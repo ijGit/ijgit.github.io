@@ -2,6 +2,7 @@
 title: 메소드 (method)와 함수 (function)의 차이점
 date: 2020-12-17
 tags: ["용어"]
+type: term
 ---
 
 

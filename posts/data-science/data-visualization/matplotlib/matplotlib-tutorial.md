@@ -1,6 +1,7 @@
 ---
 title: 'Matplotlib Tutorial'
 date: 2020-12-18
+type: develop
 tags: ['data visualization']
 ---
 

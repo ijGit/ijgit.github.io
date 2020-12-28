@@ -3,6 +3,13 @@ import {TagList} from '../tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
 
+/*
+  .title:before{
+    content: '📄';
+    line-height: 1.3;
+    margin-right: 4px;
+  }
+*/
 const Container = styled.div`
   display: flex;
   flex-direction: row;
@@ -47,11 +54,6 @@ const Container = styled.div`
       max-width: 100%;
       margin-bottom: .8em;
     }    
-  }
-  .title:before{
-    content: '📄';
-    line-height: 1.3;
-    margin-right: 4px;
   }
 
   .meta{

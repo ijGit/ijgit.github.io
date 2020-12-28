@@ -1,6 +1,7 @@
 ---
 title: "동적 계획법 (Dynamic Programming) 1"
 date: 2020-11-30
+type: theory
 tags: [Algorithm]
 draft: false
 ---
