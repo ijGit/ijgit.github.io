@@ -2,7 +2,7 @@ import React from "react"
 import {TagList} from '../tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
-
+import _type from './../../../config/type'
 /*
   .title:before{
     content: '📄';
@@ -22,13 +22,19 @@ const Container = styled.div`
     flex-direction: column;
   }
   
+
+  
   .title{
     width: 60%;
     max-width: 60%;
     display: flex;
     margin-right: auto;
+    align-items: center;
     flex-direction: row;
-
+    
+    .title-type{
+      align-items: stretch;
+    }
     
     .title-text{
       display: -webkit-box;
@@ -88,10 +94,13 @@ const Container = styled.div`
 `
 
 
-export const PostItem = ({ title, tags, date, slug }) => {
+export const PostItem = ({ title, type, tags, date, slug }) => {
+  type = type === null || type === undefined ? 'default' : type;
+
   return (
       <Container>
         <div className='title'>
+          <div className='title-type'>{_type[type]}</div>
           <Link to={slug}><span className='title-text'>{title}</span></Link>
         </div>
         <div className='meta'>

@@ -8,6 +8,15 @@ import styled from "styled-components"
   line-height: 1.3;
   margin-right: 4px;
 }
+
+    
+.title-text{
+display: -webkit-box;
+-webkit-line-clamp: 2;
+height: 1.3;
+-webkit-line-clamp: 1;  
+-webkit-box-orient: vertical;
+height: 2.6;
 */
 const Container = styled.div`
   display: flex;
@@ -31,9 +40,9 @@ const Container = styled.div`
     
     .title-text{
       display: -webkit-box;
-      -webkit-line-clamp: 2; 
+      -webkit-line-clamp: 1;  
       -webkit-box-orient: vertical;
-      height: 2.6;
+      height: 1.3;
       
       overflow: hidden;
       text-overflow: ellipsis;
@@ -41,11 +50,7 @@ const Container = styled.div`
       font-weight: 500;
       line-height: 1.3;
       font-size: 1em;
-      
-      @media screen and (max-width: 479px){
-        height: 1.3;
-        -webkit-line-clamp: 1; 
-      }
+
     }
     
     @media screen and (max-width: 479px){

@@ -6,9 +6,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     if(node.frontmatter.draft === null || node.frontmatter.draft === undefined || node.frontmatter.draft === true){
-      var _type = node.frontmatter.type !== undefined && node.frontmatter !== null ? node.frontmatter.type : 'default'
-      var _title = `${_type} ${node.frontmatter.title}`
-      node.frontmatter.title = _title;
 
       const file = getNode(node.parent);
       const slug = `/pages/${file.name}`;
