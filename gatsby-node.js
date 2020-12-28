@@ -10,6 +10,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       const file = getNode(node.parent);
       const slug = `/pages/${file.name}`;
 
+      // add 'undefined tags"
+      var tags = node.frontmatter.tags;
+      if(tags === null || tags === undefined){      
+        node.frontmatter['tags'] = ['undefined']
+      }
       createNodeField({ node, name: 'slug', value: slug });
     }
   }
@@ -48,6 +53,8 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create post pages
   const posts = result.data.postsRemark.edges;
    posts.forEach(({ node }) => {
+
+
     createPage({
       path: node.fields.slug,
       component: postTemplate,

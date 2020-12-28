@@ -28,7 +28,6 @@ const Container = styled.div`
 
 
 export const PostList = ({posts, isSearchpage=false}) =>{
-
   return(
     <Container>
       <ul>
@@ -47,9 +46,9 @@ export const PostList = ({posts, isSearchpage=false}) =>{
               <li key = {slug}>
                 <PostItem
                   title={title}
+                  type={type}
                   tags={tags}
                   date={date}
-                  type={type}
                   slug={slug}/>
               </li>
             )

@@ -2,7 +2,7 @@
 title: '🐣 Start Blogging!'
 date: 2020-12-22
 type: main
-tags: ['undefined']
+tags: ['note']
 ---
 
 ## 0. Start Blog
