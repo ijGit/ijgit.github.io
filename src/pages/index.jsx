@@ -66,20 +66,27 @@ export default function IndexPage({ data }) {
     queryString.parse(window.location.search) : 'undefined';
 
 
-  const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? '📌' : query.tag.toLowerCase();
+  const tag = query === 'undefined' || query.tag === null || query.tag === undefined ? 'main' : query.tag.toLowerCase();
   
-  const posts = edges.filter(({node}) => {
+
+  const posts = tag !== 'main' ? edges.filter(({node}) => {
       const tags = node.frontmatter.tags.map(tag =>{
         tag = tag.split(/[\_\ \. \/]/).join('-').split(/[\_\ \. \/ \+]/).join('');
         return tag.toLowerCase();
       });
       if(tags.includes(tag)){
-        return(node)
+        return node
       }
-    });
+    }) 
+    : edges.filter(({node}) => {
+        if(node.frontmatter.type === 'main'){
+          return node;
+        };
+      });
 
-
-  return (
+    
+    
+    return (
     <>
       <Head title={data.site.siteMetadata.title} />
       <Layout siteData={data.site}>
