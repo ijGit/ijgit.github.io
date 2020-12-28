@@ -34,6 +34,11 @@ const Container = styled.div`
     
     .title-type{
       align-items: stretch;
+      margin-right: 4px;
+      margin-bottom: auto;
+
+      line-height: 1.3;
+      font-size: 1em;
     }
     
     .title-text{
@@ -95,8 +100,6 @@ const Container = styled.div`
 
 
 export const PostItem = ({ title, type, tags, date, slug }) => {
-  type = type === null || type === undefined ? 'default' : type;
-
   return (
       <Container>
         <div className='title'>

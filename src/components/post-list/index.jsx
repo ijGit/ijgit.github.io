@@ -40,12 +40,16 @@ export const PostList = ({posts, isSearchpage=false}) =>{
             const date = isSearchpage? node.date : node.frontmatter.date
             const slug = isSearchpage? node.slug : node.fields.slug
 
+            var type = node.frontmatter.type
+            type = type === null || type === undefined ? 'default' : type;
+            
             return(
               <li key = {slug}>
                 <PostItem
                   title={title}
                   tags={tags}
                   date={date}
+                  type={type}
                   slug={slug}/>
               </li>
             )
