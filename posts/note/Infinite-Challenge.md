@@ -2,6 +2,7 @@
 title: "무한도전 정주행 목록"
 date: 2020-11-00
 tags: ["memo"]
+type: memo
 ---
 
 |특집   | 키워드   | 

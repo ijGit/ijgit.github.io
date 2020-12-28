@@ -2,6 +2,7 @@
 title: "파워포인트에서 LaTeX 수식 입력 사용하기"
 date: 2020-12-14
 tags: [util]
+type: tool
 ---
 
 

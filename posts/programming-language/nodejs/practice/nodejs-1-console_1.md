@@ -1,7 +1,7 @@
 ---
 title: "[Node.js] console.log 변수/객체 출력"
 date: 2020-12-07
-tags: ['Node.js']
+tags: ['Node.js', snippet]
 type: snippet
 keywords: ['Node.js console.log', 'Node.js 변수 출력']
 ---

@@ -2,6 +2,7 @@
 title: pop song list
 date: 2020-12-15
 tags: ["memo"]
+type: memo
 ---
 
 - Sunday Morning - Maroon5

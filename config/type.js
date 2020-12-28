@@ -4,7 +4,7 @@ module.exports = {
   'math': '📐',
   'snippet': '🧩',
   'design': '🎨',
-  'tool': '⚙',
+  'tool': '🛠️',
   'theory': '📚',
   'term': '📒',
   'develop': '💻',
