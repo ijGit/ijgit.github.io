@@ -1,7 +1,8 @@
 ---
 title: '[Node.js] callback function'
 date: 2020-12-07
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 ---
 
 ### 파라미터로 함수 전달

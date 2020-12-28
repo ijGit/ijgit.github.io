@@ -1,7 +1,8 @@
 ---
 title: "[Node.js] console.process: 프로세스 정보를 다루는 객체"
 date: 2020-12-07
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 ---
 
 

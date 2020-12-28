@@ -2,6 +2,7 @@
 title: '[JavaScript, Node.js] JSON 데이터 필터링하기'
 date: 2020-12-15
 tags: [node.js, JS, snippet]
+type: snippet
 ---
 
 

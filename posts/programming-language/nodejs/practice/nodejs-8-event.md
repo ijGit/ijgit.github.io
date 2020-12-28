@@ -1,7 +1,8 @@
 ---
 title: '[Node.js] event'
 date: 2020-12-08
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 ---
 
 ## event

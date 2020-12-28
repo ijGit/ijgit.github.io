@@ -1,7 +1,8 @@
 ---
 title: "[Node.js] console 실행시간 체크"
 date: 2020-12-07
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 keywords: ['코드 실행시간 체크', 'Node.js console.time', 'Node.js 실행시간 체크']
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: '[Node.js] 주소 파싱 - URL/querystring module'
 date: 2020-12-08
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 ---
 
 ## URL module

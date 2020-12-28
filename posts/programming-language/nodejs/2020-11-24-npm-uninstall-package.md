@@ -1,6 +1,7 @@
 ---
 title: "Node.js: npm uninstall package"
 date: 2020-11-24
+type: develop
 tags: 
   - Node.js
 draft: true

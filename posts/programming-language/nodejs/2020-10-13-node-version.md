@@ -1,6 +1,7 @@
 ---
 title: "[Node.js] node 버전 관리: n 모듈"
 date: 2010-10-13
+type: develop
 tags:
   - Node.js
   - dev env

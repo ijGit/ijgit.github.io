@@ -2,6 +2,7 @@
 title: '[JavaScript, Node.js] 모든 배열 값에 LowerCase/UppserCase 적용'
 date: 2020-12-15
 tags: [node.js, JS, snippet]
+type: snippet
 ---
 
 ## code

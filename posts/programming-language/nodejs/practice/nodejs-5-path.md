@@ -1,7 +1,8 @@
 ---
 title: "[Node.js] path module"
 date: 2020-12-07
-tags: ['Node.js']
+tags: ['Node.js', snippet]
+type: snippet
 ---
 
 
