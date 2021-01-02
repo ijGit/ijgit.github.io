@@ -37,9 +37,9 @@ gatsby의 [`Starter Library`](https://www.gatsbyjs.com/starters/?) 에서는 많
 
 수정할 부분이 생각나면 여기에 적어놓아야겠다.
 
-- ✅ 글의 타입 생성하기 (글 타입에 따라 이모티콘을 다르게 만들기)
+- ✅ ~~글의 타입 생성하기 (글 타입에 따라 이모티콘을 다르게 만들기)~~
   - ~~🧩(snippet), 📌(memo) 🎨(design), 📐(math), 📄(default), ..)~~
-- ✅ 기본 tag 생성하기 
+- ✅ ~~기본 tag 생성하기~~
 - .gif 지원 하도록 만들기
 
 
