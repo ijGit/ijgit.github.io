@@ -22,6 +22,7 @@ const Container = styled.div`
     li{
       margin: 0;
       list-style-type: none;
+      white-space:nowrap;
     }
   }
   
