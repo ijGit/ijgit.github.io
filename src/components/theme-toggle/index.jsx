@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 //import {Sun, Moon} from './../../constants/icon'
-import {Sun } from './../../constants/sun'
-import {Moon} from './../../constants/moon'
+import {Icon} from './../../constants/icons'
 
 const Container = styled.div`
   width: 100%;
@@ -74,8 +73,8 @@ export const ThemeToggle = () => {
           checked={colorMode === "default" ? false : true}
         />
         <label for="checkbox" className="label">
-          <Moon />
-          <Sun />
+          <Icon name='moon' icon={{'width':21, 'height':21}} />
+          <Icon name='sun' icon={{'width':21, 'height':21}} />
           <div className="slider"></div>
         </label>
       </div>
