@@ -3,7 +3,6 @@ import {TagList} from '../tags'
 import { Link } from "gatsby"
 import styled from "styled-components"
 import _type from './../../../config/type'
-import {Icon} from './../../constants/icons'
 
 const Container = styled.div`
   display: flex;
@@ -97,7 +96,8 @@ export const PostItem = ({ title, type, tags, date, slug }) => {
       <Container>
         <div className='title'>
           <div className='title-type'>
-            <Icon name={type} icon={{'width':20, 'height':20}} />
+            {_type[type]}
+            {/*<Icon name={type} icon={{'width':17, 'height':17}} />*/}
           </div>
           <Link to={slug}><span className='title-text'>{title}</span></Link>
         </div>

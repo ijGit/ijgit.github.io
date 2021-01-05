@@ -8,7 +8,6 @@ import styled from "styled-components"
   line-height: 1.3;
   margin-right: 4px;
 }
-
     
 .title-text{
 display: -webkit-box;

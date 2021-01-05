@@ -40,7 +40,7 @@ gatsby의 [`Starter Library`](https://www.gatsbyjs.com/starters/?) 에서는 많
 - ✅ ~~글의 타입 생성하기 (글 타입에 따라 이모티콘을 다르게 만들기)~~
   - ~~🧩(snippet), 📌(memo) 🎨(design), 📐(math), 📄(default), ..)~~
 - ✅ ~~기본 tag 생성하기~~
-- .gif 지원 하도록 만들기
+- ~~emoji 대신 고정 icon 사용하기~~ 안예쁘다. 쓰던거 계속 쓰는게 나은 듯 싶다.
 
 
 -----
