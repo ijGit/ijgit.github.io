@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Jan 2021 02:49:35 GMT</lastBuildDate><item><title><![CDATA[🐣 Start Blogging!]]></title><description><![CDATA[0. Start Blog 교수님은 말하셨지. 기록이 중요하다. 일기나 간단한 코드, 문서를 정리하기 위해 블로그를 만들었다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Jan 2021 02:55:41 GMT</lastBuildDate><item><title><![CDATA[🐣 Start Blogging!]]></title><description><![CDATA[0. Start Blog 교수님은 말하셨지. 기록이 중요하다. 일기나 간단한 코드, 문서를 정리하기 위해 블로그를 만들었다.
 일단은 노트 정리 (워드문서인데 노트정리..?) 한 것을 다듬어서 업로드해야겠다. 1. Choose Tool…]]></description><link>https://ijgit.github.io/pages/blog</link><guid isPermaLink="false">https://ijgit.github.io/pages/blog</guid><pubDate>Tue, 22 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;0-start-blog&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#0-start-blog&quot; aria-label=&quot;0 start blog permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;0. Start Blog&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;교수님은 말하셨지. 기록이 중요하다.&lt;/p&gt;
@@ -813,15 +813,27 @@ T(n)  &amp;amp;= 2T(n/2) + O(n)
 &lt;h3 id=&quot;contributions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#contributions&quot; aria-label=&quot;contributions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Contributions&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;run-time에서 binary weights, activations 로 BNN (Binarized-Neural-Networks)를 훈련하는 방법과 train-time에서 gradients 를 계산 하는 방법을 제안&lt;/li&gt;
-&lt;li&gt;BNN으로 MNIST, CIFAR-10, SVHN을 훈련시켰으며, 거의 최상의 결과를 얻어냄&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BNN으로 MNIST, CIFAR-10, SVHN을 훈련시켰으며, 거의 최상의 결과를 얻어냄&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;BNN은 Torch7과 Theano 프레임워크를 사용하여 구성하였다.&lt;/li&gt;
-&lt;li&gt;효율성의 증가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;효율성의 증가&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;3.1) forward pass (run-time, train-time) 동안 BNN 이 메모리 소비 (크기와 접근 횟수)를 급격하게 줄이는 것을 보여준다.&lt;/li&gt;
 &lt;li&gt;3.2) 에너지 효율성과 시간 복잡도의 감소&lt;/li&gt;
 &lt;li&gt;대부분의 산술 연산자를 비트 연산자로 줄여 에너지 효율성을 증가시킨다.&lt;/li&gt;
 &lt;li&gt;binarized CNN 은 binalzed convolution kernel 의 반복으로 이어질 수 있다. 전용 하드웨어는 시간 복잡도를 60% 까지 감소시킬 수 있다고 예상된다.&lt;/li&gt;
-&lt;li&gt;binary matrix multiplication GPU kernel 를 프로그래밍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;binary matrix multiplication GPU kernel 를 프로그래밍&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;분류 정확도의 손실 없이, 최적화되지 않은 GPU 커널보다 MNIST BNN 을 7 배 빠르게 돌릴 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;BNN 을 위한 코드 (training and running)는 Torch와 Theano 프레임워크에서 on-line으로 실행이 가능&lt;/li&gt;
 &lt;/ol&gt;</content:encoded></item><item><title><![CDATA[[JS, Node.js]: check object type]]></title><description><![CDATA[reference: https://stackoverflow.com/questions/11182924/how-to-check-if-javascript-object-is-json]]></description><link>https://ijgit.github.io/pages/check-type</link><guid isPermaLink="false">https://ijgit.github.io/pages/check-type</guid><pubDate>Fri, 18 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-js line-numbers&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;isObject&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
