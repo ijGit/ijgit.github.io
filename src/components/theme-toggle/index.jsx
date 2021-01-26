@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
-//import {Sun, Moon} from './../../constants/icon'
-//import {Icon} from './../../constants/icons'
 
 
 const Moon = () => {

@@ -1,7 +1,7 @@
 ---
 title: "[AI] DeepLearning for Tracking / Detection"
 date: 2020-12-05
-type: snippet
+type: ref
 tags: ["Deep Learning"]
 ---
 
