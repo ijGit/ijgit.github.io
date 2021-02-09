@@ -17,7 +17,7 @@ const Container = styled.div`
 
 
   ul{
-    padding-inline-start: 0;
+    padding-inline-start: .5em;
     margin: 0;
     li{
       margin: 0;
@@ -51,12 +51,10 @@ const ListItem = props => (
 export const Bio = () => {
   return (
     <Container>
-      <div className="user-comment">{comment}</div>
+      {/* <div className="user-comment">{comment}</div> */}
 
       <ul>
-        <ListItem icon={faUserCircle}>
-          {name}
-        </ListItem>
+        {/* <ListItem icon={faUserCircle}>{name}</ListItem> */}
         <ListItem icon={faAt}>
           {email}
         </ListItem>

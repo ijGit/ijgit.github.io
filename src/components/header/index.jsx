@@ -66,7 +66,7 @@ const Container = styled.header`
   return (
     <Container>
       <div className='header-title'>
-        <img src={image} alt='profile'/>
+        {/* <img src={image} alt='profile'/> */}
         <h1>
           <Link to = {data.site.siteMetadata.prefix}>
             {data.site.siteMetadata.title}
