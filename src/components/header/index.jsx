@@ -5,6 +5,8 @@ import image from './../../images/profile.png'
 import {Icon} from './../../components/icon'
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import {ThemeToggle} from './../theme-toggle'
+import {Navbar} from './../nav'
+
 
 const Container = styled.header`
   display: flex;
@@ -71,6 +73,12 @@ const Container = styled.header`
             </Link>
         </h1>
       </div>
+
+
+      <Navbar/>
+
+
+      {/* 
       <div className='buttons'>
         <Link to ='/search'>
           <Icon icon={faSearch}/>
@@ -78,6 +86,7 @@ const Container = styled.header`
         
         <ThemeToggle/>
       </div>
+      */}
     </Container>
   )
 }

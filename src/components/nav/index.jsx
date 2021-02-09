@@ -4,7 +4,7 @@ import {Link} from 'gatsby'
 import { faSun, faMoon, faTags, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
-import {Icon} from './../icon'
+import {Icon} from '../icon'
 
 const ButtonWrapper = styled.div`
   display: inline-block;
@@ -49,9 +49,9 @@ const LinkButton = props => {
 export const Navbar = () => {
   return(
     <nav>
-      <ThemeToggle/>
       {/*<LinkButton key='tags' path='/tags' icon={faTags}/> */}
-      {/*<LinkButton key='search' path='/search' icon={faSearch}/> */}
+      <LinkButton key='search' path='/search' icon={faSearch}/>
+      <ThemeToggle/>
     </nav>
   )
 }
