@@ -2,7 +2,8 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import image from './../../images/profile.png'
-
+import {Icon} from './../../components/icon'
+import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import {ThemeToggle} from './../theme-toggle'
 
 const Container = styled.header`
@@ -38,6 +39,13 @@ const Container = styled.header`
       }
     }
   }
+
+  .buttons{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
 `
   
   
@@ -63,7 +71,13 @@ const Container = styled.header`
             </Link>
         </h1>
       </div>
-      <ThemeToggle/>
+      <div className='buttons'>
+        <Link to ='/search'>
+          <Icon icon={faSearch}/>
+        </Link>
+        
+        <ThemeToggle/>
+      </div>
     </Container>
   )
 }
