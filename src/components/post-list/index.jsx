@@ -38,8 +38,8 @@ export const PostList = ({posts, isSearchpage=false}) =>{
             const tags = isSearchpage? node.tags : node.frontmatter.tags
             const date = isSearchpage? node.date : node.frontmatter.date
             const slug = isSearchpage? node.slug : node.fields.slug
+            var type = isSearchpage? node.type : node.frontmatter.type
 
-            var type = node.frontmatter.type
             type = type === null || type === undefined ? 'default' : type;
             
             return(

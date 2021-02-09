@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Head } from "./../components/head/head"
 import * as JsSearch from "js-search"
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import {PostList} from './../components/post-list/post-list'
+import {PostList} from './../components/post-list/'
 import {Icon} from './../components/icon'
 import styled from "styled-components"
 
@@ -149,6 +149,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             tags
             title
+            type
           }
         }
       }
