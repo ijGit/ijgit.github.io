@@ -3,7 +3,6 @@ title: "[devenv python] ubuntu python 기본 실행버전 변경"
 date: 2020-10-29
 type: tool
 tags:
-  - python
   - dev env
 keywords:
   - python version change

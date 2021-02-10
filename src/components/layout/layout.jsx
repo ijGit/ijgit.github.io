@@ -17,7 +17,7 @@ export const Layout = ({ children }) => {
         <Header id='header'/>
 
         <section id='contents'>
-          <aside id='aside-left'><Bio/></aside>
+          <aside id='aside-left'></aside>
 
           <main id='main'>{children}</main>
 

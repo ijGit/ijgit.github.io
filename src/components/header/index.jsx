@@ -6,6 +6,7 @@ import {Icon} from './../../components/icon'
 import { faSearch } from "@fortawesome/free-solid-svg-icons"
 import {ThemeToggle} from './../theme-toggle'
 import {Navbar} from './../nav'
+import {Bio} from './../bio'
 
 
 const Container = styled.header`
@@ -17,8 +18,8 @@ const Container = styled.header`
   
   .header-title{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     
     img {
       display: inline-flex;
@@ -72,12 +73,9 @@ const Container = styled.header`
             {data.site.siteMetadata.title}
             </Link>
         </h1>
+        <Bio/>
       </div>
-
-
       <Navbar/>
-
-
       {/* 
       <div className='buttons'>
         <Link to ='/search'>

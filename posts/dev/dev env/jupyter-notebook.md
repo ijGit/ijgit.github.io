@@ -3,7 +3,6 @@ title: "[devenv] Jupyter notebook 환경 설치"
 date: 2020-10-29
 type: tool
 tags:
-  - python
   - dev env
 ---
 
