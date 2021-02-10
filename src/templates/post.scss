@@ -33,6 +33,10 @@
 article{
   margin-top: 1rem;
 
+  .blog-post-title{
+    font-size: calc(15px + 1.5vh);
+  }
+
   .blog-post-content{
     margin-top: 3vh;
 

@@ -41,7 +41,7 @@ export default function PostTemplate({ data }) {
             <div className="blog-post">
 
               <MetaWrapper>
-                <h1>{frontmatter.title}</h1>
+                <h1 className='blog-post-title'>{frontmatter.title}</h1>
                 <div className='date'>
                   {frontmatter.date}
                 </div>
