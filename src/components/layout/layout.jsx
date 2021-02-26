@@ -2,7 +2,7 @@ import React, {useMemo } from "react"
 // import React, { useEffect, useState, useMemo } from "react"
 import { useColorMode } from "theme-ui"
 import {Header} from './../header'
-import {Bio} from './../bio'
+// import {Bio} from './../bio'
 import "./layout.scss"
 
 

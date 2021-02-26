@@ -1,10 +1,12 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
-import image from './../../images/profile.png'
-import {Icon} from './../../components/icon'
-import { faSearch } from "@fortawesome/free-solid-svg-icons"
-import {ThemeToggle} from './../theme-toggle'
+
+// import image from './../../images/profile.png'
+// import {Icon} from './../../components/icon'
+// import { faSearch } from "@fortawesome/free-solid-svg-icons"
+// import {ThemeToggle} from './../theme-toggle'
+
 import {Navbar} from './../nav'
 import {Bio} from './../bio'
 

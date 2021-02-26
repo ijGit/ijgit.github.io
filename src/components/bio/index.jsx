@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import { faUserCircle, faAt } from "@fortawesome/free-solid-svg-icons"
-import { name, comment, email, github } from "../../../config/_config"
+import { faAt } from "@fortawesome/free-solid-svg-icons"
+import { email, github } from "../../../config/_config"
 import {Icon} from '../icon'
 
 

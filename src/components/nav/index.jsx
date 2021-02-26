@@ -1,7 +1,7 @@
 import React from "react"
 
 import {Link} from 'gatsby'
-import { faSun, faMoon, faTags, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
+import { faSun, faMoon, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 import {Icon} from '../icon'
