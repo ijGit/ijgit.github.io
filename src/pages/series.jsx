@@ -7,8 +7,20 @@ import Img from "gatsby-image"
 import imageInfo from "./../../config/series-config"
 
 const GalleryContainer = styled.div`
+
+  
+
   .gallery {
     display: flex;
+    justify-content: space-between;
+    
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+
+    @media screen and (max-width: 700px) {
+      justify-content: center;
+    }
+
 
     .figure-item {
       margin: 8px;
