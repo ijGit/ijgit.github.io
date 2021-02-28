@@ -3,6 +3,7 @@ title: "신경망의 동작 방식 (1) : 뉴런 활동 표현"
 date: 2020-12-14
 type: theory
 tags: [Deep Learning, NN]
+series: "처음 배우는 딥러닝 수학"
 ---
 
 

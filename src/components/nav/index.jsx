@@ -1,7 +1,7 @@
 import React from "react"
 
 import {Link} from 'gatsby'
-import { faSun, faMoon, faSearch, faTimes} from "@fortawesome/free-solid-svg-icons"
+import { faSun, faMoon, faSearch, faTimes, faFolder} from "@fortawesome/free-solid-svg-icons"
 import styled from "styled-components"
 import { useColorMode } from "theme-ui"
 import {Icon} from '../icon'
@@ -50,6 +50,7 @@ export const Navbar = () => {
   return(
     <nav>
       {/*<LinkButton key='tags' path='/tags' icon={faTags}/> */}
+      <LinkButton key='series' path='/series' icon={faFolder}/>
       <LinkButton key='search' path='/search' icon={faSearch}/>
       <ThemeToggle/>
     </nav>
