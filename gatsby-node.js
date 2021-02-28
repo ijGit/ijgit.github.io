@@ -27,23 +27,17 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   
   // template files
-  const postTemplate = path.resolve(`${__dirname}/src/templates/post.jsx`)
+  const postTemplate = path.resolve(`${__dirname}/src/templates/post.jsx`);
+  const seriesTemplate = path.resolve(`${__dirname}/src/templates/series.jsx`);
   // query
   const result = await graphql(`{
     postsRemark: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
       edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            tags
-          }
-        }
+        node {  fields {  slug  } }
       }
     }
-    tagsGroup: allMarkdownRemark(limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
-      group(field: frontmatter___tags) {
+    seriesGroup: allMarkdownRemark(limit: 2000, filter: {frontmatter: {draft: {ne: false}}}) {
+      group(field: frontmatter___series) {
         fieldValue
       }
     }
@@ -53,12 +47,21 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create post pages
   const posts = result.data.postsRemark.edges;
    posts.forEach(({ node }) => {
-
-
     createPage({
       path: node.fields.slug,
       component: postTemplate,
       context: {slug: node.fields.slug,},
     })
   })
+
+  // create series pages
+  const serieses = result.data.seriesGroup.group;
+  serieses.forEach( series => {
+      createPage({
+        path: `/series/${series.fieldValue}/`,
+        component: seriesTemplate,
+        context: {series: series.fieldValue},
+      })
+    }
+  )
 }
