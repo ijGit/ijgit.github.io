@@ -2,6 +2,7 @@
 title: "[Algorithm] 비교 정렬의 하한"
 date: 2020-12-18
 tags: [algorithm]
+series: Algorithm
 draft: false
 type: theory
 keywords: 

@@ -9,7 +9,6 @@ keywords:
   - Node.js
   - Node.js 특징
   - Node.js 개념
-  - for interview
 ---
 
 # 1. Node.js

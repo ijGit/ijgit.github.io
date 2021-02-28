@@ -2,6 +2,7 @@
 title: "[Algorithm] Hashing (해싱)"
 date: 2020-12-19
 tags: [algorithm]
+series: Algorithm
 type: theory
 keywords: 
   - searching algorithm
