@@ -8,10 +8,10 @@ tags:
 
 
 
-## Setting file
+# 1. Setting file
 
 
-### command
+## command
 
 > `.jupyter` 디렉토리가 이미 있다면 아래 명령어 실행은 생략해도 괜찮다.
 
@@ -25,7 +25,7 @@ jupyter notebook --generate-config
 
  
 
-### create css file
+# 2. create css file
 
 - `.jupyter` 아래에 `custom` 디렉토리를 만들고 `custom.css` 파일을 생성한 뒤, jupyter notebook 설정을 할 수 있다.
 - 테마를 설치할 수도 있지만, 폰트 적용, 너비 등이 조금 깨지는 경향이 있어 css 파일을 직접 수정하는게 가장 편한 듯 싶다. 
@@ -38,7 +38,7 @@ jupyter notebook --generate-config
 
 
 
-##### overall font style
+#### overall font style
 
 전체적인 폰트 스타일은 아래 코드로 지정할 수 있다. jupyter notebook 의 기본 font은 `Helvetica Neue", Helvetica, Arial, sans-serif`인데  아마도 `Arial`을 사용하는 것 같다.
 
@@ -56,7 +56,7 @@ body{
 
 
 
-##### code style
+#### code style
 
 jupyter notebook의 기본 폰트 스타일은 코딩용 폰트가 아니라 가독성이 떨어진다.
 
@@ -79,7 +79,7 @@ div.prompt{
 
 
 
-##### output text font-style
+#### output text font-style
 
 출력 글자의 스타일을 지정한다.
 
@@ -94,7 +94,7 @@ div.output_text pre{
 
 
 
-##### markdown text style
+#### markdown text style
 
 markdown 으로 출력된 글자 스타일을 지정한다. 
 

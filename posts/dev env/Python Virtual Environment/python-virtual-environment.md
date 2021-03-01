@@ -13,7 +13,7 @@ keywords:
 ---
 
 
-## 1. Virtual Environment (가상환경)
+# 1. Virtual Environment (가상환경)
 
 프로젝트를 진행하는데에는 여러 모듈 또는 패키지들이 요구되는데, 다수의 프로젝트가 같은 패키지를 공유한다면 패키지 호환성과 같은 충돌 문제가 발생할 수 있다.
 
@@ -24,9 +24,9 @@ keywords:
 이러한 문제를 피하기 위해, 각 프로젝트마다 **독립적인 환경**을 구성하여 작업을 진행하는데, 이 독립적인 환경을 **가상환경(virtual environment)** 라고 한다.
 
 
-<br/>
 
-## 2. Create Virtual Environment (가상환경 만들기)
+
+# 2. Create Virtual Environment (가상환경 만들기)
 
 python에서는 주로 `venv`, `virtualenv`, `conda`를 사용하여 가상환경을 생성하는데, 해당 글에서는 `conda`를 이용한 가상환경 생성에 대해서는 다루지 않았다.
 
@@ -34,7 +34,7 @@ python에서는 주로 `venv`, `virtualenv`, `conda`를 사용하여 가상환�
 
 
 
-### 2.1. venv를 사용하여 가상환경 만들기
+## 2.1. venv를 사용하여 가상환경 만들기
 
 `venv`는 python 버전 3.3 부터 내장된 가상환경 구성 모듈이며, [버전 3.5 부터 가상환경을 만드는데 권장 되고 있다.](https://docs.python.org/ko/3/library/venv.html#module-venv)  
 
@@ -74,7 +74,7 @@ $
 
 <br/>
 
-### 2.2. virtualenv 를 사용하여 가상환경 만들기
+## 2.2. virtualenv 를 사용하여 가상환경 만들기
 
 `venv` 가 `virtualenv` 보다 간단하긴 하지만, `virtualenv`는 `venv` 보다 많은 기능을 제공한다. ( `virtualenv`의 일부 기능이 `venv` 에 통합된 것이며, `vnev` 는 `virtualenv`의 모든 기능을 제공하지 못한다고 한다.)
 
@@ -128,7 +128,7 @@ $ .venv/Scripts/activate
 
 <br/>
 
-## 3. 패키지 관리
+# 3. 패키지 관리
 
 `pip freeze`  명령어는 설치된 패키지 이름과 버전을  출력해주는 명령어이다. 가상환경 활성화 상태에서 이 명령어를 치면 해당 **가상환경에 설치된 패키지 정보**를 얻을 수 있다. 
 

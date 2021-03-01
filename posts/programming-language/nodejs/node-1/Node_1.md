@@ -15,7 +15,7 @@ keywords:
 
 ![image](./1.jpg)
 
-### Node.js
+#### Node.js
 - `Node.js`: open-source, cross-platform `자바스크립트 런타임` 환경
   - runtime (런타임)이란 특정 언어로 만든 프로그램들을 실행할 수 있는 환경을 말한다. 웹 브라우저 또한 자바스크립트 런타임의 하나이다. 
   - Node.js는 크롬 V8 자바스크립트 엔진으로 빌드된 자바스크립트 런타임 환경으로 자바스크립트 프로그램을 브라우저 밖에서도 실행되게 한다.
@@ -39,7 +39,7 @@ keywords:
 
 ## 2.1. Event-driven (이벤트 드리븐, 이벤트 기반)
 
-### event-driven (이벤트 드리븐, 이벤트 기반)
+#### event-driven (이벤트 드리븐, 이벤트 기반)
 
 - event-driven이란 이벤트가 발생할 때 미리 지정한 작업을 수행하는 방식을 뜻한다. "특정 이벤트가 발생"했을 때 "무엇을 실행할 지" 등록해야 하는데, 이를 `event listener (event handler)` 에 `callback` 함수를 등록한다고 표현한다.
 - 이벤트가 발생하면 Node.js 는 `event listener`에 등록한 `calllback`을 실행하는데,  더 이상 수행할 `callback`이 없다면 Node.js는 대기하게 된다.
@@ -68,7 +68,7 @@ keywords:
   ```
 
 
-### event loop (이벤트 루프)
+#### event loop (이벤트 루프)
 Node.js 는 runtime 생성자로 라이브러리대신 `event loop` 를 사용한다.
 
 - **event loop** (이벤트 루프)<br>

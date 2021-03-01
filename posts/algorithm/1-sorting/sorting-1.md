@@ -1,7 +1,7 @@
 ---
 title: "[Algorithm] 비교 정렬 알고리즘"
 date: 2020-12-19
-tags: [algorithm]
+tags: [Algorithm]
 series: Algorithm
 type: theory
 keywords: 
@@ -13,7 +13,7 @@ keywords:
 
 
 
-## 1. 정렬 알고리즘의 종류
+# 1. 정렬 알고리즘의 종류
 
 ### Comparison sort (비교 정렬)
 - 데이터 간의 **상대적 크기 관계**만을 이용해서 정렬하는 알고리즘
@@ -37,13 +37,13 @@ keywords:
 > 특수 정렬 알고리즘은 해당 포스트에 기술하지 않았다.
 
 
-## 2. 기본 정렬 알고리즘
+# 2. 기본 정렬 알고리즘
 
 - 시간 복잡도가  $O(n^2)$ 인 정렬 알고리즘
 
   
 
-### 2.1. 선택 정렬 (Selection sort)
+## 2.1. 선택 정렬 (Selection sort)
 
 전체 입력 배열에 대해 차례대로 **최대값 또는 최소값**을 "**선택"** 하여 마지막 원소와 자리를 교환하여 정렬하는 알고리즘
 
@@ -98,7 +98,7 @@ void selectionSort(int A[], int n){
 
 
 
-### 2.2. Bubble sort (버블 정렬)
+## 2.2. Bubble sort (버블 정렬)
 
 연속된 인덱스의 숫자를 비교하여 큰 수를 뒤 쪽으로 이동시키는 과정을 반복하여 정렬하는 알고리즘
 
@@ -148,7 +148,7 @@ void bubbleSort(int data[], int n){
 
 
 
-### 2.3. Insertion sort (삽입 정렬)
+## 2.3. Insertion sort (삽입 정렬)
 
 배열을 정렬된 부분 (앞 부분)과 정렬이 되지 않은 부분 (뒷 부분)으로 나누고, 정렬이 되지 않은 부분의  원소를 정렬된 부분의 적절한 위치에 "**삽입**"하여 정렬하는 알고리즘
 
@@ -202,7 +202,7 @@ void insertionSort(int data[], int n){
 
 
 
-## 3. 고급 정렬 알고리즘
+# 3. 고급 정렬 알고리즘
 
 - 시간 복잡도가  $O(nlogn)$ 인 정렬 알고리즘
 - merge sort, quick sort, heap sort이 이에 해당한다.
@@ -212,7 +212,7 @@ void insertionSort(int data[], int n){
 
  
 
-### 분할 정복법 (divide and conquer)
+## 분할 정복법 (divide and conquer)
 
 분할 정복법 (divide and conquer)은 여러 알고리즘의 기본이 되는 해결 방법으로 이를 사용하는 알고리즘에는 대표적으로 merge sort와 quick sort가 해당한다. 
 
@@ -223,7 +223,7 @@ void insertionSort(int data[], int n){
 
 
 
-### 3.1. Merge sort (병합 정렬)
+## 3.1. Merge sort (병합 정렬)
 
 1. Divide (분할): 데이터가 저장된 배열을 절반으로 나눈다.
 2. Conquer (정복): 각각을 재귀적으로 정렬한다.
@@ -310,7 +310,7 @@ void mergeSort(int A[], int p, int r){
 ```
 
 
-### 3.2. Quick sort (퀵 정렬)
+## 3.2. Quick sort (퀵 정렬)
 
 - 최악의 경우 다른 정렬 알고리즘보다 느리나, 평균적으로 merge sort, heap sort보다 빠르다.
 - 어느 정도 균형 잡히게 분할만 된다면 $O(nlogn)$의 시간 복잡도를 가진다.
@@ -425,7 +425,7 @@ void quickSort(int A[], int p, int r){
 }
 ```
 
-### 3.3. Heap sort (힙 정렬)
+## 3.3. Heap sort (힙 정렬)
 
 
 #### Heap

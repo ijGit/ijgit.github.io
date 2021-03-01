@@ -1,7 +1,7 @@
 ---
 title: "[Algorithm] 비교 정렬의 하한"
 date: 2020-12-18
-tags: [algorithm]
+tags: [Algorithm]
 series: Algorithm
 draft: false
 type: theory
@@ -10,7 +10,7 @@ keywords:
   - 정렬 알고리즘
 ---
 
-## 비교 정렬의 하한 (lower bound)
+# 비교 정렬의 하한 (lower bound)
 
 비교 정렬은 최악의 경우 수행 시간이 절대 $\omega(nlogn)$을 밑돌 수 없다.
 임의의 비교 정렬은 결정 트리 (Decision tree) 에서 탐색으로 볼 수 있다. decision tree의 루트에서 시작해 리프에 이르면 정렬은 끝난다.

@@ -22,7 +22,7 @@ keywords:
 2. 윈도우 터미널을 설치하는 것을 추천드립니다.
     - 개발할 때는 vs code 의 터미널을 더 사용하기는 하지만 기존에 설치된 powershell 이나 cmd 보다 훨씬 편합니다.
 
-  # What is WSL?
+# What is WSL?
 
   WSL 은 Windows 10 에서 경량 가상화 기술을 사용하여 리눅스 커널을 구동할 수 있도록 해주는 기능이다. WSL 기능을 사용하면 Windows 10 OS 에서 Bash 및 Ubuntu Linux 파일을 실행 가능하다.
 
