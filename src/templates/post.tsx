@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql } from "gatsby"
 
+import Title from './../components/title'
 
 
 export default function PostTemplate({ data }) {
@@ -10,15 +11,16 @@ export default function PostTemplate({ data }) {
   return (
     <>
       <article>
-        <h1>{frontmatter.title}</h1>
-        <div>{frontmatter.date}</div>
-        <div>{frontmatter.tags}</div>
+        <Title title = {frontmatter.title}
+          date = {frontmatter.date}
+          tags = {frontmatter.tags}
+        >
+        </Title>
 
-        <div> {excerpt}  </div>
-        <div> {html}  </div>
-
+        <div
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </article>
-
     </>
   )
 }

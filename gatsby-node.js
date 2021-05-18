@@ -31,7 +31,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   
   // template files
-  const postTemplate = path.resolve(`${__dirname}/src/templates/post.jsx`);
+  const postTemplate = path.resolve(`${__dirname}/src/templates/post.tsx`);
   
   // query
   const result = await graphql(`{
