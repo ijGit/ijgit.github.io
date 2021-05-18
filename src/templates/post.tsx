@@ -2,14 +2,15 @@ import React from 'react'
 import { graphql } from "gatsby"
 
 import Title from './../components/title'
-
+import Layout from './../components/layout'
 
 export default function PostTemplate({ data }) {
 
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark;
   return (
-    <>
+    <Layout>
+      
       <article>
         <Title title = {frontmatter.title}
           date = {frontmatter.date}
@@ -21,7 +22,8 @@ export default function PostTemplate({ data }) {
           dangerouslySetInnerHTML={{ __html: html }}
         />
       </article>
-    </>
+      
+    </Layout>
   )
 }
 
