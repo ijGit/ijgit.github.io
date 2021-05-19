@@ -4,7 +4,6 @@ const theme = {
   useCustomProperties: true,
   initialColorMode: "light",
 
-
   colors: {
     text: '#24292e',
     background: '#fff',
