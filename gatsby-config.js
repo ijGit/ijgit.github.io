@@ -6,6 +6,7 @@ module.exports = {
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-styled-components`,
     "gatsby-plugin-image",
+    `gatsby-plugin-sass`,
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {

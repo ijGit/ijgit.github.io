@@ -1,6 +1,7 @@
 // post title
 
 import React, { ReactNode } from "react"
+import {TagList} from './tag-list'
 
 type TitleProps = {
   title: string
@@ -39,7 +40,7 @@ const Title = ({title, date, tags}: TitleProps) => (
       alignItems: `center`,
     }}>
       <div>{date}</div>
-      <div style={{marginLeft: `1em`}}>{tags}</div>
+      <div className='tags' style={{marginLeft: `1em`}}><TagList tags={tags} /></div>
     </div>
 
 

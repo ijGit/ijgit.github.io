@@ -1,29 +1,24 @@
-import React from "react"
-import styled from "styled-components"
-
-
-const TagsContainer = styled.div` 
-  display: inline-block;
-
-  font-size: 0.85rem;
-  opacity: 0.5;
-  
-  .tag-item{
-    opacity: 1;
-    margin-right: .5rem;
-  }
-  .tag-item:hover{
-    opacity: 1;
-    margin-right: .5rem;
-  }
-`
+import React from "react";
+import { Link } from "gatsby";
+import "./../styles/components/tag/index.scss";
 
 export const TagList = ({ tags }) => {
-  return(
-    <TagsContainer>
-      {tags.map(tag => {
-        return (<span className='tag-item' key={tag}>{tag}</span>)
+  return (
+    <div
+      style={{
+        display: `inline-block`,
+        fontSize: `0.85rem`,
+      }}
+    >
+      {tags.map((tag) => {
+        return (
+            <span className="tag-item" key={tag}>
+              <Link to={`/?tag=${tag.split(' ').join('')}`}>
+              {tag}
+              </Link>
+            </span>
+        );
       })}
-    </TagsContainer>
-  )
-}
+    </div>
+  );
+};

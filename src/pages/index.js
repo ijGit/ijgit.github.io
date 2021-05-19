@@ -5,6 +5,8 @@ import kebabCase from "lodash/kebabCase"
 import { Link, graphql } from "gatsby"
 import queryString from "query-string"
 import styled from "styled-components"
+import './../styles/components/tag/index.scss'
+import './../styles/components/post-list/index.scss'
 
 
 const Container = styled.div`
@@ -15,12 +17,10 @@ const Container = styled.div`
   margin-bottom: 2vh;
 
   .tag-container {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    
-    .tag-item{
-      margin: 4px;
-    }
-
+  
     margin-bottom: 5vh;
   }
 `
@@ -61,7 +61,7 @@ export default function IndexPage({ data }) {
               {group.map(item => {
                 return (
                   <div className="tag-item" key={item.fieldValue}>
-                    <Link to={`/?tag=${kebabCase(item.fieldValue)}`}>
+                    <Link to={`?tag=${kebabCase(item.fieldValue)}`}>
                       {item.fieldValue}
                     </Link>
                   </div>

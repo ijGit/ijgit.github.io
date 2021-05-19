@@ -1,34 +1,11 @@
 import React from "react"
 import { PostItem } from "./post-item"
-import styled from "styled-components"
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  ul{
-    list-style: none;
-    margin-left: 0;
-    margin: 0px;
-    padding: 0px;
-
-    li{
-      list-style: none;
-      margin-left: 0;
-      margin: 0px;
-      padding: 0px;
-      border-bottom: 1px solid #8383837e;
-    }
-    li:first-child{
-      border-top: 1px solid #8383837e;
-    }
-  }
-`
+import './../../styles/components/post-list/index.scss'
 
 
 export default function PostList ({posts}){
   return(
-    <Container>
+    <div className='post-list'>
       <ul>
         {
           posts.map(({node}) => {
@@ -53,6 +30,6 @@ export default function PostList ({posts}){
           })
         }
       </ul>
-    </Container>
+    </div>
   )
 }
