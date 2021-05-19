@@ -1,6 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import {Bio} from './bio'
+import {ThemeToggle} from './theme-toggle'
 
 export const Header = () => {
   const data = useStaticQuery(graphql`
@@ -40,6 +41,12 @@ export const Header = () => {
       </div>
       <Bio/>
       </div>
+
+      <nav>
+        <ThemeToggle/>
+
+
+      </nav>
     </header>
   );
 };
