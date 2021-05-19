@@ -1,4 +1,6 @@
 import React from 'react'
+import {Header} from './header'
+import './../styles/global.scss'
 
 
 const Layout: React.FC = ({ children }) => (
@@ -12,7 +14,7 @@ const Layout: React.FC = ({ children }) => (
     }}
   >
 
-    <header></header>
+    <Header/>
 
     <section
       id='contents'

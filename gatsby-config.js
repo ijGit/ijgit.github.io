@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Site",
+    title: "ij.log",
   },
   plugins: [
     "gatsby-plugin-theme-ui",
