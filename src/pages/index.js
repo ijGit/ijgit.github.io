@@ -1,29 +1,10 @@
 import * as React from "react"
+import { TagList } from '../components/tag-list'
 import PostList from './../components/post-list/post-list'
 import Layout from './../components/layout'
-import kebabCase from "lodash/kebabCase"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import queryString from "query-string"
-import styled from "styled-components"
-import './../styles/components/tag/index.scss'
 import './../styles/components/post-list/index.scss'
-
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  margin: 0 auto;
-  margin-bottom: 2vh;
-
-  .tag-container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  
-    margin-bottom: 5vh;
-  }
-`
 
 
 
@@ -50,29 +31,23 @@ export default function IndexPage({ data }) {
     if (tags.includes(tag)) {
       return node
     }
-  })
+  });
+
+
+  const tags = group.map(({ fieldValue }) => {
+    return fieldValue;
+  });
+
 
   return (
-    <>
-      <Layout>
-        <div>
-          <Container>
-            <div className="tag-container">
-              {group.map(item => {
-                return (
-                  <div className="tag-item" key={item.fieldValue}>
-                    <Link to={`?tag=${kebabCase(item.fieldValue)}`}>
-                      {item.fieldValue}
-                    </Link>
-                  </div>
-                )
-              })}
-            </div>
-          </Container>
-        </div>
-        <PostList posts={posts} />
-      </Layout>
-    </>
+    <Layout>
+      <div style={{
+        marginBottom: `5vh`
+      }}>
+        <TagList tags={tags} />
+      </div>
+      <PostList posts={posts} />
+    </Layout>
   )
 }
 
