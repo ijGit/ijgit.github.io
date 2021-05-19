@@ -20,7 +20,7 @@ export const Header = () => {
         width: `100%`,
         display: `flex`,
         justifyContent: `space-between`,
-        alignItems: `stretch`,
+        alignItems: `center`,
         marginBottom: `2vh`
       }}
     >
@@ -44,8 +44,6 @@ export const Header = () => {
 
       <nav>
         <ThemeToggle/>
-
-
       </nav>
     </header>
   );

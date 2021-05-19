@@ -1,17 +1,21 @@
-import React from "react"
+import React from "react";
 import { IconButton } from "theme-ui";
 import { Sun, Moon } from "./../components/icons";
-import { useColorMode } from "theme-ui"
+import { useColorMode } from "theme-ui";
 
 export const ThemeToggle = () => {
-  const [colorMode, setColorMode] = useColorMode()
+  const [colorMode, setColorMode] = useColorMode();
 
   return (
     <IconButton
+      style={{
+        opacity: `.7`,
+      }}
       onClick={(e) => {
-        setColorMode(colorMode === 'light' ? 'dark' : 'light')
-      }}>
-       {colorMode === 'light' ? <Moon/> : <Sun/>}
+        setColorMode(colorMode === "light" ? "dark" : "light");
+      }}
+    >
+      {colorMode === "light" ? <Moon /> : <Sun />}
     </IconButton>
-  )
+  );
 };

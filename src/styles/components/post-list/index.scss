@@ -54,7 +54,6 @@
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      height: 2.6;
 
       overflow: hidden;
       text-overflow: ellipsis;
@@ -97,6 +96,7 @@
     }
     .date {
       margin-left: .5rem;
+      vertical-align: bottom;
       display: inline-flex;
       font-size: 0.85rem;
       opacity: 0.9;

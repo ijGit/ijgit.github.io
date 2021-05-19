@@ -23,6 +23,7 @@ const theme = {
 
   colors: {
     text: '#24292e',
+    svg: '#24292e',
     background: '#fff',
     primary: '#24292e',
     // secondary: "",
@@ -30,6 +31,7 @@ const theme = {
     modes: {
       dark: {
         text: '#e4e4e4',
+        svg: '#e4e4e4',
         primary: '#e4e4e4',
         blockquote: '#e4e4e4',
         background: '#262626',
@@ -118,9 +120,6 @@ const theme = {
       maxWidth: `1024px`,
     },
   },
-
-
-
 
 
 
