@@ -8,3 +8,20 @@ tags:
 ---
 
 hello world
+
+
+| 왼쪽 | 센터 | 오른쪽 |
+|:---|:----:|----:|
+| 1 | 2 | 3 |
+
+
+```cpp
+
+#include <stdio.h>
+
+int main(){
+
+}
+
+
+```

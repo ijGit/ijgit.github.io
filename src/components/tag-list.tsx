@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import "./../styles/components/tag/index.scss";
+import { Badge } from 'theme-ui'
 
 export const TagList = ({ tags }) => {
   return (
@@ -12,11 +12,16 @@ export const TagList = ({ tags }) => {
     >
       {tags.map((tag) => {
         return (
-            <span className="tag-item" key={tag}>
+          <>
+
+
+            <Badge variant='tag'>
               <Link to={`/?tag=${tag.split(' ').join('')}`}>
-              {tag}
+                {tag}
               </Link>
-            </span>
+            </Badge>
+          
+          </>
         );
       })}
     </div>

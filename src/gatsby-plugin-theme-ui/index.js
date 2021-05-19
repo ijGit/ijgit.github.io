@@ -1,6 +1,23 @@
 
 
 const theme = {
+
+  fonts: {
+    body:
+      'Nanum Gothic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+    heading: 'inherit',
+    monospace: 'Fira Code, Menlo, monospace',
+  },
+  fontSizes: [13, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+  fontWeights: {
+    body: 400,
+    heading: 700,
+    bold: 700,
+  },
+
+
+
+
   useCustomProperties: true,
   initialColorMode: "light",
 
@@ -9,7 +26,7 @@ const theme = {
     background: '#fff',
     primary: '#24292e',
     // secondary: "",
-    
+
     modes: {
       dark: {
         text: '#e4e4e4',
@@ -33,7 +50,7 @@ const theme = {
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
 
-  style:{
+  style: {
     h1: {
       variant: `text.heading`,
       fontSize: [5, 6, 6, 7],
@@ -76,30 +93,24 @@ const theme = {
     },
     table: {
       width: `100%`,
-      my: 4,
       borderCollapse: `separate`,
       borderSpacing: 0,
-      [[`th`, `td`]]: {
-        textAlign: `left`,
-        py: `4px`,
-        pr: `4px`,
-        pl: 0,
-        borderColor: `muted`,
-        borderBottomStyle: `solid`,
-      },
     },
-    th: {
-      verticalAlign: `bottom`,
-      borderBottomWidth: `2px`,
-      color: `heading`,
-    },
-    td: {
-      verticalAlign: `top`,
-      borderBottomWidth: `1px`,
-    },
-    hr: {
-      mx: 0,
-    },
+  },
+  thead: {
+    width: `100%`
+  },
+  th: {
+    verticalAlign: `bottom`,
+    borderBottomWidth: `2px`,
+    color: `heading`,
+  },
+  td: {
+    verticalAlign: `top`,
+    borderBottomWidth: `1px`,
+  },
+  hr: {
+    mx: 0,
   },
   layout: {
     container: {
@@ -107,6 +118,26 @@ const theme = {
       maxWidth: `1024px`,
     },
   },
+
+
+
+
+
+
+  badges: {
+    tag:{
+      margin: `4px .2rem`,
+      fontSize: `.9rm`,
+      fontWeight: `300`,
+      background: `#1976d2`,
+      borderRadius: `4px`,
+      opacity: `.6`,
+      '&:hover':{
+        opacity: '1'
+      }
+    }
+  },
+
 };
 
 export default theme;
