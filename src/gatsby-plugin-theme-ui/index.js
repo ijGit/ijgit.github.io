@@ -8,15 +8,12 @@ const theme = {
     heading: 'inherit',
     monospace: 'Fira Code, Menlo, monospace',
   },
-  fontSizes: [13, 14, 16, 18, 20, 24, 32, 48, 64, 96],
+  fontSizes: [15, 16, 18, 20, 22, 28, 32],
   fontWeights: {
     body: 400,
     heading: 700,
     bold: 700,
   },
-
-
-
 
   useCustomProperties: true,
   initialColorMode: "light",
@@ -39,48 +36,41 @@ const theme = {
     },
   },
 
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-  },
+
   lineHeights: {
     body: 1.5,
     heading: 1.125,
   },
-  fontSizes: [14, 15, 16, 20, 24, 32, 48, 64, 72],
-  space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
-
 
   style: {
     h1: {
       variant: `text.heading`,
-      fontSize: [5, 6, 6, 7],
+      fontSize: 5,
       mt: 4,
     },
     h2: {
       variant: `text.heading`,
-      fontSize: [4, 5, 5, 6],
+      fontSize: 4,
       mt: 4,
     },
     h3: {
       variant: `text.heading`,
-      fontSize: [3, 4, 4, 5],
+      fontSize: 3,
       mt: 4,
     },
     h4: {
       variant: `text.heading`,
-      fontSize: [2, 3, 3, 4],
+      fontSize: 2,
       mt: 3,
     },
     h5: {
       variant: `text.heading`,
-      fontSize: [1, 2, 2, 3],
+      fontSize: 1,
       mt: 3,
     },
     h6: {
       variant: `text.heading`,
-      fontSize: 1,
+      fontSize: 0,
       mb: 2,
     },
     blockquote: {
@@ -98,22 +88,20 @@ const theme = {
       borderCollapse: `separate`,
       borderSpacing: 0,
     },
+    th: {
+      verticalAlign: `bottom`,
+      borderBottomWidth: `2px`,
+      color: `heading`,
+    },
+    td: {
+      verticalAlign: `top`,
+      borderBottomWidth: `1px`,
+    },
+    hr: {
+      mx: 0,
+    },
   },
-  thead: {
-    width: `100%`
-  },
-  th: {
-    verticalAlign: `bottom`,
-    borderBottomWidth: `2px`,
-    color: `heading`,
-  },
-  td: {
-    verticalAlign: `top`,
-    borderBottomWidth: `1px`,
-  },
-  hr: {
-    mx: 0,
-  },
+
   layout: {
     container: {
       padding: [3, 4],
@@ -122,16 +110,15 @@ const theme = {
   },
 
 
-
   badges: {
-    tag:{
+    tag: {
       margin: `4px .2rem`,
       fontSize: `.9rm`,
       fontWeight: `300`,
       background: `#1976d2`,
       borderRadius: `4px`,
       opacity: `.6`,
-      '&:hover':{
+      '&:hover': {
         opacity: '1'
       }
     }

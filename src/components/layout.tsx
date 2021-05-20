@@ -10,7 +10,6 @@ const Layout: React.FC = ({ children }) => (
       width: `95%`,
       display: `flex`,
       flexDirection: `column`,
-      marginTop: `2em`,
       margin: `0 auto`
     }}
   >
