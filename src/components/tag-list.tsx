@@ -7,7 +7,7 @@ export const TagList = ({ tags }) => {
     <div
       style={{
         display: `inline-block`,
-        fontSize: `0.95rem`,
+        fontSize: `0.85rem`,
       }}
     >
       {tags.map((tag) => {
@@ -40,6 +40,7 @@ export const TagList = ({ tags }) => {
                 background: newColor,
                 color: '#000000'
               }} 
+              
             
               key={tag}>
               <Link to={`/?tag=${tag.split(" ").join("")}`}>{tag}</Link>

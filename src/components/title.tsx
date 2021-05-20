@@ -13,6 +13,10 @@ type TitleProps = {
 const Title = ({ title, date, tags }: TitleProps) => (
   <div
     style={{
+      //      borderBottomStyle: `solid`,
+      //      borderBottomWidth: `1px`,
+      //      borderBottomColor: `divide`,
+
       paddingBottom: `1em`,
       marginBottom: `2em`,
     }}
@@ -20,7 +24,7 @@ const Title = ({ title, date, tags }: TitleProps) => (
     <div>
       <h1
         style={{
-          fontSize: `calc(22px + 2vh)`,
+          fontSize: `calc(18px + 1.5vh)`,
         }}
       >
         {title}

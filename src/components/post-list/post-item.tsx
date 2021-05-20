@@ -12,12 +12,12 @@ export const PostItem = ({ title, type, tags, date, slug }) => {
           <div className='title-type'>
             {/*<Icon name={type} icon={{'width':17, 'height':17}} />*/}
           </div>
-          <Link to={slug}><h4 
+          <Link to={slug}><h3 
             style={{
               marginBlockStart: `0px`,
               marginBlockEnd: `0px`, 
             }}
-              className='title-text'>{title}</h4></Link>
+              className='title-text'>{title}</h3></Link>
         </div>
         <div className='meta'>
           <div className='tags'><TagList tags={tags} /></div>
