@@ -4,8 +4,6 @@ import PostList from './../components/post-list/post-list'
 import Layout from './../components/layout'
 import { graphql } from "gatsby"
 import queryString from "query-string"
-import './../styles/components/post-list/index.scss'
-
 
 
 // markup

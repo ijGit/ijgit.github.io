@@ -2,21 +2,16 @@
 
 import React from "react";
 import { TagList } from "./tag-list";
-import { Divider } from "theme-ui";
 
 type TitleProps = {
   title: string;
   date: string;
   tags?: [];
 };
-
 const Title = ({ title, date, tags }: TitleProps) => (
   <div
     style={{
-      //      borderBottomStyle: `solid`,
-      //      borderBottomWidth: `1px`,
-      //      borderBottomColor: `divide`,
-
+      borderBottom: `1px solid #8383837e`,
       paddingBottom: `1em`,
       marginBottom: `2em`,
     }}
@@ -40,12 +35,10 @@ const Title = ({ title, date, tags }: TitleProps) => (
       }}
     >
       <div>{date}</div>
-      <div className="tags" style={{ marginLeft: `1em` }}>
+      <div style={{ marginLeft: `2em`, fontSize: `.85rem` }}>
         <TagList tags={tags} />
       </div>
     </div>
-
-    <Divider />
   </div>
 );
 

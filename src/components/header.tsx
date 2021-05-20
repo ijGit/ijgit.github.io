@@ -2,8 +2,11 @@ import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import {Bio} from './bio'
 import {ThemeToggle} from './theme-toggle'
+import { globalHistory } from "@reach/router"
 
 export const Header = () => {
+  const path = globalHistory.location.pathname
+
   const data = useStaticQuery(graphql`
     query HeaderQuery {
       site {
@@ -35,11 +38,13 @@ export const Header = () => {
       <div className="header-title">
         <h1 style={{marginBlockEnd: `0px`, 
                     marginBlockStart: `0px`,
-                    fontSize: `calc(13px + .9vh)`}}>
+                    fontSize: `calc(15px + .9vh)`}}>
           <Link to={"/"}>{data.site.siteMetadata.title}</Link>
         </h1>
       </div>
-      <Bio/>
+
+      {/* show bio only root page */}
+      {path === '/' ? <Bio/> : null}
       </div>
 
       <nav>

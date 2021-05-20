@@ -1,6 +1,6 @@
 import React from "react"
 import { PostItem } from "./post-item"
-import './../../styles/components/post-list/index.scss'
+import './post-item.scss'
 
 
 export default function PostList ({posts}){
