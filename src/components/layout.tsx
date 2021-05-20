@@ -1,41 +1,44 @@
-import React from 'react'
-import {Header} from './header'
+import React, { useMemo } from 'react'
+import { Header } from './header'
+import { useColorMode } from "theme-ui"
 import './../styles/global.scss'
 
+const Layout: React.FC = ({ children }) => {
 
-const Layout: React.FC = ({ children }) => (
-  <div
-    id="layout"
-    style={{
-      width: `95%`,
-      display: `flex`,
-      flexDirection: `column`,
-      margin: `0 auto`
-    }}
-  >
+  const [colorMode] = useColorMode()
+  const theme = useMemo(() => colorMode === "dark", [colorMode])
 
-    <Header/>
-
-    <section
-      id='contents'
+  return (
+    <div
+      id="layout" className={theme ? "dark" : "light"}
       style={{
-        maxWidth: `800px`,//`1023px`,
-        width: `100%`,
+        width: `95%`,
+        display: `flex`,
+        flexDirection: `column`,
         margin: `0 auto`
       }}
     >
-      {children}
-      {/* <main
+      <Header />
+      <section
+        id='contents'
+        style={{
+          maxWidth: `800px`,//`1023px`,
+          width: `100%`,
+          margin: `0 auto`
+        }}
+      >
+        {children}
+        {/* <main
         style={{
           maxWidth: `800px`,
           width: `95%`,
           margin: `0 auto`
         }}
-      >
+        >
       </main> */}
-    </section>
-
-  </div>
-)
+      </section>
+    </div>
+  )
+}
 
 export default Layout
