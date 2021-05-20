@@ -1,4 +1,4 @@
-
+import './../styles/variables.scss'
 
 const theme = {
 
@@ -8,7 +8,6 @@ const theme = {
     heading: 'inherit',
     monospace: 'Fira Code, Menlo, monospace',
   },
-  fontSizes: [15, 16, 18, 20, 22, 28, 32],
   fontWeights: {
     body: 400,
     heading: 700,
@@ -43,36 +42,7 @@ const theme = {
   },
 
   style: {
-    h1: {
-      variant: `text.heading`,
-      fontSize: 5,
-      mt: 4,
-    },
-    h2: {
-      variant: `text.heading`,
-      fontSize: 4,
-      mt: 4,
-    },
-    h3: {
-      variant: `text.heading`,
-      fontSize: 3,
-      mt: 4,
-    },
-    h4: {
-      variant: `text.heading`,
-      fontSize: 2,
-      mt: 3,
-    },
-    h5: {
-      variant: `text.heading`,
-      fontSize: 1,
-      mt: 3,
-    },
-    h6: {
-      variant: `text.heading`,
-      fontSize: 0,
-      mb: 2,
-    },
+   
     blockquote: {
       borderLeftColor: `primary`,
       borderLeftStyle: `solid`,
