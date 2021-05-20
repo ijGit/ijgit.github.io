@@ -16,12 +16,8 @@ hello world
 
 
 ```cpp
-
 #include <stdio.h>
 
 int main(){
-
 }
-
-
 ```

@@ -15,7 +15,20 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        classPrefix: 'language-',
+        inlineCodeMarker: null,
+        showLineNumbers: true,
+        noInlineHighlight: false,
+        escapeEntities: {},
+        plugins: [
+          `gatsby-remark-prismjs`,
+        ]
+      }
+    },
+    
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
