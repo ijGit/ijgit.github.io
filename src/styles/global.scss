@@ -1,8 +1,8 @@
+@import "./variables.scss";
 
 body {
-
   font-family: "Nanum Gothic", "sans-serif";
-
+  font-size: $font-size;
   word-break: keep-all;
   line-height: 1.6;
 }
@@ -17,4 +17,26 @@ a:hover {
 }
 a:visited {
   opacity: 0.8;
+}
+
+
+h1 {
+  font-size: $h1-font-size;
+}
+h2 {
+  font-size: $h2-font-size;
+}
+h3 {
+  font-size: $h3-font-size;
+}
+h4 {
+  font-size: $h4-font-size;
+}
+h5, h6 {
+  font-size: $h5-font-size;
+}
+
+
+code {
+  font-family: "Fila code", "Source Code Pro", "Nanum Gothic Coding", Consolas, monospace;
 }
