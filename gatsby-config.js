@@ -18,13 +18,17 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        classPrefix: 'language-',
-        inlineCodeMarker: null,
-        showLineNumbers: true,
-        noInlineHighlight: false,
-        escapeEntities: {},
         plugins: [
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'language-',
+              inlineCodeMarker: null,
+              showLineNumbers: true,
+              noInlineHighlight: false,
+              aliases: {},
+            }
+          }
         ]
       }
     },
