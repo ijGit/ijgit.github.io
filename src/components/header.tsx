@@ -38,7 +38,8 @@ export const Header = () => {
       <div className="header-title">
         <h1 style={{marginBlockEnd: `0px`, 
                     marginBlockStart: `0px`,
-                    fontSize: `calc(18px + .9vh)`}}>
+                    fontFamily: `Fira Code, Consolas`,
+                    fontSize: `calc(18px + .5vw)`}}>
           <Link to={"/"}>{data.site.siteMetadata.title}</Link>
         </h1>
       </div>

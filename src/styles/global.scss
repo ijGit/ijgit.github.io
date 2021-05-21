@@ -1,8 +1,9 @@
 @import "./variables.scss";
 
 body {
-  font-family: "Nanum Gothic", "sans-serif";
+  font-family: "Noto Sans KR", "Nanum Gothic", "sans-serif";
   font-size: $font-size;
+  font-weight: 300;
   word-break: keep-all;
   line-height: 1.6;
 }

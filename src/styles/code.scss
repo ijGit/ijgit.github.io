@@ -15,7 +15,7 @@
   }
   // If you only want to use line numbering
   .gatsby-highlight {
-    background-color: #1d1f21;
+    background-color: #282c34;
     border-radius: 0.4em;
     margin: 0.5rem 0;
     padding: 0;
@@ -71,7 +71,7 @@
 
   :not(pre) > code[class*="language-"],
   pre[class*="language-"] {
-    background: #1d1f21;
+    background: #282c34;
   }
 
   .token.directive-hash,
