@@ -1,19 +1,6 @@
 const theme = {
-  fonts: {
-    body:
-      'Nanum Gothic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'inherit',
-    monospace: 'Fira Code, Menlo, monospace',
-  },
-  fontWeights: {
-    body: 400,
-    heading: 700,
-    bold: 700,
-  },
-
   useCustomProperties: true,
   initialColorMode: "light",
-
   colors: {
     text: '#24292e',
     svg: '#24292e',

@@ -38,7 +38,7 @@ export const Header = () => {
       <div className="header-title">
         <h1 style={{marginBlockEnd: `0px`, 
                     marginBlockStart: `0px`,
-                    fontSize: `calc(15px + .9vh)`}}>
+                    fontSize: `calc(18px + .9vh)`}}>
           <Link to={"/"}>{data.site.siteMetadata.title}</Link>
         </h1>
       </div>
