@@ -8,7 +8,11 @@ export default function PostTemplate({ data }) {
   const { frontmatter, html, excerpt } = markdownRemark;
   return (
     <Layout>
-      <article>
+      <article style={{
+        marginBlockEnd: `2rem`,
+        paddingBottom: `1rem`,
+        borderBottom: `1px solid #8383837e`,
+      }}>
         <Title
           title={frontmatter.title}
           date={frontmatter.date}

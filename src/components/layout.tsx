@@ -12,9 +12,10 @@ const Layout: React.FC = ({ children }) => {
     <div
       id="layout" className={theme ? "dark" : "light"}
       style={{
-        width: `95%`,
         display: `flex`,
         flexDirection: `column`,
+        height: `100%`,
+        width: `95%`,
         margin: `0 auto`
       }}
     >
@@ -24,7 +25,10 @@ const Layout: React.FC = ({ children }) => {
         style={{
           maxWidth: `800px`,//`1023px`,
           width: `100%`,
-          margin: `0 auto`
+          flex: `1`,
+          overflow: `auto`,
+          margin: `0 auto`,
+          
         }}
       >
         {children}

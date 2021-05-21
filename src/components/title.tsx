@@ -34,8 +34,8 @@ const Title = ({ title, date, tags }: TitleProps) => (
         alignItems: `center`,
       }}
     >
-      <div>{date}</div>
-      <div style={{ marginLeft: `2em`, fontSize: `.85rem` }}>
+      <div style={{fontSize: `.9em`}}>{date}</div>
+      <div style={{ marginLeft: `2em`, fontSize: `.8em` }}>
         <TagList tags={tags} />
       </div>
     </div>
