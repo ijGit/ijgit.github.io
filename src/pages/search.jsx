@@ -23,7 +23,8 @@ margin-bottom: 10vh;
   display: flex;
   input{
     flex: auto;
-    padding: 4px 8px;
+    padding: 10px;
+    border: solid 1px #8383837e;
   }
   input:focus{
     outline: none;
@@ -111,10 +112,11 @@ export default function SearchPage({ data }) {
             </div>
 
             <div className='search-count'>
-              search result : {queryResults.length}
             </div>
           </SearchContainer>
-          <PostList isSearchpage={true} posts={queryResults}/>
+          {queryResults.length === 0 ? 
+            <div style={{textAlign:`center`, fontSize: `1.3rem`}}>No search results</div> 
+            : <PostList isSearchpage={true} posts={queryResults}/>}
         </section>
       </Layout>
     </>
