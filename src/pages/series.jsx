@@ -3,52 +3,28 @@ import { Layout } from "../components/layout/layout"
 import { Link, graphql } from "gatsby"
 import { Head } from "../components/head/head"
 import styled from "styled-components"
-import Img from "gatsby-image"
-import imageInfo from "./../../config/series-config"
 
-const GalleryContainer = styled.div`
-
-  
-
-  .gallery {
+const SeriesList = styled.div`
+  .series-list {
     display: flex;
     justify-content: space-between;
     
     flex-wrap: wrap;
     flex-flow: row wrap;
 
-    @media screen and (max-width: 700px) {
-      justify-content: center;
-    }
-
-
-    .figure-item {
-      margin: 8px;
+    .series-item {
+      margin: 2px 0px;
       max-width: 300px;
       width: 300px;
       @media screen and (max-width: 479px) {
         width: 95%;
       }
-      .figure {
-        width: 100%;
-  
-        border-radius: 10px 10px 0 0;
-        object-fit: cover;
-      }
 
-      .figure-caption {
+      .series-text {
         display: inline-block;
-        padding-left: 8px;
-
-        padding: 8px;
         width: 100%;
-
-        background-color: #43494f86;
-        border-radius: 0 0 10px 10px;
-
-        font-size: calc(13px + 0.3vh);
+        font-size: calc(15px + 0.4vh);
         font-weight: 500;
-
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -59,34 +35,28 @@ const GalleryContainer = styled.div`
 
 export default function IndexPage({ data }) {
   const { group } = data.allMarkdownRemark
-  const { edges } = data.allFile // images
-
-  var main_images = {}
-  edges.forEach(({ node }) => {
-    main_images[node.name] = node.childImageSharp.fixed
-  })
-
   return (
     <>
       <Head title={data.site.siteMetadata.title} />
       <Layout siteData={data.site}>
-        <GalleryContainer>
-          <div className="gallery">
+
+        <h1 style={{width:`100%`, borderBottom: `1px solid #8383837e`}}>
+          Series
+        </h1>
+
+        <SeriesList>
+          <div className="series-list">
             {group.map(item => {
               return (
-                <div key={item.fieldValue} className="figure-item">
+                <div key={item.fieldValue} className="series-item">
                   <Link to={`/series/${item.fieldValue}`}>
-                    <Img
-                      className='figure'
-                      fixed={main_images[imageInfo[item.fieldValue]]}
-                    />
-                    <div className="figure-caption">{item.fieldValue}</div>
+                    <div className="series-text">{item.fieldValue}</div>
                   </Link>
                 </div>
               )
             })}
           </div>
-        </GalleryContainer>
+        </SeriesList>
       </Layout>
     </>
   )
@@ -103,33 +73,14 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { fields: frontmatter___date }
       filter: { frontmatter: { draft: { ne: false } } }
-    ) {
-      group(field: frontmatter___series) {
+    )
+    { 
+      group(field: frontmatter___series)
+      {
         fieldValue
         totalCount
         nodes {
-          fields {
-            slug
-          }
-        }
-      }
-    }
-
-    allFile(
-      filter: {
-        sourceInstanceName: { eq: "images" }
-        relativeDirectory: { eq: "main-images" }
-      }
-    ) {
-      edges {
-        node {
-          childImageSharp {
-            fixed(height: 200, width: 300) {
-              src
-              ...GatsbyImageSharpFixed
-            }
-          }
-          name
+          fields {  slug  }
         }
       }
     }
