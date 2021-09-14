@@ -4,10 +4,12 @@
 
 body {
   word-break: keep-all;
+  overflow-y: scroll;     // prevent the layout from moving due to scrollbar
 
   font-family: "Noto Sans KR", "sans-serif";
   font-size: $font-size;
   line-height: 1.6;
+
 }
 
 a {
