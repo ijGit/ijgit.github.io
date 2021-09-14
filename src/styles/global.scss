@@ -52,7 +52,7 @@ h5, h6 {
 .katex {
   width: 100%;
   max-width: 100%;
-  overflow-x: scroll;
+  overflow: hidden;
   font-size: inherit;
   line-height: inherit;
 
