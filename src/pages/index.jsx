@@ -96,7 +96,8 @@ export default function IndexPage({ data }) {
                 {group.map(item => {
                   return (
                     <div className="tag-item" key={item.fieldValue}>
-                      <Link to={`/?tag=${kebabCase(item.fieldValue)}`}>
+                      <Link to={`/?tag=${kebabCase(item.fieldValue)}`}> 
+                      {/* apply num of page into font size style={{fontSize:item.pageInfo.itemCount + 10}}> */}
                         {item.fieldValue}
                       </Link>
                     </div>
@@ -121,6 +122,9 @@ export const pageQuery = graphql`
     allMarkdownRemark(limit: 2000, sort: {fields: frontmatter___date}, filter: {frontmatter: {draft: {ne: false}}}) {
       group(field: frontmatter___tags) {
         fieldValue
+        pageInfo {
+          itemCount
+        }
       }
       edges {
         node {
