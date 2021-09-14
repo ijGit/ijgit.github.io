@@ -132,22 +132,3 @@ non blocking이란 이전 작업이 완료될 때까지 멈추지 않고 다음 
   작업을 균등하게 분산함으로써 애플리케이션 응답성을 향상시킨다.
 
 
-
-# 겸사겸사 영어공부
-
-#### 단어
-
-|영어   | 한글      |
-| ------| --------- |
-| concurrently | (…와) 동시에, 함께, 겸임하여 ((with)) |
-| further      | 더 나아가다                           |
-
-
-
-#### 기술 용어
-
-| 영어   | 한글         |
-| -------| ------------ |
-| scalable network      | To "scale a network" means to "grow a network" or "increase the size of a network" <br>scalability means the ability to be able to scale or adapt the network for future growth. On another note, limited scalability means that there are limitations placed on how large a network can be grown or increased. |
-| callback/event firing | callback/event firing, callback is fired                     |
-

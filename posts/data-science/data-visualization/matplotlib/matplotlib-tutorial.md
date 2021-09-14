@@ -156,17 +156,6 @@ plt.figure()
 
 -----
 
-##### 영어 정리
-
-- `fine`: 섬세한 (a);
-- `implicit`: 암시된 (a); 절대적인 (a)
-- this approach is trongly discouraged nowadays and deprecated;
-  - `discouraged`: 낙담한, 낙심한 (a);
-  - `nowadays`: 요즘에는 (ad);
-  - `deprecated`: [신조어] 중요도가 떨어져 더 이상 사용되지 않고 앞으로는 사라지게 될 (컴퓨터 시스템 기능 등) (a);
-
------
-
 ##### reference
 
 - https://matplotlib.org/3.3.3/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py
