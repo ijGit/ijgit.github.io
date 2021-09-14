@@ -24,8 +24,7 @@ export const Layout = ({ children }) => {
           <aside id='aside-right'/>
 
         </section>
-        
-        <footer />
+        <footer/>
       </div>
     </React.Fragment>
   )
