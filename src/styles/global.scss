@@ -6,7 +6,7 @@ body {
   word-break: keep-all;
   overflow-y: scroll;     // prevent the layout from moving due to scrollbar
 
-  font-family: "Noto Sans KR", "sans-serif";
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "sans-serif";
   font-size: $font-size;
   line-height: 1.6;
 
@@ -27,7 +27,7 @@ a:visited {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Sans KR", "sans-serif";
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "sans-serif";
   a:link {
     text-decoration-color: inherit;
   }
