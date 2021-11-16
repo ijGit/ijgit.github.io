@@ -119,6 +119,8 @@ ol p {
 }
 
 code {
+  font-size: $code-font-size;
+  font-weight: 300;
   font-family: "Fila code", "Source Code Pro", "Nanum Gothic Coding", Consolas, monospace;
 }
 
