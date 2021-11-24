@@ -28,7 +28,8 @@ const config = {
           //editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
           sidebarCollapsible: true,
           sidebarCollapsed: false,
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
+          routeBasePath: '/',
         
         },
         blog: {
