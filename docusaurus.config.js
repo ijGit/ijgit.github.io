@@ -15,8 +15,9 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  
 
+  plugins: ['docusaurus-plugin-sass'],
+  
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -26,17 +27,10 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           //editUrl: 'https://github.com/facebook/docusaurus/edit/main/website/',
-          sidebarCollapsible: true,
+          sidebarCollapsible: false,
           sidebarCollapsed: false,
-          showLastUpdateTime: true,
           routeBasePath: '/',
         
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -49,7 +43,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '',
+        title: 'ij.log',
         hideOnScroll: true,
         logo: {
           alt: 'Logo',
@@ -58,12 +52,12 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about',
             position: 'left',
-            label: 'Tutorial',
+            label: ' ',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/ijgit',
             label: 'GitHub',
             position: 'right',
           },
