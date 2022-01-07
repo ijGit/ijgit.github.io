@@ -21,26 +21,3 @@
   align-items: center;
   justify-content: center;
 }
-
-
-.container{
-  display: flex;
-  width: 80vw;
-  max-width: 900px;
-}
-
-
-.headerTitle{
-  font-size: 2em;
-}
-
-.home-layout{
-  display: flex;
-  width: 900px
-}
-
-@media screen and (max-width: 900px) {
-  .home-layout {
-    width: 90vw;
-  }
-}
