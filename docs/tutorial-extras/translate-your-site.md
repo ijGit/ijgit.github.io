@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+tags: ['tutorial-extras']
 ---
 
 # Translate your site

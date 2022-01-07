@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+tags: ['tutorial-extras']
 ---
 
 # Manage Docs Versions

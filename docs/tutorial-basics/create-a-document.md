@@ -1,5 +1,7 @@
 ---
 sidebar_position: 2
+tags: ['tutorial-basics']
+
 ---
 
 # Create a Document

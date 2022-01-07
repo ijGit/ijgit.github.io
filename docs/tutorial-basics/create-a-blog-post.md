@@ -1,5 +1,7 @@
 ---
 sidebar_position: 3
+tags: ['tutorial-basics']
+
 ---
 
 # Create a Blog Post

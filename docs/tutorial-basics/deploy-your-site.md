@@ -1,5 +1,7 @@
 ---
 sidebar_position: 5
+tags: ['tutorial-basics']
+
 ---
 
 # Deploy your site
