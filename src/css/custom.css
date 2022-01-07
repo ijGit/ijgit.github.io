@@ -26,3 +26,30 @@
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* font */
+article {
+  font-size: calc(14px + .3vh);
+}
+
+article h1 {
+  font-size: calc(18px + 1.5vh);
+  border-bottom: 0.5px solid rgba(70, 70, 70, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+article h2 {
+  font-size: calc(13px + 1.2vh);
+}
+article h3 {
+  font-size: calc(13px + .9vh);
+}
+article h4 {
+  font-size: calc(13px + .5vh);
+}
+article h5, h6 {
+  font-size: calc(13px + .5vh);
+}
+ 
