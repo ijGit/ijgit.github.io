@@ -13,3 +13,9 @@
 ### 시리즈 생성
 - main 이미지가 없을 때의 처리 구현 필요
 - `./config/series-config.js` 에 series 이름과 main 이미지 파일 이름 (확장자 제외)를 키, 값 쌍으로 작성
+
+
+-----
+
+node.js 14 버전 사용
+node-sass 4.14.1 버전 사용
