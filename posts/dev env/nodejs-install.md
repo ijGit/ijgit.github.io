@@ -1,13 +1,13 @@
 ---
-title: "[Node.js NVM을 이용하여 Node.js 설치"
-date: 2010-10-13
-type: develop
+title: "[Node.js] NVM을 이용하여 Node.js 설치"
+date: 2021-10-13
+type: tool
 tags:
-  - Node.js
-  - dev env
+  - Ubuntu
 keywords: 
-  - Node.js
-  - node 버전 관리
+  - ubuntu
+  - kakao talk
+  - ubuntu kakao talk
 ---
 
 ## NVM (Node Version Manager)
