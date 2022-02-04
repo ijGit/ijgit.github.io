@@ -1,5 +1,56 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Dec 2021 02:50:06 GMT</lastBuildDate><item><title><![CDATA[Command "python setup.py egg_info" failed with error code 1]]></title><description><![CDATA[package 설치 시,  출력과 함께 설치가 실패하는 경우 아래 명령어를 사용하여 를 설치 한 뒤, 다시 package를 설치해준다.]]></description><link>https://ijgit.github.io/pages/2021-12-03-python-error</link><guid isPermaLink="false">https://ijgit.github.io/pages/2021-12-03-python-error</guid><pubDate>Fri, 03 Dec 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;package 설치 시, &lt;code class=&quot;language-text&quot;&gt;Command &quot;python setup.py egg_info&quot; failed with error code 1&lt;/code&gt; 출력과 함께 설치가 실패하는 경우 아래 명령어를 사용하여 &lt;code class=&quot;language-text&quot;&gt;setuptools&lt;/code&gt;를 설치 한 뒤, 다시 package를 설치해준다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -H pip3 &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --upgrade --ignore-installed pip setuptools&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[SSH: 리버스 터널링]]></title><description><![CDATA[SSH - 리버스 터널링 외부에서 접속이 불가능한 PC 로 원격 접속을 하려고 하면, reverse tunnerling 이 필요하다.   옵션을 통해 실행할 수 있는데,  즉 reverse tunnerling을 통해 외부에서 접속이 불가능한 PC…]]></description><link>https://ijgit.github.io/pages/ssh-reverse-tunnerling</link><guid isPermaLink="false">https://ijgit.github.io/pages/ssh-reverse-tunnerling</guid><pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;ssh---리버스-터널링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ssh---%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%84%B0%EB%84%90%EB%A7%81&quot; aria-label=&quot;ssh   리버스 터널링 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSH - 리버스 터널링&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[ij.Log|Feed]]></title><description><![CDATA[isu jeong, github page blog]]></description><link>http://github.com/dylang/node-rss</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 04 Feb 2022 13:05:07 GMT</lastBuildDate><item><title><![CDATA[[devenv python] ubuntu jupyter lab setting]]></title><description><![CDATA[Jupyter lab setting 1. install 아래 명령어로 jupyter lab 설치 2. setting 설치를 완료하였으면 아래 글에 따라 jupyter lab…]]></description><link>https://ijgit.github.io/pages/2022-02-04-Jupyter lab setting</link><guid isPermaLink="false">https://ijgit.github.io/pages/2022-02-04-Jupyter lab setting</guid><pubDate>Fri, 04 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;jupyter-lab-setting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jupyter-lab-setting&quot; aria-label=&quot;jupyter lab setting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Jupyter lab setting&lt;/h1&gt;
+&lt;h2 id=&quot;1-install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-install&quot; aria-label=&quot;1 install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. install&lt;/h2&gt;
+&lt;p&gt;아래 명령어로 jupyter lab 설치&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;python3 -m pip &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; jupyterlab&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;2-setting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-setting&quot; aria-label=&quot;2 setting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. setting&lt;/h2&gt;
+&lt;p&gt;설치를 완료하였으면 아래 글에 따라 jupyter lab 을 설정한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;python3 -m jupyterlab --generate-config&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 명령어를 실행하면 &lt;code class=&quot;language-text&quot;&gt;~/.jupyter/jupyter_lab_config.py&lt;/code&gt; 파일이 생성된다. 해당 파일의 내용을 작성하여 jupyter lab 설정을 할 수 있다.&lt;/p&gt;
+&lt;p&gt;먼저 비밀번호 설정부터 진행한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# 아래 명령어를 입력하면, 비밀번호를 입력하라고 한다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# 생성된 비밀번호는 ~/.jupyter/juupyter_server_config.json 파일에 json 형식으로 저장되어 있다.&lt;/span&gt;
+$ python3 -m jupyterlab password
+Enter password:
+Verify password:
+&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;JupyterPasswordApp&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; Wrote hashed password to /home/user/.jupyter/jupyter_server_config.json
+
+
+&lt;span class=&quot;token comment&quot;&gt;# &apos;password&apos; 안의 내용을 ~/.jupyter/jupyter_lab_config.py&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;cat&lt;/span&gt; ~/.jupyter/jupyter_server_config.json
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token string&quot;&gt;&quot;ServerApp&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token string&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;argon2:&lt;span class=&quot;token variable&quot;&gt;$argon2id&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$v&lt;/span&gt;=19&lt;span class=&quot;token variable&quot;&gt;$m&lt;/span&gt;=10240,t=10,p=8&lt;span class=&quot;token variable&quot;&gt;$4d2gAmODPnOKxnxzLvo2OA&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$PKLhSHAfso&lt;/span&gt;/SY0iveln2KF9tOJ4kGR9VsaqMYDzA6jw&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&apos;password&apos; 안의 내용을 &lt;code class=&quot;language-text&quot;&gt;~/.jupyter/jupyter_lab_config.py&lt;/code&gt; 파일 내의 &lt;code class=&quot;language-text&quot;&gt;c.ServerApp.password&lt;/code&gt; 값으로 설정해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;py&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-py line-numbers&quot;&gt;&lt;code class=&quot;language-py&quot;&gt;c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ServerApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;password &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;argon2:$argon2id$v=19$m=10240,t=10,p=8$4d2gAmODPnOKxnxzLvo2OA$PKLhSHAfso/SY0iveln2KF9tOJ4kGR9VsaqMYDzA6jw&apos;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;그 외 설정 할 수 있는 값들은 아래와 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-python line-numbers&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token triple-quoted-string string&quot;&gt;&apos;&apos;&apos;
+~/.jupyter/jupyter_lab_config.py
+&apos;&apos;&apos;&lt;/span&gt;
+
+
+&lt;span class=&quot;token comment&quot;&gt;# 시작시 브라우저를 열 것인지&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ExtensionApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;open_browser &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;
+
+
+&lt;span class=&quot;token comment&quot;&gt;# 외부 접속 허용&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ServerApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;allow_origin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;*&apos;&lt;/span&gt;
+
+
+&lt;span class=&quot;token comment&quot;&gt;#  The string should be of the form type:salt:hashed-password.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;# password: &apos;qwer1234&apos;&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ServerApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;password &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;argon2:$argon2id$v=19$m=10240,t=10,p=8$4d2gAmODPnOKxnxzLvo2OA$PKLhSHAfso/SY0iveln2KF9tOJ4kGR9VsaqMYDzA6jw&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# ip&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ServerApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ip&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;192.168.50.186&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;# port&lt;/span&gt;
+c&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;ServerApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;port&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;8888&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;3-kernel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-kernel&quot; aria-label=&quot;3 kernel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. kernel&lt;/h2&gt;
+&lt;p&gt;가상환경을 활성화 한 뒤, 아래 명령어를 실행해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;python3 -m pip &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; ipykernel
+python3 -m ipykernel &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; --user --name&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;VENV_NAME &lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[SSH: 리버스 터널링]]></title><description><![CDATA[SSH - 리버스 터널링 외부에서 접속이 불가능한 PC 로 원격 접속을 하려고 하면, reverse tunnerling 이 필요하다.   옵션을 통해 실행할 수 있는데,  즉 reverse tunnerling을 통해 외부에서 접속이 불가능한 PC…]]></description><link>https://ijgit.github.io/pages/ssh-reverse-tunnerling</link><guid isPermaLink="false">https://ijgit.github.io/pages/ssh-reverse-tunnerling</guid><pubDate>Tue, 16 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;ssh---리버스-터널링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ssh---%EB%A6%AC%EB%B2%84%EC%8A%A4-%ED%84%B0%EB%84%90%EB%A7%81&quot; aria-label=&quot;ssh   리버스 터널링 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;SSH - 리버스 터널링&lt;/h1&gt;
 &lt;p&gt;외부에서 접속이 불가능한 PC 로 원격 접속을 하려고 하면, reverse tunnerling 이 필요하다. &lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ssh -R&lt;/code&gt; 옵션을 통해 실행할 수 있는데, &lt;/p&gt;
 &lt;p&gt;즉 reverse tunnerling을 통해 외부에서 접속이 불가능한 PC &lt;code class=&quot;language-text&quot;&gt;A&lt;/code&gt;와, 외부에 있는 PC    &lt;code class=&quot;language-text&quot;&gt;B&lt;/code&gt;가 있을 때, B가 A로 접속을 할 수 있다.&lt;/p&gt;
@@ -1766,7 +1817,200 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; uninstall --save
 
 &lt;span class=&quot;token comment&quot;&gt;# 전역적으로 설치된 패키지 제거&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;# uninstall globally installed package&lt;/span&gt;
-$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; uninstall -g &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;package-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[OS] Computer System (1): Hardware and Software]]></title><description><![CDATA[1. Computer System computer system 데이터를 처리하기 위해 다양한 작업을 수행하는 장치 Computer system 은 Hardware와 Software로 이루어져 있다. Two main components Hardware…]]></description><link>https://ijgit.github.io/pages/2020-11-19-os_1</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-11-19-os_1</guid><pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;1-computer-system&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-computer-system&quot; aria-label=&quot;1 computer system permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Computer System&lt;/h1&gt;
+$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; uninstall -g &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;package-name&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[OS] Computer System(2): Instructions]]></title><description><![CDATA[Instructions Interaction between processor and memory How a computer system runs a program? Instruction A statement that specifies the…]]></description><link>https://ijgit.github.io/pages/2020-11-19-os_2</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-11-19-os_2</guid><pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;instructions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#instructions&quot; aria-label=&quot;instructions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instructions&lt;/h2&gt;
+&lt;p&gt;Interaction between processor and memory&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;How a computer system runs a program?&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/e0202/1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 31.79190751445087%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABNElEQVQY022Q3U7CQBCFeXm40GtvfATitU+gSIiBpNrwK1BbWmgp9Hd3a4HP7pIYLjzJzGSyM+fM2ZaUkiRJyLKM4/Foqu7zPEeJEmmiQJQ5pzNkuaAUFUWpmtn8b68oCjRaQggOhwNpmrLf782j7re7iPGXy2TpMlv7zFYu6XFD4I4Jgzkbxyba+Y1wQRzHhtgQ6qQbTXILa+HTfhrR6Q5od995eLaJp4+U8zv8UYdqeU/sDUgzgWhcaFwulyuh53lYlsV0OmUymXBoFNeuT+/ToW87vFgr3j6WbJZ9ou9XQqdnqu/OsO0xw+HQ7Gq3hlApZf5A29ZVK0VhyOlHwbkm2vp432vmizXBLqaqoZQ1QbAzJEmSGpfmQp3+Q13XSKmQjZiqKhNVpa6hZHOENDO30Fy/HhfDNl7dlxQAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/1e043/1.png&quot; srcset=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/991de/1.png 173w,
+/static/db017d261bb6d1c2ff3623e1284d0946/e4d6b/1.png 345w,
+/static/db017d261bb6d1c2ff3623e1284d0946/1e043/1.png 690w,
+/static/db017d261bb6d1c2ff3623e1284d0946/e3189/1.png 1035w,
+/static/db017d261bb6d1c2ff3623e1284d0946/b1001/1.png 1380w,
+/static/db017d261bb6d1c2ff3623e1284d0946/e0202/1.png 1395w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Instruction&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A statement that specifies the operation of an arithmetic or logical operation to be performed by the processor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;1-instruction-structure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-instruction-structure&quot; aria-label=&quot;1 instruction structure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Instruction Structure&lt;/h2&gt;
+&lt;h3 id=&quot;structure-of-instructions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#structure-of-instructions&quot; aria-label=&quot;structure of instructions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Structure of instructions&lt;/h3&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/8d80197592ed97075894abf4b15a838b/8b70b/2.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 28.901734104046245%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABBUlEQVQY031R206DQBDl/79A/0Af+wUaE3yBoAahGFpBIIRbqeFmgGWOO2toH2w62ZOZ2XPm7GZXg4zqcMDx+I1rMU0TmqbBPM9XdZqYJ3hbBzv/A2Ia8TMM6LoObdsqA677vkdZlnAcB3meqz3mWLNqBzmnDK33T7y4EV7dLxhvPnb7PYIgQBzHSNMUYRgqcM+mjCzLFJIkUVrmuR7HEdrmYUu39zrd3D3R5tEj1/XoWddldkmKyLIsMk2TbNumKIqoKAqSZiRvSr7vk2EYipcHkjQkTYgFCwFyYRYCRHR6D3GhZyzL8o/jPe41/pM/ULXWkjjluq4r+UYKcqg668/aVc/4BRDSxpQMJTeDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/8d80197592ed97075894abf4b15a838b/1e043/2.png&quot; srcset=&quot;/static/8d80197592ed97075894abf4b15a838b/991de/2.png 173w,
+/static/8d80197592ed97075894abf4b15a838b/e4d6b/2.png 345w,
+/static/8d80197592ed97075894abf4b15a838b/1e043/2.png 690w,
+/static/8d80197592ed97075894abf4b15a838b/e3189/2.png 1035w,
+/static/8d80197592ed97075894abf4b15a838b/8b70b/2.png 1266w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;br&gt;
+&lt;h4 id=&quot;opcode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#opcode&quot; aria-label=&quot;opcode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OPcode&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;프로세서가 실행할 &lt;code class=&quot;language-text&quot;&gt;operation&lt;/code&gt;을 구체적으로 명시&lt;/li&gt;
+&lt;li&gt;산술 연산 (&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;), 논리 연산 (&lt;code class=&quot;language-text&quot;&gt;AND&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;OR&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;NOT&lt;/code&gt;), &lt;code class=&quot;language-text&quot;&gt;shift&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;operation code&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;n bits&lt;/code&gt;라면 &lt;code class=&quot;language-text&quot;&gt;2^n&lt;/code&gt; 개의 &lt;code class=&quot;language-text&quot;&gt;operation&lt;/code&gt; 이 수행 가능하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;operand&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#operand&quot; aria-label=&quot;operand permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Operand&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Store (the address of) the data to be operated&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/be460/3.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 28.323699421965316%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABCUlEQVQY041Qy07DMBDM//8OHwAnLhzgECQItMStEhK3cWzycuysh7UlpLYnLK1nvY/Z9WT4x9m2DcYYtE2Dn3GC41jf96jrGou1qSaEkCx7/5LIP76xO0icThJKdei6DlK27Ct47xPhOI7QWsOuK85rwGAd1LQg0IZwSfjwtMfdfY7H5z2KosDb5w6iLPGSv6JkjIS3Z5gmdNpAqp6Z6CqXtW1D55MkyWhcIOURK0hvbPw2WlNVVcTbUuzmLRJq60kMLiH/ig7HI7EslC3LgnmeMfFUTwHckSZFjO+4YczZC60SRm35+qtZWYooTcZxcW1BcFPyvXOCtRM8UDCp4OEpnvKpJojb/l/KMc6znqvS+gAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/1e043/3.png&quot; srcset=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/991de/3.png 173w,
+/static/c05e37ac2d3915867b2cc31979f14eea/e4d6b/3.png 345w,
+/static/c05e37ac2d3915867b2cc31979f14eea/1e043/3.png 690w,
+/static/c05e37ac2d3915867b2cc31979f14eea/e3189/3.png 1035w,
+/static/c05e37ac2d3915867b2cc31979f14eea/b1001/3.png 1380w,
+/static/c05e37ac2d3915867b2cc31979f14eea/be460/3.png 1645w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;example&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#example&quot; aria-label=&quot;example permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example&lt;/h4&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/3f8aa/4.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 52.02312138728323%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcRAAAXEQHKJvM/AAABoUlEQVQoz31Sa4+CQAzk//8oLyZG0YgR3+BbMQq+UUSOpb3OHnh8uk2abafT2XZ3jZ5tZy2zQV+VCtVqNapWq9Ttdsm2bWq1WmSaJjUaDWo2m1Sv16nT6VC/39cY8sDEVLvdZslZxj0Ms0v05ugV8/1+59frxe/3m8Mw5N1ux8PhkGezGbuuy5PJhA+Hg87N53MejUZ6F1yBcz6fLSOOosz3jpxmRPv9npIkIWamNE1JSGRZFomo7nowGGhOHMfU6/XKpiB+u91+BRPX4e8wpOB04kS6w5IiPiFOEn4+nyCzUkpP8Xg8+HK56Fi6AkeBLznLkCCDAMnifMHF2Mfj8SMGARTBB4bDEPu+jytQOEQLSuFHEEKFlQXRFXxg8MuCcgV8vV5VzvtfEKfnJ+tCYEWHQRDoBwRH8n8dFiNDk0sLdwcSiqIo0i8LDDE6g2jRsWAKvmCWsVwus81mw6vVisTn7XYLX38R4Ihhnufxer3mxWKhY3wp5HNcAZdrsQwpzvCXptMpjcdj7Ow4DsMHCVZgMPk6WhCPhAlgcg0KnWLkH9Rs6Idbho7RAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/1e043/4.png&quot; srcset=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/991de/4.png 173w,
+/static/e1af4f2e4e5d664b9aa6d94639e9fb80/e4d6b/4.png 345w,
+/static/e1af4f2e4e5d664b9aa6d94639e9fb80/1e043/4.png 690w,
+/static/e1af4f2e4e5d664b9aa6d94639e9fb80/e3189/4.png 1035w,
+/static/e1af4f2e4e5d664b9aa6d94639e9fb80/3f8aa/4.png 1337w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h2 id=&quot;2-instruction-execution&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-instruction-execution&quot; aria-label=&quot;2 instruction execution permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Instruction execution&lt;/h2&gt;
+&lt;h4 id=&quot;execution-process&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#execution-process&quot; aria-label=&quot;execution process permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Execution process&lt;/h4&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e9881619830dc1bd5341911c8973142f/6a5c3/5.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.75722543352601%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcRAAAXEQHKJvM/AAABWUlEQVQoz3WT6a6CQAyFff9n84+YaJSIGkHABRcQMcLU+WpKvMbb5KSdpadzWhg45wRg5quqkuv1KmVZKoiLopD7/a53uq6Ttm3l+Xz+8djACD+JIdzv93I4HDTGTyYTWSwWcrlcFHEcy2w2k+VyKWEYamEllB92u90UvOx0OikBBcD5fNZk/Hq9VuIkSfT1Skj1NE31IMsyeTweSnY8HvVlq9VKNpuNgjiKItntdnp3PB73yPP8TcghhHiARAh5ATEF8BBw3jSN7kEwnU5VLq2gJfD8lAyBSYWcmBeigjYgb7vdynA4lCAIZDQaKeq6/j0UIwH0Cz+fz7VnFKMQ+zZxYPYvIZJJtE8Iyci0Nf7byEeyM7g3o/OXnf/unE90Xp6u/UCcl9mvgeWYsR58V8B4ARNm0iadgbDPUOgh/jOnl+xRGPyhet8TjYH/CwpPVPie9eff9z/xApXiTOFOZSEDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/e9881619830dc1bd5341911c8973142f/1e043/5.png&quot; srcset=&quot;/static/e9881619830dc1bd5341911c8973142f/991de/5.png 173w,
+/static/e9881619830dc1bd5341911c8973142f/e4d6b/5.png 345w,
+/static/e9881619830dc1bd5341911c8973142f/1e043/5.png 690w,
+/static/e9881619830dc1bd5341911c8973142f/e3189/5.png 1035w,
+/static/e9881619830dc1bd5341911c8973142f/b1001/5.png 1380w,
+/static/e9881619830dc1bd5341911c8973142f/6a5c3/5.png 1646w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h4 id=&quot;instruction-execution-cycle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#instruction-execution-cycle&quot; aria-label=&quot;instruction execution cycle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instruction execution cycle&lt;/h4&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/fb477493118268266fcdf0bd799d3493/24bcc/6.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 34.68208092485549%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABcRAAAXEQHKJvM/AAABKklEQVQoz3VRy3KEIBD0/38tlxyysVLGpFR2fbFC8InKdAbWeNpMVRcUTNPTTQQuOrDvO7ZtQzgjCntHhGfl70up8Z4KSGXO84gOwjJNEEKgYKiuQ9s0yLIcdVUeco9HPJRSkFLi/jPi4/sKZYbAGYYBUcPEPM9RDRaX9IpLUqDSPbJG4TX+Qlop1NogSRLM8xxcxHGMNE2PQUY4t7N4hqIoEM3LgpmnU+w01zOEGiEXFwQyaZD3K0a7oe/NGYevdV1xbTVe3j7RdD9YrQ3TR6xI1lpidZr9alfaODjnHTIcnRHTwzURP0bTNFF7VySqlrTpz/vIGIPb7YaKs2rqGj4Cx7aO0J5+Rsd5eU5ZlrjLFlortv3ojRjiGZgYVm4UHHYAWxb/9f9xfgE04BuQEI+PdQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/fb477493118268266fcdf0bd799d3493/1e043/6.png&quot; srcset=&quot;/static/fb477493118268266fcdf0bd799d3493/991de/6.png 173w,
+/static/fb477493118268266fcdf0bd799d3493/e4d6b/6.png 345w,
+/static/fb477493118268266fcdf0bd799d3493/1e043/6.png 690w,
+/static/fb477493118268266fcdf0bd799d3493/e3189/6.png 1035w,
+/static/fb477493118268266fcdf0bd799d3493/b1001/6.png 1380w,
+/static/fb477493118268266fcdf0bd799d3493/24bcc/6.png 1781w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;h3 id=&quot;21-general-case&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-general-case&quot; aria-label=&quot;21 general case permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.1. General case&lt;/h3&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/26a94/7.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.82080924855491%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABcRAAAXEQHKJvM/AAABsklEQVQoz4VS2ZKcIBT1/z9tqtLTmcVepm1bwQUBRdRWmIknVzp5SM1DqLrFLQoOZ7kR/rPatkXf93DOoSxLdF0XzqWUUEphXdd/KtoeVHSxaRokyYUqgaS+qir0poXsZlRyDCAF7UJPoddmBhfDNwLR9quxA+6LR10LCAKb5iVUVTAwMYI1c7iciztE50Kveo9CeXg3Q4gmsB2GAVFBgLvDDftTDm4XXInR7pjh/VridDwgvpQo1RJAuJxxKw2wepRywOu5wvl0gDE9pmkC5xzRJlXpFjnj5I9BLQTSLAfjBbLbNQD8PDC0qsQ+Znjan8GyBD9ezniOc6RpAq01rLXBVwIUWH994dO78IsxBlpJdOQty1KkhUHCiRUcLqxDXtvAkNU9SXYYh57kaozj+ACs6hq6sxhnD+c/MTsPe18w3B2UFKj1At7cCXANkkX710OHSnsKsA5AG0PGGKJN6u6Q4uWD4Vh3OFE9vV7wfLwhjt9wvkm8XwQmqxEnlL56BCTamUKaQyiKJG/jtCmMNvQsy8CLAjWNylac/GObp61Ca4nFn2S3vbWP3oyeQJdvY/Mbel6oxJyj9hMAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/1e043/7.png&quot; srcset=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/991de/7.png 173w,
+/static/87b1cba74f2e491b0e24a5a3e3449275/e4d6b/7.png 345w,
+/static/87b1cba74f2e491b0e24a5a3e3449275/1e043/7.png 690w,
+/static/87b1cba74f2e491b0e24a5a3e3449275/e3189/7.png 1035w,
+/static/87b1cba74f2e491b0e24a5a3e3449275/26a94/7.png 1102w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;시간&lt;/th&gt;
+&lt;th&gt;레지스터 동작&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;①&lt;/td&gt;
+&lt;td&gt;PC → MAR&lt;/td&gt;
+&lt;td&gt;PC에 저장된 주소를 프로세서 내부 버스를 이용하여 MAR에 전달한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;②&lt;/td&gt;
+&lt;td&gt;Memory^MAR → MBR&lt;/td&gt;
+&lt;td&gt;MAR에 저장된 주소에 해당하는 메모리 위치에서 명령어를 인출한 후 &lt;br&gt;이 명령어를 MBR에 저장한다. &lt;br/&gt; 이때 제어장치는 메모리에 저장된 내용을 읽도록 제어 신호를 발생시킨다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;PC + 1 → PC&lt;/td&gt;
+&lt;td&gt;다음 명령어를 인출하려고 PC를 증가시킨다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;③&lt;/td&gt;
+&lt;td&gt;MBR → IR&lt;/td&gt;
+&lt;td&gt;MBR에 저장된 내용을 IR에 전달한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h3 id=&quot;22-interrupt-case&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-interrupt-case&quot; aria-label=&quot;22 interrupt case permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.2. Interrupt case&lt;/h3&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/297b913e590b8d48020b322eee6d5d94/26a94/8.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.82080924855491%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABcRAAAXEQHKJvM/AAABuElEQVQoz4WS3XKbMBCFef836ySd1Elsxz84NgKEhBAICYRwy+kiTy46uSgzGi3M8u3Zs5vgP4/WGsYYhBBQliXato3f67qGUgrLsvxzkvUHTolSSqRpGs8ac85hOg3ZjuC1i5CCbtEMMW46j1zYbwKStWpnLPxECngFSZVHHzD4CaIqCTKCyTEmZ2KE0CHGyswo1Iz7THlCRrXWWiRFUeLlcMPzgSHTFjeq/LRN8Z4WqAi4Ago1RUhee9y4gR8Mytri7cjxsd+SIINhGJDnORJRVdC9w1M9gfcesrM4HE/4vGbIrhdciw6bjxyt4vi1Y3jenMGuZ/x8PeJlm+GSntA0Gn3fR1+TWgq4cEdJndj7Au1GaFWT+Ros+8S1NEgZDWKZcKY7q3qKZ7DKkPIAZ3tqt4Fz7gFUBOz8DD1TT8tvTGFGP0xw5KMUHIyML79alh6i/fIwgDczallF0KqQMYakomk6GkAx/gGzAXve4sfbCRvydbd7x+7Msb9IhNGQZxVBHnChPQ3JYw4eqmniOq0+Jut0iqIgNRVNS9C6lPF9rdZqhdbeaXUekLoL5PdDYedmgk7f1uYvl3mqFpksD3EAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/297b913e590b8d48020b322eee6d5d94/1e043/8.png&quot; srcset=&quot;/static/297b913e590b8d48020b322eee6d5d94/991de/8.png 173w,
+/static/297b913e590b8d48020b322eee6d5d94/e4d6b/8.png 345w,
+/static/297b913e590b8d48020b322eee6d5d94/1e043/8.png 690w,
+/static/297b913e590b8d48020b322eee6d5d94/e3189/8.png 1035w,
+/static/297b913e590b8d48020b322eee6d5d94/26a94/8.png 1102w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;시간&lt;/th&gt;
+&lt;th&gt;레지스터 동작&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;①&lt;/td&gt;
+&lt;td&gt;PC → MBR&lt;/td&gt;
+&lt;td&gt;PC의 내용을 MBR에 저장한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;②&lt;/td&gt;
+&lt;td&gt;IntRoutine_Address → PC&lt;/td&gt;
+&lt;td&gt;인터럽트 루틴 주소를 PC에 저장한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Save_Address → MAR&lt;/td&gt;
+&lt;td&gt;PC에 저장된 루틴 주소를 MAR에 저장한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;③&lt;/td&gt;
+&lt;td&gt;MBR → &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;Memory^MAR&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.035771em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02778em;&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8413309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
+&lt;td&gt;MBR의 주소에 있는 내용을 지시된 메모리 셀로 이동한다.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;인터럽트 처리 과정&lt;/strong&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
+      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/24bcc/9.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 61.27167630057804%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABcRAAAXEQHKJvM/AAACEUlEQVQoz31TDW/aMBDl//+aTatWqbRio52gWtkGlWiRBkPQNBTybTuO4zhvdw7txDTtpFOSe353786XHsiKooAgN9ZhGURIhOYwmqZBFEVwrsE+k/gVxv4Mm6lrxIy1LZ4OGbb7jN6BXksBIQRKJREmEl9XOX6+qI5kjMeklHh8FpisC6Sq9pgqS0jCskJgthWYbihH3aBnrYXWGmWpcIhThHEBqa0n5Xnuk1ZVhaKsSaWCZRkkQimFmlRqwjJlcCCMkE5hlmVIkoTOde2wcTyOY++ssm1qWKPfcE7IWElKralQH7GThM45Ln701s+PSfxMcmpPVjQ7+5aQ4zwOVsrz9gn5g6twa/YYfE2YpKmPMykSFcLcoDS1PyClIqz2yTzn2NXxUgpP+tNye3Iphlr623jm0mPmhOMT6spg97JH8Bwip1uzTZfY2gaHKMFm+4Q4yajdxq8GW0XqdjviBCHSNEdDgFfI5E+je7w7v8HVzRSTeYBVUHhSsEtwdjnGx6sxBl+mGN4+YE+rxTZ7WOOsP0J/+A0Xnye0v4KK0NrQYrpwn3pPcu1SYVwua5boNkHkPlzeufPBxPWvZ254t3SHVHtscr9y7y/GHhuM5u5xUzhtGtfDf+xAam5/LPF9vsF6p8g1qFg3Q03zlfQtFCqqz3+Qc92lLNjd8fnqxFnQgUVt3UIItRBSLWhuJ/i//DdTB5Yd6B+UGQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/1e043/9.png&quot; srcset=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/991de/9.png 173w,
+/static/35c57c3e17c434a3657fd7e8105e7be3/e4d6b/9.png 345w,
+/static/35c57c3e17c434a3657fd7e8105e7be3/1e043/9.png 690w,
+/static/35c57c3e17c434a3657fd7e8105e7be3/e3189/9.png 1035w,
+/static/35c57c3e17c434a3657fd7e8105e7be3/b1001/9.png 1380w,
+/static/35c57c3e17c434a3657fd7e8105e7be3/24bcc/9.png 1781w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;</content:encoded></item><item><title><![CDATA[[OS] Computer System (1): Hardware and Software]]></title><description><![CDATA[1. Computer System computer system 데이터를 처리하기 위해 다양한 작업을 수행하는 장치 Computer system 은 Hardware와 Software로 이루어져 있다. Two main components Hardware…]]></description><link>https://ijgit.github.io/pages/2020-11-19-os_1</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-11-19-os_1</guid><pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;1-computer-system&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-computer-system&quot; aria-label=&quot;1 computer system permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Computer System&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;computer system&lt;/p&gt;
@@ -2216,200 +2460,7 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; uninstall -g &lt
 &lt;li&gt;저장된 주소를 통해 중단되었던 프로그램으로 복귀&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[[OS] Computer System(2): Instructions]]></title><description><![CDATA[Instructions Interaction between processor and memory How a computer system runs a program? Instruction A statement that specifies the…]]></description><link>https://ijgit.github.io/pages/2020-11-19-os_2</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-11-19-os_2</guid><pubDate>Thu, 19 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;instructions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#instructions&quot; aria-label=&quot;instructions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instructions&lt;/h2&gt;
-&lt;p&gt;Interaction between processor and memory&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;How a computer system runs a program?&lt;/p&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/e0202/1.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 31.79190751445087%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABNElEQVQY022Q3U7CQBCFeXm40GtvfATitU+gSIiBpNrwK1BbWmgp9Hd3a4HP7pIYLjzJzGSyM+fM2ZaUkiRJyLKM4/Foqu7zPEeJEmmiQJQ5pzNkuaAUFUWpmtn8b68oCjRaQggOhwNpmrLf782j7re7iPGXy2TpMlv7zFYu6XFD4I4Jgzkbxyba+Y1wQRzHhtgQ6qQbTXILa+HTfhrR6Q5od995eLaJp4+U8zv8UYdqeU/sDUgzgWhcaFwulyuh53lYlsV0OmUymXBoFNeuT+/ToW87vFgr3j6WbJZ9ou9XQqdnqu/OsO0xw+HQ7Gq3hlApZf5A29ZVK0VhyOlHwbkm2vp432vmizXBLqaqoZQ1QbAzJEmSGpfmQp3+Q13XSKmQjZiqKhNVpa6hZHOENDO30Fy/HhfDNl7dlxQAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/1e043/1.png&quot; srcset=&quot;/static/db017d261bb6d1c2ff3623e1284d0946/991de/1.png 173w,
-/static/db017d261bb6d1c2ff3623e1284d0946/e4d6b/1.png 345w,
-/static/db017d261bb6d1c2ff3623e1284d0946/1e043/1.png 690w,
-/static/db017d261bb6d1c2ff3623e1284d0946/e3189/1.png 1035w,
-/static/db017d261bb6d1c2ff3623e1284d0946/b1001/1.png 1380w,
-/static/db017d261bb6d1c2ff3623e1284d0946/e0202/1.png 1395w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Instruction&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A statement that specifies the operation of an arithmetic or logical operation to be performed by the processor&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;1-instruction-structure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-instruction-structure&quot; aria-label=&quot;1 instruction structure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Instruction Structure&lt;/h2&gt;
-&lt;h3 id=&quot;structure-of-instructions&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#structure-of-instructions&quot; aria-label=&quot;structure of instructions permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Structure of instructions&lt;/h3&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/8d80197592ed97075894abf4b15a838b/8b70b/2.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 28.901734104046245%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABBUlEQVQY031R206DQBDl/79A/0Af+wUaE3yBoAahGFpBIIRbqeFmgGWOO2toH2w62ZOZ2XPm7GZXg4zqcMDx+I1rMU0TmqbBPM9XdZqYJ3hbBzv/A2Ia8TMM6LoObdsqA677vkdZlnAcB3meqz3mWLNqBzmnDK33T7y4EV7dLxhvPnb7PYIgQBzHSNMUYRgqcM+mjCzLFJIkUVrmuR7HEdrmYUu39zrd3D3R5tEj1/XoWddldkmKyLIsMk2TbNumKIqoKAqSZiRvSr7vk2EYipcHkjQkTYgFCwFyYRYCRHR6D3GhZyzL8o/jPe41/pM/ULXWkjjluq4r+UYKcqg668/aVc/4BRDSxpQMJTeDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/8d80197592ed97075894abf4b15a838b/1e043/2.png&quot; srcset=&quot;/static/8d80197592ed97075894abf4b15a838b/991de/2.png 173w,
-/static/8d80197592ed97075894abf4b15a838b/e4d6b/2.png 345w,
-/static/8d80197592ed97075894abf4b15a838b/1e043/2.png 690w,
-/static/8d80197592ed97075894abf4b15a838b/e3189/2.png 1035w,
-/static/8d80197592ed97075894abf4b15a838b/8b70b/2.png 1266w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;br&gt;
-&lt;h4 id=&quot;opcode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#opcode&quot; aria-label=&quot;opcode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;OPcode&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;프로세서가 실행할 &lt;code class=&quot;language-text&quot;&gt;operation&lt;/code&gt;을 구체적으로 명시&lt;/li&gt;
-&lt;li&gt;산술 연산 (&lt;code class=&quot;language-text&quot;&gt;+&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;-&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;*&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt;), 논리 연산 (&lt;code class=&quot;language-text&quot;&gt;AND&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;OR&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;NOT&lt;/code&gt;), &lt;code class=&quot;language-text&quot;&gt;shift&lt;/code&gt;, etc.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;operation code&lt;/code&gt;가 &lt;code class=&quot;language-text&quot;&gt;n bits&lt;/code&gt;라면 &lt;code class=&quot;language-text&quot;&gt;2^n&lt;/code&gt; 개의 &lt;code class=&quot;language-text&quot;&gt;operation&lt;/code&gt; 이 수행 가능하다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;operand&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#operand&quot; aria-label=&quot;operand permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Operand&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Store (the address of) the data to be operated&lt;/p&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/be460/3.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 28.323699421965316%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAABcRAAAXEQHKJvM/AAABCUlEQVQY041Qy07DMBDM//8OHwAnLhzgECQItMStEhK3cWzycuysh7UlpLYnLK1nvY/Z9WT4x9m2DcYYtE2Dn3GC41jf96jrGou1qSaEkCx7/5LIP76xO0icThJKdei6DlK27Ct47xPhOI7QWsOuK85rwGAd1LQg0IZwSfjwtMfdfY7H5z2KosDb5w6iLPGSv6JkjIS3Z5gmdNpAqp6Z6CqXtW1D55MkyWhcIOURK0hvbPw2WlNVVcTbUuzmLRJq60kMLiH/ig7HI7EslC3LgnmeMfFUTwHckSZFjO+4YczZC60SRm35+qtZWYooTcZxcW1BcFPyvXOCtRM8UDCp4OEpnvKpJojb/l/KMc6znqvS+gAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/1e043/3.png&quot; srcset=&quot;/static/c05e37ac2d3915867b2cc31979f14eea/991de/3.png 173w,
-/static/c05e37ac2d3915867b2cc31979f14eea/e4d6b/3.png 345w,
-/static/c05e37ac2d3915867b2cc31979f14eea/1e043/3.png 690w,
-/static/c05e37ac2d3915867b2cc31979f14eea/e3189/3.png 1035w,
-/static/c05e37ac2d3915867b2cc31979f14eea/b1001/3.png 1380w,
-/static/c05e37ac2d3915867b2cc31979f14eea/be460/3.png 1645w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;example&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#example&quot; aria-label=&quot;example permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Example&lt;/h4&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/3f8aa/4.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 52.02312138728323%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAABcRAAAXEQHKJvM/AAABoUlEQVQoz31Sa4+CQAzk//8oLyZG0YgR3+BbMQq+UUSOpb3OHnh8uk2abafT2XZ3jZ5tZy2zQV+VCtVqNapWq9Ttdsm2bWq1WmSaJjUaDWo2m1Sv16nT6VC/39cY8sDEVLvdZslZxj0Ms0v05ugV8/1+59frxe/3m8Mw5N1ux8PhkGezGbuuy5PJhA+Hg87N53MejUZ6F1yBcz6fLSOOosz3jpxmRPv9npIkIWamNE1JSGRZFomo7nowGGhOHMfU6/XKpiB+u91+BRPX4e8wpOB04kS6w5IiPiFOEn4+nyCzUkpP8Xg8+HK56Fi6AkeBLznLkCCDAMnifMHF2Mfj8SMGARTBB4bDEPu+jytQOEQLSuFHEEKFlQXRFXxg8MuCcgV8vV5VzvtfEKfnJ+tCYEWHQRDoBwRH8n8dFiNDk0sLdwcSiqIo0i8LDDE6g2jRsWAKvmCWsVwus81mw6vVisTn7XYLX38R4Ihhnufxer3mxWKhY3wp5HNcAZdrsQwpzvCXptMpjcdj7Ow4DsMHCVZgMPk6WhCPhAlgcg0KnWLkH9Rs6Idbho7RAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/1e043/4.png&quot; srcset=&quot;/static/e1af4f2e4e5d664b9aa6d94639e9fb80/991de/4.png 173w,
-/static/e1af4f2e4e5d664b9aa6d94639e9fb80/e4d6b/4.png 345w,
-/static/e1af4f2e4e5d664b9aa6d94639e9fb80/1e043/4.png 690w,
-/static/e1af4f2e4e5d664b9aa6d94639e9fb80/e3189/4.png 1035w,
-/static/e1af4f2e4e5d664b9aa6d94639e9fb80/3f8aa/4.png 1337w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;h2 id=&quot;2-instruction-execution&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-instruction-execution&quot; aria-label=&quot;2 instruction execution permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Instruction execution&lt;/h2&gt;
-&lt;h4 id=&quot;execution-process&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#execution-process&quot; aria-label=&quot;execution process permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Execution process&lt;/h4&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/e9881619830dc1bd5341911c8973142f/6a5c3/5.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.75722543352601%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABcRAAAXEQHKJvM/AAABWUlEQVQoz3WT6a6CQAyFff9n84+YaJSIGkHABRcQMcLU+WpKvMbb5KSdpadzWhg45wRg5quqkuv1KmVZKoiLopD7/a53uq6Ttm3l+Xz+8djACD+JIdzv93I4HDTGTyYTWSwWcrlcFHEcy2w2k+VyKWEYamEllB92u90UvOx0OikBBcD5fNZk/Hq9VuIkSfT1Skj1NE31IMsyeTweSnY8HvVlq9VKNpuNgjiKItntdnp3PB73yPP8TcghhHiARAh5ATEF8BBw3jSN7kEwnU5VLq2gJfD8lAyBSYWcmBeigjYgb7vdynA4lCAIZDQaKeq6/j0UIwH0Cz+fz7VnFKMQ+zZxYPYvIZJJtE8Iyci0Nf7byEeyM7g3o/OXnf/unE90Xp6u/UCcl9mvgeWYsR58V8B4ARNm0iadgbDPUOgh/jOnl+xRGPyhet8TjYH/CwpPVPie9eff9z/xApXiTOFOZSEDAAAAAElFTkSuQmCC&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/e9881619830dc1bd5341911c8973142f/1e043/5.png&quot; srcset=&quot;/static/e9881619830dc1bd5341911c8973142f/991de/5.png 173w,
-/static/e9881619830dc1bd5341911c8973142f/e4d6b/5.png 345w,
-/static/e9881619830dc1bd5341911c8973142f/1e043/5.png 690w,
-/static/e9881619830dc1bd5341911c8973142f/e3189/5.png 1035w,
-/static/e9881619830dc1bd5341911c8973142f/b1001/5.png 1380w,
-/static/e9881619830dc1bd5341911c8973142f/6a5c3/5.png 1646w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;h4 id=&quot;instruction-execution-cycle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#instruction-execution-cycle&quot; aria-label=&quot;instruction execution cycle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Instruction execution cycle&lt;/h4&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/fb477493118268266fcdf0bd799d3493/24bcc/6.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 34.68208092485549%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABcRAAAXEQHKJvM/AAABKklEQVQoz3VRy3KEIBD0/38tlxyysVLGpFR2fbFC8InKdAbWeNpMVRcUTNPTTQQuOrDvO7ZtQzgjCntHhGfl70up8Z4KSGXO84gOwjJNEEKgYKiuQ9s0yLIcdVUeco9HPJRSkFLi/jPi4/sKZYbAGYYBUcPEPM9RDRaX9IpLUqDSPbJG4TX+Qlop1NogSRLM8xxcxHGMNE2PQUY4t7N4hqIoEM3LgpmnU+w01zOEGiEXFwQyaZD3K0a7oe/NGYevdV1xbTVe3j7RdD9YrQ3TR6xI1lpidZr9alfaODjnHTIcnRHTwzURP0bTNFF7VySqlrTpz/vIGIPb7YaKs2rqGj4Cx7aO0J5+Rsd5eU5ZlrjLFlortv3ojRjiGZgYVm4UHHYAWxb/9f9xfgE04BuQEI+PdQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;img&quot; title=&quot;img&quot; src=&quot;/static/fb477493118268266fcdf0bd799d3493/1e043/6.png&quot; srcset=&quot;/static/fb477493118268266fcdf0bd799d3493/991de/6.png 173w,
-/static/fb477493118268266fcdf0bd799d3493/e4d6b/6.png 345w,
-/static/fb477493118268266fcdf0bd799d3493/1e043/6.png 690w,
-/static/fb477493118268266fcdf0bd799d3493/e3189/6.png 1035w,
-/static/fb477493118268266fcdf0bd799d3493/b1001/6.png 1380w,
-/static/fb477493118268266fcdf0bd799d3493/24bcc/6.png 1781w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;h3 id=&quot;21-general-case&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#21-general-case&quot; aria-label=&quot;21 general case permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.1. General case&lt;/h3&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/26a94/7.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.82080924855491%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABcRAAAXEQHKJvM/AAABsklEQVQoz4VS2ZKcIBT1/z9tqtLTmcVepm1bwQUBRdRWmIknVzp5SM1DqLrFLQoOZ7kR/rPatkXf93DOoSxLdF0XzqWUUEphXdd/KtoeVHSxaRokyYUqgaS+qir0poXsZlRyDCAF7UJPoddmBhfDNwLR9quxA+6LR10LCAKb5iVUVTAwMYI1c7iciztE50Kveo9CeXg3Q4gmsB2GAVFBgLvDDftTDm4XXInR7pjh/VridDwgvpQo1RJAuJxxKw2wepRywOu5wvl0gDE9pmkC5xzRJlXpFjnj5I9BLQTSLAfjBbLbNQD8PDC0qsQ+Znjan8GyBD9ezniOc6RpAq01rLXBVwIUWH994dO78IsxBlpJdOQty1KkhUHCiRUcLqxDXtvAkNU9SXYYh57kaozj+ACs6hq6sxhnD+c/MTsPe18w3B2UFKj1At7cCXANkkX710OHSnsKsA5AG0PGGKJN6u6Q4uWD4Vh3OFE9vV7wfLwhjt9wvkm8XwQmqxEnlL56BCTamUKaQyiKJG/jtCmMNvQsy8CLAjWNylac/GObp61Ca4nFn2S3vbWP3oyeQJdvY/Mbel6oxJyj9hMAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/1e043/7.png&quot; srcset=&quot;/static/87b1cba74f2e491b0e24a5a3e3449275/991de/7.png 173w,
-/static/87b1cba74f2e491b0e24a5a3e3449275/e4d6b/7.png 345w,
-/static/87b1cba74f2e491b0e24a5a3e3449275/1e043/7.png 690w,
-/static/87b1cba74f2e491b0e24a5a3e3449275/e3189/7.png 1035w,
-/static/87b1cba74f2e491b0e24a5a3e3449275/26a94/7.png 1102w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;시간&lt;/th&gt;
-&lt;th&gt;레지스터 동작&lt;/th&gt;
-&lt;th&gt;설명&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;①&lt;/td&gt;
-&lt;td&gt;PC → MAR&lt;/td&gt;
-&lt;td&gt;PC에 저장된 주소를 프로세서 내부 버스를 이용하여 MAR에 전달한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;②&lt;/td&gt;
-&lt;td&gt;Memory^MAR → MBR&lt;/td&gt;
-&lt;td&gt;MAR에 저장된 주소에 해당하는 메모리 위치에서 명령어를 인출한 후 &lt;br&gt;이 명령어를 MBR에 저장한다. &lt;br/&gt; 이때 제어장치는 메모리에 저장된 내용을 읽도록 제어 신호를 발생시킨다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;PC + 1 → PC&lt;/td&gt;
-&lt;td&gt;다음 명령어를 인출하려고 PC를 증가시킨다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;③&lt;/td&gt;
-&lt;td&gt;MBR → IR&lt;/td&gt;
-&lt;td&gt;MBR에 저장된 내용을 IR에 전달한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;br&gt;
-&lt;h3 id=&quot;22-interrupt-case&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#22-interrupt-case&quot; aria-label=&quot;22 interrupt case permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.2. Interrupt case&lt;/h3&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/297b913e590b8d48020b322eee6d5d94/26a94/8.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.82080924855491%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABcRAAAXEQHKJvM/AAABuElEQVQoz4WS3XKbMBCFef836ySd1Elsxz84NgKEhBAICYRwy+kiTy46uSgzGi3M8u3Zs5vgP4/WGsYYhBBQliXato3f67qGUgrLsvxzkvUHTolSSqRpGs8ac85hOg3ZjuC1i5CCbtEMMW46j1zYbwKStWpnLPxECngFSZVHHzD4CaIqCTKCyTEmZ2KE0CHGyswo1Iz7THlCRrXWWiRFUeLlcMPzgSHTFjeq/LRN8Z4WqAi4Ago1RUhee9y4gR8Mytri7cjxsd+SIINhGJDnORJRVdC9w1M9gfcesrM4HE/4vGbIrhdciw6bjxyt4vi1Y3jenMGuZ/x8PeJlm+GSntA0Gn3fR1+TWgq4cEdJndj7Au1GaFWT+Ros+8S1NEgZDWKZcKY7q3qKZ7DKkPIAZ3tqt4Fz7gFUBOz8DD1TT8tvTGFGP0xw5KMUHIyML79alh6i/fIwgDczallF0KqQMYakomk6GkAx/gGzAXve4sfbCRvydbd7x+7Msb9IhNGQZxVBHnChPQ3JYw4eqmniOq0+Jut0iqIgNRVNS9C6lPF9rdZqhdbeaXUekLoL5PdDYedmgk7f1uYvl3mqFpksD3EAAAAASUVORK5CYII=&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/297b913e590b8d48020b322eee6d5d94/1e043/8.png&quot; srcset=&quot;/static/297b913e590b8d48020b322eee6d5d94/991de/8.png 173w,
-/static/297b913e590b8d48020b322eee6d5d94/e4d6b/8.png 345w,
-/static/297b913e590b8d48020b322eee6d5d94/1e043/8.png 690w,
-/static/297b913e590b8d48020b322eee6d5d94/e3189/8.png 1035w,
-/static/297b913e590b8d48020b322eee6d5d94/26a94/8.png 1102w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;시간&lt;/th&gt;
-&lt;th&gt;레지스터 동작&lt;/th&gt;
-&lt;th&gt;설명&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;①&lt;/td&gt;
-&lt;td&gt;PC → MBR&lt;/td&gt;
-&lt;td&gt;PC의 내용을 MBR에 저장한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;②&lt;/td&gt;
-&lt;td&gt;IntRoutine_Address → PC&lt;/td&gt;
-&lt;td&gt;인터럽트 루틴 주소를 PC에 저장한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;Save_Address → MAR&lt;/td&gt;
-&lt;td&gt;PC에 저장된 루틴 주소를 MAR에 저장한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;③&lt;/td&gt;
-&lt;td&gt;MBR → &lt;span class=&quot;katex&quot;&gt;&lt;span class=&quot;katex-mathml&quot;&gt;&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;r&lt;/mi&gt;&lt;msup&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mi&gt;R&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&quot;application/x-tex&quot;&gt;Memory^MAR&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&quot;katex-html&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;base&quot;&gt;&lt;span class=&quot;strut&quot; style=&quot;height:1.035771em;vertical-align:-0.19444em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.02778em;&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;mord&quot;&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.03588em;&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;msupsub&quot;&gt;&lt;span class=&quot;vlist-t&quot;&gt;&lt;span class=&quot;vlist-r&quot;&gt;&lt;span class=&quot;vlist&quot; style=&quot;height:0.8413309999999999em;&quot;&gt;&lt;span style=&quot;top:-3.063em;margin-right:0.05em;&quot;&gt;&lt;span class=&quot;pstrut&quot; style=&quot;height:2.7em;&quot;&gt;&lt;/span&gt;&lt;span class=&quot;sizing reset-size6 size3 mtight&quot;&gt;&lt;span class=&quot;mord mathnormal mtight&quot; style=&quot;margin-right:0.10903em;&quot;&gt;M&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;mord mathnormal&quot; style=&quot;margin-right:0.00773em;&quot;&gt;R&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;
-&lt;td&gt;MBR의 주소에 있는 내용을 지시된 메모리 셀로 이동한다.&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;br&gt;
-&lt;p&gt;&lt;strong&gt;인터럽트 처리 과정&lt;/strong&gt;&lt;/p&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/24bcc/9.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 61.27167630057804%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAABcRAAAXEQHKJvM/AAACEUlEQVQoz31TDW/aMBDl//+aTatWqbRio52gWtkGlWiRBkPQNBTybTuO4zhvdw7txDTtpFOSe353786XHsiKooAgN9ZhGURIhOYwmqZBFEVwrsE+k/gVxv4Mm6lrxIy1LZ4OGbb7jN6BXksBIQRKJREmEl9XOX6+qI5kjMeklHh8FpisC6Sq9pgqS0jCskJgthWYbihH3aBnrYXWGmWpcIhThHEBqa0n5Xnuk1ZVhaKsSaWCZRkkQimFmlRqwjJlcCCMkE5hlmVIkoTOde2wcTyOY++ssm1qWKPfcE7IWElKralQH7GThM45Ln701s+PSfxMcmpPVjQ7+5aQ4zwOVsrz9gn5g6twa/YYfE2YpKmPMykSFcLcoDS1PyClIqz2yTzn2NXxUgpP+tNye3Iphlr623jm0mPmhOMT6spg97JH8Bwip1uzTZfY2gaHKMFm+4Q4yajdxq8GW0XqdjviBCHSNEdDgFfI5E+je7w7v8HVzRSTeYBVUHhSsEtwdjnGx6sxBl+mGN4+YE+rxTZ7WOOsP0J/+A0Xnye0v4KK0NrQYrpwn3pPcu1SYVwua5boNkHkPlzeufPBxPWvZ254t3SHVHtscr9y7y/GHhuM5u5xUzhtGtfDf+xAam5/LPF9vsF6p8g1qFg3Q03zlfQtFCqqz3+Qc92lLNjd8fnqxFnQgUVt3UIItRBSLWhuJ/i//DdTB5Yd6B+UGQAAAABJRU5ErkJggg==&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image&quot; title=&quot;image&quot; src=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/1e043/9.png&quot; srcset=&quot;/static/35c57c3e17c434a3657fd7e8105e7be3/991de/9.png 173w,
-/static/35c57c3e17c434a3657fd7e8105e7be3/e4d6b/9.png 345w,
-/static/35c57c3e17c434a3657fd7e8105e7be3/1e043/9.png 690w,
-/static/35c57c3e17c434a3657fd7e8105e7be3/e3189/9.png 1035w,
-/static/35c57c3e17c434a3657fd7e8105e7be3/b1001/9.png 1380w,
-/static/35c57c3e17c434a3657fd7e8105e7be3/24bcc/9.png 1781w&quot; sizes=&quot;(max-width: 690px) 100vw, 690px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;</content:encoded></item><item><title><![CDATA[[Node.js] 1. About Node.js]]></title><description><![CDATA[1. Node.js  Node.js : open-source, cross-platform  환경 runtime (런타임)이란 특정 언어로 만든 프로그램들을 실행할 수 있는 환경을 말한다. 웹 브라우저 또한 자바스크립트 런타임의 하나이다.  Node…]]></description><link>https://ijgit.github.io/pages/Node_1</link><guid isPermaLink="false">https://ijgit.github.io/pages/Node_1</guid><pubDate>Mon, 16 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;1-nodejs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-nodejs&quot; aria-label=&quot;1 nodejs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Node.js&lt;/h1&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[[Node.js] 1. About Node.js]]></title><description><![CDATA[1. Node.js  Node.js : open-source, cross-platform  환경 runtime (런타임)이란 특정 언어로 만든 프로그램들을 실행할 수 있는 환경을 말한다. 웹 브라우저 또한 자바스크립트 런타임의 하나이다.  Node…]]></description><link>https://ijgit.github.io/pages/Node_1</link><guid isPermaLink="false">https://ijgit.github.io/pages/Node_1</guid><pubDate>Mon, 16 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;1-nodejs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-nodejs&quot; aria-label=&quot;1 nodejs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Node.js&lt;/h1&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; &quot;
@@ -3032,32 +3083,7 @@ fatal: remote origin already exists.&lt;/code&gt;&lt;span aria-hidden=&quot;true
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add&lt;/code&gt; 대신 &lt;code class=&quot;language-text&quot;&gt;git remote set-url&lt;/code&gt;을 사용&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[WSL error] Hot Reloading is not workign on WSL]]></title><description><![CDATA[문제 상황 WSL2 환경에서 hot-reloading…]]></description><link>https://ijgit.github.io/pages/2020-10-11-Hot_reloading-is-not-working-on-WSL2</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-11-Hot_reloading-is-not-working-on-WSL2</guid><pubDate>Sat, 10 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-상황&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9&quot; aria-label=&quot;문제 상황 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;문제 상황&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;WSL2 환경에서 hot-reloading 이 안되는 오류가 발생하였다. 코드를 수정하면 그에 따라 웹이 바로 변경되어야 하는데 새로고침을 해도 안되고, 서버를 껏다가 다시 실행 시켜야 변경사항이 반영이 되어있다.&lt;/p&gt;
-&lt;h2 id=&quot;해결-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;해결 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;해결 방법&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;요약하자면, windows 파일 경로가 아니라, Linux 파일 경로에서 프로젝트를 생성하고 작업하면 된다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;설명&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;C:\\Users\\USERNAME\\WORKSPACE\\..&lt;/code&gt; 와 같은 윈도우 파일 경로가 아니라, &lt;code class=&quot;language-text&quot;&gt;/home/USERNAME/..&lt;/code&gt;와 같은 Linux 파일 경로 내에서 작업을 해야 한다.&lt;/li&gt;
-&lt;li&gt;Windows Terminal 에서 설치한 리눅스 커널을 키거나, vs code 에서 WSL SSH 접속 확장 프로그램을 설치하면 Linux 파일 경로에서 작업을 할 수 있다. &lt;/li&gt;
-&lt;li&gt;실행할 때의 속도도 훨씬 빨라지고 Hot-reloading 기능도 동작한다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;삽질-로그&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%BD%EC%A7%88-%EB%A1%9C%EA%B7%B8&quot; aria-label=&quot;삽질 로그 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;삽질 로그&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;나중에 쓰일수도 있으니 해결하기 위해 한 것들을 정리해두었다. 해당 오류를 해결하는데 도움을 주지는 않았다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;console&lt;/code&gt;에 404 페이지가 없다는 오류가 있길래 혹시나 하고 404.md를 생성하였다.&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;파일 변경 감지 수를 늘려보았다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -w fs.inotify.max_user_watches=524288&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;크롬의 문제라는 말이 있어서 파이어폭스를 설치했다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;reference: &lt;a href=&quot;https://github.com/microsoft/WSL/issues/4417&quot;&gt;https://github.com/microsoft/WSL/issues/4417&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Node.js error] npm install error]]></title><description><![CDATA[npm install error 패키지 설치 중에 아래와 같은 오류가 발생 answers answer 1 Delete  and run  again Ensure no other processes of node.js are running (check…]]></description><link>https://ijgit.github.io/pages/2020-10-10-npm install error</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-10-npm install error</guid><pubDate>Sat, 10 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;npm-install-error&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#npm-install-error&quot; aria-label=&quot;npm install error permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;npm install error&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[Node.js error] npm install error]]></title><description><![CDATA[npm install error 패키지 설치 중에 아래와 같은 오류가 발생 answers answer 1 Delete  and run  again Ensure no other processes of node.js are running (check…]]></description><link>https://ijgit.github.io/pages/2020-10-10-npm install error</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-10-npm install error</guid><pubDate>Sat, 10 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;npm-install-error&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#npm-install-error&quot; aria-label=&quot;npm install error permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;npm install error&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;패키지 설치 중에 아래와 같은 오류가 발생&lt;/li&gt;
 &lt;/ul&gt;
@@ -3106,7 +3132,32 @@ npm ERR!     C:\Users\username\AppData\Roaming\npm-cache\_logs\2020-10-02T09_52_
 &lt;li&gt;동기화 일지 중지 후에 패키지 설치 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[WSL 2 (Windows Subsystem for Linux 2) Install]]></title><description><![CDATA[들어가기 전에 Windows 10을 업데이트하고 진행하는 것을 추천합니다. WSL 2는 Windows 10, 버전 1903, 빌드 18362 이상에서만 사용할 수 있습니다.  창에  을 입력하여 Windows…]]></description><link>https://ijgit.github.io/pages/2020-10-09-wsl2-install</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-09-wsl2-install</guid><pubDate>Fri, 09 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;들어가기 전에&lt;/strong&gt;&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[[WSL error] Hot Reloading is not workign on WSL]]></title><description><![CDATA[문제 상황 WSL2 환경에서 hot-reloading…]]></description><link>https://ijgit.github.io/pages/2020-10-11-Hot_reloading-is-not-working-on-WSL2</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-11-Hot_reloading-is-not-working-on-WSL2</guid><pubDate>Sat, 10 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-상황&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%83%81%ED%99%A9&quot; aria-label=&quot;문제 상황 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;문제 상황&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;WSL2 환경에서 hot-reloading 이 안되는 오류가 발생하였다. 코드를 수정하면 그에 따라 웹이 바로 변경되어야 하는데 새로고침을 해도 안되고, 서버를 껏다가 다시 실행 시켜야 변경사항이 반영이 되어있다.&lt;/p&gt;
+&lt;h2 id=&quot;해결-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%B4%EA%B2%B0-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;해결 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;해결 방법&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;요약하자면, windows 파일 경로가 아니라, Linux 파일 경로에서 프로젝트를 생성하고 작업하면 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;설명&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;C:\\Users\\USERNAME\\WORKSPACE\\..&lt;/code&gt; 와 같은 윈도우 파일 경로가 아니라, &lt;code class=&quot;language-text&quot;&gt;/home/USERNAME/..&lt;/code&gt;와 같은 Linux 파일 경로 내에서 작업을 해야 한다.&lt;/li&gt;
+&lt;li&gt;Windows Terminal 에서 설치한 리눅스 커널을 키거나, vs code 에서 WSL SSH 접속 확장 프로그램을 설치하면 Linux 파일 경로에서 작업을 할 수 있다. &lt;/li&gt;
+&lt;li&gt;실행할 때의 속도도 훨씬 빨라지고 Hot-reloading 기능도 동작한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;삽질-로그&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%BD%EC%A7%88-%EB%A1%9C%EA%B7%B8&quot; aria-label=&quot;삽질 로그 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;삽질 로그&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;나중에 쓰일수도 있으니 해결하기 위해 한 것들을 정리해두었다. 해당 오류를 해결하는데 도움을 주지는 않았다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;console&lt;/code&gt;에 404 페이지가 없다는 오류가 있길래 혹시나 하고 404.md를 생성하였다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;파일 변경 감지 수를 늘려보았다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -w fs.inotify.max_user_watches=524288&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;크롬의 문제라는 말이 있어서 파이어폭스를 설치했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;reference: &lt;a href=&quot;https://github.com/microsoft/WSL/issues/4417&quot;&gt;https://github.com/microsoft/WSL/issues/4417&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WSL 2 (Windows Subsystem for Linux 2) Install]]></title><description><![CDATA[들어가기 전에 Windows 10을 업데이트하고 진행하는 것을 추천합니다. WSL 2는 Windows 10, 버전 1903, 빌드 18362 이상에서만 사용할 수 있습니다.  창에  을 입력하여 Windows…]]></description><link>https://ijgit.github.io/pages/2020-10-09-wsl2-install</link><guid isPermaLink="false">https://ijgit.github.io/pages/2020-10-09-wsl2-install</guid><pubDate>Fri, 09 Oct 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;들어가기 전에&lt;/strong&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;Windows 10을 업데이트하고 진행하는 것을 추천합니다.&lt;/p&gt;
