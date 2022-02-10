@@ -135,7 +135,7 @@ $ .venv/Scripts/activate
 만약 이를 파일로 정리하고 싶다면 아래와 같이 명령어를 입력하면 된다. 패키지 정보가 정리된 파일은 다른 가상환경의 패키지를 **일괄 삭제**하거나 **일괄 설치**하는 데에 활용될 수 있다. 
 
 ```bash
-(.venv) $ pip freeze > temp.txt
+(.venv) $ pip freeze > requirement.txt
 ```
 
 생성한 패키지 목록을 사용하여 일괄 설치/삭제를 하는 명령어는 다음과 같다.
@@ -144,7 +144,7 @@ $ .venv/Scripts/activate
 #### 일괄 설치 명령어
 
 ```bash
-(another_venv) $ pip install -r temp.txt
+(another_venv) $ pip install -r requirement.txt
 ```
 
 
@@ -152,5 +152,5 @@ $ .venv/Scripts/activate
 #### 일괄 삭제 명령어
 
 ```bash
-(another_venv) $ pip uninstall -r temp.txt -y
+(another_venv) $ pip uninstall -r requirement.txt -y
 ```

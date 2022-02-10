@@ -70,3 +70,45 @@ LANG="ko_KR.UTF-8" wine ~/Downloads/KakaoTalk_Setup.exe
 
 윈도우에서 설치하는 것처럼 설치를 진행하면 되며, 마지막 **'설치하려는 구성 요소 선택'** 에서는 **'바탕화면에 바로가기 만들기', '빠른 실행 메뉴에 바로가기 만들기'** 를 선택해준다.
 
+
+## 3. 카카오톡 언어 설정
+
+터미널에서 아래 명령어를 입력한다.
+
+```bash
+vim ~/Desktop/카카오톡.desktop
+
+# 또는
+gedit ~/Desktop/카카오톡.desktop
+```
+
+아래처럼 wine 명령어 앞에 LANG="ko_KR.UTF-8"을 추가해준다.
+
+```bash{3}
+[Desktop Entry]
+Name=카카오톡
+Exec=env WINEPREFIX="/home/user/.wine" LANG="ko_KR.UTF-8"  wine-stable C:\\\\windows\\\\command\\\\start.exe /Unix /home/user/.wine/dosdevices/c:/users/Public/Desktop/카카오톡.lnk
+Type=Application
+StartupNotify=true
+...
+```
+
+아래 명령어도 실행하여 언어설정을 추가해준다.
+
+```bash
+vim ~/.local/share/applications/wine/Programs/카카오톡/카카오톡.desktop
+
+# 또는
+gedit ~/.local/share/applications/wine/Programs/카카오톡/카카오톡.desktop
+```
+
+```bash{3}
+[Desktop Entry]
+Name=카카오톡
+Exec=env WINEPREFIX="/home/user/.wine" LANG="ko_KR.UTF-8" wine-stable C:\\\\windows\\\\command\\\\start.exe /Unix /home/user/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/카카오톡/카카오톡.lnk
+...
+```
+
+<br/>
+
+이후, 바탕화면에서 카카오톡을 우클릭한 뒤, 'Allow Launching' 을 클릭한다.
